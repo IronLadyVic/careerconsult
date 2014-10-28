@@ -1,0 +1,207 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* ==========================================================================
+   NAVIGATION BAR  hide
+   ========================================================================== */
+body {
+  background-color: #242424; }
+
+body.show {
+  background-color: white; }
+
+header #main-header {
+  z-index: 1000;
+  position: relative; }
+
+#main-nav {
+  height: 0%;
+  margin-left: -2.5em;
+  margin-top: 2em; }
+
+.nav-handle {
+  position: absolute;
+  right: 0;
+  top: -6em;
+  padding-right: 2em; }
+
+.nav-handle a:hover rect {
+  color: white; }
+
+ul#main-nav li {
+  width: 100%;
+  height: 2em;
+  left: 0;
+  top: 60px;
+  display: block;
+  clear: left;
+  padding-top: 1.2em;
+  padding-bottom: 0.5em;
+  border-bottom: black 1px solid;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 100;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+  line-height: 0px;
+  background-color: #242424;
+  cursor: pointer; }
+
+ul#main-nav li:nth-child(7) {
+  background-color: white; }
+
+ul#main-nav li:nth-child(8) {
+  background-color: white; }
+
+.styleList {
+  color: black !important; }
+
+ul#main-nav li p {
+  color: white;
+  font-weight: 100;
+  padding-left: 5em;
+  margin-top: -0.6em; }
+
+ul#main-nav li i {
+  color: black;
+  font-size: 1.2em;
+  margin-left: 1.3em; }
+
+/* ==========================================================================
+   ACTIVE HOLD ON LI DROP DOWN MENU
+   ========================================================================== */
+ul#main-nav li:active {
+  background-image: linear-gradient(#9186EC, #2B2937); }
+
+ul#main-nav li p:active {
+  color: #E6E6FA; }
+
+ul#main-nav li i:active {
+  color: #E6E6FA; }
+
+header #main-header ul#main-nav li a {
+  text-decoration: none;
+  color: black; }
+
+header #main-header ul#main-nav li a {
+  text-decoration: none;
+  color: black; }
+
+header #main-header #nav-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 56px;
+  width: 56px;
+  background-color: transparent; }
+
+.side-bar {
+  position: absolute;
+  left: 0;
+  margin-top: -2.2em; }
+
+#droparrow {
+  position: absolute;
+  right: 0;
+  padding-right: 1em;
+  margin-top: -1.2em;
+  color: white; }
+
+#droparrow.hide {
+  height: 0em;
+  width: 0em;
+  overflow: hidden;
+  display: none; }
+
+/* ==========================================================================
+   NAVIGATION BAR hide
+   ========================================================================== */
+#main-nav li.hide {
+  display: block;
+  left: 0;
+  top: 60px;
+  margin: 0;
+  color: black;
+  font-weight: 100;
+  height: 0em;
+  width: 0em;
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+  overflow: hidden; }
+
+#seletedServices {
+  width: 0;
+  height: 0;
+  display: none; }
+
+#seletedServices.display {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: white;
+  color: black;
+  font-size: 0.8em; }
+
+#seletedServices i.display {
+  margin-left: 1.8em; }
+
+#seletedServices p.display {
+  margin-left: 1.3em; }
+
+#brand_logo a img {
+  height: 25%;
+  width: 25%;
+  margin-left: 1.4em; }
+
+/* ==========================================================================
+   SEARCH 
+   ========================================================================== */
+.search-container {
+  margin-left: 6.5em;
+  letter-spacing: -3px;
+  font-size: 1.2em;
+  padding: 0.3em 0.6em;
+  padding-bottom: 0.8em;
+  display: block;
+  margin-top: -3.7em;
+  position: absolute; }
+
+.search-bar {
+  text-indent: 0.5em;
+  font-size: 0.9em;
+  font-weight: 100;
+  width: 11em;
+  position: absolute;
+  border-radius: 5px;
+  color: white;
+  height: 1.7em;
+  font-weight: 100;
+  background-color: black; }
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer ul li {
+  float: left;
+  font-size: 0.5em;
+  padding: 1em; }
+
+footer ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  opacity: 0.5; }
+
+footer ul li a:hover {
+  opacity: 0.8; }
+
+/*# sourceMappingURL=main.css.map */

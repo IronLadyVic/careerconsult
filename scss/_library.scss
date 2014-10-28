@@ -1,0 +1,13 @@
+@mixin dropdownlist(){
+  background-image:
+    linear-gradient(
+      #9186EC, #2B2937
+    );
+} 
+
+@mixin mobileBackground($colour){
+  background-color: $colour;
+}
+@mixin hoverFont($fontColour){
+  color: $fontColour;
+}
