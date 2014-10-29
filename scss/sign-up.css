@@ -11,32 +11,29 @@ body {
   background-color: #242424; }
 
 body.show {
-  background-color: #2B2937; }
+  background-color: #242424; }
 
 header #main-header {
   z-index: 1000;
   position: relative; }
 
 #main-nav {
-  height: 0%;
   margin-left: -2.5em;
-  margin-top: 2em; }
+  margin-top: 2em;
+  display: none; }
 
 .nav-handle {
   position: absolute;
   right: 0;
-  top: -6em;
+  top: -4em;
   padding-right: 2em; }
-
-.nav-handle a:hover rect {
-  color: white; }
 
 #main-nav li {
   width: 100%;
   height: 2em;
   left: 0;
   top: 60px;
-  display: block;
+  display: hidden;
   clear: left;
   padding-top: 1.2em;
   padding-bottom: 0.5em;
@@ -120,18 +117,18 @@ header #main-header #nav-handle {
   display: none; }
 
 /* ==========================================================================
-   NAVIGATION BAR hide
+   NAVIGATION BAR show
    ========================================================================== */
-#main-nav li.hide {
+#main-nav.show {
   display: block;
   left: 0;
   top: 60px;
   margin: 0;
   color: black;
   font-weight: 100;
-  height: 0em;
-  width: 0em;
-  overflow: hidden; }
+  height: auto;
+  width: 100%;
+  margin-left: -2.5em; }
 
 #seletedServices {
   width: 0;
@@ -183,55 +180,37 @@ header #main-header #nav-handle {
   background-color: black; }
 
 /* ==========================================================================
-   WHEN NAV SLIDES UP BUTTON AND INTRO APPEARS
-   ========================================================================== */
+    SIGN UP FORM   
+  ========================================================================== */
 #intro-paragraph {
   font-size: 1.1em;
   font-weight: 100;
   color: white;
   width: 320px;
   text-align: center;
-  margin-top: -12em;
   postition: absolute; }
 
 section#introduction {
-  display: none;
-  height: 0;
-  width: 0; }
-
-section#introduction.show {
   display: block;
   margin: 0px auto;
   width: 320px;
   height: 100%; }
 
-#intro-form {
+#signup-form {
   width: 320px;
-  height: 300px;
+  height: auto;
   position: relative;
   z-index: 1000; }
 
-#launchCareer {
-  border-radius: 0.2em;
-  border: 0.1em white solid;
+#signup-form input {
+  border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
   background-color: transparent;
-  cursor: pointer;
-  color: white;
-  font-size: 0.9em;
+  text-indent: 2.8em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-bottom: 1em;
   width: 320px;
-  height: 3em;
-  margin-top: 1em; }
-
-button#launchCareer a {
-  width: 320px;
-  height: 3em;
-  text-decoration: none;
-  color: white; }
-
-button#signup a {
-  width: 320px;
-  height: 3em;
-  text-decoration: none;
   color: white; }
 
 #signup {
@@ -245,11 +224,20 @@ button#signup a {
   height: 3em;
   margin-top: 1em; }
 
-#rightarrow {
-  left: 10%;
-  top: 9%;
-  color: white;
-  position: absolute; }
+span i {
+  position: absolute;
+  margin-left: 1em;
+  margin-top: 1em;
+  color: white !important; }
+
+/* ==========================================================================
+    INPUT ERRORS
+  ========================================================================== */
+.invalid {
+  color: #9B8FFB;
+  font-size: 0.5em;
+  position: absolute;
+  margin-top: -1em; }
 
 /* ==========================================================================
    FOOTER
@@ -273,4 +261,4 @@ footer ul li a {
 footer ul li a:hover {
   opacity: 0.8; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=sign-up.css.map */

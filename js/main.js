@@ -1,5 +1,3 @@
-//Drop down menu
-
 $(function(){
 	
 
@@ -9,9 +7,17 @@ $(function(){
 		$("#droparrow").toggleClass("hide");
 		
 	});
+		$(".nav-handle a").on("click", function(){
+
+		$("#main-nav").toggleClass("show");
+		$("#droparrow").toggleClass("show");
+
+		
+	});
 
 	$(".nav-handle a").on("click", function(){
 		$("body").toggleClass("show");
+		$("section#introduction").toggleClass("show");
 
 	});
 	$("#menuServices").on("click", function(){

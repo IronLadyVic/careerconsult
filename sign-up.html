@@ -16,8 +16,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="scss/main.css">
-        <link rel="stylesheet" href="scss/main.scss">
+        <link rel="stylesheet" href="scss/sign-up.css">
+        <link rel="stylesheet" href="scss/sign-up.scss">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -72,15 +72,40 @@
 </div>
 </header> 
 <!-- End of Headers -->
-<!-- Introduction page -->
+
 <section id="introduction">
-    <h2 id="intro-paragraph">professional, independent and cost effective advice for job seekers, employees, graduates, 
-and those new to New Zealand.</h2>
-    <form id="intro-form" method="get">
-        <label for="launchCareer"></label><i id="rightarrow" class="fa fa-angle-right"></i>
-        <button type="button" name="launch" id="launchCareer"><a href="services.html">LAUNCH YOUR CAREER</a></button>
+    <h2 id="intro-paragraph">Become a member and recieve a free 15 minute career consultation</h2>
+    <form id="signup-form" method="get">
+        <label for="user-name"></label>
+        <span><i class="fa fa-male"></i></span>
+        <input type="text" name="username" id="user-name" placeholder="USERNAME" class="border">
+       
+        <label for="email"></label>
+        <span><i class="fa fa-envelope"></i></span>
+        <input type="email" name="email" id="email" placeholder="EMAIL" class="border">
+        <span></span>
+        <label for="firstName"></label>
+        <span><i class="fa fa-user"></i></span>
+        <input type="text" name="" id="firstName" placeholder="FIRST NAME" class="border">
+        <span></span>
+        <label for="lastName"></label>
+        <span><i class="fa fa-user"></i></span>
+        <input type="text" name="" id="lastName" placeholder="LAST NAME" class="border">
+        <span></span>
+        <label for="contact"></label>
+        <span><i class="fa fa-phone-square"></i></span>
+        <input type="text" name="" id="contact" placeholder="CONTACT NUMBER" class="border">
+        <span></span>
+        <label for="password"></label>
+        <span><i class="fa fa-lock"></i></span>
+        <input type="text" name="" id="password" placeholder="PASSWORD" class="border">
+        <span></span>
+        <label for="password_confirm"></label>
+        <span><i class="fa fa-lock"></i></span>
+        <input type="text" name="" id="password_confirm" placeholder="CONFIRM PASSWORD" class="border">
+        <span></span>
         <label for="signup"></label>
-        <button type="button" name="signup" id="signup"><a href="sign-up.html">SIGN UP</a></button>
+        <button type="submit" name="signup" id="signup">SIGN UP</button>
     </form>
 </section>
 
@@ -110,7 +135,7 @@ and those new to New Zealand.</h2>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/sign-up.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

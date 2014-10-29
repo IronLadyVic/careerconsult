@@ -11,38 +11,37 @@ body{
 
 }
 body.show{
-  @include mobileBackground(#2B2937);
+  @include mobileBackground(#242424);
 
 }
 
 header #main-header{
   z-index: 1000;
   position: relative;
+
 }
 
 
 #main-nav{
-  height: 0%;
   margin-left: -2.5em;
   margin-top: 2em;
+  display: none;
 }
 .nav-handle{
 position: absolute;
  right: 0;
- top: -6em;
+ top: -4em;
  padding-right: 2em;
 
 }
-.nav-handle a:hover rect{
-  color: white;
-}
+
 
 #main-nav li {
-width: 100%;
-height: 2em;
+  width: 100%;
+  height: 2em;
 left: 0;
 top: 60px;
-display: block;
+display: hidden;
 clear: left;
 padding-top: 1.2em;
 padding-bottom: 0.5em;
@@ -136,20 +135,20 @@ overflow: hidden;
 display: none;
 }
 /* ==========================================================================
-   NAVIGATION BAR hide
+   NAVIGATION BAR show
    ========================================================================== */
 
-#main-nav li.hide {
+#main-nav.show {
 display: block;
 left: 0;
 top: 60px;
 margin: 0;
 color: black;
 font-weight: 100;
-height: 0em;
-width: 0em;
+height: auto;
+width: 100%;
+margin-left: -2.5em;
 
-overflow: hidden;
 }
 
 #seletedServices{
@@ -210,64 +209,52 @@ font-weight: 100;
 background-color:black;
 }
 /* ==========================================================================
-   WHEN NAV SLIDES UP BUTTON AND INTRO APPEARS
-   ========================================================================== */
+    SIGN UP FORM   
+  ========================================================================== */
    #intro-paragraph{
    @include headers;
    width: 320px;
     text-align: center; 
-  margin-top: -12em;
   postition: absolute;
    }
-   section#introduction{
-    display: none;
-    height: 0;
-    width: 0;
 
-   }
-   section#introduction.show{
+   section#introduction{
     display: block;
     margin: 0px auto;
     width: 320px;
     height: 100%;
    }
-   #intro-form{
+   #signup-form{
    width: 320px;
-   height: 300px;
+   height: auto;
    position: relative;
    z-index: 1000;  
    }
-
-   #launchCareer{
-   @include outlineButton;
-   @include buttonStyle(white);
-   margin-top: 1em;
+   #signup-form input{
+    @include input;
    }
-   button#launchCareer a{
-    width:320px;
-    height: 3em;
-   text-decoration: none;
-   color: white
-   }
-
-  button#signup a{
-    width:320px;
-    height: 3em;
-    text-decoration: none;
-    color: white
-   }
-
    #signup{
     @include purpleButton;
     @include buttonStyle(white);
     margin-top: 1em;
    }
 
-   #rightarrow{
-  left: 10%;
-  top: 9%;
-  @include whiteArrow;
-}
+   span i{
+   @include inputIcons(white);
+   color: white!important;
+   }
+/* ==========================================================================
+    INPUT ERRORS
+  ========================================================================== */
+
+  .invalid{
+    @include inputMessage(#9B8FFB);
+    position: absolute;
+    margin-top: -1em;
+
+  }
+
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */
