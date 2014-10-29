@@ -7,11 +7,11 @@
    ========================================================================== */
 
 body{
-  @include mobileBackground(#242424);
+  @include responsiveBackground(#242424);
 
 }
 body.show{
-  @include mobileBackground(#242424);
+  @include responsiveBackground(#242424);
 
 }
 
@@ -88,7 +88,7 @@ ul#main-nav li i{
 
 ul#main-nav li:active{
   
-@include dropdownlist;
+@include navList;
 
 }
 ul#main-nav li p:active{
@@ -280,5 +280,101 @@ footer ul li a{
 }
 footer ul li a:hover{
   opacity: 0.8;
+
+}
+
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+
+@media only screen and (min-width: 40em) {
+
+/* ==========================================================================
+   MAIN NAV
+   ========================================================================== */
+body{
+  @include responsiveBackground(#f4f2ef); 
+}
+
+
+.nav-handle{
+  display: none;
+
+}
+
+#brand_logo a img{
+  width:15%;
+  height: 15%;
+}
+
+#main-nav{
+  margin-top: 1em;
+}
+
+ul#main-nav{
+  width: 40em;
+  float: right;
+  margin-right: 1em;
+}
+
+#main-nav li{
+  @include responsiveBackground(#f4f2ef); 
+  @include navText(#39444c); 
+  border-bottom: none;
+
+}
+
+ul#main-nav li:nth-child(7){
+  @include responsiveBackground(#f4f2ef); 
+  
+} 
+ul#main-nav li:nth-child(8){
+  @include responsiveBackground(#f4f2ef); 
+
+} 
+ul#main-nav li p{
+  @include navText(#39444c); 
+  
+  border-top: none;
+  border-bottom: none;
+}
+
+#seletedServices.display {
+display: none;
+}
+
+ul#main-nav li:active{
+  
+@include navList;
+
+}
+ul#main-nav li p:active{
+  @include hoverFont(#E6E6FA)
+}
+ul#main-nav li i:active{
+  @include hoverFont(#E6E6FA)
+}
+
+/* ==========================================================================
+   INTRODUCTION
+   ========================================================================== */
+
+}
+
+
+
+
+/* ==========================================================================
+   DESKTOP
+   ========================================================================== */
+
+@media only screen and (min-width: 65em) {
+
+
+.nav-handle{
+  display: none;
+
+}
+
 
 }

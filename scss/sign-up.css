@@ -261,4 +261,73 @@ footer ul li a {
 footer ul li a:hover {
   opacity: 0.8; }
 
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+@media only screen and (min-width: 40em) {
+  /* ==========================================================================
+     MAIN NAV
+     ========================================================================== */
+  body {
+    background-color: #f4f2ef; }
+
+  .nav-handle {
+    display: none; }
+
+  #brand_logo a img {
+    width: 15%;
+    height: 15%; }
+
+  #main-nav {
+    margin-top: 1em; }
+
+  ul#main-nav {
+    width: 40em;
+    float: right;
+    margin-right: 1em; }
+
+  #main-nav li {
+    background-color: #f4f2ef;
+    color: #39444c;
+    font-size: 1em;
+    width: 12em;
+    border-right: 1px black solid;
+    border-bottom: none; }
+
+  ul#main-nav li:nth-child(7) {
+    background-color: #f4f2ef; }
+
+  ul#main-nav li:nth-child(8) {
+    background-color: #f4f2ef; }
+
+  ul#main-nav li p {
+    color: #39444c;
+    font-size: 1em;
+    width: 12em;
+    border-right: 1px black solid;
+    border-top: none;
+    border-bottom: none; }
+
+  #seletedServices.display {
+    display: none; }
+
+  ul#main-nav li:active {
+    background-image: linear-gradient(#9B8FFB, #2B2937); }
+
+  ul#main-nav li p:active {
+    color: #E6E6FA; }
+
+  ul#main-nav li i:active {
+    color: #E6E6FA; }
+
+  /* ==========================================================================
+     INTRODUCTION
+     ========================================================================== */ }
+/* ==========================================================================
+   DESKTOP
+   ========================================================================== */
+@media only screen and (min-width: 65em) {
+  .nav-handle {
+    display: none; } }
+
 /*# sourceMappingURL=sign-up.css.map */

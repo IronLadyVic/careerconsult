@@ -28,9 +28,6 @@ header #main-header {
   top: -6em;
   padding-right: 2em; }
 
-.nav-handle a:hover rect {
-  color: white; }
-
 #main-nav li {
   width: 100%;
   height: 2em;
@@ -109,7 +106,8 @@ header #main-header #nav-handle {
 #droparrow {
   color: white;
   position: absolute;
-  right: 10%;
+  right: 0;
+  padding-right: 2em;
   margin-top: -1.2em;
   color: white !important; }
 
@@ -272,5 +270,84 @@ footer ul li a {
 
 footer ul li a:hover {
   opacity: 0.8; }
+
+/* ==========================================================================
+   ADD FROM HERE TO SERVICES, SIGN UP
+   ========================================================================== */
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+@media only screen and (min-width: 40em) {
+  /* ==========================================================================
+     MAIN NAV
+     ========================================================================== */
+  body {
+    background-color: #f4f2ef; }
+
+  .nav-handle {
+    display: none; }
+
+  #brand_logo a img {
+    width: 15%;
+    height: 15%; }
+
+  #main-nav {
+    margin-top: 1em; }
+
+  ul#main-nav {
+    float: right;
+    margin-right: 1em;
+    width: 40em; }
+
+  #main-nav li {
+    background-color: #f4f2ef;
+    color: #39444c;
+    font-size: 1em;
+    width: 12em;
+    border-right: 1px black solid;
+    border-bottom: none;
+    float: left; }
+
+  #main-nav li p {
+    float: left; }
+
+  #main-nav li i {
+    display: none; }
+
+  ul#main-nav li:nth-child(7) {
+    background-color: #f4f2ef; }
+
+  ul#main-nav li:nth-child(8) {
+    background-color: #f4f2ef; }
+
+  ul#main-nav li p {
+    color: #39444c;
+    font-size: 1em;
+    width: 12em;
+    border-right: 1px black solid;
+    border-top: none;
+    border-bottom: none; }
+
+  #seletedServices.display {
+    display: none; }
+
+  ul#main-nav li:active {
+    background-image: none !important; }
+
+  ul#main-nav li p:active {
+    color: #9B8FFB; }
+
+  ul#main-nav li i:active {
+    color: #9B8FFB; }
+
+  /* ==========================================================================
+     INTRODUCTION
+     ========================================================================== */ }
+/* ==========================================================================
+   DESKTOP
+   ========================================================================== */
+@media only screen and (min-width: 65em) {
+  .nav-handle {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
