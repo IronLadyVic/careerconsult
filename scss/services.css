@@ -1,0 +1,264 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* ==========================================================================
+   NAVIGATION BAR  hide
+   ========================================================================== */
+body {
+  background-color: #242424; }
+
+body.show {
+  background-color: #242424; }
+
+header #main-header {
+  z-index: 1000;
+  position: relative; }
+
+#main-nav {
+  margin-left: -2.5em;
+  margin-top: 2em;
+  display: none; }
+
+.nav-handle {
+  position: absolute;
+  right: 0;
+  top: -4em;
+  padding-right: 2em; }
+
+#main-nav li {
+  width: 100%;
+  height: 2em;
+  left: 0;
+  top: 60px;
+  display: hidden;
+  clear: left;
+  padding-top: 1.2em;
+  padding-bottom: 0.5em;
+  border-bottom: black 1px solid;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 100;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+  line-height: 0px;
+  background-color: #242424;
+  cursor: pointer; }
+
+ul#main-nav li:nth-child(7) {
+  background-color: white; }
+
+ul#main-nav li:nth-child(8) {
+  background-color: white; }
+
+.styleList {
+  color: black !important; }
+
+ul#main-nav li p {
+  color: white;
+  font-weight: 100;
+  padding-left: 5em;
+  margin-top: -0.6em; }
+
+ul#main-nav li i {
+  color: black;
+  font-size: 1.2em;
+  margin-left: 1.3em; }
+
+/* ==========================================================================
+   ACTIVE HOLD ON LI DROP DOWN MENU
+   ========================================================================== */
+ul#main-nav li:active {
+  background-image: linear-gradient(#9B8FFB, #2B2937); }
+
+ul#main-nav li p:active {
+  color: #E6E6FA; }
+
+ul#main-nav li i:active {
+  color: #E6E6FA; }
+
+header #main-header ul#main-nav li a {
+  text-decoration: none;
+  color: black; }
+
+header #main-header ul#main-nav li a {
+  text-decoration: none;
+  color: black; }
+
+header #main-header #nav-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 56px;
+  width: 56px;
+  background-color: transparent; }
+
+.side-bar {
+  position: absolute;
+  left: 0;
+  margin-top: -2.2em; }
+
+#droparrow {
+  color: white;
+  position: absolute;
+  right: 10%;
+  margin-top: -1.2em;
+  color: white !important; }
+
+#droparrow.hide {
+  height: 0em;
+  width: 0em;
+  overflow: hidden;
+  display: none; }
+
+/* ==========================================================================
+   NAVIGATION BAR show
+   ========================================================================== */
+#main-nav.show {
+  display: block;
+  left: 0;
+  top: 60px;
+  margin: 0;
+  color: black;
+  font-weight: 100;
+  height: auto;
+  width: 100%;
+  margin-left: -2.5em; }
+
+#seletedServices {
+  width: 0;
+  height: 0;
+  display: none; }
+
+#seletedServices.display {
+  width: 600px;
+  height: auto;
+  display: block;
+  color: black;
+  font-size: 0.8em;
+  margin-left: -3em; }
+
+#seletedServices i.display {
+  margin-left: 1.8em; }
+
+#seletedServices p.display {
+  margin-left: 1.3em; }
+
+#brand_logo a img {
+  height: 25%;
+  width: 25%;
+  margin-left: 1.4em; }
+
+/* ==========================================================================
+   SEARCH 
+   ========================================================================== */
+.search-container {
+  margin-left: 6.5em;
+  letter-spacing: -3px;
+  font-size: 1.2em;
+  padding: 0.3em 0.6em;
+  padding-bottom: 0.8em;
+  display: block;
+  margin-top: -3.7em;
+  position: absolute; }
+
+.search-bar {
+  text-indent: 0.5em;
+  font-size: 0.9em;
+  font-weight: 100;
+  width: 11em;
+  position: absolute;
+  border-radius: 5px;
+  color: white;
+  height: 1.7em;
+  font-weight: 100;
+  background-color: black; }
+
+/* ==========================================================================
+    SIGN UP FORM   
+  ========================================================================== */
+#intro-paragraph {
+  font-size: 1.1em;
+  font-weight: 100;
+  color: white;
+  width: 320px;
+  text-align: center;
+  postition: absolute; }
+
+section#introduction {
+  display: block;
+  margin: 0px auto;
+  width: 320px;
+  height: 100%; }
+
+#signup-form {
+  width: 320px;
+  height: auto;
+  position: relative;
+  z-index: 1000; }
+
+#signup-form input {
+  border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
+  background-color: transparent;
+  text-indent: 2.8em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-bottom: 1em;
+  width: 320px;
+  color: white; }
+
+#signup {
+  border-radius: 0.2em;
+  background-color: #9B8FFB;
+  box-shadow: 0.2em 0.2em 0.5em black;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9em;
+  width: 320px;
+  height: 3em;
+  margin-top: 1em; }
+
+span i {
+  position: absolute;
+  margin-left: 1em;
+  margin-top: 1em;
+  color: white !important; }
+
+/* ==========================================================================
+    INPUT ERRORS
+  ========================================================================== */
+.invalid {
+  color: #9B8FFB;
+  font-size: 0.5em;
+  position: absolute;
+  margin-top: -1em; }
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+#footer_options {
+  margin: auto;
+  width: 960px;
+  margin-left: -1.2em; }
+
+footer ul li {
+  float: left;
+  font-size: 0.5em;
+  padding: 1em; }
+
+footer ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  opacity: 0.5; }
+
+footer ul li a:hover {
+  opacity: 0.8; }
+
+/*# sourceMappingURL=services.css.map */
