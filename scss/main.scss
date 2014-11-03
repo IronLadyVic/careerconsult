@@ -40,7 +40,7 @@ height: 2em;
 left: 0;
 top: 60px;
 display: block;
-clear: left;
+/*clear: left;*/
 padding-top: 1.2em;
 padding-bottom: 0.5em;
 border-bottom: black 1px solid;
@@ -315,60 +315,105 @@ footer ul li a:hover{
 body{
   @include responsiveBackground(#f4f2ef); 
 }
+.nav-handle{
+  left: 0;
+  margin-left: 10em;
+}
+header  ul#main-nav{
+  margin-top: -0.5em; 
+}
+ul#main-nav li{
+  width: 20em;
+}
+#brand_logo a img{
+  width:15%;
+  height: 15%;
+  margin: auto;
+}
+#seletedServices.display{
+  width: auto;
+  
+}
 
+
+/* ==========================================================================
+   MAIN NAV IF YOU WANT LIST TO FLOAT LEFT.
+   ========================================================================== */
 
 .nav-handle{
   display: none;
 
 }
 
-#brand_logo a img{
-  width:15%;
-  height: 15%;
-}
 
+header  ul#main-nav{
+position: relative;
+top: auto;
+max-height: 2em;
+  float: right;
+  display: block;
+}
 #main-nav{
   margin-top: 1em;
 }
 
 ul#main-nav{
+ 
   float: right;
-  margin-right: 1em;
-  width: 40em;
+  margin-right: 3em;
 }
 
-#main-nav li{
-  @include responsiveBackground(#f4f2ef); 
-  @include navText(#39444c); 
-  border-bottom: none;
+ul#main-nav li{
+ background-color: none;
+display: block;
+margin: 0;
+height: 35px;
+color: black;
+font-weight: 100;
+ z-index: 3000;
+border-bottom: none;
   float: left;
+  background-color: transparent;
+@include navText(#39444c, 1em); 
+ width: 8em;
 }
-#main-nav li p{
-  float: left;
+ul#main-nav li p{
+  color: black;
+  margin-top: -2.5em;
+  position: absolute;
 }
 
-#main-nav li i{
-  display: none;
+ul#main-nav li i{
+  position: absolute;
+  margin-left: 3.1em;
+  margin-top: -3em;
+  font-size: 2em;
+}
+#main-nav li:nth-child(1) p{
+   margin-left: -1em;
+  
+}
+#main-nav li:nth-child(5) p{
+   margin-left: -1em;
+  
+}
+#main-nav li:nth-child(6) p{
+   margin-left: 0.6em;
+  
+}
+ul#main-nav li:nth-child(1){
+   width: 8em;
+margin-left: 2em;
 }
 
 ul#main-nav li:nth-child(7){
-  @include responsiveBackground(#f4f2ef); 
+   background-color: transparent;
   
 } 
 ul#main-nav li:nth-child(8){
-  @include responsiveBackground(#f4f2ef); 
+   background-color: transparent;
 
 } 
-ul#main-nav li p{
-  @include navText(#39444c); 
-  border-top: none;
-  border-bottom: none;
-}
-
-#seletedServices.display {
-display: none;
-}
-
 ul#main-nav li:active{
   
 background-image: none!important;
@@ -379,6 +424,9 @@ ul#main-nav li p:active{
 }
 ul#main-nav li i:active{
   @include hoverFont(#9B8FFB)
+}
+#droparrow{
+  display: none;
 }
 
 /* ==========================================================================
@@ -394,14 +442,22 @@ ul#main-nav li i:active{
    DESKTOP
    ========================================================================== */
 
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 60em) {
 
 
-.nav-handle{
-  display: none;
-
+body{
+  @include responsiveBackground(#f4f2ef); 
 }
 
+
+
+#brand_logo a img{
+  width:10%;
+  height: 10%;
+}
+   section#introduction.show{
+
+   }
 
 }
 

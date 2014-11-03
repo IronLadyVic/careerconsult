@@ -23,11 +23,11 @@
 	color: white;
 }
 
-@mixin navText($color){
+@mixin navText($color, $fontSize){
 	color: $color;
-	font-size: 1em;
-	width: 12em;
-	border-right: 1px black solid;
+	font-size: $fontSize;
+	
+	/*border-right: 1px black solid;*/
 }
 @mixin buttonStyle($color){
 	cursor: pointer;
