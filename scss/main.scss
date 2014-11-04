@@ -29,9 +29,12 @@ header #main-header{
 .nav-handle{
 position: absolute;
  right: 0;
- top: -6em;
+ top: 2em;
  padding-right: 2em;
 
+}
+.nav-handle-desktop{
+  display: none;
 }
 
 #main-nav li {
@@ -55,6 +58,7 @@ font-weight: 100;
 line-height: 0px;
  background-color: #242424;
  cursor: pointer;
+
 }
 ul#main-nav li:nth-child(7){
   background-color: white;
@@ -62,7 +66,7 @@ ul#main-nav li:nth-child(7){
 } 
 ul#main-nav li:nth-child(8){
   background-color: white;
-
+  
 } 
 .styleList{
   color: black!important;
@@ -203,18 +207,8 @@ overflow: hidden;
   margin-top: -12em;
   postition: absolute;
    }
-   section#introduction{
-    display: none;
-    height: 0;
-    width: 0;
 
-   }
-   section#introduction.show{
-    display: block;
-    margin: 0px auto;
-    width: 320px;
-    height: 100%;
-   }
+
    #intro-form{
    width: 320px;
    height: 300px;
@@ -261,13 +255,27 @@ overflow: hidden;
     text-align: center; 
   postition: absolute;
    }
+    section#introduction{
+    display: none;
+    height: 0;
+    width: 0;
 
-   section#introduction{
+   }
+   section#introduction.show{
     display: block;
     margin: 0px auto;
     width: 320px;
     height: 100%;
+   
+
    }
+
+/*   section#introduction{
+    display: block;
+    margin: 0px auto;
+    width: 320px;
+    height: 100%;
+   }*/
    #signup-form{
    width: 320px;
    height: auto;
@@ -351,16 +359,19 @@ body{
 }
 .nav-handle-desktop{
   right: 1em;
-  top: -5.5em;
+  top: 2em;
   display: block;
   position: absolute;
 }
 
 header  ul#main-nav{
   margin-top: 1em; 
+
 }
+
 #main-nav li{
   width: 14em;
+
 }
 #main-nav li p{
   margin-left: -1.3em;
@@ -373,14 +384,14 @@ header  ul#main-nav{
     position: relative;
 }
 #tab-desk-nav{
- width: 15.4em;
- height: 100%;
+width:0em;
+flex:none;
+ height: 0em;
  top:0;
  left: 0;
- position: absolute;
+/* position: absolute;*/
  z-index: 1000;
  background-color: #242424;
-
 }
 #seletedServices.display {
   margin-left: -3.2em;
@@ -419,10 +430,11 @@ color: white !important;
    ========================================================================== */
 .search-container{
   right: 8em;
-  display: block;
-  position: absolute;
+top: 2em;
+display: block;
+position: absolute;
   width: 12em;
-  margin-top: -4.5em;
+ 
   
 }
 
@@ -469,10 +481,11 @@ input#txtsearch.search-bar.display{
    Register Form
    ========================================================================== */
    section#introduction{
-    /*position: absolute;*/
-    margin-top: -14.5em;
-    margin-left:20em;
-    z-index: 2000;
+    top: 35%;
+    left: 30%;
+     position: absolute;
+    z-index: 4000;
+    display: block;
    }
    h1#header{
     @include mainHeaders(black);
@@ -482,6 +495,14 @@ input#txtsearch.search-bar.display{
    }
    #intro-paragraph{
     text-align: left;
+    color: black;
+   }
+   #launchCareer{
+    border-color: black;
+
+   }
+   button#launchCareer a{
+    color: black;
    }
    p#intro-paragraph{
     color: black;
@@ -604,14 +625,11 @@ body{
 }
 
 
-
 #brand_logo a img{
   width:10%;
   height: 10%;
 }
-   section#introduction.show{
 
-   }
 
 }
 
