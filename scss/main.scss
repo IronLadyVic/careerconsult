@@ -175,6 +175,8 @@ overflow: hidden;
   margin-left: 1.3em;
   
   }
+
+
 #brand_logo a img{
   height: 25%;
   width:25%;
@@ -184,28 +186,12 @@ overflow: hidden;
    SEARCH 
    ========================================================================== */
 .search-container{
-  margin-left: 6.5em;
-  letter-spacing: -3px;
-  font-size: 1.2em;
-  padding: 0.3em 0.6em;
-  padding-bottom: 0.8em;
-  display: block;
-  margin-top: -3.7em;
-  position:absolute;
+  display: none;
 
 }
 
 .search-bar{
-  text-indent: 0.5em;
-  font-size: 0.9em;
-  font-weight: 100;
-  width: 11em;
-  position: absolute;
-  border-radius: 5px;
-  color: white;
-  height: 1.7em;
-font-weight: 100;
-background-color:black;
+  display: none;
 }
 /* ==========================================================================
    WHEN NAV SLIDES UP BUTTON AND INTRO APPEARS
@@ -267,6 +253,51 @@ background-color:black;
   @include whiteArrow;
 }
 /* ==========================================================================
+    SIGN UP FORM   
+  ========================================================================== */
+   #intro-paragraph{
+   @include headers;
+   width: 320px;
+    text-align: center; 
+  postition: absolute;
+   }
+
+   section#introduction{
+    display: block;
+    margin: 0px auto;
+    width: 320px;
+    height: 100%;
+   }
+   #signup-form{
+   width: 320px;
+   height: auto;
+   position: relative;
+   z-index: 1000;  
+   }
+   #signup-form input{
+    @include input;
+   }
+   #signup{
+    @include purpleButton;
+    @include buttonStyle(white);
+    margin-top: 1em;
+   }
+
+   span i{
+   @include inputIcons(white);
+   color: white!important;
+   }
+/* ==========================================================================
+    INPUT ERRORS
+  ========================================================================== */
+
+  .invalid{
+    @include inputMessage(#9B8FFB);
+    position: absolute;
+    margin-top: -1em;
+
+  }
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 
@@ -316,31 +347,154 @@ body{
   @include responsiveBackground(#f4f2ef); 
 }
 .nav-handle{
-  left: 0;
-  margin-left: 10em;
+  display: none;
 }
+.nav-handle-desktop{
+  right: 1em;
+  top: -5.5em;
+  display: block;
+  position: absolute;
+}
+
 header  ul#main-nav{
-  margin-top: -0.5em; 
+  margin-top: 1em; 
 }
-ul#main-nav li{
-  width: 20em;
+#main-nav li{
+  width: 14em;
+}
+#main-nav li p{
+  margin-left: -1.3em;
 }
 #brand_logo a img{
-  width:15%;
-  height: 15%;
-  margin: auto;
+  width:5em;
+  height: 5em;
+  margin-left: 4em;
+   z-index: 2001;
+    position: relative;
 }
-#seletedServices.display{
-  width: auto;
+#tab-desk-nav{
+ width: 15.4em;
+ height: 100%;
+ top:0;
+ left: 0;
+ position: absolute;
+ z-index: 1000;
+ background-color: #242424;
+
+}
+#seletedServices.display {
+  margin-left: -3.2em;
+
+}
+#seletedServices li{
+  width: 17.5em;
+  height: 2em;
+}
+#seletedServices li p{
+  line-height: 140%;  
+}
+#seletedServices p:nth-child(3){
+ line-height: 180%;
+}
+#seletedServices p:nth-child(3){
+  line-height: 180%;
+}
+#seletedServices p:nth-child(4){
+ line-height: 180%;
+}  
+#seletedServices p.display{
+  margin-top: -1.8em;
+  margin-left: -0.3em;
+}
+#droparrow {
+z-index: 1000;
+position: absolute;
+left: 9em;
+margin-top: -1.2em;
+color: white !important;
+}
+
+/* ==========================================================================
+   SEARCH FORM
+   ========================================================================== */
+.search-container{
+  right: 8em;
+  display: block;
+  position: absolute;
+  width: 12em;
+  margin-top: -4.5em;
   
 }
 
+.search-bar{
+  display: block;
+}
 
+input#txtsearch.search-bar{
+  display: none;
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 2s;
+    /* Standard syntax */
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+}
+input#txtsearch.search-bar.display{
+   display: block;
+   height: 2em;
+   width: 15em;
+   text-indent: 0.5em;
+   border-radius: 0.3em;
+    text-indent: 0.5em;
+  font-size: 0.9em;
+  font-weight: 100;
+  position: absolute;
+  color: white;
+  font-weight: 100;
+}
+
+
+#fa-search{
+  margin-left: 9.8em;
+  margin-top: -0.1em;
+  font-size: 1.5em;
+  cursor: pointer;
+
+}
 /* ==========================================================================
-   MAIN NAV IF YOU WANT LIST TO FLOAT LEFT.
+   Register Form
+   ========================================================================== */
+   section#introduction{
+    /*position: absolute;*/
+    margin-top: -14.5em;
+    margin-left:20em;
+    z-index: 2000;
+   }
+   h1#header{
+    @include mainHeaders(black);
+    margin-top: -8.8em;
+    /*position: absolute;*/
+
+   }
+   #intro-paragraph{
+    text-align: left;
+   }
+   p#intro-paragraph{
+    color: black;
+   }
+/* ==========================================================================
+   SEARCH FORM
    ========================================================================== */
 
-.nav-handle{
+/* ==========================================================================
+   MAIN NAV IF YOU WANT LIST to be float left and at the top with no background.
+   ========================================================================== */
+
+/*.nav-handle{
   display: none;
 
 }
@@ -427,7 +581,7 @@ ul#main-nav li i:active{
 }
 #droparrow{
   display: none;
-}
+}*/
 
 /* ==========================================================================
    INTRODUCTION

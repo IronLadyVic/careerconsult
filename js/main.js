@@ -25,4 +25,22 @@ $(function(){
 		$("#seletedServices p").toggleClass("display");
 		$("#seletedServices i").toggleClass("display");
 	});
+
+	$("#fa-search").on("click", function(){
+		$("input#txtsearch.search-bar").toggleClass("display", {direction: "left"}, 1000)
+	});
+
+	
+	$("#main-nav li").on("click", function(){
+		$("#main-header").hide("slide");
+
+
+	});
+	$("#main-nav li").on("click", function(){
+		$("#main-header").hide("slide");
+
+
+	});
+	
 });
+
