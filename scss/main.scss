@@ -186,6 +186,7 @@ overflow: hidden;
   width:25%;
   margin-left: 1.4em;
 }
+
 /* ==========================================================================
    SEARCH 
    ========================================================================== */
@@ -211,7 +212,7 @@ overflow: hidden;
 
    #intro-form{
    width: 320px;
-   height: 300px;
+   height: auto;
    position: relative;
    z-index: 1000;  
    }
@@ -243,7 +244,7 @@ overflow: hidden;
 
    #rightarrow{
   left: 10%;
-  top: 9%;
+  top:25%;
   @include whiteArrow;
 }
 /* ==========================================================================
@@ -266,16 +267,26 @@ overflow: hidden;
     margin: 0px auto;
     width: 320px;
     height: 100%;
-   
-
+   }
+   h1#header{
+      color: white;
+     height: auto;
+    position: absolute;
+    margin: auto;
+    margin-top:-2em;
    }
 
-/*   section#introduction{
+
+
+
+   section#signing-up{
     display: block;
-    margin: 0px auto;
+    top:20em;
     width: 320px;
-    height: 100%;
-   }*/
+    height: 55em;
+    position: relative;
+    margin: auto;
+   }
    #signup-form{
    width: 320px;
    height: auto;
@@ -309,12 +320,14 @@ overflow: hidden;
    FOOTER
    ========================================================================== */
 
-#footer_options{
-  margin: auto;
-  width: 960px;
-  margin-left: -1.2em;
-}
+div#footer_options{
+  top: 20em;
+  bottom: 0;
 
+  margin-left: -1.5em;
+  padding-top:1em;
+  padding-bottom:3em;
+}
 
 footer ul li{
   float: left;
@@ -333,6 +346,7 @@ footer ul li a:hover{
 
 }
 
+
 /* ==========================================================================
    ADD FROM HERE TO SERVICES, SIGN UP
    ========================================================================== */
@@ -348,6 +362,15 @@ footer ul li a:hover{
 
 @media only screen and (min-width: 40em) {
 
+div#container{
+  top: 10%;
+  width: 100%;
+  height: 52em;
+  outline: 1px red solid;
+  position:absolute; 
+  margin-left: 16em;
+  z-index: 4000;
+}
 /* ==========================================================================
    MAIN NAV
    ========================================================================== */
@@ -367,12 +390,57 @@ body{
 header  ul#main-nav{
   margin-top: 1em; 
 
-}
 
+}
 #main-nav li{
   width: 14em;
 
 }
+
+/* ==========================================================================
+   Slide in and out tablet nav
+   ========================================================================== */
+#tab-desk-nav{
+width:0;
+flex:none;
+ height: 0;
+ top:0;
+ left: 0;
+ position: absolute;
+ z-index: 100;
+ background-color: #242424;
+transition: width 1s;
+    -webkit-transition: width 1s; /* Safari 3.1 to 6.0 */
+}
+ul#main-nav{
+width:0;
+  transition: width 1s;
+    -webkit-transition: width 1s; /* Safari 3.1 to 6.0 */
+ 
+  overflow:hidden;
+}
+i#droparrow{
+  display: hidden;
+  width: 0;
+
+}
+#tab-desk-nav.show{
+display: block;
+width: 15.4em;
+height: 80em;
+
+}
+ul#main-nav.show{
+  width:15.3em;
+
+}
+i#droparrow.show{
+  display: block;
+  width: auto;
+}
+/* ==========================================================================
+   Slide in and out tablet nav
+   ========================================================================== */
 #main-nav li p{
   margin-left: -1.3em;
 }
@@ -383,16 +451,7 @@ header  ul#main-nav{
    z-index: 2001;
     position: relative;
 }
-#tab-desk-nav{
-width:0em;
-flex:none;
- height: 0em;
- top:0;
- left: 0;
-/* position: absolute;*/
- z-index: 1000;
- background-color: #242424;
-}
+
 #seletedServices.display {
   margin-left: -3.2em;
 
@@ -481,11 +540,12 @@ input#txtsearch.search-bar.display{
    Register Form
    ========================================================================== */
    section#introduction{
-    top: 35%;
+    top: -5em;
     left: 30%;
-     position: absolute;
+     position: relative;
     z-index: 4000;
     display: block;
+    width: 18em;
    }
    h1#header{
     @include mainHeaders(black);
@@ -493,12 +553,29 @@ input#txtsearch.search-bar.display{
     /*position: absolute;*/
 
    }
+   #rightarrow{
+  top:50%;
+  position: relative;
+  color: black;
+  left: 2.5em;
+}
+#intro-form {
+width: 50em;
+}
    #intro-paragraph{
     text-align: left;
     color: black;
+    font-size:1.9em;
+    font-weight: 500;
+    width: 18em;
    }
    #launchCareer{
     border-color: black;
+    width: 18em;
+    margin-left:0.5em;
+   }
+   #signup{
+    width: 18em;
 
    }
    button#launchCareer a{
@@ -507,10 +584,35 @@ input#txtsearch.search-bar.display{
    p#intro-paragraph{
     color: black;
    }
+
+   #signup{
+    float: left;
+    box-shadow: none;
+   }
+
+
+
+}
+
+
+
 /* ==========================================================================
-   SEARCH FORM
+   DESKTOP
    ========================================================================== */
 
+@media only screen and (min-width: 60em) {
+
+
+body{
+  @include responsiveBackground(#f4f2ef); 
+}
+
+
+#brand_logo a img{
+  width:10%;
+  height: 10%;
+}
+}
 /* ==========================================================================
    MAIN NAV IF YOU WANT LIST to be float left and at the top with no background.
    ========================================================================== */
@@ -604,34 +706,8 @@ ul#main-nav li i:active{
   display: none;
 }*/
 
-/* ==========================================================================
-   INTRODUCTION
-   ========================================================================== */
-
-}
 
 
-
-
-/* ==========================================================================
-   DESKTOP
-   ========================================================================== */
-
-@media only screen and (min-width: 60em) {
-
-
-body{
-  @include responsiveBackground(#f4f2ef); 
-}
-
-
-#brand_logo a img{
-  width:10%;
-  height: 10%;
-}
-
-
-}
 
 
 

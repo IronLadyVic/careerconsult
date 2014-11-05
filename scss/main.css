@@ -11,7 +11,7 @@ body {
   background-color: #242424; }
 
 body.show {
-  background-color: #2B2937; }
+  background-color: #2b2937; }
 
 header #main-header {
   z-index: 1000;
@@ -77,13 +77,13 @@ ul#main-nav li i {
    ACTIVE HOLD ON LI DROP DOWN MENU
    ========================================================================== */
 ul#main-nav li:active {
-  background-image: linear-gradient(#9B8FFB, #2B2937); }
+  background-image: linear-gradient(#9b8ffb, #2b2937); }
 
 ul#main-nav li p:active {
-  color: #E6E6FA; }
+  color: lavender; }
 
 ul#main-nav li i:active {
-  color: #E6E6FA; }
+  color: lavender; }
 
 header #main-header ul#main-nav li a {
   text-decoration: none;
@@ -181,7 +181,7 @@ header #main-header #nav-handle {
 
 #intro-form {
   width: 320px;
-  height: 300px;
+  height: auto;
   position: relative;
   z-index: 1000; }
 
@@ -221,7 +221,7 @@ button#signup a {
 
 #rightarrow {
   left: 10%;
-  top: 9%;
+  top: 25%;
   color: white;
   position: absolute; }
 
@@ -247,12 +247,21 @@ section#introduction.show {
   width: 320px;
   height: 100%; }
 
-/*   section#introduction{
-    display: block;
-    margin: 0px auto;
-    width: 320px;
-    height: 100%;
-   }*/
+h1#header {
+  color: white;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  margin-top: -2em; }
+
+section#signing-up {
+  display: block;
+  top: 20em;
+  width: 320px;
+  height: 55em;
+  position: relative;
+  margin: auto; }
+
 #signup-form {
   width: 320px;
   height: auto;
@@ -291,7 +300,7 @@ span i {
     INPUT ERRORS
   ========================================================================== */
 .invalid {
-  color: #9B8FFB;
+  color: #9b8ffb;
   font-size: 0.5em;
   position: absolute;
   margin-top: -1em; }
@@ -299,10 +308,12 @@ span i {
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-#footer_options {
-  margin: auto;
-  width: 960px;
-  margin-left: -1.2em; }
+div#footer_options {
+  top: 20em;
+  bottom: 0;
+  margin-left: -1.5em;
+  padding-top: 1em;
+  padding-bottom: 3em; }
 
 footer ul li {
   float: left;
@@ -325,6 +336,15 @@ footer ul li a:hover {
    TABLET
    ========================================================================== */
 @media only screen and (min-width: 40em) {
+  div#container {
+    top: 10%;
+    width: 100%;
+    height: 52em;
+    outline: 1px red solid;
+    position: absolute;
+    margin-left: 16em;
+    z-index: 4000; }
+
   /* ==========================================================================
      MAIN NAV
      ========================================================================== */
@@ -346,6 +366,48 @@ footer ul li a:hover {
   #main-nav li {
     width: 14em; }
 
+  /* ==========================================================================
+     Slide in and out tablet nav
+     ========================================================================== */
+  #tab-desk-nav {
+    width: 0;
+    flex: none;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    background-color: #242424;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+    /* Safari 3.1 to 6.0 */ }
+
+  ul#main-nav {
+    width: 0;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+    /* Safari 3.1 to 6.0 */
+    overflow: hidden; }
+
+  i#droparrow {
+    display: hidden;
+    width: 0; }
+
+  #tab-desk-nav.show {
+    display: block;
+    width: 15.4em;
+    height: 80em; }
+
+  ul#main-nav.show {
+    width: 15.3em; }
+
+  i#droparrow.show {
+    display: block;
+    width: auto; }
+
+  /* ==========================================================================
+     Slide in and out tablet nav
+     ========================================================================== */
   #main-nav li p {
     margin-left: -1.3em; }
 
@@ -355,16 +417,6 @@ footer ul li a:hover {
     margin-left: 4em;
     z-index: 2001;
     position: relative; }
-
-  #tab-desk-nav {
-    width: 0em;
-    flex: none;
-    height: 0em;
-    top: 0;
-    left: 0;
-    /* position: absolute;*/
-    z-index: 1000;
-    background-color: #242424; }
 
   #seletedServices.display {
     margin-left: -3.2em; }
@@ -445,11 +497,12 @@ footer ul li a:hover {
      Register Form
      ========================================================================== */
   section#introduction {
-    top: 35%;
+    top: -5em;
     left: 30%;
-    position: absolute;
+    position: relative;
     z-index: 4000;
-    display: block; }
+    display: block;
+    width: 18em; }
 
   h1#header {
     font-size: 2em;
@@ -457,12 +510,29 @@ footer ul li a:hover {
     margin-top: -8.8em;
     /*position: absolute;*/ }
 
+  #rightarrow {
+    top: 50%;
+    position: relative;
+    color: black;
+    left: 2.5em; }
+
+  #intro-form {
+    width: 50em; }
+
   #intro-paragraph {
     text-align: left;
-    color: black; }
+    color: black;
+    font-size: 1.9em;
+    font-weight: 500;
+    width: 18em; }
 
   #launchCareer {
-    border-color: black; }
+    border-color: black;
+    width: 18em;
+    margin-left: 0.5em; }
+
+  #signup {
+    width: 18em; }
 
   button#launchCareer a {
     color: black; }
@@ -470,103 +540,9 @@ footer ul li a:hover {
   p#intro-paragraph {
     color: black; }
 
-  /* ==========================================================================
-     SEARCH FORM
-     ========================================================================== */
-  /* ==========================================================================
-     MAIN NAV IF YOU WANT LIST to be float left and at the top with no background.
-     ========================================================================== */
-  /*.nav-handle{
-    display: none;
-  
-  }
-  
-  
-  header  ul#main-nav{
-  position: relative;
-  top: auto;
-  max-height: 2em;
-    float: right;
-    display: block;
-  }
-  #main-nav{
-    margin-top: 1em;
-  }
-  
-  ul#main-nav{
-   
-    float: right;
-    margin-right: 3em;
-  }
-  
-  ul#main-nav li{
-   background-color: none;
-  display: block;
-  margin: 0;
-  height: 35px;
-  color: black;
-  font-weight: 100;
-   z-index: 3000;
-  border-bottom: none;
+  #signup {
     float: left;
-    background-color: transparent;
-  @include navText(#39444c, 1em); 
-   width: 8em;
-  }
-  ul#main-nav li p{
-    color: black;
-    margin-top: -2.5em;
-    position: absolute;
-  }
-  
-  ul#main-nav li i{
-    position: absolute;
-    margin-left: 3.1em;
-    margin-top: -3em;
-    font-size: 2em;
-  }
-  #main-nav li:nth-child(1) p{
-     margin-left: -1em;
-    
-  }
-  #main-nav li:nth-child(5) p{
-     margin-left: -1em;
-    
-  }
-  #main-nav li:nth-child(6) p{
-     margin-left: 0.6em;
-    
-  }
-  ul#main-nav li:nth-child(1){
-     width: 8em;
-  margin-left: 2em;
-  }
-  
-  ul#main-nav li:nth-child(7){
-     background-color: transparent;
-    
-  } 
-  ul#main-nav li:nth-child(8){
-     background-color: transparent;
-  
-  } 
-  ul#main-nav li:active{
-    
-  background-image: none!important;
-  
-  }
-  ul#main-nav li p:active{
-    @include hoverFont(#9B8FFB)
-  }
-  ul#main-nav li i:active{
-    @include hoverFont(#9B8FFB)
-  }
-  #droparrow{
-    display: none;
-  }*/
-  /* ==========================================================================
-     INTRODUCTION
-     ========================================================================== */ }
+    box-shadow: none; } }
 /* ==========================================================================
    DESKTOP
    ========================================================================== */
@@ -577,5 +553,94 @@ footer ul li a:hover {
   #brand_logo a img {
     width: 10%;
     height: 10%; } }
+/* ==========================================================================
+   MAIN NAV IF YOU WANT LIST to be float left and at the top with no background.
+   ========================================================================== */
+/*.nav-handle{
+  display: none;
 
-/*# sourceMappingURL=main.css.map */
+}
+
+
+header  ul#main-nav{
+position: relative;
+top: auto;
+max-height: 2em;
+  float: right;
+  display: block;
+}
+#main-nav{
+  margin-top: 1em;
+}
+
+ul#main-nav{
+ 
+  float: right;
+  margin-right: 3em;
+}
+
+ul#main-nav li{
+ background-color: none;
+display: block;
+margin: 0;
+height: 35px;
+color: black;
+font-weight: 100;
+ z-index: 3000;
+border-bottom: none;
+  float: left;
+  background-color: transparent;
+@include navText(#39444c, 1em); 
+ width: 8em;
+}
+ul#main-nav li p{
+  color: black;
+  margin-top: -2.5em;
+  position: absolute;
+}
+
+ul#main-nav li i{
+  position: absolute;
+  margin-left: 3.1em;
+  margin-top: -3em;
+  font-size: 2em;
+}
+#main-nav li:nth-child(1) p{
+   margin-left: -1em;
+  
+}
+#main-nav li:nth-child(5) p{
+   margin-left: -1em;
+  
+}
+#main-nav li:nth-child(6) p{
+   margin-left: 0.6em;
+  
+}
+ul#main-nav li:nth-child(1){
+   width: 8em;
+margin-left: 2em;
+}
+
+ul#main-nav li:nth-child(7){
+   background-color: transparent;
+  
+} 
+ul#main-nav li:nth-child(8){
+   background-color: transparent;
+
+} 
+ul#main-nav li:active{
+  
+background-image: none!important;
+
+}
+ul#main-nav li p:active{
+  @include hoverFont(#9B8FFB)
+}
+ul#main-nav li i:active{
+  @include hoverFont(#9B8FFB)
+}
+#droparrow{
+  display: none;
+}*/
