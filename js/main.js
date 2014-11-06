@@ -33,6 +33,15 @@ $(function(){
 		$("#seletedServices i").toggleClass("display");
 	});
 
+	$(".nav-handle-sign-up a").on("click", function(){
+
+
+		$("#main-nav").toggleClass("show");
+		$("#droparrow").toggleClass("show");
+		
+		
+		
+	});
 	//-----------search bar-----------//
 	// $("#fa-search").on("click", function(){
 	// 	$("input#txtsearch.search-bar").toggleClass("display", {direction: "left"}, 1000)

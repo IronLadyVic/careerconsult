@@ -33,6 +33,18 @@ position: absolute;
  padding-right: 2em;
 
 }
+.nav-handle-other{
+  position: absolute;
+ right: 0;
+ top: 2em;
+ padding-right: 2em;
+}
+.nav-handle-sign-up{
+  position: absolute;
+ right: 0;
+ top: 2em;
+ padding-right: 2em;
+}
 
 .nav-handle-user{
   margin-right: 2em;
@@ -169,7 +181,6 @@ color: black;
 font-weight: 100;
 height: 0em;
 width: 0em;
-
 overflow: hidden;
 }
 section#animation{
@@ -183,12 +194,12 @@ section#animation.show{
 }
 
 #aucklandSkyline img{
-  margin-top: 1.5em;
-  height: 22%;
+  margin-top: 5em;
+  height: 25%;
   width: 100%;
 /* margin-left: -20em;*/
   /*opacity: 0.8;*/
-  position: absolute;
+  position: relative;
   border-bottom: 1px #928CC4 solid!important;
 }
 
@@ -201,12 +212,13 @@ margin-top: 13em;
 
 }
 #workingGirl img{
-  margin-top:10em;
+  display: none;
+/*  margin-top:10em;
   height:22%;
   width: 22%;
   position: relative;
   z-index: 4000;
-  margin-left: 2em;
+  margin-left: 2em;*/
 }
 
 #seletedServices{
@@ -325,18 +337,6 @@ margin-top: 13em;
    }
 
 
-
-/*   section#animation.show{
-    width: 320px;
-    height: 100%;
-    position: absolute;
-    margin: 0px auto;
-}
-*/
-
-
-
-
    h1#header{
       color: white;
      height: auto;
@@ -345,14 +345,16 @@ margin-top: 13em;
     margin-top:-2em;
    }
 
+   #signing-up p{
+    color: white;
 
+   }
 
-
-   section#signing-up{
+  section#signing-up{
     display: block;
-    top:20em;
+    top:5em;
     width: 320px;
-    height: 55em;
+    height: auto;
     position: relative;
     margin: auto;
    }
@@ -365,6 +367,14 @@ margin-top: 13em;
    #signup-form input{
     @include input;
    }
+    #signup-form textarea{
+      @include input;
+    }
+  #servicesSelect{
+     @include input;
+     height: 3.5em;
+  
+  }
    #signup{
     @include purpleButton;
     @include buttonStyle(white);
@@ -375,6 +385,18 @@ margin-top: 13em;
    @include inputIcons(white);
    color: white!important;
    }
+
+   input#agree{
+  width: 1em;
+  height: 1em;
+  right: 1em;
+  margin-top: 8.3em;
+  position: absolute;
+}
+#agreementStatement{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 /* ==========================================================================
     INPUT ERRORS
   ========================================================================== */
@@ -447,16 +469,15 @@ top: 12%;
 }
 
 div#sectionSignUp{
-top: 12%;
+
  width: 70%;
-  height: 40em;
+  height: 43em;
   border: #EDEDED 0.1em solid;
   z-index: 4000;
   background-color: white;
   float: right;
-  margin-top: 1em;
-
-   margin-right: 1.5em;
+  margin-top: 1.3em;
+   margin-right: 2em;
 }
 
 
@@ -471,14 +492,16 @@ body{
 .nav-handle{
   display: none;
 }
-
+.nav-handle-other{
+  display: none;
+}
 .nav-handle-user{
   margin-right: 2em;
   top: 1em;
   margin-top: -6em;
   display: block;
   float: right;
-  height: 8em;
+  height: 3em;
 
 }
 
@@ -486,12 +509,15 @@ body{
   font-size: 0.9em;
   float: left;
   color: black!important;
+  top: 0;
 }
 
 .nav-handle-user img{
   padding-left: 0.8em;
-  height:30%;
+  height:3em;
+ /* width: 5em;*/
   float: right;
+  top: 0;
 
 }
 
@@ -680,14 +706,14 @@ section#introduction{
 
 section#animation{
     width: 100%;
-    height: 18em;
-    border-bottom: 2px solid #666666;
+    height: 50%;
+    /*border-bottom: 2px solid #666666;*/
     position: relative;
     margin-top: 24em;
     display: block;
 }
 #aucklandSkyline img{
-  margin-top: -6em;
+  margin-top: -5em;
   height: 100%;
   width: 100%;
   opacity: 0.3;
@@ -697,7 +723,7 @@ section#animation{
 #ponsonbyHousing img{
   height: 65%;
  /* width: 105%;*/
-  margin-top: 3em;
+  margin-top: 4em;
 /*background-image: url(img/Ponsonby.png);*/
 display: block;
 /*outline: 1px red solid;*/
@@ -726,9 +752,9 @@ animation-iteration-count: infinite;
 
 }
 #workingGirl img{
-  margin-top:11.6em;
-  height: 15%;
-  width: 15%;
+  margin-top:10.5em;
+  height: 7em;
+  width: 7em;
   position: relative;
   z-index: 4000;
   margin-left: 2em;
@@ -754,7 +780,7 @@ animation-iteration-count: infinite;
     border-color: black;
     width: 18em;
     margin-left:0.5em;
-    margin-top: 0em;
+    margin-top: 1em;
    }
    #signup{
     float: left;
@@ -770,43 +796,98 @@ animation-iteration-count: infinite;
    Register Form
    ========================================================================== */
 
-section#signing-up{
-    top: 23em;
-  float: left;
-  margin-top: 1em;
-  padding-left: 2em;
+   section#signing-up{
+    top: 21em;
+    float: left;
+    margin-top: 1em;
+    padding-left: 2em;
 
-}
+  }
 
-p#intro-paragraph{
+  p#intro-paragraph{
     color: black;
     margin-top: -9em;
     width: 20em;
-   }
-   h1#header{
+  }
+  h1#header{
     @include mainHeaders(black);
     margin-top: -10em;
 
 
-   }
+  }
 
-   #signup-form{
+  #signup-form{
     width: 42em;
+  }
+
+   #signing-up p{
+    text-align: left;
+    color: black;
+    font-size:1.2em;
+    font-weight: 500;
+    width: 40em;
+    margin-top: -10em;
    }
-   #signup-form input {
-border-bottom: 0.1em black solid;
-border-top: 0.1em black solid;
-/*float: left;*/
-/*margin-right: 0.5em;*/
-}
+  #signup-form input {
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    color: black;
+    float: left;
+    margin-right: 0.5em;
+  }
+#servicesSelect{
+  border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  background-color: white!important;
+  height: 4.2em;
+  border-radius: none!important;
+  width: 320px;
+  color: black;
+  }
+#signup-form textarea{
+  border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  color: black;
+} 
+  #signup-form button#signup{
+    margin-top: 0em;
+    width: 320px;
+    
+  }
 
-#signup{
-  margin-top: 0em;
-}
+  #signup-form i{
+    color: black!important;
+    display: none;
+  }
 
-#signup-form i{
-  color: black!important;
-  float: left;
+input#agree{
+  width: 1em;
+  height: 1em;
+  right: 2em;
+  margin-top: 6.5em;
+  position: absolute;
+}
+input#avatar{
+  text-indent: 0em!important;
+}
+#agreementStatement{
+ font-size: 0.8em!important;
+ width: 45em!important;
+ margin-top: 0em!important;
+ padding-bottom: 1em;
+}
+#profileImage{
+  position: absolute;
+  /*border:#EDEDED 0.01em solid;*/
+  height: 7em;
+  width: 7em;
+  margin-top: -11em;
+  right: 18em;
+  background-color: white;
+}
+#profileImage img{
+  /*width: 100%;*/
+  height: 100%;
 
 }
 /* ==========================================================================
@@ -816,7 +897,7 @@ div#footer_options{
   clear: both;
   float: right;
   padding-right: 1em;
-  padding-top: 1em;
+
   width: 45em;
 }
 

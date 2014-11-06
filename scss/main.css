@@ -28,6 +28,18 @@ header #main-header {
   top: 2em;
   padding-right: 2em; }
 
+.nav-handle-other {
+  position: absolute;
+  right: 0;
+  top: 2em;
+  padding-right: 2em; }
+
+.nav-handle-sign-up {
+  position: absolute;
+  right: 0;
+  top: 2em;
+  padding-right: 2em; }
+
 .nav-handle-user {
   margin-right: 2em;
   top: 1em;
@@ -157,12 +169,12 @@ section#animation.show {
   /*border-bottom: 1px white solid!important;*/ }
 
 #aucklandSkyline img {
-  margin-top: 1.5em;
-  height: 22%;
+  margin-top: 5em;
+  height: 25%;
   width: 100%;
   /* margin-left: -20em;*/
   /*opacity: 0.8;*/
-  position: absolute;
+  position: relative;
   border-bottom: 1px #928CC4 solid !important; }
 
 #ponsonbyHousing img {
@@ -174,12 +186,13 @@ section#animation.show {
   /*position: absolute;*/ }
 
 #workingGirl img {
-  margin-top: 10em;
-  height: 22%;
-  width: 22%;
-  position: relative;
-  z-index: 4000;
-  margin-left: 2em; }
+  display: none;
+  /*  margin-top:10em;
+    height:22%;
+    width: 22%;
+    position: relative;
+    z-index: 4000;
+    margin-left: 2em;*/ }
 
 #seletedServices {
   width: 0;
@@ -259,6 +272,7 @@ button#signup a {
   border-radius: 0.2em;
   background-color: #9B8FFB;
   box-shadow: 0.2em 0.2em 0.5em black;
+  text-decoration: none;
   cursor: pointer;
   color: white;
   font-size: 0.9em;
@@ -294,13 +308,6 @@ section#introduction.show {
   width: 320px;
   height: 100%; }
 
-/*   section#animation.show{
-    width: 320px;
-    height: 100%;
-    position: absolute;
-    margin: 0px auto;
-}
-*/
 h1#header {
   color: white;
   height: auto;
@@ -308,11 +315,14 @@ h1#header {
   margin: auto;
   margin-top: -2em; }
 
+#signing-up p {
+  color: white; }
+
 section#signing-up {
   display: block;
-  top: 20em;
+  top: 5em;
   width: 320px;
-  height: 55em;
+  height: auto;
   position: relative;
   margin: auto; }
 
@@ -333,10 +343,34 @@ section#signing-up {
   width: 320px;
   color: white; }
 
+#signup-form textarea {
+  border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
+  background-color: transparent;
+  text-indent: 2.8em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-bottom: 1em;
+  width: 320px;
+  color: white; }
+
+#servicesSelect {
+  border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
+  background-color: transparent;
+  text-indent: 2.8em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-bottom: 1em;
+  width: 320px;
+  color: white;
+  height: 3.5em; }
+
 #signup {
   border-radius: 0.2em;
   background-color: #9B8FFB;
   box-shadow: 0.2em 0.2em 0.5em black;
+  text-decoration: none;
   cursor: pointer;
   color: white;
   font-size: 0.9em;
@@ -349,6 +383,17 @@ span i {
   margin-left: 1em;
   margin-top: 1em;
   color: white !important; }
+
+input#agree {
+  width: 1em;
+  height: 1em;
+  right: 1em;
+  margin-top: 8.3em;
+  position: absolute; }
+
+#agreementStatement {
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 /* ==========================================================================
     INPUT ERRORS
@@ -402,15 +447,14 @@ footer ul li a:hover {
     margin-right: 2em; }
 
   div#sectionSignUp {
-    top: 12%;
     width: 70%;
-    height: 40em;
+    height: 43em;
     border: #EDEDED 0.1em solid;
     z-index: 4000;
     background-color: white;
     float: right;
-    margin-top: 1em;
-    margin-right: 1.5em; }
+    margin-top: 1.3em;
+    margin-right: 2em; }
 
   /* ==========================================================================
      MAIN NAV
@@ -421,23 +465,29 @@ footer ul li a:hover {
   .nav-handle {
     display: none; }
 
+  .nav-handle-other {
+    display: none; }
+
   .nav-handle-user {
     margin-right: 2em;
     top: 1em;
     margin-top: -6em;
     display: block;
     float: right;
-    height: 8em; }
+    height: 3em; }
 
   #signedInTag {
     font-size: 0.9em;
     float: left;
-    color: black !important; }
+    color: black !important;
+    top: 0; }
 
   .nav-handle-user img {
     padding-left: 0.8em;
-    height: 30%;
-    float: right; }
+    height: 3em;
+    /* width: 5em;*/
+    float: right;
+    top: 0; }
 
   header ul#main-nav {
     margin-top: 1em; }
@@ -599,14 +649,14 @@ footer ul li a:hover {
 
   section#animation {
     width: 100%;
-    height: 18em;
-    border-bottom: 2px solid #666666;
+    height: 50%;
+    /*border-bottom: 2px solid #666666;*/
     position: relative;
     margin-top: 24em;
     display: block; }
 
   #aucklandSkyline img {
-    margin-top: -6em;
+    margin-top: -5em;
     height: 100%;
     width: 100%;
     opacity: 0.3;
@@ -615,7 +665,7 @@ footer ul li a:hover {
   #ponsonbyHousing img {
     height: 65%;
     /* width: 105%;*/
-    margin-top: 3em;
+    margin-top: 4em;
     /*background-image: url(img/Ponsonby.png);*/
     display: block;
     /*outline: 1px red solid;*/
@@ -643,9 +693,9 @@ footer ul li a:hover {
     animation-iteration-count: infinite; }
 
   #workingGirl img {
-    margin-top: 11.6em;
-    height: 15%;
-    width: 15%;
+    margin-top: 10.5em;
+    height: 7em;
+    width: 7em;
     position: relative;
     z-index: 4000;
     margin-left: 2em; }
@@ -670,7 +720,7 @@ footer ul li a:hover {
     border-color: black;
     width: 18em;
     margin-left: 0.5em;
-    margin-top: 0em; }
+    margin-top: 1em; }
 
   #signup {
     float: left;
@@ -684,7 +734,7 @@ footer ul li a:hover {
      Register Form
      ========================================================================== */
   section#signing-up {
-    top: 23em;
+    top: 21em;
     float: left;
     margin-top: 1em;
     padding-left: 2em; }
@@ -702,18 +752,71 @@ footer ul li a:hover {
   #signup-form {
     width: 42em; }
 
+  #signing-up p {
+    text-align: left;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 40em;
+    margin-top: -10em; }
+
   #signup-form input {
     border-bottom: 0.1em black solid;
     border-top: 0.1em black solid;
-    /*float: left;*/
-    /*margin-right: 0.5em;*/ }
+    color: black;
+    float: left;
+    margin-right: 0.5em; }
 
-  #signup {
-    margin-top: 0em; }
+  #servicesSelect {
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    background-color: white !important;
+    height: 4.2em;
+    border-radius: none !important;
+    width: 320px;
+    color: black; }
+
+  #signup-form textarea {
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    color: black; }
+
+  #signup-form button#signup {
+    margin-top: 0em;
+    width: 320px; }
 
   #signup-form i {
     color: black !important;
-    float: left; }
+    display: none; }
+
+  input#agree {
+    width: 1em;
+    height: 1em;
+    right: 2em;
+    margin-top: 6.5em;
+    position: absolute; }
+
+  input#avatar {
+    text-indent: 0em !important; }
+
+  #agreementStatement {
+    font-size: 0.8em !important;
+    width: 45em !important;
+    margin-top: 0em !important;
+    padding-bottom: 1em; }
+
+  #profileImage {
+    position: absolute;
+    /*border:#EDEDED 0.01em solid;*/
+    height: 7em;
+    width: 7em;
+    margin-top: -11em;
+    right: 18em;
+    background-color: white; }
+
+  #profileImage img {
+    /*width: 100%;*/
+    height: 100%; }
 
   /* ==========================================================================
      FOOTER
@@ -722,7 +825,6 @@ footer ul li a:hover {
     clear: both;
     float: right;
     padding-right: 1em;
-    padding-top: 1em;
     width: 45em; }
 
   footer ul li a {

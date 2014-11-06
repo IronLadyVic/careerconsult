@@ -64,7 +64,7 @@
     </ul>
 </div>
 
-<div class="nav-handle">
+<div class="nav-handle-other">
   <a href="#">
     <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -76,7 +76,7 @@
    </a>
 </div>
 <div class="nav-handle-user">
-<p id="signedInTag">Welcome, user</p>
+<p id="signedInTag">Welcome, Karyn</p>
   <a href="#">
     <img src="img/career.png" alt="user">
    </a>
@@ -88,40 +88,59 @@
 <div id="sectionSignUp">
 <section id="signing-up">
     <h1 id="header">SIGN UP</h1>
-    <p id="intro-paragraph">Become a member and recieve a free 15 minute career consultation</p>
+    <p>Become a member and recieve a free 15 minute career consultation</p>
     <form id="signup-form" method="get">
         <label for="user-name"></label>
         <span><i class="fa fa-male"></i></span>
-        <input type="text" name="username" id="user-name" placeholder="USERNAME" class="border">
+        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
        
         <label for="email"></label>
         <span><i class="fa fa-envelope"></i></span>
-        <input type="email" name="email" id="email" placeholder="EMAIL" class="border">
+        <input type="email" name="email" id="email" placeholder="Email" class="border">
         <span></span>
         <label for="firstName"></label>
         <span><i class="fa fa-user"></i></span>
-        <input type="text" name="" id="firstName" placeholder="FIRST NAME" class="border">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border">
         <span></span>
         <label for="lastName"></label>
         <span><i class="fa fa-user"></i></span>
-        <input type="text" name="" id="lastName" placeholder="LAST NAME" class="border">
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border">
         <span></span>
         <label for="contact"></label>
         <span><i class="fa fa-phone-square"></i></span>
-        <input type="text" name="" id="contact" placeholder="CONTACT NUMBER" class="border">
+        <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
         <span></span>
         <label for="avatar"></label>
         <span><i class="fa fa-picture-o"></i></span>
-        <input type="text" name="" id="avatar" placeholder="PROFILE IMAGE" class="border">
+        <input type="file" name="imageType" id="avatar" placeholder="" class="border">
+        <img id="profileImage" src="#" alt="profile picture">
         <span></span>
         <label for="password"></label>
         <span><i class="fa fa-lock"></i></span>
-        <input type="text" name="" id="password" placeholder="PASSWORD" class="border">
+        <input type="text" name="password" id="password" placeholder="Password" class="border">
         <span></span>
-        <label for="password_confirm"></label>
+        <label for="confirm_password"></label>
         <span><i class="fa fa-lock"></i></span>
-        <input type="text" name="" id="password_confirm" placeholder="CONFIRM PASSWORD" class="border">
+        <input type="text" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
         <span></span>
+        <label for="services"></label>
+        <span><i class="fa fa-hand-o-right"></i></span>
+        <select id="servicesSelect" class="border">
+            <option value="0">Services I'm Interested In...</option>
+            <option value="1">CV</option>
+            <option value="2">Opel</option>
+            <option value="4">Audi</option>
+            <option value="5">Audi</option>
+            <option value="6">Audi</option>
+            <option value="7">Audi</option>
+        </select>
+        <span></span>
+        <label for="comment"></label>
+        <span><i class="fa fa-pencil-square-o"></i></span>
+        <textarea type="text" name="comment" id="comment" placeholder="Questions or Comments" class="border"></textarea>
+        <span></span>
+        <label for="services"></label>
+        <input type="checkbox" name="agreement" id="agree"><p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with the above.</p>
         <label for="signup"></label>
         <button type="submit" name="signup" id="signup">SIGN UP</button>
     </form>
@@ -154,6 +173,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/sign-up.js"></script>
+        <script src="js/avatarUpload.js"></script>
         <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
