@@ -22,7 +22,8 @@ $(function(){
 
 		$("body").toggleClass("show");
 		$("section#introduction").toggleClass("show");
-
+		$("section#animation").toggleClass("show");
+		
 
 	});
 	//-----------Services drop down menu-----------//
@@ -33,16 +34,16 @@ $(function(){
 	});
 
 	//-----------search bar-----------//
-	$("#fa-search").on("click", function(){
-		$("input#txtsearch.search-bar").toggleClass("display", {direction: "left"}, 1000)
-	});
+	// $("#fa-search").on("click", function(){
+	// 	$("input#txtsearch.search-bar").toggleClass("display", {direction: "left"}, 1000)
+	// });
 
-	$(".nav-handle-desktop").on("click",function(){
-		$("#tab-desk-nav").toggleClass("show");
-		$("ul#main-nav").toggleClass("show");
-		$("i#droparrow").toggleClass("show");
+	// $(".nav-handle-desktop").on("click",function(){
+		
+	// 	$("ul#main-nav").toggleClass("show");
+	// 	$("i#droparrow").toggleClass("show");
 
-	});
+	// });
 
 
 

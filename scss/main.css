@@ -11,7 +11,7 @@ body {
   background-color: #242424; }
 
 body.show {
-  background-color: #2b2937; }
+  background-color: #2B2937; }
 
 header #main-header {
   z-index: 1000;
@@ -28,8 +28,22 @@ header #main-header {
   top: 2em;
   padding-right: 2em; }
 
-.nav-handle-desktop {
-  display: none; }
+.nav-handle-user {
+  margin-right: 2em;
+  top: 1em;
+  margin-top: -6em;
+  display: none;
+  height: 8em; }
+
+#signedInTag {
+  font-size: 0.9em;
+  float: left;
+  color: white !important; }
+
+.nav-handle-user img {
+  padding-left: 0.8em;
+  height: 30%;
+  float: right; }
 
 #main-nav li {
   width: 100%;
@@ -77,13 +91,13 @@ ul#main-nav li i {
    ACTIVE HOLD ON LI DROP DOWN MENU
    ========================================================================== */
 ul#main-nav li:active {
-  background-image: linear-gradient(#9b8ffb, #2b2937); }
+  background-image: linear-gradient(#9B8FFB, #2B2937); }
 
 ul#main-nav li p:active {
-  color: lavender; }
+  color: #E6E6FA; }
 
 ul#main-nav li i:active {
-  color: lavender; }
+  color: #E6E6FA; }
 
 header #main-header ul#main-nav li a {
   text-decoration: none;
@@ -133,6 +147,39 @@ header #main-header #nav-handle {
   height: 0em;
   width: 0em;
   overflow: hidden; }
+
+section#animation {
+  display: none; }
+
+section#animation.show {
+  display: block;
+  width: 400px;
+  /*border-bottom: 1px white solid!important;*/ }
+
+#aucklandSkyline img {
+  margin-top: 1.5em;
+  height: 22%;
+  width: 100%;
+  /* margin-left: -20em;*/
+  /*opacity: 0.8;*/
+  position: absolute;
+  border-bottom: 1px #928CC4 solid !important; }
+
+#ponsonbyHousing img {
+  /*  height:10%;
+  margin-top: 13em;
+  */
+  display: none;
+  /*outline: 1px red solid;*/
+  /*position: absolute;*/ }
+
+#workingGirl img {
+  margin-top: 10em;
+  height: 22%;
+  width: 22%;
+  position: relative;
+  z-index: 4000;
+  margin-left: 2em; }
 
 #seletedServices {
   width: 0;
@@ -247,6 +294,13 @@ section#introduction.show {
   width: 320px;
   height: 100%; }
 
+/*   section#animation.show{
+    width: 320px;
+    height: 100%;
+    position: absolute;
+    margin: 0px auto;
+}
+*/
 h1#header {
   color: white;
   height: auto;
@@ -300,7 +354,7 @@ span i {
     INPUT ERRORS
   ========================================================================== */
 .invalid {
-  color: #9b8ffb;
+  color: #9B8FFB;
   font-size: 0.5em;
   position: absolute;
   margin-top: -1em; }
@@ -309,11 +363,11 @@ span i {
    FOOTER
    ========================================================================== */
 div#footer_options {
-  top: 20em;
-  bottom: 0;
-  margin-left: -1.5em;
-  padding-top: 1em;
-  padding-bottom: 3em; }
+  clear: both;
+  margin: auto;
+  width: 400px;
+  margin-top: 5em;
+  margin-left: -1.8em; }
 
 footer ul li {
   float: left;
@@ -336,14 +390,27 @@ footer ul li a:hover {
    TABLET
    ========================================================================== */
 @media only screen and (min-width: 40em) {
-  div#container {
-    top: 10%;
-    width: 100%;
-    height: 52em;
-    outline: 1px red solid;
-    position: absolute;
-    margin-left: 16em;
-    z-index: 4000; }
+  div#sectionTwo {
+    top: 12%;
+    width: 70%;
+    height: 10em;
+    border: #EDEDED 0.1em solid;
+    z-index: 4000;
+    background-color: white;
+    float: right;
+    margin-top: 5em;
+    margin-right: 2em; }
+
+  div#sectionSignUp {
+    top: 12%;
+    width: 70%;
+    height: 40em;
+    border: #EDEDED 0.1em solid;
+    z-index: 4000;
+    background-color: white;
+    float: right;
+    margin-top: 1em;
+    margin-right: 1.5em; }
 
   /* ==========================================================================
      MAIN NAV
@@ -354,11 +421,23 @@ footer ul li a:hover {
   .nav-handle {
     display: none; }
 
-  .nav-handle-desktop {
-    right: 1em;
-    top: 2em;
+  .nav-handle-user {
+    margin-right: 2em;
+    top: 1em;
+    margin-top: -6em;
     display: block;
-    position: absolute; }
+    float: right;
+    height: 8em; }
+
+  #signedInTag {
+    font-size: 0.9em;
+    float: left;
+    color: black !important; }
+
+  .nav-handle-user img {
+    padding-left: 0.8em;
+    height: 30%;
+    float: right; }
 
   header ul#main-nav {
     margin-top: 1em; }
@@ -370,9 +449,9 @@ footer ul li a:hover {
      Slide in and out tablet nav
      ========================================================================== */
   #tab-desk-nav {
-    width: 0;
-    flex: none;
-    height: 0;
+    width: 15.4em;
+    float: left;
+    height: 80em;
     top: 0;
     left: 0;
     position: absolute;
@@ -387,23 +466,29 @@ footer ul li a:hover {
     transition: width 1s;
     -webkit-transition: width 1s;
     /* Safari 3.1 to 6.0 */
+    float: left;
     overflow: hidden; }
 
   i#droparrow {
     display: hidden;
     width: 0; }
 
-  #tab-desk-nav.show {
-    display: block;
-    width: 15.4em;
-    height: 80em; }
-
-  ul#main-nav.show {
+  /*#tab-desk-nav.show{
+  display: block;
+  width: 15.4em;
+  height: 80em;
+  
+  }*/
+  ul#main-nav {
     width: 15.3em; }
 
-  i#droparrow.show {
+  i#droparrow {
     display: block;
-    width: auto; }
+    z-index: 1000;
+    position: absolute;
+    left: 9em;
+    margin-top: -1.2em;
+    color: white !important; }
 
   /* ==========================================================================
      Slide in and out tablet nav
@@ -441,74 +526,129 @@ footer ul li a:hover {
     margin-top: -1.8em;
     margin-left: -0.3em; }
 
-  #droparrow {
-    z-index: 1000;
-    position: absolute;
-    left: 9em;
-    margin-top: -1.2em;
-    color: white !important; }
-
   /* ==========================================================================
      SEARCH FORM
      ========================================================================== */
   .search-container {
-    right: 8em;
-    top: 2em;
+    right: 5.8em;
+    top: 1em;
     display: block;
     position: absolute;
     width: 12em; }
 
-  .search-bar {
-    display: block; }
-
-  input#txtsearch.search-bar {
-    display: none;
-    /* For Safari 3.1 to 6.0 */
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-delay: 2s;
-    /* Standard syntax */
-    transition-property: width;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    transition-delay: 2s; }
-
-  input#txtsearch.search-bar.display {
+  /*.search-bar{
     display: block;
-    height: 2em;
-    width: 15em;
-    text-indent: 0.5em;
-    border-radius: 0.3em;
-    text-indent: 0.5em;
-    font-size: 0.9em;
+  }*/
+  /*input#txtsearch.search-bar{
+    display: none;
+  
+      -webkit-transition-property: width;
+      -webkit-transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      -webkit-transition-delay: 2s;
+    
+      transition-property: width;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+      transition-delay: 2s;
+  }*/
+  input#txtsearch.search-bar {
+    display: block;
+    height: 2.5em;
+    width: 16em;
+    text-indent: 3.5em;
+    font-size: 1em;
     font-weight: 100;
     position: absolute;
-    color: white;
-    font-weight: 100; }
+    color: white !important;
+    font-weight: 100;
+    margin-top: 3em; }
+
+  #txtsearch {
+    background-color: black; }
 
   #fa-search {
-    margin-left: 9.8em;
-    margin-top: -0.1em;
-    font-size: 1.5em;
-    cursor: pointer; }
+    right: 6.5em;
+    padding-right: 0.5em;
+    margin-top: 2.35em;
+    font-size: 1.4em;
+    position: absolute;
+    color: white !important;
+    border-right: 1px white solid; }
 
   /* ==========================================================================
-     Register Form
+     INTRODUCTION
      ========================================================================== */
+  div#sectionOne {
+    margin-top: 1em;
+    width: 74%;
+    height: 35em;
+    /* border: #EDEDED 0.1em solid;*/
+    z-index: 4000;
+    /* background-color: white;*/
+    float: right; }
+
   section#introduction {
-    top: -5em;
-    left: 30%;
+    top: 22em;
     position: relative;
     z-index: 4000;
     display: block;
-    width: 18em; }
+    width: 37em;
+    height: 16em;
+    padding-left: 1.2em; }
 
-  h1#header {
-    font-size: 2em;
-    color: black;
-    margin-top: -8.8em;
-    /*position: absolute;*/ }
+  section#animation {
+    width: 100%;
+    height: 18em;
+    border-bottom: 2px solid #666666;
+    position: relative;
+    margin-top: 24em;
+    display: block; }
+
+  #aucklandSkyline img {
+    margin-top: -6em;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    position: absolute; }
+
+  #ponsonbyHousing img {
+    height: 65%;
+    /* width: 105%;*/
+    margin-top: 3em;
+    /*background-image: url(img/Ponsonby.png);*/
+    display: block;
+    /*outline: 1px red solid;*/
+    position: absolute;
+    background-repeat: repeat-x;
+    -webkit-animation-name: ponsonbyHousing;
+    -moz-animation-name: ponsonbyHousing;
+    -ms-animation-name: ponsonbyHousing;
+    -o-animation-name: ponsonbyHousing;
+    animation-name: ponsonbyHousing;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+  #workingGirl img {
+    margin-top: 11.6em;
+    height: 15%;
+    width: 15%;
+    position: relative;
+    z-index: 4000;
+    margin-left: 2em; }
 
   #rightarrow {
     top: 50%;
@@ -517,32 +657,81 @@ footer ul li a:hover {
     left: 2.5em; }
 
   #intro-form {
-    width: 50em; }
+    width: 45em; }
 
   #intro-paragraph {
     text-align: left;
     color: black;
-    font-size: 1.9em;
+    font-size: 1.8em;
     font-weight: 500;
-    width: 18em; }
+    width: 16em; }
 
   #launchCareer {
     border-color: black;
     width: 18em;
-    margin-left: 0.5em; }
+    margin-left: 0.5em;
+    margin-top: 0em; }
 
   #signup {
+    float: left;
+    box-shadow: none;
     width: 18em; }
 
   button#launchCareer a {
     color: black; }
 
+  /* ==========================================================================
+     Register Form
+     ========================================================================== */
+  section#signing-up {
+    top: 23em;
+    float: left;
+    margin-top: 1em;
+    padding-left: 2em; }
+
   p#intro-paragraph {
-    color: black; }
+    color: black;
+    margin-top: -9em;
+    width: 20em; }
+
+  h1#header {
+    font-size: 2em;
+    color: black;
+    margin-top: -10em; }
+
+  #signup-form {
+    width: 42em; }
+
+  #signup-form input {
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    /*float: left;*/
+    /*margin-right: 0.5em;*/ }
 
   #signup {
-    float: left;
-    box-shadow: none; } }
+    margin-top: 0em; }
+
+  #signup-form i {
+    color: black !important;
+    float: left; }
+
+  /* ==========================================================================
+     FOOTER
+     ========================================================================== */
+  div#footer_options {
+    clear: both;
+    float: right;
+    padding-right: 1em;
+    padding-top: 1em;
+    width: 45em; }
+
+  footer ul li a {
+    color: black;
+    font-size: 2em;
+    padding: 0.5em; }
+
+  footer ul li a:hover {
+    opacity: 0.8; } }
 /* ==========================================================================
    DESKTOP
    ========================================================================== */
@@ -644,3 +833,5 @@ ul#main-nav li i:active{
 #droparrow{
   display: none;
 }*/
+
+/*# sourceMappingURL=main.css.map */
