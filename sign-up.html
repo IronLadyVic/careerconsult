@@ -76,10 +76,22 @@
    </a>
 </div>
 <div class="nav-handle-user">
-<p id="signedInTag">Welcome, Karyn</p>
-  <a href="#">
-    <img src="img/career.png" alt="user">
-   </a>
+    <form id="navLogIn">
+        <label for="user-name"></label>
+        <span><i class="fa fa-user"></i></span>
+        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
+        <span></span>
+        <label for="password"></label>
+        <span><i class="fa fa-lock"></i></span>
+        <input type="text" name="password" id="password" placeholder="Password" class="border">
+        <span></span>
+        <div class="checkBox">
+        <input type="checkbox" value="None" id="checkBox" name="check" />
+        <label for="checkBox"></label>
+        </div>
+        <span class="spanFont">Remember Me</span>
+        <button type="submit" name="login" id="login">Log In</button>
+    </form>
 </div> 
 </header> 
 <!-- End of Headers -->
@@ -90,10 +102,10 @@
     <h1 id="header">SIGN UP</h1>
     <p>Become a member and recieve a free 15 minute career consultation</p>
     <form id="signup-form" method="get">
-        <label for="user-name"></label>
-        <span><i class="fa fa-male"></i></span>
-        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
-       
+        <label for="userName"></label>
+        <span><i class="fa fa-user"></i></span>
+        <input type="text" name="username" id="userName" placeholder="Username" class="border">
+        <span></span>
         <label for="email"></label>
         <span><i class="fa fa-envelope"></i></span>
         <input type="email" name="email" id="email" placeholder="Email" class="border">
@@ -127,22 +139,25 @@
         <span><i class="fa fa-hand-o-right"></i></span>
         <select id="servicesSelect" class="border">
             <option value="0">Services I'm Interested In...</option>
-            <option value="1">CV</option>
-            <option value="2">Opel</option>
-            <option value="4">Audi</option>
-            <option value="5">Audi</option>
-            <option value="6">Audi</option>
-            <option value="7">Audi</option>
+            <option value="1">CV Writing & Cover Letters</option>
+            <option value="2">Interview Preparation</option>
+            <option value="4">New to NZ</option>
+            <option value="5">Employment Contracts</option>
+            <option value="6">General Job Seeking Advice</option>
+            <option value="7">General Employment Advice</option>
         </select>
         <span></span>
         <label for="comment"></label>
         <span><i class="fa fa-pencil-square-o"></i></span>
         <textarea type="text" name="comment" id="comment" placeholder="Questions or Comments" class="border"></textarea>
         <span></span>
-        <label for="services"></label>
-        <input type="checkbox" name="agreement" id="agree"><p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with the above.</p>
+        <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with this statement.</p>
+        <div class="checkBoxAgree">
+        <input type="checkbox" value="agreement" id="checkBoxAgree" name="check" />
+        <label for="checkBoxAgree"></label>
+        </div>
         <label for="signup"></label>
-        <button type="submit" name="signup" id="signup">SIGN UP</button>
+        <button type="submit" name="signup" id="signup">Sign Up</button>
     </form>
 </section>
 </div>

@@ -62,7 +62,7 @@ position: absolute;
 }
 
 .nav-handle-user img{
-  padding-left: 0.8em;
+
   height:30%;
   float: right;
 
@@ -397,6 +397,46 @@ margin-top: 13em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
+input#avatar{
+  text-indent: 0em!important;
+}
+#profileImage{
+  
+  /*border:#EDEDED 0.01em solid;*/
+  height: 4em;
+  width: 4em;
+  margin: auto;
+  margin-top: -0.8em;
+  background-color: #242424;
+}
+#profileImage img{
+  /*width: 100%;*/
+  height: 100%;
+
+}
+/* ==========================================================================
+   ALL CHECKBOXES
+   ========================================================================== */
+
+
+.checkBox{
+  @include checkBox;
+    font-size: 0.8em;
+  float: left;
+
+}
+.checkBox label {
+float: left;
+margin-top:6em;
+margin-left: -10.5em;
+}
+
+.checkBoxAgree{
+  @include checkBox;
+  position: relative;
+  margin-left: 18em;
+  margin-top: -4em;
+}
 /* ==========================================================================
     INPUT ERRORS
   ========================================================================== */
@@ -471,13 +511,14 @@ top: 12%;
 div#sectionSignUp{
 
  width: 70%;
-  height: 43em;
+  height: 45em;
   border: #EDEDED 0.1em solid;
   z-index: 4000;
   background-color: white;
-  float: right;
-  margin-top: 1.3em;
-   margin-right: 2em;
+  
+  /*float: left;*/
+  margin-left: 17.2em; 
+  margin-top: 0.5em;
 }
 
 
@@ -496,29 +537,38 @@ body{
   display: none;
 }
 .nav-handle-user{
-  margin-right: 2em;
-  top: 1em;
-  margin-top: -6em;
+  margin-left: 2em;
+  margin-top: -5em;
+  background-color: white;
+/*  border: #EDEDED 0.1em solid;*/
   display: block;
-  float: right;
+  float: left;
   height: 3em;
-
+  
+  width: 44%;  
 }
 
 #signedInTag{
   font-size: 0.9em;
   float: left;
+  padding-right: 1em;
+  padding-left: 1em;
   color: black!important;
-  top: 0;
+  
+}
+div#profilePic{
+  height: 3em;
+  width: 3em;
+  float: left;
+  border: #EDEDED 0.01em solid; 
 }
 
-.nav-handle-user img{
-  padding-left: 0.8em;
-  height:3em;
- /* width: 5em;*/
-  float: right;
-  top: 0;
-
+#profilePic a img{
+  
+  margin-right: 0em; 
+  
+  height: 100%;
+  width: 100%;
 }
 
 header  ul#main-nav{
@@ -529,6 +579,52 @@ header  ul#main-nav{
 #main-nav li{
   width: 14em;
 
+}
+
+/* ==========================================================================
+   NAV SIGN UP
+   ========================================================================== */
+
+form#navLogIn{
+  height: 5em;
+  background-color: white;
+}
+
+#navLogIn input{
+  margin-left: 0.5em;
+  height: 2em;
+  text-indent: 2em;
+  width: 12em;
+  margin-top: 0.7em;
+  border-bottom: 0.1em black solid;
+border-top: 0.1em black solid;
+font-size: 0.9em;
+float: left;
+}
+#navLogIn span i{
+  color: black!important;
+}
+
+#login{
+  @include purpleButton;
+  width: 6em;
+  height: 2em;
+  box-shadow: none!important;
+  font-size: 0.8em;
+  float: right;
+  /*//change to float left in desktop*/
+  margin-right: 0.5em;
+  color: white;
+    margin-top: -2.2em
+}
+
+
+.spanFont{
+  font-size: 0.8em;
+  margin-left: -8em;
+   bottom: 0;
+   float: left;
+  margin-top: 1.2em;
 }
 
 
@@ -622,12 +718,12 @@ color: white !important;
    SEARCH FORM
    ========================================================================== */
 .search-container{
-right: 5.8em;
-top: 1em;
+margin-right: 6em;
+top: 0;
 display: block;
-position: absolute;
+float: right;
   width: 12em;
- 
+ margin-top: -8em;
   
 }
 
@@ -650,7 +746,7 @@ position: absolute;
 }*/
 input#txtsearch.search-bar{
    display: block;
-   height: 2.5em;
+   height: 3em;
    width: 16em;
    text-indent: 3.5em;
   font-size: 1em;
@@ -667,9 +763,9 @@ input#txtsearch.search-bar{
     background-color: black;
 }
 #fa-search{
-  right: 6.5em;
+  right: 10.8em;
   padding-right: 0.5em;
-  margin-top: 2.35em;
+  margin-top: 2.6em;
   font-size: 1.4em;
   position: absolute;
   color: white!important;
@@ -818,6 +914,8 @@ animation-iteration-count: infinite;
 
   #signup-form{
     width: 42em;
+    
+    background-color: white;
   }
 
    #signing-up p{
@@ -839,7 +937,7 @@ animation-iteration-count: infinite;
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
   background-color: white!important;
-  height: 4.2em;
+ height: 2.8em;
   border-radius: none!important;
   width: 320px;
   color: black;
@@ -848,9 +946,10 @@ animation-iteration-count: infinite;
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
   color: black;
+  height: 1em;
 } 
   #signup-form button#signup{
-    margin-top: 0em;
+    margin-top: 2em;
     width: 320px;
     
   }
@@ -864,9 +963,11 @@ input#agree{
   width: 1em;
   height: 1em;
   right: 2em;
-  margin-top: 6.5em;
+  margin-top: 8em;
   position: absolute;
 }
+
+
 input#avatar{
   text-indent: 0em!important;
 }
@@ -876,6 +977,7 @@ input#avatar{
  margin-top: 0em!important;
  padding-bottom: 1em;
 }
+
 #profileImage{
   position: absolute;
   /*border:#EDEDED 0.01em solid;*/
@@ -890,6 +992,31 @@ input#avatar{
   height: 100%;
 
 }
+
+/* ==========================================================================
+   ALL CHECKBOXES
+   ========================================================================== */
+
+
+.checkBox{
+  @include checkBox;
+    font-size: 0.8em;
+  float: left;
+
+}
+.checkBox label {
+float: left;
+margin-top:6em;
+margin-left: -10.5em;
+}
+
+.checkBoxAgree{
+  @include checkBox;
+  position: relative;
+  margin-left: 18em;
+  margin-top: -4em;
+}
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */
