@@ -29,7 +29,6 @@
         <![endif]-->
 
 <!-- Navigation -->
-<!-- Navigation -->
 <!-- Drop down menu header -->
 <header>
         
@@ -41,7 +40,7 @@
         </form> 
         <p id="fa-search"><i class="fa fa-search"></i></p>
   </div>
-   <div id="tab-desk-nav"></div> 
+  <div id="tab-desk-nav"></div> 
   <div id="main-header">
     <ul id="main-nav">
       <li><a href=""><i class="fa fa-pencil"></i><p>Latest News</p></a></li>
@@ -59,12 +58,12 @@
       <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href=""><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
-      <li><a href="sign-up.html"><i class="fa fa-user"></i><p class="styleList">Sign Up</p></a></li>
-      <li><a href=""><i class="fa fa-lock"></i><p class="styleList">Log In</p></a></li>
+      <li><a href="#"><i class="fa fa-archive"></i><p class="styleList">My Career Profile</p></a></li>
+      <li><a href=""><i class="fa fa-unlock"></i><p class="styleList">Log Out</p></a></li>
     </ul>
-</div>
 
-<div class="nav-handle-other">
+</div>
+<div class="nav-handle">
   <a href="#">
     <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -76,99 +75,38 @@
    </a>
 </div>
 <div class="nav-handle-user">
-    <form id="navLogIn">
-        <label for="user-name"></label>
-        <!-- <span><i id="iconLogIn" class="fa fa-user"></i></span> -->
-        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
-        <span></span>
-        <label for="password"></label>
-        <!-- <span><i id="iconLogIn" class="fa fa-lock"></i></span> -->
-        <input type="text" name="password" id="password" placeholder="Password" class="border">
-        <span></span>
-        <div class="checkBox">
-        <input type="checkbox" value="None" id="checkBox" name="check" />
-        <label for="checkBox"></label>
-        </div>
-        <span class="spanFont">Remember Me</span>
-        <button type="submit" name="login" id="login">Log In</button>
-    </form>
+    <div id="profilePic">
+      <a href="#">
+        <img src="img/careerprofile-BLK.png" alt="user" id="userProfile">
+    </a>
+    </div>
+    <p id="signedInTag">User Name</p>  
 </div> 
 </header> 
 <!-- End of Headers -->
+<!-- Section One -->
+<div id="sectionOne">
 
-<!-- End of Headers -->
-<div id="sectionSignUp">
-<section id="signing-up">
-    <h1 id="header">SIGN UP</h1>
-    <img id="profileImage" src="img/careerprofile.png" alt="profile picture">
-    <p>Become a member and recieve a free 15 minute career consultation</p>
-    <form id="signup-form" method="get">
-        <label for="userName"></label>
-
-        <span><i class="fa fa-user"></i></span>
-        <input type="text" name="username" id="userName" placeholder="Username" class="border">
-        <span></span>
-
-        <label for="email"></label>
-        <span><i class="fa fa-envelope"></i></span>
-        <input type="email" name="email" id="email" placeholder="Email" class="border">
-        <span></span>
-        <label for="firstName"></label>
-        <span><i id="iconPlacement" class="fa fa-user"></i></span>
-        <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border">
-        <span></span>
-        <label for="lastName"></label>
-        <span><i class="fa fa-user"></i></span>
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border">
-        <span></span>
-        <label for="contact"></label>
-        <span><i id="iconPlacement" class="fa fa-phone-square"></i></span>
-        <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
-        <span></span>
-        <label for="avatar"></label>
-        <input type="file" name="imageType" id="avatar" value="choose profile" class="border"  >
-        <span></span>
-        <label for="password"></label>
-        <span><i id="iconPlacement" class="fa fa-lock"></i></span>
-        <input type="text" name="password" id="password" placeholder="Password" class="border">
-        <span></span>
-        <label for="confirm_password"></label>
-        <span><i class="fa fa-lock"></i></span>
-        <input type="text" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
-        <span></span>
-        <label for="services"></label>
-        <span><i id="iconPlacement" class="fa fa-hand-o-right"></i></span>
-        <select id="servicesSelect" class="border">
-            <option value="0">Services I'm Interested In...</option>
-            <option value="1">CV Writing & Cover Letters</option>
-            <option value="2">Interview Preparation</option>
-            <option value="4">New to NZ</option>
-            <option value="5">Employment Contracts</option>
-            <option value="6">General Job Seeking Advice</option>
-            <option value="7">General Employment Advice</option>
-        </select>
-        <span></span>
-        <label for="comment"></label>
-        <span><i class="fa fa-pencil-square-o"></i></span>
-        <textarea type="text" name="comment" id="comment" placeholder="Comment" class="border"></textarea>
-        <span></span>
-        <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with this statement.</p>
-        <div class="checkBoxAgree">
-        <input type="checkbox" value="agreement" id="checkBoxAgree" name="check" />
-        <label for="checkBoxAgree"></label>
-        </div>
+<!-- Introduction Section -->
+<section id="introduction">
+    <h2 id="intro-paragraph">professional, independent and cost effective advice for job seekers, employees, graduates, and those new to New Zealand.</h2>
+    <form id="intro-form" method="get">
+        <label for="launchCareer"></label><i id="rightarrow" class="fa fa-angle-right"></i>
+        <button type="button" name="launch" id="launchCareer"><a href="services.html">LAUNCH YOUR CAREER</a></button>
         <label for="signup"></label>
-        <button type="submit" name="signup" id="signup">SIGN UP</button>
+        <button type="button" name="signup" id="signup"><a href="sign-up.html">MY CAREER PROFILE</a></button>
     </form>
 </section>
+<!-- End of Introduction Section -->
+<section id="animation">
+    <div id="aucklandSkyline"><img src="img/Auckland skyline.png" alt="Auckland City"></div>
+    <div id="ponsonbyHousing"><img src="img/Ponsonby_grey.png" alt="Auckland City"></div>
+    <div id="workingGirl"><img src="img/CareerConsultBicyle_grey.png" alt="On my way to work"></div>
+</section>
+
 </div>
-
-
-
-
-
-
-
+<!-- End of Section One -->
+<!-- <div id="sectionTwo"></div> -->
 <!-- Footer -->
 <footer>
     <div id="footer_options">
@@ -189,8 +127,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/formValidation.js"></script>
-        <script src="js/avatarUpload.js"></script>
         <script src="js/main.js"></script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

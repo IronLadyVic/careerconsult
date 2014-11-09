@@ -3,7 +3,7 @@ $(function(){
 
 	$(".nav-handle a").on("click", function(){
 
-		$("#main-nav li").toggleClass("hide");
+		$("div#main-header").toggleClass("hide");
 		$("#droparrow").toggleClass("hide");
 		
 	});

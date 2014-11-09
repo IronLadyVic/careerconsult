@@ -7,442 +7,515 @@
 /* ==========================================================================
    NAVIGATION BAR  hide
    ========================================================================== */
-body {
-  background-color: #242424; }
+@media only screen and (min-width: 20em) {
+  body {
+    background-color: #242424; }
 
-body.show {
-  background-color: #2B2937; }
+  body.show {
+    background-color: #2B2937; }
 
-header #main-header {
-  z-index: 1000;
-  position: relative; }
+  header #main-header {
+    z-index: 1000;
+    position: relative; }
 
-#main-nav {
-  height: 0%;
-  margin-left: -2.5em;
-  margin-top: 2em; }
+  #main-nav {
+    height: 0%;
+    margin-left: -2.5em;
+    margin-top: 2em; }
 
-.nav-handle {
-  position: absolute;
-  right: 0;
-  top: 2em;
-  padding-right: 2em; }
+  ul#main-header.hide {
+    display: none; }
 
-.nav-handle-other {
-  position: absolute;
-  right: 0;
-  top: 2em;
-  padding-right: 2em; }
+  #droparrow.hide {
+    font-size: 0px;
+    display: none; }
 
-.nav-handle-sign-up {
-  position: absolute;
-  right: 0;
-  top: 2em;
-  padding-right: 2em; }
+  .nav-handle {
+    position: absolute;
+    right: 0;
+    top: 2em;
+    padding-right: 2em; }
 
-.nav-handle-user {
-  margin-right: 2em;
-  top: 1em;
-  margin-top: -6em;
-  display: none;
-  height: 8em; }
+  .nav-handle-other {
+    position: absolute;
+    right: 0;
+    top: 2em;
+    padding-right: 2em; }
 
-#signedInTag {
-  font-size: 0.9em;
-  float: left;
-  color: white !important; }
+  .nav-handle-sign-up {
+    position: absolute;
+    right: 0;
+    top: 2em;
+    padding-right: 2em; }
 
-.nav-handle-user img {
-  height: 30%;
-  float: right; }
+  .nav-handle-user {
+    margin-right: 2em;
+    top: 1em;
+    margin-top: -6em;
+    display: none;
+    height: 8em; }
 
-#main-nav li {
-  width: 100%;
-  height: 2em;
-  left: 0;
-  top: 60px;
-  display: block;
-  /*clear: left;*/
-  padding-top: 1.2em;
-  padding-bottom: 0.5em;
-  border-bottom: black 1px solid;
-  margin: 0;
-  font-size: 1.1em;
-  font-weight: 100;
-  -webkit-transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -ms-transition: height 1s ease;
-  -o-transition: height 1s ease;
-  transition: height 1s ease;
-  line-height: 0px;
-  background-color: #242424;
-  cursor: pointer; }
+  #signedInTag {
+    font-size: 0.9em;
+    float: left;
+    color: white !important; }
 
-ul#main-nav li:nth-child(7) {
-  background-color: white; }
+  .nav-handle-user img {
+    height: 30%;
+    float: right; }
 
-ul#main-nav li:nth-child(8) {
-  background-color: white; }
+  #main-nav li {
+    width: 100%;
+    height: 2em;
+    left: 0;
+    top: 60px;
+    display: block;
+    /*clear: left;*/
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
+    border-bottom: black 1px solid;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 100;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
+    line-height: 0px;
+    background-color: #242424;
+    cursor: pointer; }
 
-.styleList {
-  color: black !important; }
+  ul#main-nav li:nth-child(7) {
+    background-color: white; }
 
-ul#main-nav li p {
-  color: white;
-  font-weight: 100;
-  padding-left: 5em;
-  margin-top: -0.6em; }
+  ul#main-nav li:nth-child(8) {
+    background-color: white; }
 
-ul#main-nav li i {
-  color: #585859;
-  font-size: 1.2em;
-  margin-left: 1.3em; }
+  .styleList {
+    color: black !important; }
 
-/* ==========================================================================
-   ACTIVE HOLD ON LI DROP DOWN MENU
-   ========================================================================== */
-ul#main-nav li:active {
-  background-image: linear-gradient(#9B8FFB, #2B2937); }
+  ul#main-nav li p {
+    color: white;
+    font-weight: 100;
+    padding-left: 5em;
+    margin-top: -0.6em; }
 
-ul#main-nav li p:active {
-  color: #E6E6FA; }
+  ul#main-nav li i {
+    color: #585859;
+    font-size: 1.2em;
+    margin-left: 1.3em; }
 
-ul#main-nav li i:active {
-  color: #E6E6FA; }
+  /* ==========================================================================
+     ACTIVE HOLD ON LI DROP DOWN MENU
+     ========================================================================== */
+  ul#main-nav li:active {
+    background-image: linear-gradient(#9B8FFB, #2B2937); }
 
-header #main-header ul#main-nav li a {
-  text-decoration: none;
-  color: black; }
+  ul#main-nav li p:active {
+    color: #E6E6FA; }
 
-header #main-header ul#main-nav li a {
-  text-decoration: none;
-  color: black; }
+  ul#main-nav li i:active {
+    color: #E6E6FA; }
 
-header #main-header #nav-handle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 56px;
-  width: 56px;
-  background-color: transparent; }
+  header #main-header ul#main-nav li a {
+    text-decoration: none;
+    color: black; }
 
-.side-bar {
-  position: absolute;
-  left: 0;
-  margin-top: -2.2em; }
+  header #main-header ul#main-nav li a {
+    text-decoration: none;
+    color: black; }
 
-#droparrow {
-  color: white;
-  position: absolute;
-  right: 0;
-  padding-right: 2em;
-  margin-top: -1.2em;
-  color: white !important; }
+  header #main-header #nav-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 56px;
+    width: 56px;
+    background-color: transparent; }
 
-#droparrow.hide {
-  height: 0em;
-  width: 0em;
-  overflow: hidden;
-  display: none; }
+  .side-bar {
+    position: absolute;
+    left: 0;
+    margin-top: -2.2em; }
 
-/* ==========================================================================
-   NAVIGATION BAR hide
-   ========================================================================== */
-#main-nav li.hide {
-  display: block;
-  left: 0;
-  top: 60px;
-  margin: 0;
-  color: black;
-  font-weight: 100;
-  height: 0em;
-  width: 0em;
-  overflow: hidden; }
+  #droparrow {
+    color: white;
+    position: absolute;
+    right: 0;
+    padding-right: 2em;
+    margin-top: -1.2em;
+    color: white !important; }
 
-section#animation {
-  display: none; }
+  /* ==========================================================================
+     NAVIGATION BAR hide
+     ========================================================================== */
+  #main-nav li.hide {
+    display: block;
+    left: 0;
+    top: 60px;
+    margin: 0;
+    color: black;
+    font-weight: 100;
+    height: 0em;
+    width: 0em;
+    overflow: hidden; }
 
-section#animation.show {
-  display: block;
-  width: 400px;
-  /*border-bottom: 1px white solid!important;*/ }
+  section#animation {
+    display: none; }
 
-#aucklandSkyline img {
-  margin-top: 5em;
-  height: 25%;
-  width: 100%;
-  /* margin-left: -20em;*/
-  /*opacity: 0.8;*/
-  position: relative;
-  border-bottom: 1px #928CC4 solid !important; }
+  section#animation.show {
+    display: block;
+    width: 400px;
+    /*border-bottom: 1px white solid!important;*/ }
 
-#ponsonbyHousing img {
-  /*  height:10%;
-  margin-top: 13em;
-  */
-  display: none;
-  /*outline: 1px red solid;*/
-  /*position: absolute;*/ }
-
-#workingGirl img {
-  display: none;
-  /*  margin-top:10em;
-    height:22%;
-    width: 22%;
+  #aucklandSkyline img {
+    margin-top: 1em;
+    /*height: 25%;*/
+    width: 100%;
+    /* margin-left: -20em;*/
+    /*opacity: 0.8;*/
     position: relative;
-    z-index: 4000;
-    margin-left: 2em;*/ }
+    border-bottom: 1px #928CC4 solid !important; }
 
-#seletedServices {
-  width: 0;
-  height: 0;
-  display: none; }
+  #ponsonbyHousing img {
+    /*  height:10%;
+    margin-top: 13em;
+    */
+    display: none;
+    /*outline: 1px red solid;*/
+    /*position: absolute;*/ }
 
-#seletedServices.display {
-  width: 600px;
-  height: auto;
-  display: block;
-  color: black;
-  font-size: 0.8em;
-  margin-left: -3em; }
+  #workingGirl img {
+    display: none;
+    /*  margin-top:10em;
+      height:22%;
+      width: 22%;
+      position: relative;
+      z-index: 4000;
+      margin-left: 2em;*/ }
 
-#seletedServices i.display {
-  margin-left: 1.8em; }
+  #seletedServices {
+    width: 0;
+    height: 0;
+    display: none; }
 
-#seletedServices p.display {
-  margin-left: 1.3em; }
+  #seletedServices.display {
+    width: 600px;
+    height: auto;
+    display: block;
+    color: black;
+    font-size: 0.8em;
+    margin-left: -3em; }
 
-#brand_logo a img {
-  height: 25%;
-  width: 25%;
-  margin-left: 1.4em; }
+  #seletedServices i.display {
+    margin-left: 1.8em; }
 
-/* ==========================================================================
-   SEARCH 
-   ========================================================================== */
-.search-container {
-  display: none; }
+  #seletedServices p.display {
+    margin-left: 1.3em; }
 
-.search-bar {
-  display: none; }
+  #brand_logo a img {
+    height: 25%;
+    width: 25%;
+    margin-left: 1.4em; }
 
-/* ==========================================================================
-   WHEN NAV SLIDES UP BUTTON AND INTRO APPEARS
-   ========================================================================== */
-#intro-paragraph {
-  font-size: 1.1em;
-  font-weight: 100;
-  color: white;
-  width: 320px;
-  text-align: center;
-  margin-top: -12em;
-  postition: absolute; }
+  /* ==========================================================================
+     SEARCH 
+     ========================================================================== */
+  .search-container {
+    display: none; }
 
-#intro-form {
-  width: 320px;
-  height: auto;
-  position: relative;
-  z-index: 1000; }
+  .search-bar {
+    display: none; }
 
-#launchCareer {
-  border-radius: 0.2em;
-  border: 0.1em white solid;
-  background-color: transparent;
-  cursor: pointer;
-  color: white;
-  font-size: 0.9em;
-  width: 320px;
-  height: 3em;
-  margin-top: 1em; }
+  /* ==========================================================================
+     WHEN NAV SLIDES UP BUTTON AND INTRO APPEARS
+     ========================================================================== */
+  #intro-paragraph {
+    font-size: 1.1em;
+    font-weight: 100;
+    color: white;
+    width: 320px;
+    text-align: center;
+    margin-top: -12em;
+    postition: absolute; }
 
-button#launchCareer a {
-  width: 320px;
-  height: 3em;
-  text-decoration: none;
-  color: white; }
+  #intro-form {
+    width: 320px;
+    height: auto;
+    position: relative;
+    z-index: 1000; }
 
-button#signup a {
-  width: 320px;
-  height: 3em;
-  text-decoration: none;
-  color: white; }
+  #launchCareer {
+    border-radius: 0.2em;
+    border: 0.1em white solid;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    width: 320px;
+    height: 3em;
+    margin-top: 1em; }
 
-#signup {
-  border-radius: 0.2em;
-  background-color: #9B8FFB;
-  box-shadow: 0.2em 0.2em 0.5em black;
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  font-size: 0.9em;
-  width: 320px;
-  height: 3em;
-  margin-top: 1em; }
+  button#launchCareer a {
+    width: 320px;
+    height: 3em;
+    text-decoration: none;
+    color: white; }
 
-#rightarrow {
-  left: 10%;
-  top: 25%;
-  color: white;
-  position: absolute; }
+  button#signup a {
+    width: 315px;
+    height: 3em;
+    text-decoration: none;
+    color: white; }
 
-/* ==========================================================================
-    SIGN UP FORM   
-  ========================================================================== */
-#intro-paragraph {
-  font-size: 1.1em;
-  font-weight: 100;
-  color: white;
-  width: 320px;
-  text-align: center;
-  postition: absolute; }
+  #signup {
+    border-radius: 0.2em;
+    background-color: #9B8FFB;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    width: 320px;
+    height: 3em; }
 
-section#introduction {
-  display: none;
-  height: 0;
-  width: 0; }
+  #rightarrow {
+    left: 10%;
+    top: 25%;
+    color: white;
+    position: absolute; }
 
-section#introduction.show {
-  display: block;
-  margin: 0px auto;
-  width: 320px;
-  height: 100%; }
+  /* ==========================================================================
+      SIGN UP FORM   
+    ========================================================================== */
+  #intro-paragraph {
+    font-size: 1.1em;
+    font-weight: 100;
+    color: white;
+    width: 320px;
+    text-align: center; }
 
-h1#header {
-  color: white;
-  height: auto;
-  position: absolute;
-  margin: auto;
-  margin-top: -2em; }
+  section#introduction {
+    display: none;
+    height: 0;
+    width: 0; }
 
-#signing-up p {
-  color: white; }
+  section#introduction.show {
+    display: block;
+    margin: 0px auto;
+    width: 320px;
+    height: 100%; }
 
-section#signing-up {
-  display: block;
-  top: 5em;
-  width: 320px;
-  height: auto;
-  position: relative;
-  margin: auto; }
+  h1#header {
+    color: white;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    margin-top: -2em; }
 
-#signup-form {
-  width: 320px;
-  height: auto;
-  position: relative;
-  z-index: 1000; }
+  #signing-up p {
+    color: white; }
 
-#signup-form input {
-  border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  background-color: transparent;
-  text-indent: 2.8em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  margin-bottom: 1em;
-  width: 320px;
-  color: white; }
+  section#signing-up {
+    display: block;
+    top: 5em;
+    width: 320px;
+    height: auto;
+    position: relative;
+    margin: auto; }
 
-#signup-form textarea {
-  border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  background-color: transparent;
-  text-indent: 2.8em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  margin-bottom: 1em;
-  width: 320px;
-  color: white; }
+  #signup-form {
+    width: 320px;
+    height: auto;
+    position: relative;
+    z-index: 1000; }
 
-#servicesSelect {
-  border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  background-color: transparent;
-  text-indent: 2.8em;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  margin-bottom: 1em;
-  width: 320px;
-  color: white;
-  height: 3.5em; }
+  #signup-form input {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    text-indent: 2.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-bottom: 1em;
+    width: 320px;
+    color: white; }
 
-#signup {
-  border-radius: 0.2em;
-  background-color: #9B8FFB;
-  box-shadow: 0.2em 0.2em 0.5em black;
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  font-size: 0.9em;
-  width: 320px;
-  height: 3em;
-  margin-top: 1em; }
+  #signup-form textarea {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    text-indent: 2.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-bottom: 1em;
+    width: 320px;
+    color: white; }
 
-span i {
-  position: absolute;
-  margin-left: 1em;
-  margin-top: 1em;
-  color: white !important; }
+  #servicesSelect {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    text-indent: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-bottom: 1em;
+    width: 320px;
+    color: white;
+    height: 3.5em; }
 
-input#agree {
-  width: 1em;
-  height: 1em;
-  right: 1em;
-  margin-top: 8.3em;
-  position: absolute; }
+  #signup {
+    border-radius: 0.2em;
+    background-color: #9B8FFB;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    width: 320px;
+    height: 3em; }
 
-#agreementStatement {
-  padding-top: 1em;
-  padding-bottom: 1em; }
+  span i {
+    position: absolute;
+    margin-left: 1em;
+    margin-top: 1em;
+    color: white !important; }
 
-input#avatar {
-  text-indent: 0em !important; }
+  input#agree {
+    width: 1em;
+    height: 1em;
+    right: 1em;
+    margin-top: 8.3em;
+    position: absolute; }
+    input#agree input[type=checkbox] {
+      visibility: hidden; }
+    input#agree label {
+      cursor: pointer;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+      background: white; }
+    input#agree label:after {
+      filter: alpha(opacity=0);
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 5px;
+      background: transparent;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    input#agree label:hover::after {
+      filter: alpha(opacity=1);
+      opacity: 0.5; }
+    input#agree input[type=checkbox]:checked + label:after {
+      filter: alpha(opacity=1);
+      opacity: 1; }
 
-#profileImage {
-  /*border:#EDEDED 0.01em solid;*/
-  height: 4em;
-  width: 4em;
-  margin: auto;
-  margin-top: -0.8em;
-  background-color: #242424;
-  margin-left: 7em; }
+  #agreementStatement {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: -1em; }
 
-#profileImage img {
-  /*width: 100%;*/
-  height: 100%; }
+  input#avatar {
+    text-indent: 0em !important; }
 
-/* ==========================================================================
-    INPUT ERRORS
-  ========================================================================== */
-.invalid {
-  color: #9B8FFB;
-  font-size: 0.5em;
-  position: absolute;
-  margin-top: -1em; }
+  #profileImage {
+    /*border:#EDEDED 0.01em solid;*/
+    height: 4em;
+    width: 4em;
+    margin: auto;
+    margin-top: -0.8em;
+    background-color: #242424;
+    margin-left: 7em; }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
-div#footer_options {
-  clear: both;
-  margin: auto;
-  width: 400px;
-  margin-top: 5em;
-  margin-left: -1.8em; }
+  #profileImage img {
+    /*width: 100%;*/
+    height: 100%; }
 
-footer ul li {
-  float: left;
-  font-size: 0.5em;
-  padding: 1em; }
+  input.checkBoxAgree input[type=checkbox] {
+    visibility: hidden; }
+  input.checkBoxAgree label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    background: white; }
+  input.checkBoxAgree label:after {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  input.checkBoxAgree label:hover::after {
+    filter: alpha(opacity=1);
+    opacity: 0.5; }
+  input.checkBoxAgree input[type=checkbox]:checked + label:after {
+    filter: alpha(opacity=1);
+    opacity: 1; }
 
-footer ul li a {
-  list-style-type: none;
-  text-decoration: none;
-  color: white;
-  opacity: 0.5; }
+  /* ==========================================================================
+      INPUT ERRORS
+    ========================================================================== */
+  .invalid {
+    color: #9B8FFB;
+    font-size: 0.5em;
+    position: absolute;
+    margin-top: -1em; }
 
-footer ul li a:hover {
-  opacity: 0.8; }
+  /* ==========================================================================
+     FOOTER
+     ========================================================================== */
+  div#footer_options {
+    float: left;
+    padding-top: 6em;
+    margin-left: -2.2em;
+    width: 100%; }
 
+  footer ul li {
+    float: left;
+    font-size: 0.6em;
+    padding: 0.6em; }
+
+  footer ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5; }
+
+  footer ul li a:hover {
+    opacity: 0.8; } }
 /* ==========================================================================
    ADD FROM HERE TO SERVICES, SIGN UP
    ========================================================================== */
@@ -450,6 +523,18 @@ footer ul li a:hover {
    TABLET
    ========================================================================== */
 @media only screen and (min-width: 40em) {
+  body.show {
+    background-color: #f4f2ef; }
+
+  section#introduction.show {
+    display: block;
+    height: 100%;
+    float: left;
+    left: 0; }
+
+  ul#main-nav.show {
+    display: block; }
+
   div#sectionTwo {
     top: 12%;
     width: 70%;
@@ -731,16 +816,18 @@ footer ul li a:hover {
     display: block; }
 
   #aucklandSkyline img {
-    margin-top: -5em;
-    height: 100%;
-    width: 100%;
+    margin-top: -4em;
+    /*  height: 100%;
+      width: 100%;*/
     opacity: 0.3;
-    position: absolute; }
+    position: absolute;
+    margin-left: 4.5em; }
 
   #ponsonbyHousing img {
-    height: 65%;
-    /* width: 105%;*/
-    margin-top: 4em;
+    /* height: 65%;*/
+    width: 100%;
+    margin-top: 5em;
+    margin-left: 1em;
     /*background-image: url(img/Ponsonby.png);*/
     display: block;
     /*outline: 1px red solid;*/
@@ -768,21 +855,24 @@ footer ul li a:hover {
     animation-iteration-count: infinite; }
 
   #workingGirl img {
-    margin-top: 10.5em;
-    height: 7em;
-    width: 7em;
-    position: relative;
+    margin-top: 15em;
+    width: 10%;
+    /*  height: 6.5em;
+      width: 7em;*/
+    position: absolute;
     z-index: 4000;
-    margin-left: 2em; }
+    margin-left: 2em;
+    display: block; }
 
   #rightarrow {
-    top: 50%;
+    top: 0;
     position: relative;
     color: black;
     left: 2.5em; }
 
   #intro-form {
-    width: 45em; }
+    width: 45em;
+    height: 3em; }
 
   #intro-paragraph {
     text-align: left;
@@ -795,7 +885,7 @@ footer ul li a:hover {
     border-color: black;
     width: 18em;
     margin-left: 0.5em;
-    margin-top: 1em; }
+    margin-top: -0.1em; }
 
   #signup {
     float: left;
@@ -1015,7 +1105,8 @@ footer ul li a:hover {
   div#footer_options {
     clear: both;
     float: left;
-    margin-left: 14em;
+    margin-left: 15em;
+    margin-top: 8em;
     width: 80%; }
 
   footer ul li a {
@@ -1028,9 +1119,6 @@ footer ul li a:hover {
 /* ==========================================================================
    DESKTOP
    ========================================================================== */
-/*body{
-  @include responsiveBackground(#f4f2ef); 
-}*/
 @media only screen and (min-width: 60em) {
   #brand_logo a img {
     width: 6em;
@@ -1040,7 +1128,13 @@ footer ul li a:hover {
     margin-top: 1.5em; }
 
   div#sectionSignUp {
-    width: 50em; } }
+    width: 50em; }
+
+  #aucklandSkyline img {
+    margin-top: -8em; }
+
+  #ponsonbyHousing img {
+    margin-left: -2em; } }
 /* ==========================================================================
    MAIN NAV IF YOU WANT LIST to be float left and at the top with no background.
    ========================================================================== */

@@ -75,13 +75,23 @@
    </a>
 </div>
 <div class="nav-handle-user">
-    <div id="profilePic">
-      <a href="#">
-        <img src="img/careerprofile-BLK.png" alt="user" id="userProfile">
-    </a>
-    </div>
-    <p id="signedInTag">User Name</p>  
-</div> 
+    <form id="navLogIn">
+        <label for="user-name"></label>
+        <!-- <span><i id="iconLogIn" class="fa fa-user"></i></span> -->
+        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
+        <span></span>
+        <label for="password"></label>
+        <!-- <span><i id="iconLogIn" class="fa fa-lock"></i></span> -->
+        <input type="text" name="password" id="password" placeholder="Password" class="border">
+        <span></span>
+        <div class="checkBox">
+        <input type="checkbox" value="None" id="checkBox" name="check" />
+        <label for="checkBox"></label>
+        </div>
+        <span class="spanFont">Remember Me</span>
+        <button type="submit" name="login" id="login">Log In</button>
+    </form>
+</div>  
 </header> 
 <!-- End of Headers -->
 <!-- Section One -->
@@ -126,6 +136,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/formValidation.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
