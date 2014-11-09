@@ -263,13 +263,13 @@
     text-decoration: none;
     color: white; }
 
-  button#signup a {
+  button#button a {
     width: 315px;
     height: 3em;
     text-decoration: none;
     color: white; }
 
-  #signup {
+  #button {
     border-radius: 0.2em;
     background-color: #9B8FFB;
     box-shadow: 0.2em 0.2em 0.5em black;
@@ -285,6 +285,32 @@
     top: 25%;
     color: white;
     position: absolute; }
+
+  /* ==========================================================================
+      LOG IN FORM  
+    ========================================================================== */
+  section#loggingIn {
+    display: block;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 6em; }
+
+  #logIn-form input {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    text-indent: 2.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin-bottom: 1em;
+    width: 320px;
+    color: white; }
+
+  #loggingIn p {
+    color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
 
   /* ==========================================================================
       SIGN UP FORM   
@@ -312,10 +338,13 @@
     height: auto;
     position: absolute;
     margin: auto;
-    margin-top: -2em; }
+    margin-top: -2em;
+    padding-left: 0.5em; }
 
   #signing-up p {
-    color: white; }
+    color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
 
   section#signing-up {
     display: block;
@@ -365,7 +394,7 @@
     color: white;
     height: 3.5em; }
 
-  #signup {
+  #button {
     border-radius: 0.2em;
     background-color: #9B8FFB;
     box-shadow: 0.2em 0.2em 0.5em black;
@@ -374,7 +403,8 @@
     color: white;
     font-size: 0.9em;
     width: 320px;
-    height: 3em; }
+    height: 3em;
+    margin-top: 1em; }
 
   span i {
     position: absolute;
@@ -438,52 +468,57 @@
     /*border:#EDEDED 0.01em solid;*/
     height: 4em;
     width: 4em;
-    margin: auto;
+    /*  margin-left: auto;
+      margin-right: auto;*/
     margin-top: -0.8em;
     background-color: #242424;
-    margin-left: 7em; }
+    margin-left: 8em; }
 
   #profileImage img {
     /*width: 100%;*/
     height: 100%; }
 
-  input.checkBoxAgree input[type=checkbox] {
-    visibility: hidden; }
-  input.checkBoxAgree label {
-    cursor: pointer;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-    background: white; }
-  input.checkBoxAgree label:after {
-    filter: alpha(opacity=0);
-    opacity: 0;
-    content: '';
-    position: absolute;
-    width: 9px;
-    height: 5px;
-    background: transparent;
-    top: 4px;
-    left: 4px;
-    border: 3px solid #333;
-    border-top: none;
-    border-right: none;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-  input.checkBoxAgree label:hover::after {
-    filter: alpha(opacity=1);
-    opacity: 0.5; }
-  input.checkBoxAgree input[type=checkbox]:checked + label:after {
-    filter: alpha(opacity=1);
-    opacity: 1; }
+  input#checkBoxAgree {
+    float: left;
+    left: 0;
+    margin-top: -1em; }
+    input#checkBoxAgree input[type=checkbox] {
+      visibility: hidden; }
+    input#checkBoxAgree label {
+      cursor: pointer;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+      background: white; }
+    input#checkBoxAgree label:after {
+      filter: alpha(opacity=0);
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 5px;
+      background: transparent;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    input#checkBoxAgree label:hover::after {
+      filter: alpha(opacity=1);
+      opacity: 0.5; }
+    input#checkBoxAgree input[type=checkbox]:checked + label:after {
+      filter: alpha(opacity=1);
+      opacity: 1; }
 
   /* ==========================================================================
       INPUT ERRORS
@@ -498,10 +533,9 @@
      FOOTER
      ========================================================================== */
   div#footer_options {
-    float: left;
     padding-top: 6em;
-    margin-left: -2.2em;
-    width: 100%; }
+    margin-left: -2.4em;
+    width: 360px; }
 
   footer ul li {
     float: left;
@@ -547,14 +581,61 @@
     margin-right: 2em; }
 
   div#sectionSignUp {
-    width: 70%;
     height: 45em;
     border: #EDEDED 0.1em solid;
-    z-index: 4000;
     background-color: white;
-    /*float: left;*/
-    margin-left: 17.2em;
-    margin-top: 0.5em; }
+    margin: 0 auto;
+    position: relative;
+    width: 48em;
+    padding-left: 3em; }
+
+  #signing-up h1#header {
+    margin-left: -0.5em; }
+
+  /* ==========================================================================
+     Login
+     ========================================================================== */
+  div#sectionLogin {
+    display: block;
+    width: 30em;
+    height: 32em;
+    border: #EDEDED 0.1em solid;
+    background-color: white;
+    margin: 0 auto;
+    position: relative; }
+
+  section#loggingIn {
+    margin-top: 24em;
+    float: left;
+    margin-left: 5em; }
+
+  #loggingIn h1#header {
+    color: black !important;
+    position: relative;
+    margin-left: -0.5em;
+    margin-top: -10em; }
+
+  #loggingIn p {
+    margin-left: -0.5em;
+    color: black !important; }
+
+  #logIn-form input {
+    border-bottom: 0.1em solid black;
+    border-top: 0.1em solid black;
+    color: black; }
+
+  #logIn-form i {
+    color: black !important; }
+
+  #logIn-form button {
+    width: 320px; }
+
+  #loggingIn img#profileImage {
+    position: relative;
+    height: 5em;
+    width: 5em;
+    margin-top: 1em;
+    margin-left: 7em; }
 
   /* ==========================================================================
      MAIN NAV
@@ -609,6 +690,12 @@
     height: 3em;
     background-color: white;
     border: #EDEDED 0.1em solid; }
+
+  #navLogIn button {
+    width: 6em !important;
+    height: 2em !important;
+    margin-left: 0.2em;
+    margin-top: 0.8em; }
 
   /* ==========================================================================
      Checkbox
@@ -791,34 +878,53 @@
      ========================================================================== */
   div#sectionOne {
     margin-top: 1em;
-    width: 74%;
-    height: 35em;
-    /* border: #EDEDED 0.1em solid;*/
-    z-index: 4000;
-    /* background-color: white;*/
-    float: right; }
+    width: 80%;
+    padding-left: 4em;
+    margin: 0 auto;
+    z-index: 4000; }
 
   section#introduction {
-    top: 22em;
+    top: 24em;
     position: relative;
+    margin-left: 8em;
     z-index: 4000;
     display: block;
     width: 37em;
     height: 16em;
     padding-left: 1.2em; }
 
-  section#animation {
+  /*section#animation{
+  
+      position: relative;
+      display: block;
+      margin: 0 auto;
+  }
+  #aucklandSkyline img{
     width: 100%;
-    height: 50%;
-    /*border-bottom: 2px solid #666666;*/
+  opacity: 0.3;
+  height: 350px;
+  position: absolute;
+  top: 20em;
+  background-position: 0 0;
+  margin-left: 8em;
+  }
+  
+  #ponsonbyHousing img{
+  width: 100%;
+  height: 140px;
+  position: relative;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  display: block;
+  margin-left: 8em;
+  }*/
+  section#animation {
+    margin-top: 25em;
     position: relative;
-    margin-top: 24em;
     display: block; }
 
   #aucklandSkyline img {
-    margin-top: -4em;
-    /*  height: 100%;
-      width: 100%;*/
+    margin-top: -10em;
     opacity: 0.3;
     position: absolute;
     margin-left: 4.5em; }
@@ -826,53 +932,31 @@
   #ponsonbyHousing img {
     /* height: 65%;*/
     width: 100%;
-    margin-top: 5em;
+    margin-top: 10em;
     margin-left: 1em;
-    /*background-image: url(img/Ponsonby.png);*/
     display: block;
-    /*outline: 1px red solid;*/
-    position: absolute;
-    background-repeat: repeat-x;
-    -webkit-animation-name: ponsonbyHousing;
-    -moz-animation-name: ponsonbyHousing;
-    -ms-animation-name: ponsonbyHousing;
-    -o-animation-name: ponsonbyHousing;
-    animation-name: ponsonbyHousing;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; }
+    position: absolute; }
 
   #workingGirl img {
-    margin-top: 15em;
+    margin-top: 20em;
     width: 10%;
     /*  height: 6.5em;
       width: 7em;*/
     position: absolute;
     z-index: 4000;
-    margin-left: 2em;
-    display: block; }
+    margin-left: 10em;
+    display: none; }
 
   #rightarrow {
     top: 0;
     position: relative;
     color: black;
-    left: 2.5em; }
+    left: 1.5em; }
 
-  #intro-form {
+  form#intro-form {
     width: 45em;
-    height: 3em; }
+    height: 4em;
+    z-index: 5000; }
 
   #intro-paragraph {
     text-align: left;
@@ -884,17 +968,22 @@
   #launchCareer {
     border-color: black;
     width: 18em;
-    margin-left: 0.5em;
-    margin-top: -0.1em; }
+    margin-left: -0.6em;
+    margin-top: -0.1em;
+    z-index: 4000; }
 
-  #signup {
-    float: left;
+  #button {
+    /*    float: left;*/
     box-shadow: none;
-    width: 18em; }
+    width: 18em;
+    z-index: 4000; }
 
   button#launchCareer a {
     color: black; }
 
+  /* ==========================================================================
+     Login Form
+     ========================================================================== */
   /* ==========================================================================
      Register Form
      ========================================================================== */
@@ -920,7 +1009,7 @@
   #signing-up p {
     text-align: left;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
     width: 40em;
     margin-top: -10em; }
@@ -950,8 +1039,8 @@
     width: 320px !important;
     margin-left: 0.5em; }
 
-  #signup-form button#signup {
-    margin-top: 2em;
+  #signup-form button#button {
+    margin-top: 4em;
     width: 320px; }
 
   #signup-form i {
@@ -1011,7 +1100,6 @@
      ALL CHECKBOXES
      ========================================================================== */
   .checkBox {
-    font-size: 0.8em;
     position: relative; }
     .checkBox input[type=checkbox] {
       visibility: hidden; }
@@ -1103,11 +1191,10 @@
      FOOTER
      ========================================================================== */
   div#footer_options {
-    clear: both;
-    float: left;
-    margin-left: 15em;
-    margin-top: 8em;
-    width: 80%; }
+    margin: 5em auto !important;
+    position: relative;
+    width: 50em;
+    margin-top: 12em; }
 
   footer ul li a {
     color: black;
@@ -1125,16 +1212,15 @@
     height: 6em; }
 
   .spanFont {
-    margin-top: 1.5em; }
+    margin-top: 1.5em;
+    float: left; }
 
-  div#sectionSignUp {
-    width: 50em; }
-
-  #aucklandSkyline img {
-    margin-top: -8em; }
-
-  #ponsonbyHousing img {
-    margin-left: -2em; } }
+  /*#aucklandSkyline img{
+    margin-top: -8em;
+  }
+  #ponsonbyHousing img{
+    margin-left: -2em;
+  }*/ }
 /* ==========================================================================
    MAIN NAV IF YOU WANT LIST to be float left and at the top with no background.
    ========================================================================== */
