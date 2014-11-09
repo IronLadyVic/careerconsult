@@ -14,10 +14,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+          <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="scss/services.css">
-        <link rel="stylesheet" href="scss/services.scss">
+        <link rel="stylesheet" href="scss/main.css">
+        <link rel="stylesheet" href="scss/main.scss">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -29,22 +30,26 @@
         <![endif]-->
 
 <!-- Navigation -->
+<!-- Navigation -->
 <!-- Drop down menu header -->
-<header>    
-  <div id="brand_logo"><a href="index.html"><img src="img/CareerConsult_logo.png" alt="career consult logo"></a></div> 
-<!--   <div class="search-container">
+<header>
+        
+  <div id="brand_logo"><a href="index.html"><img src="img/CareerConsult_logo.png" alt="career consult logo"></a></div>
+  
+  <div class="search-container">
         <form id="searchForm" action="search/SiteSearch" method="get">
-            
-            <input type="search" id="txtsearch" class="search-bar" placeholder="search" size="50" maxlength="255" value="">
+            <input type="search" id="txtsearch" class="search-bar" placeholder="search" size="50" maxlength="255">
         </form> 
-  </div>  -->
+        <p id="fa-search"><i class="fa fa-search"></i></p>
+  </div>
+   <div id="tab-desk-nav"></div> 
   <div id="main-header">
     <ul id="main-nav">
-      <li><a href=""><i class="fa fa-pencil"></i><p>Booking Enquiry</p></a></li>
-      <li id="menuServices"><a href=""><i class="fa fa-cogs"></i><p>Services</p><i id="droparrow" class="fa fa-angle-down"></i></a></li>    
+      <li><a href=""><i class="fa fa-pencil"></i><p>Latest News</p></a></li>
+      <li id="menuServices"><a href="services.html"><i class="fa fa-cogs"></i><p>Services</p><i id="droparrow" class="fa fa-angle-down"></i></a></li>    
       <div id="seletedServices">
         <ul>
-        <li><a href=""><i class="fa fa-angle-right"></i><p>CV Writing & Cover Letters</p></a></li>
+        <li><a href=""><span><i class="fa fa-angle-right"></i></span><p>CV Writing & Cover Letters</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>Interview Preparation</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>New to NZ</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>Employment Contracts</p></a></li>
@@ -55,10 +60,12 @@
       <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href=""><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
-      <li><a href=""><i class="fa fa-user"></i><p class="styleList">Sign Up</p></a></li>
-      <li><a href=""><i class="fa fa-lock"></i><p class="styleList">Log In</p></a></li>
+      <li><a href="sign-up.html"><i class="fa fa-user"></i><p class="styleList">Sign Up</p></a></li>
+      <li><a href="login.html"><i class="fa fa-lock"></i><p class="styleList">Log In</p></a></li>
     </ul>
-<div class="nav-handle">
+</div>
+
+<div class="nav-handle-other">
   <a href="#">
     <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -69,14 +76,127 @@
         </svg>
    </a>
 </div>
-</div>
+<div class="nav-handle-user">
+    <form id="navLogIn">
+        <label for="user-name"></label>
+        <span><i id="iconLogIn" class="fa fa-user"></i></span>
+        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
+        <span></span>
+        <label for="password"></label>
+        <span><i id="iconLogIn" class="fa fa-lock"></i></span>
+        <input type="text" name="password" id="password" placeholder="Password" class="border">
+        <span></span>
+        <!-- <div class="checkBox">
+        <input type="checkbox" value="None" id="checkBox" name="check" />
+        <label for="checkBox"></label>
+        </div>
+        <span class="spanFont">Remember Me</span> -->
+        <button type="submit" name="button" id="button">Log In</button>
+    </form>
+</div>  
 </header> 
 <!-- End of Headers -->
-<!-- Header v2 -->
-<section id="introduction">
 
+<!-- End of Headers -->
+<div id="sectionServices">
+    <section id="servicesListed">
+        <h1 id="header">SERVICES</h1>
+        <p>Career Consult offer a number of services, which you can pick and choose to suit your needs.  Our FREE 15 minute consultation will help determine your personal plan.</p>
+        <div id="accordion">
+            <!-- <p><i class="fa fa-file-powerpoint-o"></i></p> -->
+            <h3>CV Writing & Cover Letters</h3>
+            <!-- <p><i class="fa fa-chevron-down"></i></p> -->
+            <div>
+                <ul>
+                <li>Choose from a number CV templates & assistance in creating a CV.</li>
+                <li>Receive honest critique about your existing CV and / or cover letter.</li>
+                <li>How to tailor your CV and cover letter to a specific job.</li>
+                <li>Tips to help you ‘get that interview’.</li>
+                <li>
+                <form id="" method="#">
+                    <label for="enquire"></label>
+                    <button type="submit" name="button" id="button">ENQUIRE</button>
+                </form>
+                </li>   
+                </ul>
+            </div>
+            <h3>Interview Preparation</h3>
+            <div>
+                <ul>
+                <li>Learn about the types of questions asked and how to effectively answer these.</li>
+                <li>Complete a ‘mock interview’ to practice your approach & gain confidence.</li>
+                <li>Useful tips to impress your interviewers and stand out from the crowd.</li>
+                <li>Graduates: what to expect when attending a graduate programme interview.</li>
+                <li>
+                <form id="" method="#">
+                    <label for="enquire"></label>
+                    <button type="submit" name="button" id="button">ENQUIRE</button>
+                </form>
+                </li>   
+                </ul>
+            </div>
+            <h3>New to NZ</h3>
+            <div>
+                <ul>
+                <li>NZ workplace culture – what to expect and how to adapt your approach.</li>
+                <li>Comprehensive spelling and grammar support for your CV and cover letter.</li>
+                <li>Options for job searching in NZ.</li>
+                <li>
+                <form id="" method="#">
+                    <label for="enquire"></label>
+                    <button type="submit" name="button" id="button">ENQUIRE</button>
+                </form>
+                </li>   
+                </ul>
+                
+          </div>
+          <h3>Employment Contracts</h3>
+          <div>
+            <ul>
+                <li>Independent advice on an employment contract before you sign it.</li>
+                <li>
+                <form id="" method="#">
+                    <label for="enquire"></label>
+                    <button type="submit" name="button" id="button">ENQUIRE</button>
+                </form>
+                </li>       
+            </ul>
+             
+        </div>
+        <h3>General Job Seeking Advice</h3>
+          <div>
+            <ul>
+                <li>Effective on-line job searching.</li>
+                <li>Understand recruitment agencies and how to get the best out of them.</li>
+                <li>Create an effective LinkedIn profile.</li>
+                <li>Understand the realities of the job market.</li>
+                <li>
+                <form id="" method="#">
+                    <label for="enquire"></label>
+                    <button type="submit" name="button" id="button">ENQUIRE</button>
+                </form>
+                </li>   
+                </ul>
+           
+        </div>
+        <h3>General Employment Advice</h3>
+          <div>
+            <ul>
+                <li>Ask questions about your employment situation and your rights.</li>
+                <li>Coaching for approaching difficult situations at work.</li>
+                <li>Advice and / or support person in disciplinary meetings.</li> 
+                <li>
+                <form id="" method="#">
+                    <label for="enquire"></label>
+                    <button type="submit" name="button" id="button">ENQUIRE</button>
+                </form>
+                </li>   
+            </ul>
+        </div>
+    </div>
+    <p>During your appointment you are encouraged to ask anything!  No question is too silly. </p>
 </section>
-
+</div>
 
 
 
@@ -103,8 +223,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         <script src="js/main.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
