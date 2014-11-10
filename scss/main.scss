@@ -566,10 +566,6 @@ footer ul li a:hover{
 }
 
 }
-/* ==========================================================================
-   ADD FROM HERE TO SERVICES, SIGN UP
-   ========================================================================== */
-
 
 
 
@@ -687,7 +683,7 @@ body{
 .nav-handle-user{
   margin-left: 4em;
   margin-top: -5em;
-  background-color: white;
+  background-color: rgba(255,255,255,0.5);
 /*  border: #EDEDED 0.1em solid;*/
   display: block;
   float: left;
@@ -724,10 +720,10 @@ header  ul#main-nav{
 
 
 }
-#main-nav li{
-  width: 14em;
+// #main-nav li{
+//   width: 14em;
 
-}
+// }
 
 /* ==========================================================================
    NAV SIGN UP
@@ -735,8 +731,8 @@ header  ul#main-nav{
 
 form#navLogIn{
   height: 3em;
-  background-color: white;
-  border: #EDEDED 0.1em solid;
+
+  float: left;
 }
 
 #navLogIn button{
@@ -746,7 +742,54 @@ form#navLogIn{
   margin-top: 0.8em;
 }
 
+/* ==========================================================================
+   SERVICES ACCORDIAN
+   ========================================================================== */
+div#sectionServices{
+display: block;
+ width: 45em;
+  height:55em;
+  border: #EDEDED 0.1em solid;
+  background-color: white;
+margin: 0 auto;
 
+position: relative;
+}
+
+
+
+#servicesListed h1#header{
+  color: black;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-top:-2em;
+  margin-left: -3.8em;
+
+   }  
+ #servicesListed p{
+  color: black;
+  width: 32em;
+  margin-left:-6.5em;
+ }  
+
+.ui-accordion {
+  width: 30em;
+ margin-left:-6em;
+
+}
+.ui-accordion .ui-accordion-content ul li{
+  width:28em;
+}
+.ui-accordion .ui-accordion-content button#button{
+    margin: 0 auto;
+    position: relative;
+    margin-top:2em;
+    margin-left: 5em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+  left: 28em;
+}
 
 /* ==========================================================================
    Checkbox
@@ -761,17 +804,29 @@ margin-left: -10.5em;
 #navLogIn input{
   margin-left: 0.5em;
   height: 2em;
-  /*text-indent: 2em;*/
+  background-color:none!important;
   width: 12em;
   margin-top: 0.7em;
   border-bottom: 0.1em black solid;
 border-top: 0.1em black solid;
 font-size: 0.9em;
 float: left;
+padding-left:2.5em;
 }
 #navLogIn span i{
   color: black!important;
+  position: absolute;
+  margin-left:-10em;
 }
+i#iconLogIn.fa.fa-user{
+
+  margin-left:-21.5em;
+}
+i#iconLogIn.fa.fa-lock{
+
+  margin-left:-10em;
+}
+
 
 #login{
   @include purpleButton;
@@ -831,7 +886,7 @@ height: 80em;
 
 }*/
 ul#main-nav{
-  width:15.3em;
+  width:17.9em;
 
 }
 i#droparrow{
@@ -862,20 +917,20 @@ color: white !important;
 }
 #seletedServices li{
   width: 17.5em;
-  height: 2em;
+  height: 4em;
 }
 #seletedServices li p{
-  line-height: 140%;  
+  line-height: 120%;  
+}
+#seletedServices p:nth-child(2){
+padding-top:0.8em;
 }
 #seletedServices p:nth-child(3){
- line-height: 180%;
+  line-height: 160%;
 }
-#seletedServices p:nth-child(3){
-  line-height: 180%;
-}
-#seletedServices p:nth-child(4){
- line-height: 180%;
-}  
+// p.display:nth-child(5){
+//  padding-bottom:0.5em;
+// }  
 #seletedServices p.display{
   margin-top: -1.8em;
   margin-left: -0.3em;
@@ -916,7 +971,7 @@ input#txtsearch.search-bar{
    display: block;
    height: 3em;
    width: 16em;
-   text-indent: 3.5em;
+   padding-left: 3.5em;
   font-size: 1em;
   font-weight: 100;
   position: absolute;
@@ -1114,6 +1169,7 @@ position: absolute;
     color: black;
     position: relative;
     margin-right: 0.5em;
+    width: 20em!important;
   }
 
 #servicesSelect{
@@ -1133,36 +1189,30 @@ position: absolute;
   height: 1em;
   width: 320px!important;
   margin-left: 0.5em;
+  height:2.8em;
 }
 
 
-  #signup-form button#button{
+  #signup-form button#button {
     margin-top: 4em;
-    width: 320px;
-    
-  }
+    width: 320px; }
 
-  #signup-form i{
-    color: black!important;
-    
-  }
-  span i{
-    float: left!important;
-  }
-   #signup-form i .fa-hand-o-right{
+  #signup-form i {
+    color: black !important; }
+
+  span i {
+    float: left !important; }
+
+  #signup-form i .fa-hand-o-right {
     position: absolute;
-    margin-left: 10em;
-    
-  }
+    margin-left: 10em; }
 
-input#agree{
-  width: 1em;
-  height: 1em;
-  right: 2em;
-  margin-top: 8em;
-  position: absolute;
-}
-
+  input#agree {
+    width: 1em;
+    height: 1em;
+    right: 2em;
+    margin-top: 8em;
+    position: absolute; }
 
 input#avatar{
   text-indent: 0em!important;

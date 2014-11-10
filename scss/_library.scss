@@ -50,15 +50,15 @@
 	background-color: transparent;
 }
 @mixin input{
-	border-bottom: 0.1em white solid;
-	border-top: 0.1em white solid;
-	background-color: transparent;
-	text-indent: 2.8em;
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
-	margin-bottom: 1em;
-	width: 320px;
-	color: white;
+  border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
+  background-color: transparent;
+  padding-left: 2.8em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-bottom: 1em;
+  width: 320px;
+  color: white;
 }
 @mixin inputService{
     border-bottom: 0.1em white solid;

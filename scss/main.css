@@ -15,7 +15,7 @@
     background-color: #242424; }
 
   body.show {
-    background-color: #2B2937; }
+    background-color: #2b2937; }
 
   header #main-header {
     z-index: 1000;
@@ -113,13 +113,13 @@
      ACTIVE HOLD ON LI DROP DOWN MENU
      ========================================================================== */
   ul#main-nav li:active {
-    background-image: linear-gradient(#9B8FFB, #2B2937); }
+    background-image: linear-gradient(#9b8ffb, #2b2937); }
 
   ul#main-nav li p:active {
-    color: #E6E6FA; }
+    color: lavender; }
 
   ul#main-nav li i:active {
-    color: #E6E6FA; }
+    color: lavender; }
 
   header #main-header ul#main-nav li a {
     text-decoration: none;
@@ -179,7 +179,7 @@
     /* margin-left: -20em;*/
     /*opacity: 0.8;*/
     position: relative;
-    border-bottom: 1px #928CC4 solid !important; }
+    border-bottom: 1px #928cc4 solid !important; }
 
   #ponsonbyHousing img {
     /*  height:10%;
@@ -303,7 +303,7 @@
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    text-indent: 2.8em;
+    padding-left: 2.8em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
     margin-bottom: 1em;
@@ -367,7 +367,7 @@
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    text-indent: 2.8em;
+    padding-left: 2.8em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
     margin-bottom: 1em;
@@ -378,7 +378,7 @@
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    text-indent: 2.8em;
+    padding-left: 2.8em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
     margin-bottom: 1em;
@@ -581,7 +581,7 @@
       INPUT ERRORS
     ========================================================================== */
   .invalid {
-    color: #9B8FFB;
+    color: #9b8ffb;
     font-size: 0.5em;
     position: absolute;
     margin-top: -1em; }
@@ -607,9 +607,6 @@
 
   footer ul li a:hover {
     opacity: 0.8; } }
-/* ==========================================================================
-   ADD FROM HERE TO SERVICES, SIGN UP
-   ========================================================================== */
 /* ==========================================================================
    TABLET
    ========================================================================== */
@@ -709,7 +706,7 @@
   .nav-handle-user {
     margin-left: 4em;
     margin-top: -5em;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     /*  border: #EDEDED 0.1em solid;*/
     display: block;
     float: left;
@@ -737,22 +734,59 @@
   header ul#main-nav {
     margin-top: 1em; }
 
-  #main-nav li {
-    width: 14em; }
-
   /* ==========================================================================
      NAV SIGN UP
      ========================================================================== */
   form#navLogIn {
     height: 3em;
-    background-color: white;
-    border: #EDEDED 0.1em solid; }
+    float: left; }
 
   #navLogIn button {
     width: 6em !important;
     height: 2em !important;
     margin-left: 0.2em;
     margin-top: 0.8em; }
+
+  /* ==========================================================================
+     SERVICES ACCORDIAN
+     ========================================================================== */
+  div#sectionServices {
+    display: block;
+    width: 45em;
+    height: 55em;
+    border: #EDEDED 0.1em solid;
+    background-color: white;
+    margin: 0 auto;
+    position: relative; }
+
+  #servicesListed h1#header {
+    color: black;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -2em;
+    margin-left: -3.8em; }
+
+  #servicesListed p {
+    color: black;
+    width: 32em;
+    margin-left: -6.5em; }
+
+  .ui-accordion {
+    width: 30em;
+    margin-left: -6em; }
+
+  .ui-accordion .ui-accordion-content ul li {
+    width: 28em; }
+
+  .ui-accordion .ui-accordion-content button#button {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 2em;
+    margin-left: 5em; }
+
+  .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    left: 28em; }
 
   /* ==========================================================================
      Checkbox
@@ -765,16 +799,25 @@
   #navLogIn input {
     margin-left: 0.5em;
     height: 2em;
-    /*text-indent: 2em;*/
+    background-color: none !important;
     width: 12em;
     margin-top: 0.7em;
     border-bottom: 0.1em black solid;
     border-top: 0.1em black solid;
     font-size: 0.9em;
-    float: left; }
+    float: left;
+    padding-left: 2.5em; }
 
   #navLogIn span i {
-    color: black !important; }
+    color: black !important;
+    position: absolute;
+    margin-left: -10em; }
+
+  i#iconLogIn.fa.fa-user {
+    margin-left: -21.5em; }
+
+  i#iconLogIn.fa.fa-lock {
+    margin-left: -10em; }
 
   #login {
     border-radius: 0.2em;
@@ -833,7 +876,7 @@
   
   }*/
   ul#main-nav {
-    width: 15.3em; }
+    width: 17.9em; }
 
   i#droparrow {
     display: block;
@@ -861,19 +904,16 @@
 
   #seletedServices li {
     width: 17.5em;
-    height: 2em; }
+    height: 4em; }
 
   #seletedServices li p {
-    line-height: 140%; }
+    line-height: 120%; }
+
+  #seletedServices p:nth-child(2) {
+    padding-top: 0.8em; }
 
   #seletedServices p:nth-child(3) {
-    line-height: 180%; }
-
-  #seletedServices p:nth-child(3) {
-    line-height: 180%; }
-
-  #seletedServices p:nth-child(4) {
-    line-height: 180%; }
+    line-height: 160%; }
 
   #seletedServices p.display {
     margin-top: -1.8em;
@@ -910,7 +950,7 @@
     display: block;
     height: 3em;
     width: 16em;
-    text-indent: 3.5em;
+    padding-left: 3.5em;
     font-size: 1em;
     font-weight: 100;
     position: absolute;
@@ -1078,7 +1118,8 @@
     border-top: 0.1em black solid;
     color: black;
     position: relative;
-    margin-right: 0.5em; }
+    margin-right: 0.5em;
+    width: 20em !important; }
 
   #servicesSelect {
     border-bottom: 0.1em black solid;
@@ -1096,7 +1137,8 @@
     color: black;
     height: 1em;
     width: 320px !important;
-    margin-left: 0.5em; }
+    margin-left: 0.5em;
+    height: 2.8em; }
 
   #signup-form button#button {
     margin-top: 4em;
@@ -1371,5 +1413,3 @@ ul#main-nav li i:active{
 #droparrow{
   display: none;
 }*/
-
-/*# sourceMappingURL=main.css.map */
