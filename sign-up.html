@@ -29,7 +29,6 @@
         <![endif]-->
 
 <!-- Navigation -->
-<!-- Navigation -->
 <!-- Drop down menu header -->
 <header>
         
@@ -46,7 +45,7 @@
     <ul id="main-nav">
       <!-- <li><a href=""><i class="fa fa-pencil"></i><p>Latest News</p></a></li> -->
       <li id="menuServices"><a href="services.html"><i class="fa fa-cogs"></i><p>Services</p><i id="droparrow" class="fa fa-angle-down"></i></a></li>    
-      <div id="seletedServices">
+      <li id="seletedServices">
         <ul>
         <li><a href=""><i class="fa fa-angle-right"></i><p>CV Writing & Cover Letters</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>Interview Preparation</p></a></li>
@@ -55,7 +54,7 @@
         <li><a href=""><i class="fa fa-angle-right"></i><p>General Job Seeking Advice</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>General Employment Advice</p></a></li> 
         </ul>
-      </div>           
+      </li>           
       <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href=""><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
@@ -79,19 +78,14 @@
 <div class="nav-handle-user">
     <form id="navLogIn">
         <label for="user-name"></label>
-        <span><i id="iconLogIn" class="fa fa-user"></i></span>
+        <span><i class="fa fa-user"></i></span>
         <input type="text" name="username" id="user-name" placeholder="Username" class="border">
         <span></span>
         <label for="password"></label>
-        <span><i id="iconLogIn" class="fa fa-lock"></i></span>
+        <span><i class="fa fa-lock"></i></span>
         <input type="text" name="password" id="password" placeholder="Password" class="border">
         <span></span>
-        <!-- <div class="checkBox">
-        <input type="checkbox" value="None" id="checkBox" name="check" />
-        <label for="checkBox"></label>
-        </div>
-        <span class="spanFont">Remember Me</span> -->
-        <button type="submit" name="button" id="button">Log In</button>
+        <button type="submit" name="button" class="button">Log In</button>
     </form>
 </div>  
 </header> 
@@ -115,7 +109,7 @@
         <input type="email" name="email" id="email" placeholder="Email" class="border">
         <span></span>
         <label for="firstName"></label>
-        <span><i id="iconPlacement" class="fa fa-user"></i></span>
+        <span class="iconPlacement"><i class="fa fa-user"></i></span>
         <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border">
         <span></span>
         <label for="lastName"></label>
@@ -123,23 +117,23 @@
         <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border">
         <span></span>
         <label for="contact"></label>
-        <span><i id="iconPlacement" class="fa fa-phone-square"></i></span>
+        <span class="iconPlacement"><i class="fa fa-phone-square"></i></span>
         <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
         <span></span>
         <label for="avatar"></label>
         <span><i class="fa fa-camera"></i></span>
-        <input type="file" name="imageType" id="avatar" value="choose profile" class="border"  >
+        <input type="file" name="imageType" id="avatar" class="border"  >
         <span></span>
-        <label for="password"></label>
-        <span><i id="iconPlacement" class="fa fa-lock"></i></span>
-        <input type="password" name="password" id="password" placeholder="Password" class="border">
+        <label for="passwordSignUp"></label>
+        <span class="iconPlacement"><i class="fa fa-lock"></i></span>
+        <input type="password" name="password" id="passwordSignUp" placeholder="Password" class="border">
         <span></span>
         <label for="confirm_password"></label>
         <span><i class="fa fa-lock"></i></span>
         <input type="password" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
         <span></span>
-        <label for="services"></label>
-        <span><i id="iconPlacement" class="fa fa-hand-o-right"></i></span>
+        
+        <span class="iconPlacement"><i class="fa fa-hand-o-right"></i></span>
         <select id="servicesSel" class="border">
             <option value="0">Services I'm Interested In...</option>
             <option value="1">CV Writing & Cover Letters</option>
@@ -152,15 +146,15 @@
         <span></span>
         <label for="comment"></label>
         <span><i class="fa fa-pencil-square-o"></i></span>
-        <textarea type="text" name="comment" id="comment" placeholder="Comment" class="border"></textarea>
+        <textarea name="comment" id="comment" placeholder="Comment" class="border"></textarea>
         <span></span>
         <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with this statement.</p>
         <div class="checkBoxAgree">
         <input type="checkbox" value="agreement" id="checkBoxAgree" name="check" />
         <label for="checkBoxAgree"></label>
         </div>
-        <label for="button"></label>
-        <button type="submit" name="button" id="button">SIGN UP</button>
+        <label for="signUp"></label>
+        <button type="submit" name="button" id="signUp" class="button">SIGN UP</button>
     </form>
 </section>
 </div>

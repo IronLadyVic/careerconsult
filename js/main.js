@@ -27,8 +27,8 @@ $(function(){
 
 	});
 	//-----------Services drop down menu-----------//
-	$("#menuServices").on("click", function(){
-		$("#seletedServices").toggleClass("display");
+	$("li#menuServices").on("click", function(){
+		$("li#seletedServices").toggleClass("display");
 		$("#seletedServices p").toggleClass("display");
 		$("#seletedServices i").toggleClass("display");
 	});

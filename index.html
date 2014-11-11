@@ -45,7 +45,7 @@
     <ul id="main-nav">
       <!-- <li><a href=""><i class="fa fa-pencil"></i><p>Latest News</p></a></li> -->
       <li id="menuServices"><a href="services.html"><i class="fa fa-cogs"></i><p>Services</p><i id="droparrow" class="fa fa-angle-down"></i></a></li>    
-      <div id="seletedServices">
+      <li id="seletedServices">
         <ul>
         <li><a href=""><i class="fa fa-angle-right"></i><p>CV Writing & Cover Letters</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>Interview Preparation</p></a></li>
@@ -54,7 +54,7 @@
         <li><a href=""><i class="fa fa-angle-right"></i><p>General Job Seeking Advice</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>General Employment Advice</p></a></li> 
         </ul>
-      </div>           
+      </li>           
       <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href=""><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
@@ -62,7 +62,6 @@
       <li><a href="sign-up.html"><i class="fa fa-user"></i><p class="styleList">Sign Up</p></a></li>
       <li><a href="login.html"><i class="fa fa-lock"></i><p class="styleList">Log In</p></a></li>
     </ul>
-
 </div>
 <div class="nav-handle">
   <a href="#">
@@ -78,14 +77,14 @@
 <div class="nav-handle-user">
     <form id="navLogIn">
         <label for="user-name"></label>
-        <span><i id="iconLogIn" class="fa fa-user"></i></span>
+        <span><i class="fa fa-user"></i></span>
         <input type="text" name="username" id="user-name" placeholder="Username" class="border">
         <span></span>
         <label for="password"></label>
-        <span><i id="iconLogIn" class="fa fa-lock"></i></span>
+        <span><i class="fa fa-lock"></i></span>
         <input type="password" name="password" id="password" placeholder="Password" class="border">
         <span></span>
-        <button type="submit" name="button" id="button">Log In</button>
+        <button type="submit" name="button" class="button">Log In</button>
     </form>
 </div>  
 </header> 
@@ -96,16 +95,20 @@
 <!-- Introduction Section -->
 <section id="introduction">
     <h2 id="intro-paragraph">professional, independent and cost effective advice for job seekers, employees, graduates, and those new to New Zealand.</h2>
-    <form id="intro-form" method="get">
-        <label for="launchCareer"></label><i id="rightarrow" class="fa fa-angle-right"></i>
-        <button type="button" name="launch" id="launchCareer"><a href="services.html">LAUNCH YOUR CAREER</a></button>
-        <label for="button"></label>
-        <button type="submit" name="button" id="button"><a href="sign-up.html">SIGN UP</a></button>
-    </form>
+        <div id="introButtons">
+        <i id="rightarrow" class="fa fa-angle-right"></i>
+        <div id="launchCareer">
+        <a href="services.html"><span>LAUNCH YOUR CAREER</span></a>
+        </div>
+        <div id="careerButton">
+        <a href="sign-up.html"><span>SIGN UP</span></a>
+        </div>
+        </div>
 </section>
 <!-- End of Introduction Section -->
 <section id="animation">
-    <div id="aucklandSkyline"><img src="img/Auckland skyline.png" alt="Auckland City"></div>
+    <h1 style="font-size: 0em;">Auckland Skyline</h1>
+    <div id="aucklandSkyline"><img src="img/Auckland-skyline.png" alt="Auckland City"></div>
     <div id="ponsonbyHousing"><img src="img/Ponsonby_grey.png" alt="Auckland City"></div>
     <div id="workingGirl"><img src="img/CareerConsultBicyle_grey.png" alt="On my way to work"></div>
 </section>

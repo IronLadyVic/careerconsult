@@ -46,7 +46,7 @@
     <ul id="main-nav">
       <!-- <li><a href=""><i class="fa fa-pencil"></i><p>Latest News</p></a></li> -->
       <li id="menuServices"><a href="services.html"><i class="fa fa-cogs"></i><p>Services</p><i id="droparrow" class="fa fa-angle-down"></i></a></li>    
-      <div id="seletedServices">
+      <li id="seletedServices">
         <ul>
         <li><a href=""><i class="fa fa-angle-right"></i><p>CV Writing & Cover Letters</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>Interview Preparation</p></a></li>
@@ -55,7 +55,7 @@
         <li><a href=""><i class="fa fa-angle-right"></i><p>General Job Seeking Advice</p></a></li>
         <li><a href=""><i class="fa fa-angle-right"></i><p>General Employment Advice</p></a></li> 
         </ul>
-      </div>           
+      </li>           
       <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href=""><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
@@ -91,7 +91,7 @@
 <!-- End of Headers -->
 <div id="sectionCareerProfile">
 <section id="career-profile">
-    <h1 id="header">CAREER</br>PROFILE</h1>
+    <h1 id="header">CAREER<br>PROFILE</h1>
     <img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture">
     <p>Please feel free to update your profile, this will help your career consultant provide the correct service and help you launch your career.</p>
     <form id="careerProfile-form" method="get">
@@ -119,30 +119,30 @@
         <span></span>
         <label for="avatar"></label>
         <span><i class="fa fa-camera"></i></span>
-        <input type="file" name="imageType" id="avatar" value="choose profile" class="border"  >
+        <input type="file" name="imageType" id="avatar" class="border"  >
         <span></span>
         <label for="experience"></label>
         <span><i  class="fa fa-pencil-square-o"></i></span>
-        <textarea type="text" name="comment" id="experience" placeholder="Experience" class="border"></textarea>
+        <textarea name="comment" id="experience" placeholder="Experience" class="border"></textarea>
         <span></span>
         <label for="education"></label>
         <span><i class="fa fa-university"></i></span>
-        <textarea type="text" name="comment" id="education" placeholder="Education" class="border"></textarea>
+        <textarea name="comment" id="education" placeholder="Education" class="border"></textarea>
         <span></span>
         <label for="acheivements"></label>
         <span><i  class="fa fa-trophy"></i></span>
-        <textarea type="text" name="comment" id="acheivements" placeholder="Acheivements" class="border"></textarea>
+        <textarea name="comment" id="acheivements" placeholder="Acheivements" class="border"></textarea>
         <span></span>
         <label for="careerHistory"></label>
         <span><i class="fa fa-history"></i></span>
-        <textarea type="text" name="comment" id="careerHistory" placeholder="Career History" class="border"></textarea>
+        <textarea name="comment" id="careerHistory" placeholder="Career History" class="border"></textarea>
         <span></span>
         <label for="personalDetails"></label>
         <span><i  class="fa fa-pencil-square-o"></i></span>
-        <textarea type="text" name="comment" id="personalDetails" placeholder="Personal Details" class="border"></textarea>
+        <textarea name="comment" id="personalDetails" placeholder="Personal Details" class="border"></textarea>
         <span></span>
-        <label for="services"></label>
-        <span><i id="iconPlacement" class="fa fa-hand-o-right"></i></span>
+        <label for="servicesSel"></label>
+        <span id="iconPlacement"><i  class="fa fa-hand-o-right"></i></span>
         <select id="servicesSel" class="border">
             <option value="0">Services I'm Interested In...</option>
             <option value="1">CV Writing & Cover Letters</option>
@@ -196,8 +196,8 @@
         <input type="checkbox" value="agreement" id="checkBoxAgree" name="check" />
         <label for="checkBoxAgree"></label>
         </div>
-        <label for="button"></label>
-        <button type="submit" name="button" id="button">UPDATE MY PROFILE</button>
+        <label for="updateProfile"></label>
+        <button type="submit" name="button" id="updateProfile" class="button">UPDATE MY PROFILE</button>
     </form>
 </section>
 </div>

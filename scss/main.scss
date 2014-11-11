@@ -111,7 +111,7 @@ ul#main-nav li:nth-child(7){
   background-color: white;
   
 } 
-ul#main-nav li:nth-child(8){
+ul#main-nav li:nth-child(6){
   background-color: white;
   
 } 
@@ -178,7 +178,9 @@ background-color: transparent;
   margin-top: -1.2em;
   color: white!important;
 }
-
+#droparrow.hide{
+  display: none;
+}
 /* ==========================================================================
    NAVIGATION BAR hide
    ========================================================================== */
@@ -233,7 +235,7 @@ margin-top: 13em;
   margin-left: 2em;*/
 }
 
-#seletedServices{
+li#seletedServices{
   width: 0;
   height: 0;
   display: none;
@@ -241,7 +243,7 @@ margin-top: 13em;
 }
 
 
-#seletedServices.display{
+li#seletedServices.display{
   width: 600px;
   height: auto;
   display: block;
@@ -249,12 +251,12 @@ margin-top: 13em;
   font-size: 0.8em;
   margin-left: -3em;
   }
-#seletedServices i.display{
+li#seletedServices i.display{
   margin-left: 1.8em;
   
   }
 
-#seletedServices p.display{
+li#seletedServices p.display{
   margin-left: 1.3em;
   
   }
@@ -300,15 +302,33 @@ margin-top: 13em;
    @include outlineButton;
    @include buttonStyle(white);
    margin-top: 1em;
-   }
-   button#launchCareer a{
-    width:320px;
+       width:320px;
     height: 3em;
+
+   color: white;
+   text-align: center;
+   line-height: 40px;
+   }
+#launchCareer a{
    text-decoration: none;
    color: white;
+}
+   #careerButton{
+   @include purpleButton;
+   margin-top: 1em;
+       width:320px;
+   color: white;
+   text-align: center;
+   line-height: 40px;
    }
+#careerButton a{
+   text-decoration: none;
+   color: white;
+}
 
-  button#button a{
+
+
+  button.button a{
     width:315px;
     height: 3em;
     text-decoration: none;
@@ -316,7 +336,7 @@ margin-top: 13em;
 
    }
 
-   #button{
+   .button{
     @include purpleButton;
     @include buttonStyle(white);
 
@@ -324,7 +344,7 @@ margin-top: 13em;
 
    #rightarrow{
   left: 10%;
-  top:25%;
+  top:14%;
   @include whiteArrow;
 }
 
@@ -424,7 +444,7 @@ margin-top: 13em;
      height: 3em;
 
   }
-   #button{
+   .button{
     @include purpleButton;
     @include buttonStyle(white);
     margin-top: 1em;
@@ -585,43 +605,60 @@ section#servicesListed{
  }  
 
 .ui-accordion {
-  background-color: white;
+  /*background-color: white;*/
   font-family: 'Quicksand'!important;
   border-radius: none!important;
 /*  background-color: transparent!important;*/
- }
- .ui-accordion h1{
-  font-size: 1em;
 
  }
+
 
 .ui-corner-all{
   border-radius: none!important;
 }
-
+.ui-accordion .ui-accordion-header{
+  font-size: 0.95em;
+  padding-right: 0.5em;
+}
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-  left: 16.5em;
+  left: 17.5em;
+
 }
 .ui-accordion .ui-accordion-content{
   padding: 0.2em;
   padding-top: 1em;
 
 }
+.ui-accordion-content ul{
+  margin-left: -0.7em;
+}
 .ui-accordion .ui-accordion-content ul li{
   font-size: 0.9em;
   padding-top: 1em;
   left: 0;
+  width: 17em;
+  list-style: decimal outside none;
+  list-style-type: disc;
 }
-.ui-accordion .ui-accordion-content button#button{
+.ui-accordion .ui-accordion-content button.button{
     font-family: 'Quicksand'!important;
-    margin-left: -2em;
+    margin-left: -1em;
     width: 20em;
     padding-bottom: 0.5em;
     box-shadow: none;
     line-height: 40px;
+/*    list-style-type: none!important;*/
 }
 .ui-accordion .ui-accordion-content{
   height: auto;
+}
+#accordion i{
+  margin-left: -1em;
+  padding-right: 1em;
+}
+#accordion i.fa.fa-circle{
+  font-size: 0.1em;
+
 }
 /* ==========================================================================
     INPUT ERRORS
@@ -691,7 +728,7 @@ div#sectionTwo{
 top: 12%;
  width: 70%;
   height: 10em;
-  border: #EDEDED 0.1em solid;
+/*  border: #EDEDED 0.1em solid;*/
   z-index: 4000;
 /*  background-color: white;*/
   float: right;
@@ -701,7 +738,7 @@ top: 12%;
 }
 
 div#sectionSignUp{
-  height: 55em;
+  height: 44em;
   margin: 0  auto;
   position: relative;
   width: 46em;
@@ -722,8 +759,8 @@ input#user-name.border{
 div#sectionLogin{
 display: block;
  width: 30em;
-  height: 32em;
-  border: #EDEDED 0.1em solid;
+  height: 36em;
+/*  border: #EDEDED 0.1em solid;*/
 /*  background-color: white;*/
 margin: 0 auto;
 
@@ -888,10 +925,18 @@ header  ul#main-nav{
 
 
 }
-/*#main-nav li{
-width: 14em;
-
- }*/
+ul#main-nav li:nth-child(6){
+  background-color: #242424;
+  
+}
+ul#main-nav li:nth-child(7){
+  background-color: white;
+  
+} 
+ul#main-nav li:nth-child(8){
+  background-color: white;
+  
+} 
 
 
 /* ==========================================================================
@@ -901,13 +946,14 @@ div#sectionServices{
 display: block;
  width: 40em;
   height:56em;
-  border: #EDEDED 0.1em solid;
+/*  border: #EDEDED 0.1em solid;*/
 /*  background-color: white;*/
 margin: 0 auto;
 /*margin-left: 20em;*/
 position: relative;
-}
+padding-bottom: 0.5em;
 
+}
 
 
 #servicesListed h1#header{
@@ -916,13 +962,13 @@ position: relative;
   position: relative;
   margin: 0 auto;
   margin-top:-2em;
-  margin-left: -3.8em;
+  margin-left: -3.6em;
 
    }  
  #servicesListed p{
   color: black;
   width: 32em;
-  margin-left:-6.5em;
+  margin-left:-6.3em;
   padding-bottom: 1em;
  }  
 
@@ -930,7 +976,8 @@ position: relative;
 .ui-accordion {
   width: 30em;
  margin-left:-5em;
-background-color: none!important;
+background-color: transparent!important;
+border: none;
 }
 div#accordion.ui-accordion .ui-widget .ui-helper-reset{
   background-color: none!important;
@@ -939,7 +986,7 @@ div#accordion.ui-accordion .ui-widget .ui-helper-reset{
 .ui-accordion .ui-accordion-content ul li{
   width:28em;
 }
-.ui-accordion .ui-accordion-content button#button{
+.ui-accordion .ui-accordion-content button.button{
     margin: 0 auto;
     position: relative;
     margin-top:2em;
@@ -947,11 +994,23 @@ div#accordion.ui-accordion .ui-widget .ui-helper-reset{
     line-height: 40px;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-  left: 28em;
+  left: 30em;
 }
-/*.ui-helper-reset{
-    background-color: none!important;
-}*/
+
+.ui-accordion .ui-accordion-content{
+  background-color: transparent;
+}
+.ui-accordion .ui-accordion-icons{
+  background-color: transparent!important;
+}
+#accordion i{
+  margin-left: -1em;
+  padding-right: 1em;
+
+}
+#accordion i.fa.fa-circle{
+  font-size: 0.1em;
+}
 /* ==========================================================================
    Checkbox for Nav Sign up
    ========================================================================== */
@@ -998,11 +1057,11 @@ margin-top: -0.1em;
   position: absolute;
   margin-left:-10em;
 }
-i#iconLogIn.fa.fa-user{
+#navLogIn i.fa.fa-user{
   margin-top: 0.9em;
   margin-left:-23em;
 }
-i#iconLogIn.fa.fa-lock{
+#navLogIn i.fa.fa-lock{
   margin-top: 0.9em;
   margin-left:-11em;
 }
@@ -1054,10 +1113,10 @@ width:0;
  float: left;
   overflow:hidden;
 }
-i#droparrow{
-  display: hidden;
+#droparrow.hide{
+  display: none;
   width: 0;
-
+  height: 0;
 }
 /*#tab-desk-nav.show{
 display: block;
@@ -1069,7 +1128,7 @@ ul#main-nav{
   width:17.9em;
 
 }
-i#droparrow{
+#droparrow{
   display: block;
   z-index: 1000;
 position: absolute;
@@ -1091,31 +1150,30 @@ color: white !important;
     position: relative;
 }
 
-#seletedServices.display {
+li#seletedServices.display {
   margin-left: -3.2em;
 
 }
-#seletedServices li{
+li#seletedServices li{
   width: 17.5em;
   height: 4em;
 }
-#seletedServices li p{
+li#seletedServices li p{
   line-height: 120%;  
 }
-#seletedServices p:nth-child(2){
-padding-top:0.8em;
+li#seletedServices p:nth-child(2){
+padding-top:0.3em;
 }
-#seletedServices p:nth-child(3){
+li#seletedServices p:nth-child(3){
   line-height: 160%;
 }
 p.display:nth-child(5){
   padding-bottom:0.5em;
   }  
-#seletedServices p.display{
+li#seletedServices p.display{
   margin-top: -1.8em;
   margin-left: -0.3em;
 }
-
 
 /* ==========================================================================
    SEARCH FORM
@@ -1263,17 +1321,16 @@ position: absolute;
   display: none;
 }
 
-  #rightarrow{
-  top:0;
-  position: relative;
-  color: black;
-  left: 1.5em;
-  }
-  form#intro-form {
-  width: 45em;
-  height: 4em;  
-  z-index: 5000;
+
+/* ==========================================================================
+   Introduction buttons 
+   ========================================================================== */
+#introButtons{
+
+
 }
+
+
    #intro-paragraph{
     text-align: left;
     color: black;
@@ -1282,27 +1339,43 @@ position: absolute;
     width: 16em;
 
    }
+  #rightarrow{
+  top: 1.8em;
+ position: relative;
+  color: black;
+  left: 1.5em;
+  }
+
+
    #launchCareer{
     border-color: black;
     width: 18em;
-    margin-left: -0.6em;
+    margin-left: 0em;
     margin-top: -0.1em;   
-     z-index: 4000;
+
    }
-   #button{
+
+
+   #launchCareer a{
+    color: black;
+   }
+
+    #careerButton{
+    width: 16.2em;
+    height: 2.65em;
+
+    margin-left: 17em;
+    margin-top: -2.7em;   
+    box-shadow: none;
+   }
+
+   .button{
 /*    float: left;*/
     box-shadow: none;
     width: 18em;  
    z-index: 4000;
    }
 
-   button#launchCareer a{
-    color: black;
-
-   }
-/* ==========================================================================
-   Login Form
-   ========================================================================== */
 
 /* ==========================================================================
    Register Form
@@ -1380,7 +1453,7 @@ position: absolute;
   color: black;
   }
 
-  #signup-form button#button {
+  #signup-form button.button {
     margin-top: 4em;
     width: 320px; }
 
@@ -1427,14 +1500,14 @@ input#avatar{
   height: 100%;
 
 }
-#iconPlacement{
+.iconPlacement{
   float: left;
   margin-left: -40.5em;
   margin-top: 5em;
  
 }
 
-#iconPlacement:nth-child(3){
+.iconPlacement:nth-child(3){
   
   margin-top:0.2em;
  
@@ -1494,7 +1567,7 @@ form#careerProfile-form{
 #careerProfile-form input#avatar{
     color: black!important;
 }
-#careerProfile-form button#button{
+#careerProfile-form button.button{
   float: left;
   width: 320px;
   height: 3.5em;
@@ -1612,20 +1685,8 @@ height: 6em;
 
 }
 
-div#sectionSignUp{
-  height: 50em;
-  border: #EDEDED 0.1em solid;
-  margin: 0 auto;
-  position: relative;
-  /*width: 56em;*/
-  margin-top: -4em;
- }
-/*#aucklandSkyline img{
-  margin-top: -8em;
-}
-#ponsonbyHousing img{
-  margin-left: -2em;
-}*/
+
+
 
 
 }

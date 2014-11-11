@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
           <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="scss/main.css">
         <link rel="stylesheet" href="scss/main.scss">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -47,16 +48,7 @@
     <ul id="main-nav">
       
       <li id="menuServices"><a href="services.html"><i class="fa fa-cogs"></i><p>Services</p><i id="droparrow" class="fa fa-angle-down"></i></a></li>    
-      <div id="seletedServices">
-<!--         <ul>
-        <li><a href=""><span><i class="fa fa-angle-right"></i></span><p>CV Writing & Cover Letters</p></a></li>
-        <li><a href=""><i class="fa fa-angle-right"></i><p>Interview Preparation</p></a></li>
-        <li><a href=""><i class="fa fa-angle-right"></i><p>New to NZ</p></a></li>
-        <li><a href=""><i class="fa fa-angle-right"></i><p>Employment Contracts</p></a></li>
-        <li><a href=""><i class="fa fa-angle-right"></i><p>General Job Seeking Advice</p></a></li>
-        <li><a href=""><i class="fa fa-angle-right"></i><p>General Employment Advice</p></a></li> 
-        </ul> -->
-      </div>           
+             
       <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href=""><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
@@ -80,14 +72,14 @@
 <div class="nav-handle-user">
     <form id="navLogIn">
         <label for="user-name"></label>
-        <span><i id="iconLogIn" class="fa fa-user"></i></span>
+        <span><i class="fa fa-user"></i></span>
         <input type="text" name="username" id="user-name" placeholder="Username" class="border">
         <span></span>
         <label for="password"></label>
         <span><i id="iconLogIn" class="fa fa-lock"></i></span>
         <input type="password" name="password" id="password" placeholder="Password" class="border">
         <span></span>
-        <button type="submit" name="button" id="button">Log In</button>
+        <button type="submit" name="button" class="button">Log In</button>
     </form>
 </div>  
 </header> 
@@ -99,9 +91,9 @@
         <h1 id="header">SERVICES</h1>
         <p>Career Consult offer a number of services, which you can pick and choose to suit your needs. Please sign up to and recieive a free 15min consultation and let us help you launch your career.</p>
         <div id="accordion">
-            <!-- <p><i class="fa fa-file-powerpoint-o"></i></p> -->
-            <h3>CV Writing & Cover Letters</h3>
-            <!-- <p><i class="fa fa-chevron-down"></i></p> -->
+            
+            <h3><i class="fa fa-file-text"></i>CV Writing & Cover Letters</h3>
+            
             <div>
                 <ul>
                 <li>Choose from a number CV templates & assistance in creating a CV.</li>
@@ -109,14 +101,16 @@
                 <li>How to tailor your CV and cover letter to a specific job.</li>
                 <li>Tips to help you ‘get that interview’.</li>
                 <li>
-                <form id="" method="#">
-                    <label for="enquire"></label>
-                    <button type="submit" name="button" id="button">BOOK THIS SERVICE</button>
+                <form>
+                    <label for="cvWriting"></label>
+                    <button type="submit" name="button" id="cvWriting" class="button">BOOK THIS SERVICE</button>
                 </form>
                 </li>   
                 </ul>
             </div>
-            <h3>Interview Preparation</h3>
+
+            <h3><i class="fa fa-comments"></i>Interview Preparation</h3>
+            
             <div>
                 <ul>
                 <li>Learn about the types of questions asked and how to effectively answer these.</li>
@@ -124,42 +118,42 @@
                 <li>Useful tips to impress your interviewers and stand out from the crowd.</li>
                 <li>Graduates: what to expect when attending a graduate programme interview.</li>
                 <li>
-                <form id="" method="#">
-                    <label for="enquire"></label>
-                    <button type="submit" name="button" id="button">BOOK THIS SERVICE</button>
+                <form>
+                    <label for="interviewBook"></label>
+                    <button type="submit" name="button" id="interviewBook" class="button">BOOK THIS SERVICE</button>
                 </form>
                 </li>   
                 </ul>
             </div>
-            <h3>New to NZ</h3>
+            <h3><i class="fa fa-plane"></i>New to NZ</h3>
             <div>
                 <ul>
                 <li>NZ workplace culture – what to expect and how to adapt your approach.</li>
                 <li>Comprehensive spelling and grammar support for your CV and cover letter.</li>
                 <li>Options for job searching in NZ.</li>
                 <li>
-                <form id="" method="#">
-                    <label for="enquire"></label>
-                    <button type="submit" name="button" id="button">BOOK THIS SERVICE</button>
+                <form>
+                    <label for="newToNZ"></label>
+                    <button type="submit" name="button" id="newToNZ" class="button">BOOK THIS SERVICE</button>
                 </form>
                 </li>   
                 </ul>
                 
           </div>
-          <h3>Employment Contracts</h3>
+          <h3><i class="fa fa-file-archive-o"></i>Employment Contracts</h3>
           <div>
             <ul>
                 <li>Independent advice on an employment contract before you sign it.</li>
                 <li>
-                <form id="" method="#">
-                    <label for="enquire"></label>
-                    <button type="submit" name="button" id="button">BOOK THIS SERVICE</button>
+                <form>
+                    <label for="employmentContract"></label>
+                    <button type="submit" name="button" id="employmentContract" class="button">BOOK THIS SERVICE</button>
                 </form>
                 </li>       
             </ul>
              
         </div>
-        <h3>General Job Seeking Advice</h3>
+        <h3><i class="fa fa-users"></i>General Job Seeking Advice</h3>
           <div>
             <ul>
                 <li>Effective on-line job searching.</li>
@@ -167,24 +161,24 @@
                 <li>Create an effective LinkedIn profile.</li>
                 <li>Understand the realities of the job market.</li>
                 <li>
-                <form id="" method="#">
-                    <label for="enquire"></label>
-                    <button type="submit" name="button" id="button">BOOK THIS SERVICE</button>
+                <form>
+                    <label for="generalJobSeekingBook"></label>
+                    <button type="submit" name="button" id="generalJobSeekingBook" class="button">BOOK THIS SERVICE</button>
                 </form>
                 </li>   
                 </ul>
            
         </div>
-        <h3>General Employment Advice</h3>
+        <h3><i class="fa fa-thumbs-up"></i>General Employment Advice</h3>
           <div>
             <ul>
                 <li>Ask questions about your employment situation and your rights.</li>
                 <li>Coaching for approaching difficult situations at work.</li>
                 <li>Advice and / or support person in disciplinary meetings.</li> 
                 <li>
-                <form id="" method="#">
-                    <label for="enquire"></label>
-                    <button type="submit" name="button" id="button">BOOK THIS SERVICE</button>
+                <form>
+                    <label for="generalAdviceBook"></label>
+                    <button type="submit" name="button" id="generalAdviceBook" class="button">BOOK THIS SERVICE</button>
                 </form>
                 </li>   
             </ul>
