@@ -43,26 +43,14 @@ $(function(){
 	});
 
 
-	//-----------search bar-----------//
-	// $("#fa-search").on("click", function(){
-	// 	$("input#txtsearch.search-bar").toggleClass("display", {direction: "left"}, 1000)
-	// });
-
-	// $(".nav-handle-desktop").on("click",function(){
-		
-	// 	$("ul#main-nav").toggleClass("show");
-	// 	$("i#droparrow").toggleClass("show");
-
-	// });
-
-
-
-
-
 });
 
 	//-----------services accordion-----------//
 
 	$(function() {
-    $( "#accordion" ).accordion();
-  	});
+		$( "#accordion" ).accordion();
+	});
+
+
+	//-----------change color of select options in sign up and career profile -----------//
+

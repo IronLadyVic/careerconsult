@@ -60,9 +60,10 @@
       <li><a href=""><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
       <li><a href=""><i class="fa fa-phone"></i><p>Contact</p></a></li>
-      <li><a href="sign-up.html"><i class="fa fa-user"></i><p class="styleList">Sign Up</p></a></li>
-      <li><a href="login.html"><i class="fa fa-lock"></i><p class="styleList">Log In</p></a></li>
+      <li><a href="Career-Profile.html"><i class="fa fa-archive"></i><p class="styleList">My Career Profile</p></a></li>
+      <li><a href="index.html"><i class="fa fa-unlock"></i><p class="styleList">Log Out</p></a></li>
     </ul>
+
 </div>
 
 <div class="nav-handle-other">
@@ -77,33 +78,23 @@
    </a>
 </div>
 <div class="nav-handle-user">
-    <form id="navLogIn">
-        <label for="user-name"></label>
-        <span><i id="iconLogIn" class="fa fa-user"></i></span>
-        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
-        <span></span>
-        <label for="password"></label>
-        <span><i id="iconLogIn" class="fa fa-lock"></i></span>
-        <input type="text" name="password" id="password" placeholder="Password" class="border">
-        <span></span>
-        <!-- <div class="checkBox">
-        <input type="checkbox" value="None" id="checkBox" name="check" />
-        <label for="checkBox"></label>
-        </div>
-        <span class="spanFont">Remember Me</span> -->
-        <button type="submit" name="button" id="button">Log In</button>
-    </form>
-</div>  
+    <div id="profilePic">
+      <a href="#">
+        <img src="img/careerprofile-BLK.png" alt="user" id="userProfile">
+    </a>
+    </div>
+    <p id="signedInTag">User Name</p>  
+</div>
 </header> 
 <!-- End of Headers -->
 
 <!-- End of Headers -->
-<div id="sectionSignUp">
-<section id="signing-up">
-    <h1 id="header">SIGN UP</h1>
+<div id="sectionCareerProfile">
+<section id="career-profile">
+    <h1 id="header">CAREER</br>PROFILE</h1>
     <img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture">
-    <p>Become a member and recieve a free 15 minute career consultation.</p>
-    <form id="signup-form" method="get">
+    <p>Please feel free to update your profile, this will help your career consultant provide the correct service and help you launch your career.</p>
+    <form id="careerProfile-form" method="get">
         <label for="userName"></label>
 
         <span><i class="fa fa-user"></i></span>
@@ -115,7 +106,7 @@
         <input type="email" name="email" id="email" placeholder="Email" class="border">
         <span></span>
         <label for="firstName"></label>
-        <span><i id="iconPlacement" class="fa fa-user"></i></span>
+        <span><i  class="fa fa-user"></i></span>
         <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border">
         <span></span>
         <label for="lastName"></label>
@@ -123,20 +114,32 @@
         <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border">
         <span></span>
         <label for="contact"></label>
-        <span><i id="iconPlacement" class="fa fa-phone-square"></i></span>
+        <span><i  class="fa fa-phone-square"></i></span>
         <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
         <span></span>
         <label for="avatar"></label>
         <span><i class="fa fa-camera"></i></span>
         <input type="file" name="imageType" id="avatar" value="choose profile" class="border"  >
         <span></span>
-        <label for="password"></label>
-        <span><i id="iconPlacement" class="fa fa-lock"></i></span>
-        <input type="password" name="password" id="password" placeholder="Password" class="border">
+        <label for="experience"></label>
+        <span><i  class="fa fa-pencil-square-o"></i></span>
+        <textarea type="text" name="comment" id="experience" placeholder="Experience" class="border"></textarea>
         <span></span>
-        <label for="confirm_password"></label>
-        <span><i class="fa fa-lock"></i></span>
-        <input type="password" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
+        <label for="education"></label>
+        <span><i class="fa fa-university"></i></span>
+        <textarea type="text" name="comment" id="education" placeholder="Education" class="border"></textarea>
+        <span></span>
+        <label for="acheivements"></label>
+        <span><i  class="fa fa-trophy"></i></span>
+        <textarea type="text" name="comment" id="acheivements" placeholder="Acheivements" class="border"></textarea>
+        <span></span>
+        <label for="careerHistory"></label>
+        <span><i class="fa fa-history"></i></span>
+        <textarea type="text" name="comment" id="careerHistory" placeholder="Career History" class="border"></textarea>
+        <span></span>
+        <label for="personalDetails"></label>
+        <span><i  class="fa fa-pencil-square-o"></i></span>
+        <textarea type="text" name="comment" id="personalDetails" placeholder="Personal Details" class="border"></textarea>
         <span></span>
         <label for="services"></label>
         <span><i id="iconPlacement" class="fa fa-hand-o-right"></i></span>
@@ -150,17 +153,51 @@
             <option value="7">General Employment Advice</option>
         </select>
         <span></span>
-        <label for="comment"></label>
-        <span><i class="fa fa-pencil-square-o"></i></span>
-        <textarea type="text" name="comment" id="comment" placeholder="Comment" class="border"></textarea>
+        <label for="careerClass"></label>
+         <span><i class="fa fa-thumbs-o-up"></i></span>
+        <select id="careerClass" class="border">
+            <option value="0">Choose your Career Class</option>
+            <option value="1">Accounting</option>
+            <option value="2">Administration & Office Support</option>
+            <option value="4">Advertising, Arts & Media</option>
+            <option value="5">Banking  Financial Services</option>
+            <option value="6">Call Centre & Customer Service</option>
+            <option value="7">CEO & General Management</option>
+            <option value="8">Community Services & Development</option>
+            <option value="9">Construction</option>
+            <option value="10">Consulting & Strategy</option>
+            <option value="11">Community Services & Development</option>
+            <option value="12">Design &amp; Architecture</option>
+            <option value="13">Education &amp; Training</option>
+            <option value="14">Engineering</option>
+            <option value="15">Farming, Animals &amp; Conservation</option>
+            <option value="16">Government &amp; Defence</option>
+            <option value="17">Healthcare &amp; Medical</option>
+            <option value="18">Hospitality &amp; Tourism</option>
+            <option value="19">Human Resources &amp; Recruitment</option> 
+            <option value="20">Information &amp; Communication Technology</option>
+            <option value="21">Insurance &amp; Superannuation</option>
+            <option value="22">Legal</option>
+            <option value="23">Manufacturing, Transport &amp; Logistics</option>
+            <option value="24">Marketing &amp; Communications</option>
+            <option value="25">Mining, Resources &amp; Energy</option>
+            <option value="26">Real Estate &amp; Property</option>
+            <option value="27">Retail &amp; Consumer Products</option>
+            <option value="28">Sales</option>
+            <option value="29">Science &amp; Technology</option>
+            <option value="30">Self Employment</option>
+            <option value="31">Sport &amp; Recreation</option>
+            <option value="32">Trades &amp; Services</option>
+        </select>
         <span></span>
-        <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with this statement.</p>
+        
+        <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your career profile for future career consult meetings & planning.</p>
         <div class="checkBoxAgree">
         <input type="checkbox" value="agreement" id="checkBoxAgree" name="check" />
         <label for="checkBoxAgree"></label>
         </div>
         <label for="button"></label>
-        <button type="submit" name="button" id="button">SIGN UP</button>
+        <button type="submit" name="button" id="button">UPDATE MY PROFILE</button>
     </form>
 </section>
 </div>
