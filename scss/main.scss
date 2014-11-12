@@ -111,7 +111,7 @@ ul#main-nav li:nth-child(7){
   background-color: white;
   
 } 
-ul#main-nav li:nth-child(6){
+ul#main-nav li:nth-child(8){
   background-color: white;
   
 } 
@@ -498,78 +498,100 @@ input#checkBoxAgree{
 /* ==========================================================================
     CAREER PROFILE 
   ========================================================================== */
+
+
+
    #career-profile h1#header{
       color: white;
-     height: auto;
     position: relative;
-    margin: auto;
-    margin-top:-2em;
-    margin-left: -0.5em;
-    padding-bottom: 1em;
-    /*padding-left: 0.5em;*/
+    margin: 0 auto;
+  margin-top: 2em;
    }
 
    #career-profile p{
     color: white;
-    /*padding-left: 0.5em;*/
-    padding-right: 0.5em;
+    padding: 0.5em;
    }
-div#sectionCareerProfile{
+#career-profile img#profileImage{
       position: relative;
     margin: 0 auto;
 }
   section#career-profile{
-    display: block;
-    top:5em;
-    width: 320px;
-    height: auto;
+
     position: relative;
     margin: 0 auto;
    }
-   #careerProfile-form{
-   width: 320px;
-   height: auto;
-   position: relative;
-   z-index: 1000;  
-   }
+#careerProfile-form form{
+  width:320px;
+}
    #careerProfile-form input{
-    @include input;
-
-
-   }
-      #careerProfile-form select#servicesSel{
-          @include inputService;
+    width: 80%;
     height: 3em;
-    
-    border-bottom: 0.1em white solid;
+      border-bottom: 0.1em white solid;
   border-top: 0.1em white solid;
-  color:white;
-  float: left;
+  background-color: transparent;
+  color: white;
+
    }
+
+#careerProfile-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"]{
+    -webkit-appearance: none;
+    width: 90%;
+    @include input;
+   
+}
+
+#careerProfile-form textarea{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3em;
+    @include input;
+    padding-top: 0.8em;
+    
+}
+
+form#careerProfile-form span{
+      border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
+   color: #606468;
+    display: block;
+    float: left;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    margin-left: 0.5em;
+}
+
+
+  #careerProfile-form select#servicesSel{
+    width: 80%;
+    height: 3em;
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color:black;
+    background-color: transparent;
+    
+     }
 
 
    #careerProfile-form select#careerClass{
-      @include inputService;
+     width: 80%;
     height: 3em;
-
     border-bottom: 0.1em white solid;
   border-top: 0.1em white solid;
-  color:white;
-  float: left;
-   }
-   #careerProfile-form textarea{
-      @include inputService;
-    float: left;
-
+  color:black;
+  background-color: transparent;
+  
 
    }
-  #careerProfile-form .checkBoxAgree{
+#careerProfile-form input#checkbox{
+  height: 2em!important;
+  width: 2em!important;
 
-  margin-left: 2em;
-
-
+  position: relative;
+  
 }
-
 /* ==========================================================================
     SERVICES
   ========================================================================== */
@@ -746,6 +768,7 @@ div#sectionSignUp{
  }
 #signing-up h1#header{
   margin-left: -0.5em;
+  color: black;
 }
 input#password.border{
   background-color: transparent;
@@ -805,76 +828,67 @@ margin-left: 7em;
 /* ==========================================================================
     CAREER PROFILE 
   ========================================================================== */
-   #career-profile h1#header{
-      color: white;
-     height: auto;
-    position: relative;
-    margin: auto;
-    margin-top:-2em;
-    margin-left: -0.5em;
-    padding-bottom: 1em;
-    /*padding-left: 0.5em;*/
-   }
+//    #career-profile h1#header{
+//       color: white;
+//      height: auto;
+//     position: relative;
+//     margin: auto;
 
-   #career-profile p{
-    color: white;
-    /*padding-left: 0.5em;*/
-    padding-right: 0.5em;
-   }
-div#sectionCareerProfile{
-      position: relative;
-    margin: 0 auto;
-}
-  section#career-profile{
-    display: block;
-    top:5em;
-    width: 320px;
-    height: auto;
-    position: relative;
-    margin: 0 auto;
-   }
-   #careerProfile-form{
-   width: 320px;
-   height: auto;
-   position: relative;
-   z-index: 1000;  
-   }
-   #careerProfile-form input{
-    @include input;
-   }
-      #careerProfile-form select#servicesSel{
-          @include inputService;
-    height: 3em;
+//    }
+
+//    #career-profile p{
+//     color: white;
+//     /*padding-left: 0.5em;*/
+//     padding-right: 0.5em;
+//    }
+// div#sectionCareerProfile{
+//       position: relative;
+//     margin: 0 auto;
+// }
+//   section#career-profile{
+//     display: block;
+//     top:5em;
+//     width: 320px;
+//     height: auto;
+//     position: relative;
+//     margin: 0 auto;
+//    }
+//    #careerProfile-form{
+//    width: 42em;
+//     height:50em;
+//    }
+//    #careerProfile-form input{
+//     @include input;
+//     // color: black;
+//    }
+//       #careerProfile-form select#servicesSel{
+//           @include inputService;
+//     height: 3em;
     
-    border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  color:white;
-  float: left;
-   }
+//     border-bottom: 0.1em white solid;
+//   border-top: 0.1em white solid;
 
 
-   #careerProfile-form select#careerClass{
-      @include inputService;
-    height: 3em;
-  
-    border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  color:white;
-  float: left;
-   }
-   #careerProfile-form textarea{
-      @include inputService;
-    float: left;
+//    }
 
 
-   }
-  #careerProfile-form .checkBoxAgree{
-/*  @include checkBox;*/
-  /*float: left;*/
-  margin-left: 2em;
+//    #careerProfile-form select#careerClass{
+//       @include inputService;
+//     height: 3em; 
+//     border-bottom: 0.1em white solid;
+//   border-top: 0.1em white solid;
 
-
-}
+//    }
+//    #careerProfile-form textarea{
+//       @include inputService;
+//       height: 3em;
+//       padding-top:1em;
+//       padding-left:2.8em;
+//       color: black;
+//    }
+//   #careerProfile-form .checkBoxAgree{
+//   margin-left: 2em;
+// }
 
 /* ==========================================================================
    MAIN NAV
@@ -1519,95 +1533,98 @@ input#avatar{
 
 
    section#career-profile{
-
+    margin-top: -5em;
     width: 42em;
     padding-left: 2em;
 
   }
 section#career-profile #profileImage{
-  position: absolute;
-  margin-left: 8em;
-  margin-top: -5em;
+  // position: absolute;
+  // margin-left: 8em;
+  // margin-top: -10em;
 
 }
 #career-profile h1#header{
   color: black;
   float: left;
+  margin-left: -1em;
 }
 
 #career-profile p{
   color: black;
   float: left;
 }
-#careerProfile-form span i{
-  color: black!important;
+// #careerProfile-form span i{
+//   color: black!important;
 
 
-}
-form#careerProfile-form{
-  width: 42em;
-  height: 50em;
+// }
+// form#careerProfile-form{
+//   width: 42em;
+//   height: 50em;
 
-}
-#careerProfile-form p#agreementStatement{
-
-
-  height: 2em!important;
-}
+// }
+// #careerProfile-form p#agreementStatement{
 
 
-
-#careerProfile-form input{
-  color: black;
-  margin-right: 0.5em;
-      border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  float: left;
-}
-#careerProfile-form input#avatar{
-    color: black!important;
-}
-#careerProfile-form button.button{
-  float: left;
-  width: 320px;
-  height: 3.5em;
-}
-     #careerProfile-form select#servicesSel{
-    border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  color: black;
-margin-right: 0.8em;
-   }
+//   height: 2em!important;
+// }
 
 
-   #careerProfile-form select#careerClass{
-    border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  color: black;
-  height: 3em;
-  padding-right: 2.8em!important;
+
+// #careerProfile-form input{
+//   color: black;
+//   margin-right: 0.5em;
+//       border-bottom: 0.1em black solid;
+//   border-top: 0.1em black solid;
+//   float: left;
+// }
+// #careerProfile-form input#avatar{
+//     color: black!important;
+// }
+// #careerProfile-form button.button{
+//   float: left;
+//   width: 320px;
+//   height: 3.5em;
+//   margin-left:1em;
+//   margin-top: -0.1em;
+// }
+//      #careerProfile-form select#servicesSel{
+//     border-bottom: 0.1em black solid;
+//   border-top: 0.1em black solid;
+//   color: black;
+// margin-right: 0.8em;
+//    }
 
 
-   }
-   #careerProfile-form textarea{
-      @include inputService;
-    float: left;
+//    #careerProfile-form select#careerClass{
+//     border-bottom: 0.1em black solid;
+//   border-top: 0.1em black solid;
+//   color: black;
+//   height: 3em;
+//   padding-right: 2.8em!important;
 
-   }
-  #careerProfile-form .checkBoxAgree{
-position: relative;
-}
-#careerProfile-form p{
-  position: relative;
 
-}
-#careerProfile-form textarea{
-  height: 3em;
-  border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  color: black;
-  margin-right: 0.8em;
-}
+//    }
+//    #careerProfile-form textarea{
+//       @include inputService;
+//     float: left;
+
+//    }
+//   #careerProfile-form .checkBoxAgree{
+// position: relative;
+// }
+// #careerProfile-form p{
+//   position: relative;
+
+// }
+// #careerProfile-form textarea{
+//   height: 3em;
+//   border-bottom: 0.1em black solid;
+//   border-top: 0.1em black solid;
+//   color: black;
+//   margin-right: 0.8em;
+// }
 
 
 /* ==========================================================================

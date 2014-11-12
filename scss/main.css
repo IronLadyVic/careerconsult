@@ -15,7 +15,7 @@
     background-color: #242424; }
 
   body.show {
-    background-color: #2B2937; }
+    background-color: #2b2937; }
 
   header #main-header {
     z-index: 1000;
@@ -92,7 +92,7 @@
   ul#main-nav li:nth-child(7) {
     background-color: white; }
 
-  ul#main-nav li:nth-child(6) {
+  ul#main-nav li:nth-child(8) {
     background-color: white; }
 
   .styleList {
@@ -113,13 +113,13 @@
      ACTIVE HOLD ON LI DROP DOWN MENU
      ========================================================================== */
   ul#main-nav li:active {
-    background-image: linear-gradient(#9B8FFB, #2B2937); }
+    background-image: linear-gradient(#9b8ffb, #2b2937); }
 
   ul#main-nav li p:active {
-    color: #E6E6FA; }
+    color: lavender; }
 
   ul#main-nav li i:active {
-    color: #E6E6FA; }
+    color: lavender; }
 
   header #main-header ul#main-nav li a {
     text-decoration: none;
@@ -182,7 +182,7 @@
     /* margin-left: -20em;*/
     /*opacity: 0.8;*/
     position: relative;
-    border-bottom: 1px #928CC4 solid !important; }
+    border-bottom: 1px #928cc4 solid !important; }
 
   #ponsonbyHousing img {
     /*  height:10%;
@@ -326,11 +326,7 @@
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.8em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 320px;
+    height: 3em;
     color: white; }
 
   #loggingIn p {
@@ -396,33 +392,21 @@
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.8em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 320px;
+    height: 3em;
     color: white; }
 
   #signup-form textarea {
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.8em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 320px;
+    height: 3em;
     color: white; }
 
   #servicesSelect {
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
+    height: 3em;
     color: white;
     height: 3.5em; }
 
@@ -430,11 +414,7 @@
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
+    height: 3em;
     color: white;
     height: 3em; }
 
@@ -452,9 +432,6 @@
     margin-top: 1em; }
 
   span i {
-    position: absolute;
-    margin-left: 1em;
-    margin-top: 1em;
     color: white !important; }
 
   input#agree {
@@ -570,94 +547,85 @@
     ========================================================================== */
   #career-profile h1#header {
     color: white;
-    height: auto;
     position: relative;
-    margin: auto;
-    margin-top: -2em;
-    margin-left: -0.5em;
-    padding-bottom: 1em;
-    /*padding-left: 0.5em;*/ }
+    margin: 0 auto;
+    margin-top: 2em; }
 
   #career-profile p {
     color: white;
-    /*padding-left: 0.5em;*/
-    padding-right: 0.5em; }
+    padding: 0.5em; }
 
-  div#sectionCareerProfile {
+  #career-profile img#profileImage {
     position: relative;
     margin: 0 auto; }
 
   section#career-profile {
-    display: block;
-    top: 5em;
-    width: 320px;
-    height: auto;
     position: relative;
     margin: 0 auto; }
 
-  #careerProfile-form {
-    width: 320px;
-    height: auto;
-    position: relative;
-    z-index: 1000; }
+  #careerProfile-form form {
+    width: 320px; }
 
   #careerProfile-form input {
+    width: 80%;
+    height: 3em;
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.8em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 320px;
     color: white; }
 
-  #careerProfile-form select#servicesSel {
+  #careerProfile-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
+    -webkit-appearance: none;
+    width: 90%;
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
-    color: white;
     height: 3em;
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    color: white;
-    float: left; }
-
-  #careerProfile-form select#careerClass {
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
-    color: white;
-    height: 3em;
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    color: white;
-    float: left; }
+    color: white; }
 
   #careerProfile-form textarea {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3em;
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
+    height: 3em;
     color: white;
-    float: left; }
+    padding-top: 0.8em; }
 
-  #careerProfile-form .checkBoxAgree {
-    margin-left: 2em; }
+  form#careerProfile-form span {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color: #606468;
+    display: block;
+    float: left;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    margin-left: 0.5em; }
+
+  #careerProfile-form select#servicesSel {
+    width: 80%;
+    height: 3em;
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color: black;
+    background-color: transparent; }
+
+  #careerProfile-form select#careerClass {
+    width: 80%;
+    height: 3em;
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color: black;
+    background-color: transparent; }
+
+  #careerProfile-form input#checkbox {
+    height: 2em !important;
+    width: 2em !important;
+    position: relative; }
 
   /* ==========================================================================
       SERVICES
@@ -741,7 +709,7 @@
       INPUT ERRORS
     ========================================================================== */
   .invalid {
-    color: #9B8FFB;
+    color: #9b8ffb;
     font-size: 0.5em;
     position: absolute;
     margin-top: -1em; }
@@ -802,7 +770,8 @@
     margin-top: -2em; }
 
   #signing-up h1#header {
-    margin-left: -0.5em; }
+    margin-left: -0.5em;
+    color: black; }
 
   input#password.border {
     background-color: transparent; }
@@ -859,99 +828,6 @@
   /* ==========================================================================
       CAREER PROFILE 
     ========================================================================== */
-  #career-profile h1#header {
-    color: white;
-    height: auto;
-    position: relative;
-    margin: auto;
-    margin-top: -2em;
-    margin-left: -0.5em;
-    padding-bottom: 1em;
-    /*padding-left: 0.5em;*/ }
-
-  #career-profile p {
-    color: white;
-    /*padding-left: 0.5em;*/
-    padding-right: 0.5em; }
-
-  div#sectionCareerProfile {
-    position: relative;
-    margin: 0 auto; }
-
-  section#career-profile {
-    display: block;
-    top: 5em;
-    width: 320px;
-    height: auto;
-    position: relative;
-    margin: 0 auto; }
-
-  #careerProfile-form {
-    width: 320px;
-    height: auto;
-    position: relative;
-    z-index: 1000; }
-
-  #careerProfile-form input {
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    background-color: transparent;
-    padding-left: 2.8em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 320px;
-    color: white; }
-
-  #careerProfile-form select#servicesSel {
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
-    color: white;
-    height: 3em;
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    color: white;
-    float: left; }
-
-  #careerProfile-form select#careerClass {
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
-    color: white;
-    height: 3em;
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    color: white;
-    float: left; }
-
-  #careerProfile-form textarea {
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
-    color: white;
-    float: left; }
-
-  #careerProfile-form .checkBoxAgree {
-    /*  @include checkBox;*/
-    /*float: left;*/
-    margin-left: 2em; }
-
   /* ==========================================================================
      MAIN NAV
      ========================================================================== */
@@ -1447,11 +1323,7 @@
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
+    height: 3em;
     color: white;
     height: 3em;
     border-bottom: 0.1em black solid;
@@ -1514,84 +1386,18 @@
      Career Profile
      ========================================================================== */
   section#career-profile {
+    margin-top: -5em;
     width: 42em;
     padding-left: 2em; }
 
-  section#career-profile #profileImage {
-    position: absolute;
-    margin-left: 8em;
-    margin-top: -5em; }
-
   #career-profile h1#header {
     color: black;
-    float: left; }
+    float: left;
+    margin-left: -1em; }
 
   #career-profile p {
     color: black;
     float: left; }
-
-  #careerProfile-form span i {
-    color: black !important; }
-
-  form#careerProfile-form {
-    width: 42em;
-    height: 50em; }
-
-  #careerProfile-form p#agreementStatement {
-    height: 2em !important; }
-
-  #careerProfile-form input {
-    color: black;
-    margin-right: 0.5em;
-    border-bottom: 0.1em black solid;
-    border-top: 0.1em black solid;
-    float: left; }
-
-  #careerProfile-form input#avatar {
-    color: black !important; }
-
-  #careerProfile-form button.button {
-    float: left;
-    width: 320px;
-    height: 3.5em; }
-
-  #careerProfile-form select#servicesSel {
-    border-bottom: 0.1em black solid;
-    border-top: 0.1em black solid;
-    color: black;
-    margin-right: 0.8em; }
-
-  #careerProfile-form select#careerClass {
-    border-bottom: 0.1em black solid;
-    border-top: 0.1em black solid;
-    color: black;
-    height: 3em;
-    padding-right: 2.8em !important; }
-
-  #careerProfile-form textarea {
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    background-color: transparent;
-    padding-left: 2.5em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    margin-bottom: 1em;
-    width: 20em;
-    color: white;
-    float: left; }
-
-  #careerProfile-form .checkBoxAgree {
-    position: relative; }
-
-  #careerProfile-form p {
-    position: relative; }
-
-  #careerProfile-form textarea {
-    height: 3em;
-    border-bottom: 0.1em black solid;
-    border-top: 0.1em black solid;
-    color: black;
-    margin-right: 0.8em; }
 
   /* ==========================================================================
      ALL CHECKBOXES
@@ -1801,5 +1607,3 @@ ul#main-nav li i:active{
 #droparrow{
   display: none;
 }*/
-
-/*# sourceMappingURL=main.css.map */

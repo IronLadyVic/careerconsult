@@ -82,12 +82,12 @@
         <input type="text" name="username" id="user-name" placeholder="Username" class="border">
         <span></span>
         <label for="password"></label>
-        <span><i class="fa fa-lock"></i></span>
-        <input type="text" name="password" id="password" placeholder="Password" class="border">
+        <span><i id="iconLogIn" class="fa fa-lock"></i></span>
+        <input type="password" name="password" id="password" placeholder="Password" class="border">
         <span></span>
-        <button type="submit" name="button" class="button">Log In</button>
+        <button type="submit" name="button" id="logIn" class="button">Log In</button>
     </form>
-</div>  
+</div>   
 </header> 
 <!-- End of Headers -->
 
@@ -132,16 +132,15 @@
         <span><i class="fa fa-lock"></i></span>
         <input type="password" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
         <span></span>
-        
+        <p>click on a service you are interested below.</p>
         <span class="iconPlacement"><i class="fa fa-hand-o-right"></i></span>
         <select id="servicesSel" class="border">
-            <option value="0">Services I'm Interested In...</option>
-            <option value="1">CV Writing & Cover Letters</option>
-            <option value="2">Interview Preparation</option>
-            <option value="4">New to NZ</option>
-            <option value="5">Employment Contracts</option>
-            <option value="6">General Job Seeking Advice</option>
-            <option value="7">General Employment Advice</option>
+            <option value="0">CV Writing & Cover Letters</option>
+            <option value="1">Interview Preparation</option>
+            <option value="2">New to NZ</option>
+            <option value="3">Employment Contracts</option>
+            <option value="4">General Job Seeking Advice</option>
+            <option value="5">General Employment Advice</option>
         </select>
         <span></span>
         <label for="comment"></label>

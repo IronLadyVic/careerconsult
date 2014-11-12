@@ -37,7 +37,7 @@ $(function() {
                 return valid;
                 }
             
-                $("#signup-form button#button").click(function() {
+                $("button#signUp.button").click(function() {
                 $('#signup-form').submit(validateform);
                     $('#signup-form').submit();
 
@@ -63,7 +63,7 @@ $(function() {
                 return valid;
                 }
             
-                $("#logIn-form button#button").click(function() {
+                $("button#logIn.button").click(function() {
                 $('#logIn-form').submit(validateform);
                     $('#logIn-form').submit();
 
@@ -90,7 +90,7 @@ $(function() {
                 return valid;
                 }
             
-                $("#navLogIn button#button").click(function() {
+                $("button#logIn.button").click(function() {
                 $('#navLogIn').submit(validateform);
                     $('#navLogIn').submit();
                 });

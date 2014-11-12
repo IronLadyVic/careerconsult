@@ -95,54 +95,76 @@
     <img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture">
     <p>Please feel free to update your profile, this will help your career consultant provide the correct service and help you launch your career.</p>
     <form id="careerProfile-form" method="get">
+        
+        <p>
+        <span><i class="fa fa-user"></i></span>
         <label for="userName"></label>
-
-        <span><i class="fa fa-user"></i></span>
         <input type="text" name="username" id="userName" placeholder="Username" class="border">
-        <span></span>
+        </p>
 
-        <label for="email"></label>
+        <p>
         <span><i class="fa fa-envelope"></i></span>
+        <label for="email"></label>
         <input type="email" name="email" id="email" placeholder="Email" class="border">
-        <span></span>
-        <label for="firstName"></label>
+        </p>
+
+        <p>
         <span><i  class="fa fa-user"></i></span>
+        <label for="firstName"></label>
         <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border">
-        <span></span>
-        <label for="lastName"></label>
+        </p>
+
+        <p>
         <span><i class="fa fa-user"></i></span>
+        <label for="lastName"></label>
         <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border">
-        <span></span>
-        <label for="contact"></label>
+        </p>
+
+        <p>
         <span><i  class="fa fa-phone-square"></i></span>
+        <label for="contact"></label>
         <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
-        <span></span>
-        <label for="avatar"></label>
+        </p>
+
+        <p>
         <span><i class="fa fa-camera"></i></span>
+        <label for="avatar"></label>
         <input type="file" name="imageType" id="avatar" class="border"  >
-        <span></span>
+        </p>
+        
+        <p>
+        <span><i  class="fa fa-pencil-square-o"></i></span> 
         <label for="experience"></label>
-        <span><i  class="fa fa-pencil-square-o"></i></span>
         <textarea name="comment" id="experience" placeholder="Experience" class="border"></textarea>
-        <span></span>
-        <label for="education"></label>
+        </p>
+        
+        <p>
         <span><i class="fa fa-university"></i></span>
+        <label for="education"></label>
         <textarea name="comment" id="education" placeholder="Education" class="border"></textarea>
-        <span></span>
+        </p>
+
+        <p>
+        <span><i  class="fa fa-trophy"></i></span> 
         <label for="acheivements"></label>
-        <span><i  class="fa fa-trophy"></i></span>
         <textarea name="comment" id="acheivements" placeholder="Acheivements" class="border"></textarea>
-        <span></span>
-        <label for="careerHistory"></label>
+        </p>
+
+        <p>
         <span><i class="fa fa-history"></i></span>
+        <label for="careerHistory"></label>
         <textarea name="comment" id="careerHistory" placeholder="Career History" class="border"></textarea>
-        <span></span>
-        <label for="personalDetails"></label>
+        </p>
+
+        <p>
         <span><i  class="fa fa-pencil-square-o"></i></span>
+        <label for="personalDetails"></label>
         <textarea name="comment" id="personalDetails" placeholder="Personal Details" class="border"></textarea>
-        <span></span>
+        </p>
+
+        <p>
+        <span><i  class="fa fa-hand-o-right"></i></span>
         <label for="servicesSel"></label>
-        <span id="iconPlacement"><i  class="fa fa-hand-o-right"></i></span>
         <select id="servicesSel" class="border">
             <option value="0">Services I'm Interested In...</option>
             <option value="1">CV Writing & Cover Letters</option>
@@ -152,9 +174,11 @@
             <option value="6">General Job Seeking Advice</option>
             <option value="7">General Employment Advice</option>
         </select>
-        <span></span>
-        <label for="careerClass"></label>
-         <span><i class="fa fa-thumbs-o-up"></i></span>
+        </p>
+        
+        <p>
+        <span><i class="fa fa-thumbs-o-up"></i></span>
+        <label for="careerClass"></label>      
         <select id="careerClass" class="border">
             <option value="0">Choose your Career Class</option>
             <option value="1">Accounting</option>
@@ -189,11 +213,11 @@
             <option value="31">Sport &amp; Recreation</option>
             <option value="32">Trades &amp; Services</option>
         </select>
-        <span></span>
+        </p>
         
         <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your career profile for future career consult meetings & planning.</p>
-        <div class="checkBoxAgree">
-        <input type="checkbox" value="agreement" id="checkBoxAgree" name="check" />
+        <div>
+        <input type="checkbox" value="agreement" id="checkbox" name="check" />
         <label for="checkBoxAgree"></label>
         </div>
         <label for="updateProfile"></label>
