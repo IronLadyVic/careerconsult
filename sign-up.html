@@ -95,63 +95,74 @@
 <div id="sectionSignUp">
 <section id="signing-up">
     <h1 id="header">SIGN UP</h1>
-    <img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture">
-    <p>Become a member and recieve a free 15 minute career consultation.</p>
+    <div class="profileAuto"><p><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></p></div>
+    <p id="description">Become a member and recieve a free 15 minute career consultation.</p>
     <form id="signup-form" method="get">
+        
+        <p>
+        <span class="border"><i class="fa fa-user"></i></span>
         <label for="userName"></label>
-
-        <span><i class="fa fa-user"></i></span>
         <input type="text" name="username" id="userName" placeholder="Username" class="border">
-        <span></span>
-
+        </p>
+        <p>
+        <span class="border"><i class="fa fa-envelope"></i></span>
         <label for="email"></label>
-        <span><i class="fa fa-envelope"></i></span>
         <input type="email" name="email" id="email" placeholder="Email" class="border">
-        <span></span>
+        </p>
+        <p>
+        <span class="border" ><i class="fa fa-user"></i></span>
         <label for="firstName"></label>
-        <span class="iconPlacement"><i class="fa fa-user"></i></span>
         <input type="text" name="firstName" id="firstName" placeholder="First Name" class="border">
-        <span></span>
-        <label for="lastName"></label>
-        <span><i class="fa fa-user"></i></span>
+        </p>
+        <p>
+        <span class="border"><i class="fa fa-user"></i></span>
+        <label for="lastName"></label>        
         <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border">
-        <span></span>
+        </p>
+        <p>
+        <span class="border" ><i class="fa fa-phone-square"></i></span>
         <label for="contact"></label>
-        <span class="iconPlacement"><i class="fa fa-phone-square"></i></span>
         <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
-        <span></span>
+        </p>
+        <p>
+        <span class="border"><i class="fa fa-camera"></i></span>
         <label for="avatar"></label>
-        <span><i class="fa fa-camera"></i></span>
         <input type="file" name="imageType" id="avatar" class="border"  >
-        <span></span>
-        <label for="passwordSignUp"></label>
-        <span class="iconPlacement"><i class="fa fa-lock"></i></span>
+        </p>
+        <p>
+        <span class="border" ><i class="fa fa-lock"></i></span>       
+        <label for="passwordSignUp"></label>     
         <input type="password" name="password" id="passwordSignUp" placeholder="Password" class="border">
-        <span></span>
+        </p>
+        <p>
+        <span class="border"><i class="fa fa-lock"></i></span>
         <label for="confirm_password"></label>
-        <span><i class="fa fa-lock"></i></span>
         <input type="password" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
-        <span></span>
-        <p>click on a service you are interested below.</p>
-        <span class="iconPlacement"><i class="fa fa-hand-o-right"></i></span>
+        </p>
+        <p>
+        <span class="border"><i class="fa fa-hand-o-right"></i></span>
         <select id="servicesSel" class="border">
-            <option value="0">CV Writing & Cover Letters</option>
-            <option value="1">Interview Preparation</option>
-            <option value="2">New to NZ</option>
-            <option value="3">Employment Contracts</option>
-            <option value="4">General Job Seeking Advice</option>
-            <option value="5">General Employment Advice</option>
+            <option value="0">Services I am interested in..</option>
+            <option value="1">CV Writing & Cover Letters</option>
+            <option value="2">Interview Preparation</option>
+            <option value="3">New to NZ</option>
+            <option value="4">Employment Contracts</option>
+            <option value="5">General Job Seeking Advice</option>
+            <option value="6">General Employment Advice</option>
         </select>
-        <span></span>
+        </p>
+        <p>
+        <span class="border"><i class="fa fa-pencil-square-o"></i></span>
         <label for="comment"></label>
-        <span><i class="fa fa-pencil-square-o"></i></span>
         <textarea name="comment" id="comment" placeholder="Comment" class="border"></textarea>
-        <span></span>
+        </p>
+       <p>
         <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with this statement.</p>
-        <div class="checkBoxAgree">
-        <input type="checkbox" value="agreement" id="checkBoxAgree" name="check" />
-        <label for="checkBoxAgree"></label>
+        <div>
+        <input type="checkbox" value="agreement" id="checkbox" name="check" />
+        <label for="checkbox"></label>
         </div>
+        </p>
         <label for="signUp"></label>
         <button type="submit" name="button" id="signUp" class="button">SIGN UP</button>
     </form>

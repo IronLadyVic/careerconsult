@@ -80,7 +80,7 @@
 <div class="nav-handle-user">
     <div id="profilePic">
       <a href="#">
-        <img src="img/careerprofile-BLK.png" alt="user" id="userProfile">
+        <img src="img/careerprofile.png" alt="user" id="userProfile">
     </a>
     </div>
     <p id="signedInTag">User Name</p>  
@@ -92,8 +92,8 @@
 <div id="sectionCareerProfile">
 <section id="career-profile">
     <h1 id="header">CAREER<br>PROFILE</h1>
-    <img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture">
-    <p>Please feel free to update your profile, this will help your career consultant provide the correct service and help you launch your career.</p>
+    <div class="profileAuto"><p><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></p></div>
+    <p id="description">Please feel free to update your profile, this will help your career consultant provide the correct service and help you launch your career.</p>
     <form id="careerProfile-form" method="get">
         
         <p>
@@ -133,6 +133,12 @@
         </p>
         
         <p>
+        <span><i  class="fa fa-pencil-square-o"></i></span>
+        <label for="personalGoals"></label>
+        <textarea name="comment" id="personalGoals" placeholder="Personal Goals" class="border"></textarea>
+        </p>
+
+        <p>
         <span><i  class="fa fa-pencil-square-o"></i></span> 
         <label for="experience"></label>
         <textarea name="comment" id="experience" placeholder="Experience" class="border"></textarea>
@@ -156,26 +162,6 @@
         <textarea name="comment" id="careerHistory" placeholder="Career History" class="border"></textarea>
         </p>
 
-        <p>
-        <span><i  class="fa fa-pencil-square-o"></i></span>
-        <label for="personalDetails"></label>
-        <textarea name="comment" id="personalDetails" placeholder="Personal Details" class="border"></textarea>
-        </p>
-
-        <p>
-        <span><i  class="fa fa-hand-o-right"></i></span>
-        <label for="servicesSel"></label>
-        <select id="servicesSel" class="border">
-            <option value="0">Services I'm Interested In...</option>
-            <option value="1">CV Writing & Cover Letters</option>
-            <option value="2">Interview Preparation</option>
-            <option value="4">New to NZ</option>
-            <option value="5">Employment Contracts</option>
-            <option value="6">General Job Seeking Advice</option>
-            <option value="7">General Employment Advice</option>
-        </select>
-        </p>
-        
         <p>
         <span><i class="fa fa-thumbs-o-up"></i></span>
         <label for="careerClass"></label>      
@@ -214,12 +200,28 @@
             <option value="32">Trades &amp; Services</option>
         </select>
         </p>
+       <p>
+        <span><i  class="fa fa-hand-o-right"></i></span>
+        <label for="servicesSel"></label>
+        <select id="servicesSel" class="border">
+            <option value="0">Services I'm Interested In...</option>
+            <option value="1">CV Writing & Cover Letters</option>
+            <option value="2">Interview Preparation</option>
+            <option value="4">New to NZ</option>
+            <option value="5">Employment Contracts</option>
+            <option value="6">General Job Seeking Advice</option>
+            <option value="7">General Employment Advice</option>
+        </select>
+        </p>
         
+
+        <p>
         <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your career profile for future career consult meetings & planning.</p>
         <div>
         <input type="checkbox" value="agreement" id="checkbox" name="check" />
-        <label for="checkBoxAgree"></label>
+        <label for="checkbox"></label>
         </div>
+        </p>
         <label for="updateProfile"></label>
         <button type="submit" name="button" id="updateProfile" class="button">UPDATE MY PROFILE</button>
     </form>

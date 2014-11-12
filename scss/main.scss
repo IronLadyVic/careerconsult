@@ -85,7 +85,7 @@ position: absolute;
 }
 
 #main-nav li {
-width: 100%;
+/*width: 100%;*/
 /*height: 2em;*/
 left: 0;
 top: 60px;
@@ -351,7 +351,7 @@ li#seletedServices p.display{
 /* ==========================================================================
     LOG IN FORM  
   ========================================================================== */
-   section#loggingIn{
+/*   section#loggingIn{
     display: block;
     position: relative;
     width: 320px;
@@ -375,9 +375,9 @@ li#seletedServices p.display{
    margin-left: 2em;
    margin-top: -2em;
   
-}
+}*/
 /* ==========================================================================
-    SIGN UP FORM   
+    SECTION INTRODUCTION BUTTONS AND INTRO  
   ========================================================================== */
    #intro-paragraph{
    @include headers;
@@ -399,102 +399,88 @@ li#seletedServices p.display{
    }
 
 
-   h1#header{
-      color: white;
-     height: auto;
-    position: absolute;
-    margin: auto;
-    margin-top:-2em;
-    padding-left: 0.5em;
-   }
+/* ==========================================================================
+    SIGN UP FORM
+  ========================================================================== */
 
-   #signing-up p{
-    color: white;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-   }
+#signing-up h1{
+  color: white;
+}
+#signing-up p#description{
+  color: white;
+   width: 92%;
+   margin-left: 0.5em;
+}
 
-  section#signing-up{
-    display: block;
-    top:5em;
-    width: 320px;
-    height: auto;
-    position: relative;
-    margin: auto;
-   }
-   #signup-form{
-   width: 320px;
-   height: auto;
-   position: relative;
-   z-index: 1000;  
-   }
+#signing-up img{
+
+}
+
+#signup-form form{
+  width:320px;
+}
    #signup-form input{
+    width: 80%;
+    height: 3em;
+      border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
+  background-color: transparent;
+  color: white;
+
+   }
+#signup-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"]{
+    -webkit-appearance: none;
+    width: 90%;
     @include input;
-   }
-    #signup-form textarea{
-      @include input;
-    }
-  #servicesSelect{
-     @include inputService;
-     height: 3.5em;
-  
-  }
-  #signup-form select#servicesSel{
-    @include inputService;
-     height: 3em;
-
-  }
-   .button{
-    @include purpleButton;
-    @include buttonStyle(white);
-    margin-top: 1em;
-   }
-
-   span i{
-   @include inputIcons(white);
-   color: white!important;
-   }
-
-   input#agree{
-  width: 1em;
-  height: 1em;
-  right: 1em;
-  @include checkBox;
-  margin-top: 8.3em;
-  position: absolute;
+   
 }
-#agreementStatement{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: -1em;
+
+#signup-form textarea{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3em;
+    @include input;
+    padding-top: 0.8em;
+    
 }
-input#avatar{
-  text-indent: 0em!important;
+form#signup-form span{
+      border-bottom: 0.1em white solid;
+  border-top: 0.1em white solid;
+   color: white;
+    display: block;
+    float: left;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    margin-left: 0.5em;
 }
+  #signup-form select{
+    width: 80%;
+    height: 3em;
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color:white;
+    background-color: transparent;
+     }
+#signup-form button#signUp{
+  margin-left: 1em;
+  width: 90%;
+  margin-bottom: 2em;
+}
+
 #profileImage{
-  
-  /*border:#EDEDED 0.01em solid;*/
-  height: 4em;
-  width: 4em;
-/*  margin-left: auto;
-  margin-right: auto;*/
-  margin-top: -0.8em;
-  background-color: #242424;
-  margin-left: 8em;
+  width: 5em;
+  height: 5em;
+  margin-left: 8.5em;
 }
-#profileImage img{
-  /*width: 100%;*/
-  height: 100%;
 
 
-}
-input#checkBoxAgree{
-  @include checkBox;
-  float: left;
-  left: 0;
-  
-  margin-top: -1em;
-}
+
+
+
+
+
 /* ==========================================================================
     CAREER PROFILE 
   ========================================================================== */
@@ -510,14 +496,10 @@ input#checkBoxAgree{
 
    #career-profile p{
     color: white;
-    padding: 0.5em;
+/*    padding: 0.5em;*/
    }
-#career-profile img#profileImage{
-      position: relative;
-    margin: 0 auto;
-}
-  section#career-profile{
 
+  section#career-profile{
     position: relative;
     margin: 0 auto;
    }
@@ -549,11 +531,10 @@ input#checkBoxAgree{
     padding-top: 0.8em;
     
 }
-
 form#careerProfile-form span{
       border-bottom: 0.1em white solid;
   border-top: 0.1em white solid;
-   color: #606468;
+   color: white;
     display: block;
     float: left;
     height: 48px;
@@ -569,9 +550,8 @@ form#careerProfile-form span{
     height: 3em;
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
-    color:black;
+    color:white;
     background-color: transparent;
-    
      }
 
 
@@ -580,17 +560,22 @@ form#careerProfile-form span{
     height: 3em;
     border-bottom: 0.1em white solid;
   border-top: 0.1em white solid;
-  color:black;
+  color:white;
   background-color: transparent;
-  
-
    }
-#careerProfile-form input#checkbox{
-  height: 2em!important;
-  width: 2em!important;
 
-  position: relative;
-  
+
+#careerProfile-form button#updateProfile{
+  margin-left: 1em;
+  width: 90%;
+  margin-bottom: 2em;
+}
+#agreementStatement{
+  padding: 1em;
+  color: white;
+}
+p#description{
+  padding: 1em;
 }
 /* ==========================================================================
     SERVICES
@@ -825,70 +810,10 @@ width: 5em;
 margin-top: 1em;
 margin-left: 7em;
 }
-/* ==========================================================================
-    CAREER PROFILE 
-  ========================================================================== */
-//    #career-profile h1#header{
-//       color: white;
-//      height: auto;
-//     position: relative;
-//     margin: auto;
-
-//    }
-
-//    #career-profile p{
-//     color: white;
-//     /*padding-left: 0.5em;*/
-//     padding-right: 0.5em;
-//    }
-// div#sectionCareerProfile{
-//       position: relative;
-//     margin: 0 auto;
-// }
-//   section#career-profile{
-//     display: block;
-//     top:5em;
-//     width: 320px;
-//     height: auto;
-//     position: relative;
-//     margin: 0 auto;
-//    }
-//    #careerProfile-form{
-//    width: 42em;
-//     height:50em;
-//    }
-//    #careerProfile-form input{
-//     @include input;
-//     // color: black;
-//    }
-//       #careerProfile-form select#servicesSel{
-//           @include inputService;
-//     height: 3em;
-    
-//     border-bottom: 0.1em white solid;
-//   border-top: 0.1em white solid;
 
 
-//    }
 
 
-//    #careerProfile-form select#careerClass{
-//       @include inputService;
-//     height: 3em; 
-//     border-bottom: 0.1em white solid;
-//   border-top: 0.1em white solid;
-
-//    }
-//    #careerProfile-form textarea{
-//       @include inputService;
-//       height: 3em;
-//       padding-top:1em;
-//       padding-left:2.8em;
-//       color: black;
-//    }
-//   #careerProfile-form .checkBoxAgree{
-//   margin-left: 2em;
-// }
 
 /* ==========================================================================
    MAIN NAV
@@ -1395,237 +1320,191 @@ position: absolute;
    Register Form
    ========================================================================== */
 
+   div#sectionSignUp{
+     display: block;
 
+     width: 40em;
+     height: 60em;
+     position: relative;
+     margin: 0 auto;
+    }
+form#signup-form{
+  width: 52em;
 
+}
 
-   section#signing-up{
-    top: 21em;
-    float: left;
-    margin-top: 1em;
-    padding-left: 2em;
-
-  }
-
-  p#intro-paragraph{
-    color: black;
-    margin-top: -9em;
-    width: 20em;
-  }
-  h1#header{
-    @include mainHeaders(black);
-    margin-top: -10em;
-
-
-  }
-
-  #signup-form{
-    width: 42em;
-
-  }
-
-   #signing-up p{
-    text-align: left;
-    color: black;
-    font-size:1.1em;
-    font-weight: 500;
-    width: 40em;
-    margin-top: -10em;
-   }
-  #signup-form input {
-    border-bottom: 0.1em black solid;
-    border-top: 0.1em black solid;
-    color: black;
-    position: relative;
-    margin-right: 0.5em;
-    width: 20em!important;
-  }
-
-#servicesSelect{
-  border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  background-color: transparent!important;
- height: 2.8em;
-  border-radius: none!important;
-  width: 320px;
+#signing-up p#description{
   color: black;
-  text-indent: 1.8em;
-  }
+  font-size: 1.1em;
+  width: 48em;
+  margin-left: -0.5em;
+}
+
+#signing-up p{
+  float: left;
+}
+
+#signup-form input{
+    color: black;
+    border-bottom: 0.1em black solid!important;
+    border-top: 0.1em black solid!important;
+    float: left;
+    width: 20em;
+}
+
+#career-profile h1#header{
+    color: black;
+}
+
+
 #signup-form textarea{
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
   color: black;
-  height: 1em;
-  width: 320px!important;
-  margin-left: 0.5em;
-  height:2.8em;
+   width: 20em; 
+}
+form#signup-form span{
+ border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+
+}
+
+form#signup-form  i{
+color: black!important;
+border-bottom: 0.1em white solid;
+border-top: 0.1em white solid;
+
+display: block;
+float: left;
+height: 48px;
+line-height: 50px;
+text-align: center;
+width: 50px;
+
 }
   #signup-form select#servicesSel{
-    @include inputService;
-     height: 3em;
-      border-bottom: 0.1em black solid;
+  border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
+color: black;
+width: 20em; 
+}
+#signup-form p#agreementStatement{
   color: black;
-  }
-
-  #signup-form button.button {
-    margin-top: 4em;
-    width: 320px; }
-
-  #signup-form i {
-    color: black !important; }
-
-  span i {
-    float: left !important; }
-
-  #signup-form i .fa-hand-o-right {
-    position: absolute;
-    margin-left: 10em; }
-
-  input#agree {
-    width: 1em;
-    height: 1em;
-    right: 2em;
-    margin-top: 8em;
-    position: absolute; }
-
-input#avatar{
-  text-indent: 0em!important;
+  margin-left: -0.6em;
+  width: 48em;
 }
-#agreementStatement{
- font-size: 0.8em!important;
- width: 45em!important;
- margin-top: 0em!important;
- padding-bottom: 1em;
+#signup-form button#signUp{
+   width: 26.5em;
+   float: left;
+   height: 3.4em;
+   
 }
+#signup-form input#checkbox{
+     float: right;
+     margin-top: -4em;
+     
 
-#profileImage{
-  position: absolute;
-  border:#EDEDED 0.01em solid;
-  text-align: center;
-
-  height: 7em;
-  width: 7em;
-  margin-top: -20em;
-  margin-left: 16.5em;
-  background-color: white;
-}
-#profileImage img{
-  /*width: 100%;*/
-  height: 100%;
-
-}
-.iconPlacement{
-  float: left;
-  margin-left: -40.5em;
-  margin-top: 5em;
- 
-}
-
-.iconPlacement:nth-child(3){
-  
-  margin-top:0.2em;
- 
 }
 /* ==========================================================================
-   Career Profile
-   ========================================================================== */
-
-
+    CAREER PROFILE 
+  ========================================================================== */
+div#sectionCareerProfile{
+  margin-top: -5em;
+}
 
    section#career-profile{
-    margin-top: -5em;
-    width: 42em;
-    padding-left: 2em;
+     display: block;
 
-  }
-section#career-profile #profileImage{
-  // position: absolute;
-  // margin-left: 8em;
-  // margin-top: -10em;
+     width: 40em;
+     height: 60em;
+     position: relative;
+     margin: 0 auto;
+    }
+form#careerProfile-form{
 
-}
-#career-profile h1#header{
-  color: black;
-  float: left;
-  margin-left: -1em;
+  width: 52em;
+
 }
 
 #career-profile p{
-  color: black;
   float: left;
 }
-// #careerProfile-form span i{
-//   color: black!important;
+p#description{
+  float: left;
+  color: black;
+  width: 40em;
+  font-size: 1.1em;
+}
+#careerProfile-form input{
+    color: black;
+    border-bottom: 0.1em black solid!important;
+    border-top: 0.1em black solid!important;
+    width: 20em;
+}
+
+#career-profile h1#header{
+    color: black;
+}
 
 
-// }
-// form#careerProfile-form{
-//   width: 42em;
-//   height: 50em;
+#careerProfile-form textarea{
+  border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  color: black;
+width: 20em;
+    
+}
+form#careerProfile-form span{
+ border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
 
-// }
-// #careerProfile-form p#agreementStatement{
+}
 
+form#careerProfile-form  i{
+color: black!important;
+border-bottom: 0.1em white solid;
+border-top: 0.1em white solid;
 
-//   height: 2em!important;
-// }
+display: block;
+float: left;
+height: 48px;
+line-height: 50px;
+text-align: center;
+width: 50px;
+margin-left: 0.5em;
+}
 
-
-
-// #careerProfile-form input{
-//   color: black;
-//   margin-right: 0.5em;
-//       border-bottom: 0.1em black solid;
-//   border-top: 0.1em black solid;
-//   float: left;
-// }
-// #careerProfile-form input#avatar{
-//     color: black!important;
-// }
-// #careerProfile-form button.button{
-//   float: left;
-//   width: 320px;
-//   height: 3.5em;
-//   margin-left:1em;
-//   margin-top: -0.1em;
-// }
-//      #careerProfile-form select#servicesSel{
-//     border-bottom: 0.1em black solid;
-//   border-top: 0.1em black solid;
-//   color: black;
-// margin-right: 0.8em;
-//    }
+  #careerProfile-form select#servicesSel{
+  border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+color: black;
+width: 20em;
+}
 
 
-//    #careerProfile-form select#careerClass{
-//     border-bottom: 0.1em black solid;
-//   border-top: 0.1em black solid;
-//   color: black;
-//   height: 3em;
-//   padding-right: 2.8em!important;
-
-
-//    }
-//    #careerProfile-form textarea{
-//       @include inputService;
-//     float: left;
-
-//    }
-//   #careerProfile-form .checkBoxAgree{
-// position: relative;
-// }
-// #careerProfile-form p{
-//   position: relative;
-
-// }
-// #careerProfile-form textarea{
-//   height: 3em;
-//   border-bottom: 0.1em black solid;
-//   border-top: 0.1em black solid;
-//   color: black;
-//   margin-right: 0.8em;
-// }
-
+   #careerProfile-form select#careerClass{
+color: black;
+    border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+width: 20em;
+   }
+p#agreementStatement{
+  color: black;
+  float: left;
+  width: 26em;
+  margin-top: -1em;
+}
+#careerProfile-form button#updateProfile{
+   width: 26em;
+   float: left;
+   height: 3.4em;
+   margin-left: 0.5em;
+}
+#careerProfile-form input#checkbox{
+     float: right;
+     margin-top: -4em;
+     margin-right: -14em;
+}
 
 /* ==========================================================================
    ALL CHECKBOXES
@@ -1696,11 +1575,7 @@ height: 6em;
 }
 
 
-.spanFont{
-  margin-top: 1.5em;
-  float: left;
 
-}
 
 
 
