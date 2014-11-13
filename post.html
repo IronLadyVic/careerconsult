@@ -14,8 +14,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+          <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="scss/main.css">
         <link rel="stylesheet" href="scss/main.scss">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -41,7 +43,7 @@
         </form> 
         <p id="fa-search"><i class="fa fa-search"></i></p>
   </div>
-   <div id="tab-desk-nav"></div> 
+  <div id="tab-desk-nav"></div> 
   <div id="main-header">
     <ul id="main-nav">
       <!-- <li><a href=""><i class="fa fa-pencil"></i><p>Latest News</p></a></li> -->
@@ -64,7 +66,17 @@
       <li><a href="login.html"><i class="fa fa-lock"></i><p class="styleList">Log In</p></a></li>
     </ul>
 </div>
-
+<div class="nav-handle">
+  <a href="#">
+    <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="25px" height="25px" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
+            <rect fill="white" width="20" height="2"></rect>
+            <rect y="6" fill="white" width="20" height="2"></rect>
+            <rect y="12" fill="white" width="20" height="2"></rect>
+        </svg>
+   </a>
+</div>
 <div class="nav-handle-other">
   <a href="#">
     <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
@@ -76,49 +88,75 @@
         </svg>
    </a>
 </div>
-<!-- <div class="nav-handle-user">
-
-</div>  -->
+<div class="nav-handle-user">
+    <form id="navLogIn">
+        <label for="user-name"></label>
+        <span><i class="fa fa-user"></i></span>
+        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
+        <span></span>
+        <label for="password"></label>
+        <span><i id="iconLogIn" class="fa fa-lock"></i></span>
+        <input type="password" name="password" id="password" placeholder="Password" class="border">
+        <span></span>
+        <button type="submit" name="button" id="logIn" class="button">Log In</button>
+    </form>
+</div>  
 </header> 
 <!-- End of Headers -->
 
-<!-- End of Headers -->
-<div id="sectionLogin">
-<section id="loggingIn">
-    <h1 id="header">LOG IN</h1>
-    
-    <p>Log in to update your career profile, or enquire about booking a service.</p>
-    <form id="logIn-form" method="get">
-        <p><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></p>
-        <p>
-        <span><i class="fa fa-user"></i></span>
-        <label for="userName"></label>
-        <input type="text" name="username" id="userName" placeholder="Username" class="border">
-        <span></span>
-        </p>
 
-        <p>
-        <span><i class="fa fa-lock"></i></span>
-        <label for="password"></label>
-        <input type="password" name="password" id="password" placeholder="Password" class="border">
-        <span></span>
-        </p>
+<div id="mainPostBody">
+<div id="leftColomn">
+<article id="postWrapper">
+    <div class="contentWrapper">
+        <div class="headerTopic">
+            <h2><a href="#">Find out what you enjoy.</a></h2>
+        </div>
+        <div class="">
+            <p>
+            <a href="http://www.careers.govt.nz/fileadmin/multimedia/interactive_flash/career_stories/career-stories.html"><i class="fa fa-bookmark"></i>Trying Things Out</a></p>
+        </div>
+        <div class="postPhoto">
+            <img src="uploadPostPhotos/successImage.png" alt="contentPicture">
+        </div>
+        <div class="">
+            <p>Success comes in all shapes and colours. You can be successful in your job and career but you can equally be successful in your marriage, at sports or a hobby. Whatever success you are after there is one thing all radically successful people have in common: Their ferocious drive and hunger for success makes them never give up. Successful people (or the people talking or writing about them) often paint a picture of the perfect ascent to success. In fact, some of the most successful people in business, entertainment and sport have failed. Many have failed numerous times but they have never given up. Successful people are able to pick themselves up, dust themselves off and carry on trying.
 
-        <span class="rememberMe">Remember Me</span>
+I have collected some examples that should be an inspiration to anyone who aspires to be successful. They show that if you want to succeed you should expect failure along the way. I actually believe that failure can spur you on and make you try even harder. You could argue that every experience of failure increases the hunger for success. The truly successful won't be beaten, they take responsibility for failure, learn from it and start all over from a stronger position.
 
-        <p>
-        <input type="checkbox" value="None" id="checkBox" name="check" />
-        <label for="checkBox" class="border"></label>
-        </p>
-        
-        
-        <label for="logIn"></label>
-        <button type="submit" name="button" id="logIn" class="button">LOG IN</button>
-    </form>
-</section>
+</p>
+        </div>
+
+        <div class="postAvatar">
+            <img src="img/KarynsProfilePic.png" alt="avatar">
+        </div>
+        <div class="">
+            <p>Editor: Karyn McDonald</p>
+        </div>
+        <div class="">
+            <p>13th Thursday November 2014</p>
+        </div>
+    </div> 
+</article>
 </div>
 
+<aside id="rightColomn">
+    <section>
+        <h2>Browse by Topics</h2>
+        <div>
+            <ul>
+                <li><a href="">Starting out</a></li>
+                <li><a href="">Graduation</a></li>
+                <li><a href="">New to NZ</a></li>
+                <li><a href="">Returning to the workforce</a></li>
+                <li><a href="">CV Advice</a></li>
+            </ul>
+        </div>
+    </section>
 
+</aside>
+<!-- End of Container -->
+</div>
 
 
 
@@ -143,8 +181,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/formValidation.js"></script>
-        <script src="js/avatarUpload.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

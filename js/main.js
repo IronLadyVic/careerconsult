@@ -4,7 +4,7 @@ $(function(){
 	$(".nav-handle a").on("click", function(){
 
 		$("div#main-header").toggleClass("hide");
-		$("#droparrow").toggleClass("hide");
+		$(".fa .fa-angle-down").toggleClass("hide");
 		
 	});
 	//-----------Nav handle drop down menu-----------//

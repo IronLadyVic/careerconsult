@@ -81,58 +81,5 @@
 }
 
 
-@mixin checkBox {
-input[type=checkbox] {
-  visibility: hidden;
-}
-label {
-  cursor: pointer;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 0;
-  border-radius: 4px;
 
-  -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
-  -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
-  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
-  background: white;
 
-  
-}
-
-label:after {
-  
-  filter: alpha(opacity=0);
-  opacity: 0;
-  content: '';
-  position: absolute;
-  width: 9px;
-  height: 5px;
-  background: transparent;
-  top: 4px;
-  left: 4px;
-  border: 3px solid #333;
-  border-top: none;
-  border-right: none;
-
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-label:hover::after {
- 
-  filter: alpha(opacity=1);
-  opacity: 0.5;
-}
-
-input[type=checkbox]:checked + label:after {
-  
-  filter: alpha(opacity=1);
-  opacity: 1;
-}
-
-}

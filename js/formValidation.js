@@ -115,7 +115,7 @@ $(function() {
                 return valid;
                 }
             
-                $("#careerProfile-form button#button").click(function() {
+                $("button#updateProfile").click(function() {
                 $('#careerProfile-form').submit(validateform);
                     $('#careerProfile-form').submit();
                 });

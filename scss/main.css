@@ -21,6 +21,9 @@
     z-index: 1000;
     position: relative; }
 
+  #servicesPage div#main-header ul#main-nav li:nth-child(6) {
+    background-color: white !important; }
+
   #main-nav {
     height: 0%;
     margin-left: -2.5em;
@@ -110,6 +113,84 @@
     margin-left: 1.3em; }
 
   /* ==========================================================================
+     LATEST UPDATES - NEXT TO SERVICES ACCORDION
+     ========================================================================== */
+  #asideLatestNews {
+    border-top: 1px solid white;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em; }
+
+  #latestUpdates article {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: white; }
+
+  #latestUpdates h1 {
+    font-size: 1.3em;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    text-decoration: none; }
+
+  .divWrapperHeader h2 a {
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500; }
+
+  .divWrapperHeader h2 a:hover {
+    color: #9B8FFB; }
+
+  .hashTag p a {
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none; }
+
+  .hashTag p a:hover {
+    color: #9B8FFB; }
+
+  .hashTag a i {
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    padding-right: 0.5em; }
+
+  .hashTag a i:hover {
+    color: #9B8FFB;
+    padding-right: 0.5em; }
+
+  .readMore p a {
+    color: white;
+    text-decoration: none; }
+
+  .readMore p a:hover {
+    color: #9B8FFB;
+    text-decoration: none; }
+
+  .avatarProfile {
+    height: 3em;
+    width: 3em; }
+
+  .avatarProfile img {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    float: left; }
+
+  .editor, .date {
+    color: white; }
+
+  .editor {
+    font-size: 0.9em;
+    font-weight: 500;
+    height: 1em; }
+
+  .date {
+    font-size: 0.8em;
+    font-weight: 500; }
+
+  /* ==========================================================================
      ACTIVE HOLD ON LI DROP DOWN MENU
      ========================================================================== */
   ul#main-nav li:active {
@@ -172,7 +253,7 @@
 
   section#animation.show {
     display: block;
-    width: 400px;
+    width: 100%;
     /*border-bottom: 1px white solid!important;*/ }
 
   #aucklandSkyline img {
@@ -237,17 +318,8 @@
   /* ==========================================================================
      WHEN NAV SLIDES UP BUTTON AND INTRO APPEARS
      ========================================================================== */
-  #intro-paragraph {
-    font-size: 1.1em;
-    font-weight: 100;
-    color: white;
-    width: 320px;
-    text-align: center;
-    margin-top: -12em;
-    postition: absolute; }
-
   #intro-form {
-    width: 320px;
+    width: 80%;
     height: auto;
     position: relative;
     z-index: 1000; }
@@ -263,11 +335,13 @@
     height: 3em;
     text-decoration: none;
     margin-top: 1em;
-    width: 320px;
+    width: 90%;
     height: 3em;
     color: white;
     text-align: center;
-    line-height: 40px; }
+    line-height: 40px;
+    z-index: 4000;
+    margin-left: 1em; }
 
   #launchCareer a {
     text-decoration: none;
@@ -279,10 +353,12 @@
     box-shadow: 0.2em 0.2em 0.5em black;
     text-decoration: none;
     margin-top: 1em;
-    width: 320px;
+    width: 90%;
     color: white;
     text-align: center;
-    line-height: 40px; }
+    line-height: 40px;
+    z-index: 4000;
+    margin-left: 1em; }
 
   #careerButton a {
     text-decoration: none;
@@ -306,40 +382,84 @@
     height: 3em;
     text-decoration: none; }
 
+  .fa .fa-angle-down.hide {
+    display: none;
+    width: 0;
+    height: 0; }
+
   #rightarrow {
-    left: 10%;
-    top: 14%;
+    margin-left: 4em;
+    margin-top: 0.8em;
     color: white;
     position: absolute; }
 
   /* ==========================================================================
       LOG IN FORM  
     ========================================================================== */
-  /*   section#loggingIn{
-      display: block;
-      position: relative;
-      width: 320px;
-      margin: 0 auto;
-      margin-top: 6em;
-    }
-  
-     #logIn-form input{
-      @include input;
-     }
-  
-     #loggingIn p{
-      color: white;
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-     }
-  
-     .spanFont{
-      color: white;
-     position: absolute;
-     margin-left: 2em;
-     margin-top: -2em;
-    
-  }*/
+  section#loggingIn {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1em; }
+
+  #loggingIn h1 {
+    color: white;
+    margin-left: 0.5em; }
+
+  #logIn-form input {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    height: 3em;
+    color: white;
+    width: 78%;
+    height: 3em;
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    color: white; }
+
+  #logIn-form span i {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color: white;
+    display: block;
+    float: left;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    margin-left: 0.5em; }
+
+  #loggingIn p {
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em; }
+
+  #logIn {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    margin-left: 1em;
+    margin-top: 1em; }
+
+  #logIn-form input#checkBox {
+    float: left;
+    width: 1em;
+    height: 1em;
+    margin-left: 1em;
+    margin-top: -2em; }
+
+  #loggingIn #profileImage {
+    width: 5em;
+    height: 5em;
+    margin-left: 35%; }
+
+  #logIn-form span.rememberMe {
+    color: white;
+    margin-left: 4.5em;
+    font-size: 0.8em; }
+
   /* ==========================================================================
       SECTION INTRODUCTION BUTTONS AND INTRO  
     ========================================================================== */
@@ -347,8 +467,11 @@
     font-size: 1.1em;
     font-weight: 100;
     color: white;
-    width: 320px;
-    text-align: center; }
+    width: 80%;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    margin-top: -14em; }
 
   section#introduction {
     display: none;
@@ -358,19 +481,44 @@
   section#introduction.show {
     display: block;
     margin: 0px auto;
-    width: 320px;
-    height: 100%; }
+    width: 100%;
+    height: 100%;
+    z-index: 4000; }
 
   /* ==========================================================================
       SIGN UP FORM
     ========================================================================== */
   #signing-up h1 {
-    color: white; }
+    color: white;
+    margin-left: 0.6em; }
 
   #signing-up p#description {
     color: white;
     width: 92%;
+    padding-left: 0.5em; }
+
+  ul#reasonsToSignUp {
+    height: 14em;
+    width: 92%;
     margin-left: 0.5em; }
+
+  ul#reasonsToSignUp li {
+    float: left;
+    list-style: decimal outside none;
+    list-style-type: disc;
+    color: white;
+    margin-bottom: 0.8em;
+    margin-left: -1em;
+    padding-left: 0.8em;
+    padding-right: 0.8em; }
+
+  ul#reasonsToSignUp li:nth-child(1) {
+    float: left;
+    list-style: none;
+    list-style-type: none;
+    color: white;
+    margin-bottom: 0.8em;
+    margin-left: -3em; }
 
   #signup-form form {
     width: 320px; }
@@ -431,7 +579,17 @@
   #profileImage {
     width: 5em;
     height: 5em;
-    margin-left: 8.5em; }
+    margin-left: 35%; }
+
+  #aLink {
+    text-decoration: none;
+    color: #9B8FFB; }
+
+  #signup-form input#checkbox {
+    position: absolute;
+    margin-top: -3.5em;
+    margin-left: 20em;
+    margin-bottom: 0.5em; }
 
   /* ==========================================================================
       CAREER PROFILE 
@@ -440,7 +598,8 @@
     color: white;
     position: relative;
     margin: 0 auto;
-    margin-top: 2em; }
+    margin-top: 1em;
+    margin-left: 0.5em; }
 
   #career-profile p {
     color: white;
@@ -481,7 +640,7 @@
     color: white;
     padding-top: 0.8em; }
 
-  form#careerProfile-form span {
+  #careerProfile-form span {
     border-bottom: 0.1em white solid;
     border-top: 0.1em white solid;
     color: white;
@@ -520,6 +679,12 @@
 
   p#description {
     padding: 1em; }
+
+  #careerProfile-form input#checkbox {
+    position: absolute;
+    margin-top: -3.5em;
+    margin-left: 20em;
+    margin-bottom: 0.5em; }
 
   /* ==========================================================================
       SERVICES
@@ -580,10 +745,14 @@
     list-style: decimal outside none;
     list-style-type: disc; }
 
+  .ui-accordion .ui-accordion-content ul li:nth-last-child(1) {
+    list-style: none;
+    list-style-type: none; }
+
   .ui-accordion .ui-accordion-content button.button {
     font-family: "Quicksand" !important;
     margin-left: -1em;
-    width: 20em;
+    width: 18em;
     padding-bottom: 0.5em;
     box-shadow: none;
     line-height: 40px;
@@ -645,79 +814,20 @@
   ul#main-nav.show {
     display: block; }
 
-  div#sectionTwo {
-    top: 12%;
-    width: 70%;
-    height: 10em;
-    /*  border: #EDEDED 0.1em solid;*/
-    z-index: 4000;
-    /*  background-color: white;*/
-    float: right;
-    margin-top: 5em;
-    margin-right: 2em; }
-
-  div#sectionSignUp {
-    height: 44em;
-    margin: 0  auto;
-    position: relative;
-    width: 46em;
-    margin-top: -2em; }
+  #servicesPage div#main-header ul#main-nav li:nth-child(6) {
+    background-color: white !important; }
 
   #signing-up h1#header {
     margin-left: -0.5em;
     color: black; }
 
   input#password.border {
-    background-color: transparent; }
-
-  input#user-name.border {
-    background-color: transparent; }
-
-  /* ==========================================================================
-     Login
-     ========================================================================== */
-  div#sectionLogin {
-    display: block;
-    width: 30em;
-    height: 36em;
-    /*  border: #EDEDED 0.1em solid;*/
-    /*  background-color: white;*/
-    margin: 0 auto;
-    position: relative; }
-
-  section#loggingIn {
-    margin-top: 24em;
-    float: left;
-    margin-left: 5em; }
-
-  #loggingIn h1#header {
-    color: black !important;
-    position: relative;
-    margin-left: -0.5em;
-    margin-top: -10em; }
-
-  #loggingIn p {
-    margin-left: -0.5em;
-    color: black !important; }
-
-  #logIn-form input {
-    border-bottom: 0.1em solid black;
-    border-top: 0.1em solid black;
+    background-color: transparent;
     color: black; }
 
-  #logIn-form i {
-    color: black !important; }
-
-  #logIn-form button {
-    width: 320px;
-    height: 3em; }
-
-  #loggingIn img#profileImage {
-    position: relative;
-    height: 5em;
-    width: 5em;
-    margin-top: 1em;
-    margin-left: 7em; }
+  input#user-name.border {
+    background-color: transparent;
+    color: black; }
 
   /* ==========================================================================
      MAIN NAV
@@ -762,9 +872,10 @@
   header ul#main-nav {
     margin-top: 1em; }
 
-  ul#main-nav li:nth-child(6) {
-    background-color: #242424; }
-
+  /*ul#main-nav li:nth-child(6){
+    background-color: #242424;
+    
+  }*/
   ul#main-nav li:nth-child(7) {
     background-color: white; }
 
@@ -776,13 +887,9 @@
      ========================================================================== */
   div#sectionServices {
     display: block;
-    width: 40em;
+    width: 55%;
     height: 56em;
-    /*  border: #EDEDED 0.1em solid;*/
-    /*  background-color: white;*/
-    margin: 0 auto;
-    /*margin-left: 20em;*/
-    position: relative;
+    float: left;
     padding-bottom: 0.5em; }
 
   #servicesListed h1#header {
@@ -790,7 +897,7 @@
     height: auto;
     position: relative;
     margin: 0 auto;
-    margin-top: -2em;
+    margin-top: -3em;
     margin-left: -3.6em; }
 
   #servicesListed p {
@@ -800,7 +907,7 @@
     padding-bottom: 1em; }
 
   .ui-accordion {
-    width: 30em;
+    width: 29em;
     margin-left: -5em;
     background-color: transparent !important;
     border: none; }
@@ -815,11 +922,11 @@
     margin: 0 auto;
     position: relative;
     margin-top: 2em;
-    margin-left: 5em;
+    margin-left: 3em;
     line-height: 40px; }
 
   .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-    left: 30em; }
+    left: 29em; }
 
   .ui-accordion .ui-accordion-content {
     background-color: transparent; }
@@ -837,14 +944,15 @@
   /* ==========================================================================
      Checkbox for Nav Sign up
      ========================================================================== */
-  .checkBox input {
-    float: left;
-    margin-top: 1em !important;
-    margin-left: -10.5em; }
-
-  input #checkBox {
-    float: left; }
-
+  /*.checkBox input {
+  float: left;
+  margin-top:1em!important;
+  margin-left: -10.5em;
+  
+  }
+  input #checkBox{
+    float:left;
+  }*/
   /* ==========================================================================
      NAV SIGN UP
      ========================================================================== */
@@ -899,12 +1007,58 @@
     color: white;
     margin-top: 0.9em; }
 
-  .spanFont {
-    font-size: 0.8em;
-    margin-left: -9em;
-    color: black;
+  /* ==========================================================================
+     Login
+     ========================================================================== */
+  div#sectionLogin {
+    display: block;
+    width: 26em;
+    height: 30em;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 3em; }
+
+  #sectionLogin h1 {
+    color: black; }
+
+  #sectionLogin p {
+    color: black; }
+
+  #logIn-form input {
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    color: black !important;
+    width: 19em;
+    height: 3em;
+    background-color: transparent; }
+
+  #logIn {
+    width: 24.5em;
+    margin-left: 1.8em; }
+
+  form#logIn-form i {
+    color: black !important;
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    display: block;
     float: left;
-    margin-top: 1em; }
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px; }
+
+  #logIn-form img#profileImage {
+    margin-left: 8.5em; }
+
+  #logIn-form input#checkBox {
+    height: 1em;
+    width: 1em;
+    float: left;
+    margin-top: -2em;
+    margin-right: 1em; }
+
+  #logIn-form span.rememberMe {
+    color: black; }
 
   /* ==========================================================================
      Slide in and out tablet nav
@@ -1059,31 +1213,6 @@
     height: 16em;
     padding-left: 1.2em; }
 
-  /*section#animation{
-  
-      position: relative;
-      display: block;
-      margin: 0 auto;
-  }
-  #aucklandSkyline img{
-    width: 100%;
-  opacity: 0.3;
-  height: 350px;
-  position: absolute;
-  top: 20em;
-  background-position: 0 0;
-  margin-left: 8em;
-  }
-  
-  #ponsonbyHousing img{
-  width: 100%;
-  height: 140px;
-  position: relative;
-  background-repeat: repeat-x;
-  background-position: 0 0;
-  display: block;
-  margin-left: 8em;
-  }*/
   section#animation {
     margin-top: 25em;
     position: relative;
@@ -1123,13 +1252,14 @@
     color: black;
     font-size: 1.8em;
     font-weight: 500;
-    width: 16em; }
+    width: 16em;
+    margin-left: 0em; }
 
   #rightarrow {
     top: 1.8em;
     position: relative;
     color: black;
-    left: 1.5em; }
+    left: -2.5em; }
 
   #launchCareer {
     border-color: black;
@@ -1154,26 +1284,48 @@
     z-index: 4000; }
 
   /* ==========================================================================
-     Register Form
+     Sign up Form
      ========================================================================== */
   div#sectionSignUp {
     display: block;
-    width: 40em;
+    width: 48%;
     height: 60em;
     position: relative;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: -2em; }
 
   form#signup-form {
-    width: 52em; }
+    width: 56em;
+    margin-top: 14em; }
 
   #signing-up p#description {
     color: black;
     font-size: 1.1em;
-    width: 48em;
+    width: 42em;
     margin-left: -0.5em; }
 
   #signing-up p {
     float: left; }
+
+  ul#reasonsToSignUp {
+    height: 8em;
+    width: 46em;
+    margin-left: -0.2em; }
+
+  ul#reasonsToSignUp li {
+    float: left;
+    list-style: decimal outside none;
+    list-style-type: disc;
+    color: black;
+    margin-bottom: 0.8em; }
+
+  ul#reasonsToSignUp li:nth-child(1) {
+    float: left;
+    list-style: none;
+    list-style-type: none;
+    color: black;
+    margin-bottom: 0.8em;
+    margin-left: -3em; }
 
   #signup-form input {
     color: black;
@@ -1182,8 +1334,9 @@
     float: left;
     width: 20em; }
 
-  #career-profile h1#header {
-    color: black; }
+  #signing-up h1#header {
+    color: black;
+    margin-left: 0em; }
 
   #signup-form textarea {
     border-bottom: 0.1em black solid;
@@ -1214,33 +1367,42 @@
 
   #signup-form p#agreementStatement {
     color: black;
-    margin-left: -0.6em;
-    width: 48em; }
+    margin-left: 0.5em;
+    width: 47em;
+    margin-top: 0.5em; }
 
   #signup-form button#signUp {
     width: 26.5em;
     float: left;
-    height: 3.4em; }
+    height: 3.4em;
+    margin-left: 0.5em; }
 
   #signup-form input#checkbox {
-    float: right;
-    margin-top: -4em; }
+    margin-top: 30em;
+    margin-left: -2em;
+    width: 1em;
+    height: 1em; }
+
+  #signup-form img#profileImage {
+    width: 6em;
+    height: 6em;
+    margin-left: 21em;
+    margin-top: -6.5em;
+    position: absolute; }
 
   /* ==========================================================================
       CAREER PROFILE 
     ========================================================================== */
   div#sectionCareerProfile {
-    margin-top: -5em; }
-
-  section#career-profile {
     display: block;
-    width: 40em;
-    height: 60em;
+    width: 48%;
+    height: 65em;
     position: relative;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: -3em; }
 
   form#careerProfile-form {
-    width: 52em; }
+    width: 48em; }
 
   #career-profile p {
     float: left; }
@@ -1258,7 +1420,8 @@
     width: 20em; }
 
   #career-profile h1#header {
-    color: black; }
+    color: black;
+    margin-left: 0.5em; }
 
   #careerProfile-form textarea {
     border-bottom: 0.1em black solid;
@@ -1297,7 +1460,7 @@
   p#agreementStatement {
     color: black;
     float: left;
-    width: 26em;
+    width: 22em;
     margin-top: -1em; }
 
   #careerProfile-form button#updateProfile {
@@ -1307,106 +1470,145 @@
     margin-left: 0.5em; }
 
   #careerProfile-form input#checkbox {
-    float: right;
-    margin-top: -4em;
-    margin-right: -14em; }
+    margin-top: 33em;
+    margin-left: -2em;
+    width: 1em;
+    height: 1em; }
+
+  #careerProfile-form img#profileImage {
+    width: 6em;
+    height: 6em;
+    margin-left: 21em;
+    margin-top: 0em; }
 
   /* ==========================================================================
-     ALL CHECKBOXES
+     LATEST UPDATES - NEXT TO SERVICES ACCORDION
      ========================================================================== */
-  .checkBox {
-    position: relative; }
-    .checkBox input[type=checkbox] {
-      visibility: hidden; }
-    .checkBox label {
-      cursor: pointer;
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      top: 0;
-      border-radius: 4px;
-      -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-      background: white; }
-    .checkBox label:after {
-      filter: alpha(opacity=0);
-      opacity: 0;
-      content: '';
-      position: absolute;
-      width: 9px;
-      height: 5px;
-      background: transparent;
-      top: 4px;
-      left: 4px;
-      border: 3px solid #333;
-      border-top: none;
-      border-right: none;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
-    .checkBox label:hover::after {
-      filter: alpha(opacity=1);
-      opacity: 0.5; }
-    .checkBox input[type=checkbox]:checked + label:after {
-      filter: alpha(opacity=1);
-      opacity: 1; }
+  #servicesPage div#tab-desk-nav {
+    height: 100em; }
 
-  .checkBox label {
-    /*float: left;*/
-    margin-top: 1em;
-    margin-left: -9em; }
+  section#latestUpdates {
+    float: left;
+    width: 19%;
+    height: auto; }
 
-  .checkBoxAgree {
-    position: relative;
-    margin-left: 18em;
-    margin-top: -4em; }
-    .checkBoxAgree input[type=checkbox] {
-      visibility: hidden; }
-    .checkBoxAgree label {
-      cursor: pointer;
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      top: 0;
-      border-radius: 4px;
-      -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-      background: white; }
-    .checkBoxAgree label:after {
-      filter: alpha(opacity=0);
-      opacity: 0;
-      content: '';
-      position: absolute;
-      width: 9px;
-      height: 5px;
-      background: transparent;
-      top: 4px;
-      left: 4px;
-      border: 3px solid #333;
-      border-top: none;
-      border-right: none;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
-    .checkBoxAgree label:hover::after {
-      filter: alpha(opacity=1);
-      opacity: 0.5; }
-    .checkBoxAgree input[type=checkbox]:checked + label:after {
-      filter: alpha(opacity=1);
-      opacity: 1; }
+  aside#asideLatestNews {
+    height: 70em;
+    border-top: none; }
+
+  #latestUpdates article {
+    border-bottom: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    padding-bottom: 1em; }
+
+  #latestUpdates h2 {
+    font-size: 1.3em;
+    width: 100%;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    color: black;
+    font-weight: 500;
+    text-decoration: none; }
+
+  .divWrapperHeader h2 a {
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500; }
+
+  .divWrapperHeader h2 a:hover {
+    color: #9B8FFB; }
+
+  .hashTag p a {
+    font-size: 0.8em;
+    color: #2B2937;
+    text-decoration: none; }
+
+  .hashTag p a:hover {
+    color: #9B8FFB; }
+
+  .content {
+    color: black; }
+
+  .hashTag a i {
+    font-size: 0.8em;
+    color: #2B2937;
+    text-decoration: none;
+    padding-right: 0.5em; }
+
+  .hashTag a i:hover {
+    color: #9B8FFB;
+    padding-right: 0.5em; }
+
+  .readMore p a {
+    color: #2B2937;
+    text-decoration: none; }
+
+  .readMore p a:hover {
+    color: #9B8FFB;
+    text-decoration: none; }
+
+  .avatarProfile {
+    height: 3em;
+    width: 3em; }
+
+  .avatarProfile img {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    float: left; }
+
+  .editor, .date {
+    color: black; }
+
+  .editor {
+    font-size: 0.9em;
+    font-weight: 500;
+    height: 1em; }
+
+  .date {
+    font-size: 0.6em;
+    font-weight: 500; }
+
+  /* ==========================================================================
+     POSTS
+     ========================================================================== */
+  #mainPostBody {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 80em; }
+
+  #leftColomn {
+    width: 62.5%;
+    float: left;
+    margin-bottom: 5em; }
+
+  .contentWrapper {
+    padding-left: 5%;
+    padding-right: 5%; }
+
+  #rightColomn {
+    width: 20%;
+    float: right; }
+
+  .postAvatar img {
+    width: 4em;
+    height: 4em; }
+
+  .postPhoto img {
+    width: 80%; }
+
+  .headerTopic {
+    font-size: 1.5em; }
 
   /* ==========================================================================
      FOOTER
      ========================================================================== */
   div#footer_options {
-    margin: -2em 0 0 auto;
-    padding-top: 5em;
+    bottom: 2em;
+    margin-left: 20em;
     position: relative;
     width: 50em; }
 
@@ -1424,96 +1626,5 @@
   #brand_logo a img {
     width: 6em;
     height: 6em; } }
-/* ==========================================================================
-   MAIN NAV IF YOU WANT LIST to be float left and at the top with no background.
-   ========================================================================== */
-/*.nav-handle{
-  display: none;
-
-}
-
-
-header  ul#main-nav{
-position: relative;
-top: auto;
-max-height: 2em;
-  float: right;
-  display: block;
-}
-#main-nav{
-  margin-top: 1em;
-}
-
-ul#main-nav{
- 
-  float: right;
-  margin-right: 3em;
-}
-
-ul#main-nav li{
- background-color: none;
-display: block;
-margin: 0;
-height: 35px;
-color: black;
-font-weight: 100;
- z-index: 3000;
-border-bottom: none;
-  float: left;
-  background-color: transparent;
-@include navText(#39444c, 1em); 
- width: 8em;
-}
-ul#main-nav li p{
-  color: black;
-  margin-top: -2.5em;
-  position: absolute;
-}
-
-ul#main-nav li i{
-  position: absolute;
-  margin-left: 3.1em;
-  margin-top: -3em;
-  font-size: 2em;
-}
-#main-nav li:nth-child(1) p{
-   margin-left: -1em;
-  
-}
-#main-nav li:nth-child(5) p{
-   margin-left: -1em;
-  
-}
-#main-nav li:nth-child(6) p{
-   margin-left: 0.6em;
-  
-}
-ul#main-nav li:nth-child(1){
-   width: 8em;
-margin-left: 2em;
-}
-
-ul#main-nav li:nth-child(7){
-   background-color: transparent;
-  
-} 
-ul#main-nav li:nth-child(8){
-   background-color: transparent;
-
-} 
-ul#main-nav li:active{
-  
-background-image: none!important;
-
-}
-ul#main-nav li p:active{
-  @include hoverFont(#9B8FFB)
-}
-ul#main-nav li i:active{
-  @include hoverFont(#9B8FFB)
-}
-#droparrow{
-  display: none;
-}*/
 
 /*# sourceMappingURL=main.css.map */

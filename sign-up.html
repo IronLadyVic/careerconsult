@@ -95,19 +95,33 @@
 <div id="sectionSignUp">
 <section id="signing-up">
     <h1 id="header">SIGN UP</h1>
-    <div class="profileAuto"><p><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></p></div>
-    <p id="description">Become a member and recieve a free 15 minute career consultation.</p>
+    
+        <p id="description">Sign up and recieve a free 15 minute career consultation.</p>
+
+        <ul id="reasonsToSignUp">
+            <li>Why should I sign up?</li>
+            <li>Helps your career consultant recognise who you are when you decide to meet up.</li>
+            <li>You may fill in your career profile, this will help tailor a service to your career needs.</li>
+            <li>Not sure with signing up? Please enquire with one of our <a href="services.html" id="aLink">services</a>.</li>
+        </ul>
+
+
     <form id="signup-form" method="get">
-        
+        <div class="profileAuto"><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></div>
         <p>
         <span class="border"><i class="fa fa-user"></i></span>
         <label for="userName"></label>
         <input type="text" name="username" id="userName" placeholder="Username" class="border">
         </p>
         <p>
-        <span class="border"><i class="fa fa-envelope"></i></span>
-        <label for="email"></label>
-        <input type="email" name="email" id="email" placeholder="Email" class="border">
+        <span class="border" ><i class="fa fa-lock"></i></span>       
+        <label for="passwordSignUp"></label>     
+        <input type="password" name="password" id="passwordSignUp" placeholder="Password" class="border">
+        </p>
+        <p>
+        <span class="border"><i class="fa fa-lock"></i></span>
+        <label for="confirm_password"></label>
+        <input type="password" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
         </p>
         <p>
         <span class="border" ><i class="fa fa-user"></i></span>
@@ -120,6 +134,11 @@
         <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="border">
         </p>
         <p>
+        <span class="border"><i class="fa fa-envelope"></i></span>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Email" class="border">
+        </p>
+        <p>
         <span class="border" ><i class="fa fa-phone-square"></i></span>
         <label for="contact"></label>
         <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
@@ -129,16 +148,7 @@
         <label for="avatar"></label>
         <input type="file" name="imageType" id="avatar" class="border"  >
         </p>
-        <p>
-        <span class="border" ><i class="fa fa-lock"></i></span>       
-        <label for="passwordSignUp"></label>     
-        <input type="password" name="password" id="passwordSignUp" placeholder="Password" class="border">
-        </p>
-        <p>
-        <span class="border"><i class="fa fa-lock"></i></span>
-        <label for="confirm_password"></label>
-        <input type="password" name="confirmPassword" id="confirm_password" placeholder="Confirm Password" class="border">
-        </p>
+
         <p>
         <span class="border"><i class="fa fa-hand-o-right"></i></span>
         <select id="servicesSel" class="border">
@@ -156,13 +166,13 @@
         <label for="comment"></label>
         <textarea name="comment" id="comment" placeholder="Comment" class="border"></textarea>
         </p>
-       <p>
+
         <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your sign up information, private email address and mobile number on file to keep in touch with you. Please tick this box if you agree with this statement.</p>
         <div>
         <input type="checkbox" value="agreement" id="checkbox" name="check" />
         <label for="checkbox"></label>
         </div>
-        </p>
+
         <label for="signUp"></label>
         <button type="submit" name="button" id="signUp" class="button">SIGN UP</button>
     </form>
