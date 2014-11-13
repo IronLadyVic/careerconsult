@@ -123,7 +123,37 @@ $(function() {
         });
 
 
+//Using Jquery to color the sign up form validation for select drop down only
+$(function() {
+            function validateform() {
+                
 
+                
+
+                var valid = true;
+                $("select#servicesSel.border").css("border-top","0.1em solid #D7EE61");
+                $("select#servicesSel.border").css("border-bottom","0.1em solid #D7EE61");
+                $("span i").css("color","#D7EE61");
+
+                $(".border").each(function() {
+                    if($(this).val() == "" ||  $(this).val().replace(/\s/g, '').length == 0) {
+                        $(this).css("border-top","0.1em solid #9B8FFB");
+                        $(this).css("border-bottom","0.1em solid #9B8FFB");
+                        $("span i").css("color","#9B8FFB");
+                        valid = false;
+                    }
+                });
+                return valid;
+                }
+            
+                $('select#servicesSel').click(function() {
+                $('#signup-form').submit(validateform);
+                    $('#signup-form').submit();
+
+
+                });
+            
+        });
 
 
 //Form Validation - may need to use this for proper form validation

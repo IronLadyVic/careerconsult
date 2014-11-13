@@ -20,6 +20,7 @@ body.show{
 header #main-header{
   z-index: 1000;
   position: relative;
+  width: 100%;
 }
 #servicesPage div#main-header ul#main-nav li:nth-child(6){
   background-color: white!important;
@@ -90,8 +91,7 @@ position: absolute;
 }
 
 #main-nav li {
-/*width: 100%;*/
-/*height: 2em;*/
+
 left: 0;
 top: 60px;
 display: block;
@@ -141,23 +141,38 @@ ul#main-nav li i{
 
 #asideLatestNews{
   border-top: 1px solid white;
-  margin-top: 2em;
+  padding-bottom: 1em;
+/*  margin-top: 2em;
   margin-left: 2em;
-  margin-right: 2em;
+  margin-right: 2em;*/
 }
 #latestUpdates article{
 border-bottom: 1px solid white;
 border-top: 1px solid white;
 color: white;
+padding-bottom: 1em;
+
 }
-#latestUpdates h1{
-  font-size:1.3em;
-    width: 100%;
+
+section#latestUpdates{
+  float: left;
+  padding-right: 1em;
+  width: 98%;
+  padding-left: 1em;
+    height:auto;
+    margin-top: 0em;
+
+}
+
+#latestUpdates h2{
+  font-size:1.6em;
+    width: 90%;
 
   color: white;
    font-weight: 500;
   text-decoration: none;
 }
+
 
 .divWrapperHeader h2 a{
   font-size:0.8em;
@@ -549,7 +564,7 @@ li#seletedServices p.display{
 
 #signing-up h1{
   color: white;
-  margin-left: 0.6em;
+  margin-left: 0.2em;
 }
 #signing-up p#description{
   color: white;
@@ -583,7 +598,7 @@ margin-left: -3em;
 
 }
 #signup-form form{
-  width:320px;
+  width:100%;
 }
    #signup-form input{
     width: 80%;
@@ -640,7 +655,11 @@ form#signup-form span{
   height: 5em;
   margin-left: 35%;
 }
-
+#signup-form p#agreementStatement{
+  width: 94%;
+   margin-left: 0.5em;
+   padding-bottom: 1em;
+}
 
 #aLink{
   text-decoration: none;
@@ -648,10 +667,8 @@ form#signup-form span{
 }
 
 #signup-form input#checkbox{
-  position: absolute;
-  margin-top: -3.5em;
-  margin-left: 20em;
-  margin-bottom: 0.5em;
+  float: left;
+  margin-left: 1.5em;
 }
 
 
@@ -774,9 +791,8 @@ position: relative;
 
 section#servicesListed{
     display: block;
-    position: relative;
-    width: 320px;
-    margin: 0 auto;
+position:80%;
+margin: 0 auto;
     margin-top: 6em;
 
   }
@@ -872,17 +888,17 @@ section#servicesListed{
    FOOTER
    ========================================================================== */
 
-div#footer_options{
 
-  padding-top: 6em;
+div#footer_options{
+  padding-top: 2em;
   margin-left: -2.4em;
-  width: 360px;
+  width: 110%;
 }
 
 footer ul li{
   float: left;
-  font-size: 0.6em;
-  padding: 0.6em;
+  font-size: 0.5em;
+  padding: 0.7em;
 }
 footer ul li a{
   list-style-type: none;
@@ -961,8 +977,8 @@ top: -5em;
   height: 3em;
     margin: 0 auto;
 position: relative;
-  width: 30em;
-  margin-right: 18em;
+  width: 50%;
+  /*margin-right: 18em;*/
 }
 
 #signedInTag{
@@ -1009,15 +1025,17 @@ ul#main-nav li:nth-child(8){
 /* ==========================================================================
    SERVICES ACCORDIAN
    ========================================================================== */
-div#sectionServices{
-display: block;
- width: 55%;
-  height:56em;
+
+section#servicesListed {
   float: left;
-padding-bottom: 0.5em;
+display: block;
+position: relative;
+width: 35%;
+margin: 0 auto;
+margin-top: 5em;
+margin-left: 7em;
 
 }
-
 
 #servicesListed h1#header{
   color: black;
@@ -1030,15 +1048,16 @@ padding-bottom: 0.5em;
    }  
  #servicesListed p{
   color: black;
-  width: 32em;
-  margin-left:-6.3em;
+    margin-left:-6.3em;
   padding-bottom: 1em;
  }  
 
 
 .ui-accordion {
-  width: 29em;
- margin-left:-5em;
+  width: 118%;
+ float: left;
+ margin-left: -5em;
+ margin-bottom: 2em;
 background-color: transparent!important;
 border: none;
 }
@@ -1050,7 +1069,7 @@ div#accordion.ui-accordion .ui-widget .ui-helper-reset{
 
 
 .ui-accordion .ui-accordion-content ul li{
-  width:28em;
+  width: 100%;
 }
 
 
@@ -1060,11 +1079,12 @@ div#accordion.ui-accordion .ui-widget .ui-helper-reset{
     margin: 0 auto;
     position: relative;
     margin-top:2em;
-    margin-left: 3em;
+    width: 100%;
+    margin-left: -1em;
     line-height: 40px;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-  left: 29em;
+  float: right;
 }
 
 .ui-accordion .ui-accordion-content{
@@ -1100,56 +1120,60 @@ input #checkBox{
 form#navLogIn{
   height: 3em;
   float: left;
+  width: 90%;
+  margin-top: -1em;
 }
 
 #navLogIn button{
-  width: 6em!important;
+  width: 15%;
   height: 3.2em!important;
   margin-left: 0.3em;
   margin-top: 0em;
 }
 
 #navLogIn input{
-  margin-left: 0.2em;
-  height: 3.3em;
+  height: 3.35em;
   background-color:none!important;
-  width: 13em;
-  margin-top: 0.7em;
+  width: 28%;
+
   border-bottom: 0.1em black solid;
 border-top: 0.1em black solid;
 font-size: 0.9em;
 float: left;
-padding-left:2em;
-margin-top: -0.1em;
+
 }
 #navLogIn span i{
   color: black!important;
-  position: absolute;
-  margin-left:-10em;
+  float: left;
+
 }
-#navLogIn i.fa.fa-user{
-  margin-top: 0.9em;
-  margin-left:-23em;
-}
-#navLogIn i.fa.fa-lock{
-  margin-top: 0.9em;
-  margin-left:-11em;
+form#navLogIn  i{
+color: black!important;
+border-bottom: 0.1em black solid;
+border-top: 0.1em black solid;
+display: block;
+height: 3em;
+padding-top: 1em;
+float: left;/*
+height: 2.95em;
+line-height: 49px;*/
+text-align: center;
+width: 3em;
+
 }
 
 
-#login{
+/*#login{
   @include purpleButton;
-  width: 6em;
-  height: 2em;
+   height: 2em;
   box-shadow: none!important;
   font-size: 0.8em;
   float: left;
-  /*//change to float left in desktop*/
   margin-right: 0.5em;
   color: white;
     margin-top: 0.9em
 }
-
+*/
 
 /* ==========================================================================
    Login
@@ -1249,10 +1273,11 @@ ul#main-nav{
 
 }
 #droparrow{
+  width: 0.5em;
   display: block;
   z-index: 1000;
 position: absolute;
-left: 9em;
+left: 8em;
 margin-top: -1.2em;
 color: white !important;
 }
@@ -1474,32 +1499,42 @@ position: absolute;
 
    div#sectionSignUp{
      display: block;
-     width: 48%;
-     height: 60em;
      position: relative;
      margin: 0 auto;
      margin-top: -2em;
     }
+    section#signing-up{
+      width: 70%;
+     height: 68em;
+     float: left;
+     margin-left: 2em;
+
+    }
+
+
+
 form#signup-form{
-  width: 56em;
-  margin-top: 14em;
+  width: 100%;
+  margin-top: 7em;
 
 }
 
 #signing-up p#description{
   color: black;
   font-size: 1.1em;
-  width: 42em;
+
   margin-left: -0.5em;
 }
 
 #signing-up p{
   float: left;
+   width: 47%;
+   height: 3em;
 }
 
 ul#reasonsToSignUp{
   height: 8em;
-  width: 46em;
+  width: 100%;
   margin-left: -0.2em;
 }
 ul#reasonsToSignUp li{
@@ -1508,6 +1543,7 @@ ul#reasonsToSignUp li{
 list-style-type: disc;
 color: black;
 margin-bottom: 0.8em;
+width: 100%;
 
 
 }
@@ -1518,15 +1554,15 @@ list-style-type: none;
 color: black;
 margin-bottom: 0.8em;
 margin-left: -3em;
+width: 100%;
 
 }
 
 #signup-form input{
-    color: black;
-    border-bottom: 0.1em black solid!important;
-    border-top: 0.1em black solid!important;
     float: left;
-    width: 20em;
+      border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  color: black;
 }
 
 #signing-up h1#header{
@@ -1539,61 +1575,89 @@ margin-left: -3em;
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
   color: black;
-   width: 20em; 
+
+ /*  width: 20em; */
 }
 form#signup-form span{
  border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
-
+  float: left;
+  height: 3em;
+  color: black;
 }
+#signup-form form input[type="password"]{
+     color: black;
+    border-bottom: 0.1em black solid!important;
+    border-top: 0.1em black solid!important;
 
-form#signup-form  i{
+    width: 90%;
+    @include input;
+}
+#signup-form form input[type="email"]{
+     color: black;
+
+    width: 90%;
+    @include input;
+}
+#signup-form form input[type="text"], input[type="email"], input[type="url"]{
+   color: black;
+    border-bottom: 0.1em black solid!important;
+    border-top: 0.1em black solid!important;
+
+    width: 90%;
+    @include input;
+   
+}
+/*form#signup-form  i{
 color: black!important;
 border-bottom: 0.1em white solid;
 border-top: 0.1em white solid;
-
+padding-left: 0.9em;
 display: block;
 float: left;
-height: 48px;
 line-height: 50px;
 text-align: center;
-width: 50px;
+width: 5%;
 
-}
+
+}*/
   #signup-form select#servicesSel{
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
 color: black;
-width: 20em; 
+
+/*width: 20em; */
 }
 #signup-form p#agreementStatement{
   color: black;
-  margin-left: 0.5em;
-  width: 47em;
+height: 7em;
+width: 92%;
   margin-top: 0.5em;
+  margin-left: 0.5em;
 }
 #signup-form button#signUp{
-   width: 26.5em;
+   /*width: 26.5em;*/
    float: left;
+   width: 92%;
    height: 3.4em;
+
    margin-left: 0.5em;
    
 }
 #signup-form input#checkbox{
-  margin-top: 30em;
+  margin-top: 30.5em;
   margin-left: -2em;
   width: 1em;
   height: 1em;
-
+  position: absolute;
 }
 
 
 #signup-form img#profileImage{
-  width: 6em;
-  height: 6em;
-  margin-left: 21em;
-  margin-top: -6.5em;
- position: absolute;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 42%;
+/* position: absolute;*/
 }
 
 
@@ -1602,42 +1666,61 @@ width: 20em;
 /* ==========================================================================
     CAREER PROFILE 
   ========================================================================== */
-div#sectionCareerProfile{
+     div#sectionCareerProfile{
+     display: block;
+     position: relative;
+     margin: 0 auto;
+     margin-top: -2em;
+    }
+    section#career-profile{
+      width: 70%;
+     height: 68em;
+     float: left;
+     margin-left: 2em;
 
-  display: block;
-width: 48%;
-height: 65em;
-position: relative;
-margin: 0 auto;
-margin-top: -3em;
-}
+    }
 
 
-form#careerProfile-form{
-
-  width: 48em;
-
-}
 
 #career-profile p{
   float: left;
+   width: 47%;
+   height: 3em;
+
 }
+
+
+
+
+form#careerProfile-form{
+  width: 100%;
+  margin-top: 7em;
+
+}
+
 p#description{
-  float: left;
-  color: black;
-  width: 40em;
+  color: black!important;
   font-size: 1.1em;
+  margin-left: -0.5em;
+  width: 100%;
 }
+
+#careerProfile-form p{
+  float: left;
+   width: 50%;
+   height: 3em;
+}
+
 #careerProfile-form input{
-    color: black;
-    border-bottom: 0.1em black solid!important;
-    border-top: 0.1em black solid!important;
-    width: 20em;
+    float: left;
+      border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  color: black;
 }
 
 #career-profile h1#header{
     color: black;
-    margin-left: 0.5em;
+    margin-left: 0.1em;
 }
 
 
@@ -1645,34 +1728,35 @@ p#description{
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
   color: black;
-width: 20em;
-    
+
+ /*  width: 20em; */
 }
 form#careerProfile-form span{
  border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
-
+  float: left;
+  height: 3em;
+  color: black;
 }
 
-form#careerProfile-form  i{
-color: black!important;
-border-bottom: 0.1em white solid;
-border-top: 0.1em white solid;
 
-display: block;
-float: left;
-height: 48px;
-line-height: 50px;
-text-align: center;
-width: 50px;
-margin-left: 0.5em;
+#careerProfile-form form input[type="text"]{
+   color: black;
+    border-bottom: 0.1em black solid!important;
+    border-top: 0.1em black solid!important;
+
+    width: 90%;
+    @include input;
+   
 }
+
+
 
   #careerProfile-form select#servicesSel{
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
 color: black;
-width: 20em;
+
 }
 
 
@@ -1680,23 +1764,27 @@ width: 20em;
 color: black;
     border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
-width: 20em;
+
    }
 p#agreementStatement{
   color: black;
-  float: left;
-  width: 22em;
-  margin-top: -1em;
+  float: right;
+  width: 46%;
+  margin-right: 2em;  
+  margin-top: -4.5em;
+  height: 7em;
+  padding: 0.5em;
 }
 #careerProfile-form button#updateProfile{
-   width: 26em;
+   width: 95%; 
    float: left;
    height: 3.4em;
+   margin-top: 2em;
    margin-left: 0.5em;
 }
 #careerProfile-form input#checkbox{
-  margin-top: 33em;
-  margin-left: -2em;
+  margin-top: 35em;
+  margin-left: -4em;
   width: 1em;
   height: 1em;
 
@@ -1704,8 +1792,8 @@ p#agreementStatement{
 #careerProfile-form img#profileImage{
   width: 6em;
   height: 6em;
-  margin-left: 21em;
-  margin-top: 0em;
+  margin-left: 42%;
+  margin-top: 2em;
 
 }
 
@@ -1715,23 +1803,25 @@ p#agreementStatement{
 
 #servicesPage div#tab-desk-nav{
   height: 100em;
+
 }
 
 
 section#latestUpdates{
   float: left;
-  width: 19%;
-  
+  margin-left: 1em;
+  width: 25%;
+  padding-left: 2em;
     height:auto;
+    margin-top: 0em;
 }
 aside#asideLatestNews{
   height: 70em;
   border-top: none;
 
-
-
 }
 #latestUpdates article{
+  margin-top: 2.2em;
 border-bottom: 1px solid #aaaaaa;
 border-top: 1px solid #aaaaaa;
 padding-bottom: 1em;
@@ -1739,9 +1829,6 @@ padding-bottom: 1em;
 #latestUpdates h2{
   font-size:1.3em;
     width: 100%;
-    
-margin-bottom: 1em;
-padding-bottom: 1em;
   color: black;
    font-weight: 500;
   text-decoration: none;
@@ -1753,7 +1840,7 @@ padding-bottom: 1em;
   color: black;
   text-decoration: none;
   font-weight: 500;
-
+cursor: pointer;
 }
 
 .divWrapperHeader h2 a:hover{
@@ -1763,6 +1850,7 @@ padding-bottom: 1em;
   font-size:0.8em;
   color: #2B2937;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .hashTag p a:hover{
@@ -1770,6 +1858,7 @@ padding-bottom: 1em;
 }
 .content{
   color: black;
+  font-size: 0.8em;
 }
 
 .hashTag a i{
@@ -1860,15 +1949,15 @@ float: right;
 
 }
 
+
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */
 div#footer_options{
-bottom: 2em;
-margin-left: 20em;
-position: relative;
-width: 50em;
-  
+float: left;
+width: 80%;
+margin-left: 14em;  
 
 }
 
