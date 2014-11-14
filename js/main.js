@@ -43,14 +43,13 @@ $(function(){
 	});
 
 
+
 });
 
-	//-----------services accordion-----------//
+//-----------services accordion-----------//
 
 	$(function() {
 		$( "#accordion" ).accordion();
 	});
 
-
-	//-----------change color of select options in sign up and career profile -----------//
-
+//-----------gallery slider-----------//

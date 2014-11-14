@@ -14,20 +14,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+          <link rel="stylesheet" href="/resources/demos/style.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="scss/main.css">
         <link rel="stylesheet" href="scss/main.scss">
+        <!-- Include the jQuery library (local or CDN) -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Include the plugin *after* the jQuery library -->
+<script src="bjqs.min.js"></script>
+
+<!-- Include the basic styles -->
+<link type="text/css" rel="Stylesheet" href="bjqs.css" />
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    
+
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+<!-- Navigation -->
 <!-- Navigation -->
 <!-- Drop down menu header -->
 <header>
@@ -74,6 +85,17 @@
         </svg>
    </a>
 </div>
+<div class="nav-handle-other">
+  <a href="#">
+    <!-- source github.com/headloose/Style-Guide / icons / arrow-down.svg -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="25px" height="25px" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
+            <rect fill="white" width="20" height="2"></rect>
+            <rect y="6" fill="white" width="20" height="2"></rect>
+            <rect y="12" fill="white" width="20" height="2"></rect>
+        </svg>
+   </a>
+</div>
 <div class="nav-handle-user">
     <form id="navLogIn">
     <p>
@@ -93,33 +115,31 @@
 </div>  
 </header> 
 <!-- End of Headers -->
-<!-- Section One -->
-<div id="sectionOne">
 
-<!-- Introduction Section -->
-<section id="introduction">
-    <h2 id="intro-paragraph">professional, independent and cost effective advice for job seekers, employees, graduates, and those new to New Zealand.</h2>
-        <div id="introButtons">
-        <i id="rightarrow" class="fa fa-angle-right"></i>
-        <div id="launchCareer">
-        <a href="services.html"><span>LAUNCH YOUR CAREER</span></a>
-        </div>
-        <div id="careerButton">
-        <a href="sign-up.html"><span>SIGN UP</span></a>
-        </div>
-        </div>
-</section>
-<!-- End of Introduction Section -->
-<section id="animation">
-    <h1 style="font-size: 0em;">Auckland Skyline</h1>
-    <div id="aucklandSkyline"><img src="img/Auckland-skyline.png" alt="Auckland City"></div>
-    <div id="ponsonbyHousing"><img src="img/Ponsonby_grey.png" alt="Auckland City"></div>
-    <div id="workingGirl"><img src="img/CareerConsultBicyle_grey.png" alt="On my way to work"></div>
-</section>
 
+<div id="mainTestimonialBody">
+<div id="leftColomn">
+<article id="contentWrapper">
+
+</article>
 </div>
-<!-- End of Section One -->
-<!-- <div id="sectionTwo"></div> -->
+
+<aside id="rightColomn">
+    <section>
+        <h2></h2>
+        <div class="panelTopics">
+
+        </div>
+    </section>
+
+</aside>
+<!-- End of Container -->
+</div>
+
+
+
+
+
 <!-- Footer -->
 <footer>
     <div id="footer_options">
@@ -139,9 +159,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/formValidation.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         <script src="js/main.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

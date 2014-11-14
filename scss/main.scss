@@ -472,14 +472,16 @@ li#seletedServices p.display{
     margin-top: 1em;
 
   }
-
+form#logIn-form{
+  width:100%;
+}
 #loggingIn h1{
   color: white;
   margin-left: 0.5em;
 }
    #logIn-form input{
     @include input;
-        width: 78%;
+        width: 75%;
     height: 3em;
       border-bottom: 0.1em white solid;
   border-top: 0.1em white solid;
@@ -487,16 +489,16 @@ li#seletedServices p.display{
   color: white;
    }
 
-   #logIn-form span i{
+   #logIn-form span{
           border-bottom: 0.1em white solid;
   border-top: 0.1em white solid;
    color: white;
     display: block;
     float: left;
-    height: 48px;
+    height: 3em;
     line-height: 50px;
     text-align: center;
-    width: 50px;
+    width: 3em;
     margin-left: 0.5em;
    }
 
@@ -512,24 +514,30 @@ li#seletedServices p.display{
     margin-left: 1em;
     margin-top: 1em;
 }
-#logIn-form input#checkBox{
-  float: left;
-  width: 1em;
-  height: 1em;
-  margin-left: 1em;
-  margin-top: -2em;
-}
+// #logIn-form input#checkBox{
+//   float: left;
+//   width: 1em;
+//   height: 1em;
+//   margin-left: 2em;
+//   margin-top: 1em;
+
+// }
 
 #loggingIn #profileImage{
   width: 5em;
   height: 5em;
   margin-left: 35%;
 }
-#logIn-form span.rememberMe{
- color: white;
- margin-left: 4.5em;
- font-size: 0.8em;
-}
+// span#rememberMe{
+//  color: white;
+//     position: relative;
+//     margin: 0 auto;
+//     margin-left: 0.5em;
+//         width: 73%;
+//     height: 3em;
+
+// }
+
 
 /* ==========================================================================
     SECTION INTRODUCTION BUTTONS AND INTRO  
@@ -656,8 +664,9 @@ form#signup-form span{
   margin-left: 35%;
 }
 #signup-form p#agreementStatement{
-  width: 94%;
-   margin-left: 0.5em;
+  // width: 94%;
+   padding-left: 1em;
+   padding-right: 1em;
    padding-bottom: 1em;
 }
 
@@ -777,7 +786,112 @@ p#description{
   margin-bottom: 0.5em;
 }
 
+/* ==========================================================================
+   POSTS
+   ========================================================================== */
+#mainPostBody{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 90%;
+margin-top:2em;
 
+}
+.headerTopic h2 {
+color: white;
+height: auto;
+// position: relative;
+margin: 0 auto;
+font-size: 1.2em;
+text-transform: uppercase;
+padding-bottom:1em;
+margin-top:2em;
+} 
+
+#leftColomn{
+  width: 100%;
+float: left;
+margin-top: -2.5em;
+margin-bottom: 5em;
+}
+.contentWrapper{
+  padding-left: 5%;
+  padding-right: 5%;
+    width: 100%;
+    color: white;
+}
+
+.postAvatar img{
+  width: 4em;
+  height: 4em;
+}
+.postPhoto img{
+  width: 100%;
+  
+}
+.headerTopic{
+  font-size: 1.5em;
+  color: white;
+}
+.hashtagPost p a{
+  font-size:1em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hashtagPost p a:hover{
+  color: #9B8FFB;
+}
+
+.hashtagPost i{
+  font-size:1em;
+  color: white;
+  text-decoration: none;
+  padding-right: 0.5em;
+}
+
+.hashtagPost a i:hover{
+  color: #9B8FFB;
+  padding-right: 0.5em;
+}
+.contentPost{
+  width: 82%;
+}
+#rightColomn{
+  width: 85%;
+
+
+}
+
+#rightColomn h2 {
+font-size: 1.3em;
+width: 100%;
+color: white;
+font-weight: 500;
+text-decoration: none;
+margin-top: -1em;
+}
+
+.panelTopics{
+
+height: auto;
+}
+li.styleList{
+@include styleList;
+margin-left: -2.5em;
+line-height: 100%;
+}
+.styleList a{
+  text-decoration: none;
+   color: white;
+  
+}
+.styleList a:hover{
+   // transition: color 2s ease; 
+   color: #9B8FFB;
+  
+}
 
 
 /* ==========================================================================
@@ -1142,25 +1256,33 @@ font-size: 0.9em;
 float: left;
 
 }
-#navLogIn span i{
+#navLogIn span{
   color: black!important;
   float: left;
-
-}
-form#navLogIn  i{
-color: black!important;
-border-bottom: 0.1em black solid;
+  border-bottom: 0.1em black solid;
 border-top: 0.1em black solid;
 display: block;
 height: 3em;
 padding-top: 1em;
-float: left;/*
-height: 2.95em;
-line-height: 49px;*/
+float: left;
 text-align: center;
 width: 3em;
 
 }
+// form#navLogIn  i{
+// color: black!important;
+// border-bottom: 0.1em black solid;
+// border-top: 0.1em black solid;
+// display: block;
+// height: 3em;
+// padding-top: 1em;
+// float: left;/*
+// height: 2.95em;
+// line-height: 49px;*/
+// text-align: center;
+// width: 3em;
+
+// }
 
 
 /*#login{
@@ -1206,16 +1328,16 @@ background-color: transparent;
   margin-left: 1.8em;
 }
 
-form#logIn-form  i{
+form#logIn-form span{
 color: black!important;
 border-bottom: 0.1em black solid;
 border-top: 0.1em black solid;
 display: block;
 float: left;
-height: 48px;
+height: 3em;
 line-height: 50px;
 text-align: center;
-width: 50px;
+width: 3em;
 
 }
 
@@ -1528,7 +1650,7 @@ form#signup-form{
 
 #signing-up p{
   float: left;
-   width: 47%;
+   width: 46%;
    height: 3em;
 }
 
@@ -1631,22 +1753,25 @@ color: black;
 #signup-form p#agreementStatement{
   color: black;
 height: 7em;
-width: 92%;
+  width: 87%;
   margin-top: 0.5em;
   margin-left: 0.5em;
 }
+
+
+
 #signup-form button#signUp{
    /*width: 26.5em;*/
    float: left;
-   width: 92%;
+   width: 87%;
    height: 3.4em;
 
    margin-left: 0.5em;
    
 }
 #signup-form input#checkbox{
-  margin-top: 30.5em;
-  margin-left: -2em;
+  margin-top: 29em;
+  margin-left: -5em;
   width: 1em;
   height: 1em;
   position: absolute;
@@ -1656,7 +1781,7 @@ width: 92%;
 #signup-form img#profileImage{
   position: relative;
   margin: 0 auto;
-  margin-left: 42%;
+  margin-left: 41%;
 /* position: absolute;*/
 }
 
@@ -1766,14 +1891,14 @@ color: black;
   border-top: 0.1em black solid;
 
    }
-p#agreementStatement{
-  color: black;
-  float: right;
-  width: 46%;
-  margin-right: 2em;  
-  margin-top: -4.5em;
-  height: 7em;
-  padding: 0.5em;
+ #careerProfile-form p#agreementStatement{
+  // color: black;
+  // float: right;
+  // width: 46%;
+  // margin-right: 2em;  
+  // margin-top: -4.5em;
+  // height: 7em;
+  // padding: 0.5em;
 }
 #careerProfile-form button#updateProfile{
    width: 95%; 
@@ -1846,6 +1971,12 @@ cursor: pointer;
 .divWrapperHeader h2 a:hover{
   color: #9B8FFB;
 }
+
+.content{
+  color: black;
+  font-size: 0.8em;
+}
+
 .hashTag p a{
   font-size:0.8em;
   color: #2B2937;
@@ -1856,10 +1987,7 @@ cursor: pointer;
 .hashTag p a:hover{
   color: #9B8FFB;
 }
-.content{
-  color: black;
-  font-size: 0.8em;
-}
+
 
 .hashTag a i{
   font-size:0.8em;
@@ -1918,36 +2046,115 @@ margin-left: auto;
 margin-right: auto;
 width: 90%;
 max-width: 80em;
-
+margin-top:2em;
 
 }
+.headerTopic h2 {
+color: black;
+height: auto;
+position: relative;
+margin: 0 auto;
+font-size: 1.2em;
+text-transform: uppercase;
+padding-bottom:1em;
+} 
 
 #leftColomn{
-  width: 62.5%;
+  width: 60%;
 float: left;
-
+margin-top: -2.5em;
 margin-bottom: 5em;
 }
 .contentWrapper{
   padding-left: 5%;
   padding-right: 5%;
+  color: black;
 }
-#rightColomn{
-  width: 20%;
-float: right;
-}
+
 .postAvatar img{
   width: 4em;
   height: 4em;
 }
 .postPhoto img{
-  width: 80%;
+  width: 85%;
   
 }
 .headerTopic{
   font-size: 1.5em;
+  color: black;
+}
+.hashtagPost p a{
+  font-size:1em;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hashtagPost p a:hover{
+  color: #9B8FFB;
+}
+
+.hashtagPost i{
+  font-size:1em;
+  color: black;
+  text-decoration: none;
+  padding-right: 0.5em;
+}
+
+.hashtagPost a i:hover{
+  color: #9B8FFB;
+  padding-right: 0.5em;
+}
+.contentPost{
+  width: 82%;
+}
+#rightColomn{
+  width: 18%;
+float: left;
 
 }
+
+#rightColomn h2 {
+font-size: 1.3em;
+width: 100%;
+color: black;
+font-weight: 500;
+text-decoration: none;
+margin-top: -1em;
+}
+
+.panelTopics{
+
+height: auto;
+}
+li.styleList{
+@include styleList;
+margin-left: -2.5em;
+line-height: 100%;
+}
+.styleList a{
+  text-decoration: none;
+   color: black;
+  
+}
+.styleList a:hover{
+   // transition: color 2s ease; 
+   color: #9B8FFB;
+  
+}
+/* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+#mainTestimonialBody{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height: 20em;
+margin-top:2em;
+outline: 1px red solid;
+}
+
 
 
 

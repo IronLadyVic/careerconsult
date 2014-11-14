@@ -81,5 +81,15 @@
 }
 
 
-
+@mixin styleList{
+	  border-bottom: 1px solid #aaaaaa;
+border-top: 1px solid #aaaaaa;
+  cursor: pointer;
+  font-weight: 500;
+  height: 3.5em;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+  color: black;
+  
+}
 
