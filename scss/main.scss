@@ -101,7 +101,7 @@ padding-bottom: 0.5em;
 border-bottom: black 1px solid;
 margin: 0;
 font-size: 1.1em;
-font-weight: 100;
+font-weight: 300;
 -webkit-transition: height 1s ease; 
   -moz-transition: height 1s ease; 
   -ms-transition: height 1s ease; 
@@ -114,11 +114,11 @@ line-height: 0px;
 }
 ul#main-nav li:nth-child(7){
   background-color: white;
-  
+  font-weight: 300;
 } 
 ul#main-nav li:nth-child(8){
   background-color: white;
-  
+  font-weight: 300;
 } 
 .styleList{
   color: black!important;
@@ -257,13 +257,13 @@ border-radius: 50%;
 .editor{
   font-size: 0.9em;
   font-weight: 500;
-  
+  margin-left:6em;
   height: 1em;
 }
 .date{
   font-size: 0.8em;
   font-weight: 500;
-
+  margin-left: 7em;
 }
 
    div#shareSocial p a{
@@ -392,7 +392,7 @@ li#seletedServices{
 
 
 li#seletedServices.display{
-  width: 600px;
+  width: 112%;
   height: auto;
   display: block;
   color: black;
@@ -406,9 +406,12 @@ li#seletedServices i.display{
 
 li#seletedServices p.display{
   margin-left: 1.3em;
-  
-  }
 
+  }
+#seletedServices li:last-child{
+  border-bottom: none;
+
+  }
 
 #brand_logo a img{
   height: 25%;
@@ -530,7 +533,7 @@ cursor: pointer;
   height: 0;
 }
    #rightarrow{
-  margin-left:4em;
+  margin-left:3em;
   margin-top: 0.8em;
   @include whiteArrow;
 }
@@ -623,9 +626,9 @@ form#logIn-form{
   ========================================================================== */
    #intro-paragraph{
    @include headers;
-   width: 80%;
-   margin-left: 2em;
-   margin-right: 2em;
+   width: 90%;
+   margin-left: 1em;
+   margin-right: 1em;
     text-align: center; 
     margin-top: -14em;
 
@@ -754,7 +757,7 @@ margin-left: -3em;
   border-top: 0.1em white solid;
   background-color: transparent;
   color: white;
-
+  border-radius: none;
    }
 #signup-form input[type="checkbox"]{
   width: 1em;
@@ -769,7 +772,7 @@ margin-left: -3em;
     -webkit-appearance: none;
     width: 90%;
     @include input;
-   
+    border-radius: none;
 }
 
 #signup-form textarea{
@@ -799,6 +802,7 @@ form#signup-form span{
     border-top: 0.1em white solid;
     color:white;
     background-color: transparent;
+    border-radius: none;
      }
 #signup-form button#signUp{
   margin-left: 1em;
@@ -810,8 +814,8 @@ form#signup-form span{
   height: 5em;
   margin-left: 35%;
 }
-#profileImage{
-  width: 100%;
+img#profileImage{
+  
   height: 100%;
   
 }
@@ -829,7 +833,7 @@ form#signup-form span{
 
 #signup-form input#checkbox{
   float: left;
-  margin-left: 1.5em;
+  
 }
 
 
@@ -1172,10 +1176,10 @@ margin: 0 auto;
 
 div#footer_options{
 
-margin-top: 6em;
+margin-top: 1em;
 border-top: 1px solid #3d4144;
 position: relative;
-left: -1em;
+left: -2em;
 
 width: 100%;
 
@@ -1781,7 +1785,7 @@ position: absolute;
   top: 1.8em;
  position: relative;
   color: black;
-  left: -2.5em;
+  left: -1.5em;
   }
 
 
@@ -2143,7 +2147,7 @@ color: black;
 section#latestUpdates{
   float: left;
   margin-left: 1em;
-  width: 25%;
+  width: 22%;
   padding-left: 2em;
     height:auto;
     margin-top: 1.5em;
@@ -2158,6 +2162,7 @@ aside#asideLatestNews{
 border-bottom: 1px solid #aaaaaa;
 border-top: 1px solid #aaaaaa;
 padding-bottom: 1em;
+float: left;
 }
 #latestUpdates h2{
   font-size:1.3em;
@@ -2218,8 +2223,9 @@ cursor: pointer;
 }
 
 .avatarProfile{
-    height: 4em;
-width: 4em;
+    height: 5em;
+width: 5em;
+padding-right: 1em;
 }
 
 .avatarProfile img{
@@ -2238,13 +2244,15 @@ float: left;
 .editor{
   font-size: 0.9em;
   font-weight: 500;
-  
+  margin-left: 0.5em;
   height: 1em;
+  margin-left: 5em;
 }
 .date{
   font-size: 0.6em;
   font-weight: 500;
-
+margin-left: 0.5em;
+margin-left: 7.5em;
 }
    div#shareSocial p a{
   color: black;
