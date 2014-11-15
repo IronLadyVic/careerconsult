@@ -906,13 +906,15 @@
       SERVICES
     ========================================================================== */
   div#sectionServices {
+    float: left;
+    width: 100%;
     margin: 0 auto;
     position: relative; }
 
   section#servicesListed {
     display: block;
-    position: 80%;
     margin: 0 auto;
+    width: 90%;
     margin-top: 6em; }
 
   #servicesListed h1#header {
@@ -943,7 +945,7 @@
     padding-right: 0.5em; }
 
   .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-    left: 17.5em; }
+    left: 17.2em; }
 
   .ui-accordion .ui-accordion-content {
     padding: 0.2em;
@@ -956,7 +958,7 @@
     font-size: 0.9em;
     padding-top: 1em;
     left: 0;
-    width: 17em;
+    width: 90%;
     list-style: decimal outside none;
     list-style-type: disc; }
 
@@ -1122,7 +1124,7 @@
     float: left;
     display: block;
     position: relative;
-    width: 35%;
+    width: 75%;
     margin: 0 auto;
     margin-top: 5em;
     margin-left: 7em; }
@@ -1795,25 +1797,35 @@
      LATEST UPDATES - NEXT TO SERVICES ACCORDION
      ========================================================================== */
   #servicesPage div#tab-desk-nav {
-    height: 100em; }
+    /*  height: 100%;
+    */
+    overflow-y: hidden; }
+
+  div#sectionServices {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    position: relative; }
+
+  aside#asideLatestNews {
+    /*  height: 70em;*/
+    border-top: none;
+    float: left;
+    width: 25%; }
 
   section#latestUpdates {
     float: left;
-    margin-left: 1em;
-    width: 22%;
-    padding-left: 2em;
+    /*  margin-left: 1em;*/
+    width: 100%;
+    /*  padding-left: 2em;*/
     height: auto;
     margin-top: 1.5em; }
 
-  aside#asideLatestNews {
-    height: 70em;
-    border-top: none; }
-
-  #latestUpdates article {
-    margin-top: 2.2em;
+  section#latestUpdates article {
+    /*  margin-top: 2.2em;*/
     border-bottom: 1px solid #aaaaaa;
     border-top: 1px solid #aaaaaa;
-    padding-bottom: 1em;
+    /*padding-bottom: 1em;*/
     float: left; }
 
   #latestUpdates h2 {
@@ -1882,9 +1894,9 @@
   .editor {
     font-size: 0.9em;
     font-weight: 500;
-    margin-left: 0.5em;
-    height: 1em;
-    margin-left: 5em; }
+    height: 2em;
+    margin-left: 5em;
+    margin-top: -2em; }
 
   .date {
     font-size: 0.6em;
@@ -1901,6 +1913,32 @@
 
   #shareSocial p a:hover {
     color: #9B8FFB; }
+
+  /* ==========================================================================
+     ADMIN POST CAREER UPDATES/ADVICE
+     ========================================================================== */
+  div#adminPostLatest {
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 2em;
+    margin-top: -3em; }
+
+  section#postUpdates {
+    float: left;
+    /*  margin-left: 1em;*/
+    width: 60%;
+    /*  padding-left: 2em;*/
+    height: auto;
+    margin-top: 1.5em;
+    margin-left: 2em; }
+
+  section#postUpdates article {
+    /*  margin-top: 2.2em;*/
+    border-bottom: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    padding-bottom: 1em;
+    float: left; }
 
   /* ==========================================================================
      POSTS

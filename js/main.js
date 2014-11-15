@@ -52,33 +52,6 @@ $(function(){
 		$( "#accordion" ).accordion();
 	});
 
-//-----------Anchor slide-----------//
+//-----------In mobile click nav handle to hide menu list-----------//
 
 
-$(document).ready(function(){
-
-	// hide #back-top first
-
-
-	$("#main-nav").hide();
-	
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#main-nav').fadeIn();
-			} else {
-				$('#main-nav').fadeOut();
-			}
-		});
-
-		// scroll body to 0px on click
-		$('#main-nav li').click(function () {
-			$('body,html').animate({
-				scrollDown: 0
-			}, 800);
-			return false;
-		});
-	});
-
-});
