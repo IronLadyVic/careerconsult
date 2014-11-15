@@ -178,14 +178,15 @@
     text-decoration: none; }
 
   .avatarProfile {
-    height: 3em;
-    width: 3em; }
+    height: 4em;
+    width: 4em; }
 
   .avatarProfile img {
     width: 100%;
     overflow: hidden;
     display: block;
-    float: left; }
+    float: left;
+    border-radius: 50%; }
 
   .editor, .date {
     color: white; }
@@ -198,6 +199,16 @@
   .date {
     font-size: 0.8em;
     font-weight: 500; }
+
+  div#shareSocial p a {
+    color: white;
+    float: left;
+    width: 3em;
+    height: 3em;
+    font-size: 1.2em; }
+
+  #shareSocial p a:hover {
+    color: #9B8FFB; }
 
   /* ==========================================================================
      ACTIVE HOLD ON LI DROP DOWN MENU
@@ -354,7 +365,11 @@
 
   #launchCareer a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    width: 100%;
+    height: 100%;
+    height: 3em;
+    z-index: 4000; }
 
   #careerButton {
     border-radius: 0.2em;
@@ -367,11 +382,15 @@
     text-align: center;
     line-height: 40px;
     z-index: 4000;
-    margin-left: 1em; }
+    margin-left: 1em;
+    cursor: pointer; }
 
   #careerButton a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    width: 90%;
+    height: 3em;
+    cursor: pointer; }
 
   button.button a {
     width: 315px;
@@ -401,6 +420,11 @@
     margin-top: 0.8em;
     color: white;
     position: absolute; }
+
+  input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    border: none; }
 
   /* ==========================================================================
       LOG IN FORM  
@@ -485,6 +509,56 @@
     height: 100%;
     z-index: 4000; }
 
+  div#shareSocial {
+    width: 90%; }
+
+  /* ==========================================================================
+     TESTIMONIALS
+     ========================================================================== */
+  #leftColomnTestimonials {
+    display: block;
+    width: 98%;
+    margin-top: 0em; }
+
+  .cd-testimonials-wrapper h1 {
+    margin-left: 0.5em;
+    color: white; }
+
+  .cd-testimonials p {
+    color: white;
+    font-size: 1em;
+    width: 90%;
+    margin-left: -1em; }
+
+  .cd-client img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    float: left; }
+
+  .flex-active-slide {
+    width: 100%;
+    position: relative;
+    width: 90%; }
+
+  .flex-direction-nav li a {
+    color: white;
+    text-decoration: none; }
+
+  .cd-client-info {
+    color: white;
+    margin-left: 1em; }
+
+  .flex-direction-nav li a {
+    float: left;
+    padding-top: 3em;
+    margin-left: -1em; }
+
+  .flex-direction-nav li a:nth-child(1) {
+    padding-right: 2em; }
+
   /* ==========================================================================
       SIGN UP FORM
     ========================================================================== */
@@ -494,8 +568,10 @@
 
   #signing-up p#description {
     color: white;
-    width: 92%;
-    padding-left: 0.5em; }
+    width: 95%;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    font-weight: bold; }
 
   ul#reasonsToSignUp {
     height: 14em;
@@ -530,6 +606,14 @@
     border-top: 0.1em white solid;
     background-color: transparent;
     color: white; }
+
+  #signup-form input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    border: none; }
 
   #signup-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
     -webkit-appearance: none;
@@ -576,10 +660,14 @@
     width: 90%;
     margin-bottom: 2em; }
 
-  #profileImage {
+  .profileAuto {
     width: 5em;
     height: 5em;
     margin-left: 35%; }
+
+  #profileImage {
+    width: 100%;
+    height: 100%; }
 
   #signup-form p#agreementStatement {
     padding-left: 1em;
@@ -722,7 +810,8 @@
 
   .postAvatar img {
     width: 4em;
-    height: 4em; }
+    height: 4em;
+    border-radius: 50%; }
 
   .postPhoto img {
     width: 100%; }
@@ -762,22 +851,24 @@
     color: white;
     font-weight: 500;
     text-decoration: none;
-    margin-top: -1em; }
+    margin-top: -1em;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 1em; }
 
   .panelTopics {
     height: auto; }
 
   li.styleList {
     border-bottom: 1px solid #aaaaaa;
-    border-top: 1px solid #aaaaaa;
     cursor: pointer;
     font-weight: 500;
-    height: 3.5em;
+    height: 4em;
     padding-top: 0.5em;
     padding-bottom: 2em;
     color: black;
     margin-left: -2.5em;
-    line-height: 100%; }
+    line-height: 100%;
+    padding-top: 1em; }
 
   .styleList a {
     text-decoration: none;
@@ -867,6 +958,15 @@
   #accordion i.fa.fa-circle {
     font-size: 0.1em; }
 
+  #shareSocial p a {
+    color: black;
+    float: left;
+    width: 3em;
+    font-size: 1.5em; }
+
+  #shareSocial p a:hover {
+    color: #9B8FFB; }
+
   /* ==========================================================================
       INPUT ERRORS
     ========================================================================== */
@@ -880,14 +980,23 @@
      FOOTER
      ========================================================================== */
   div#footer_options {
-    padding-top: 2em;
-    margin-left: -2.4em;
-    width: 110%; }
+    margin-top: 6em;
+    border-top: 1px solid #3d4144;
+    position: relative;
+    left: -1em;
+    width: 100%;
+    padding-bottom: 3em;
+    overflow: hidden;
+    opacity: .5;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear; }
 
   footer ul li {
     float: left;
-    font-size: 0.5em;
-    padding: 0.7em; }
+    font-size: 0.6em;
+    padding: 0.4em; }
 
   footer ul li a {
     list-style-type: none;
@@ -1026,7 +1135,7 @@
     margin-top: 2em;
     width: 100%;
     margin-left: -1em;
-    line-height: 40px; }
+    line-height: 45px; }
 
   .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
     float: right; }
@@ -1043,6 +1152,23 @@
 
   #accordion i.fa.fa-circle {
     font-size: 0.1em; }
+
+  p#testimonialButton {
+    width: 20em;
+    height: 3em;
+    border-radius: 0.2em;
+    background-color: #9B8FFB;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    text-decoration: none;
+    box-shadow: none;
+    text-align: center;
+    margin-left: -5.5em; }
+
+  p#testimonialButton a {
+    color: white;
+    text-decoration: none;
+    line-height: 45px;
+    text-align: center; }
 
   /* ==========================================================================
      Checkbox for Nav Sign up
@@ -1063,7 +1189,8 @@
     height: 3em;
     float: left;
     width: 90%;
-    margin-top: -1em; }
+    margin-top: -1em;
+    margin-left: 1em; }
 
   #navLogIn button {
     width: 15%;
@@ -1162,7 +1289,7 @@
   #tab-desk-nav {
     width: 15.4em;
     float: left;
-    height: 80em;
+    height: 90em;
     top: 0;
     left: 0;
     position: absolute;
@@ -1507,23 +1634,24 @@
   #signup-form p#agreementStatement {
     color: black;
     height: 7em;
-    width: 87%;
+    width: 90%;
     margin-top: 0.5em;
     margin-left: 0.5em; }
 
   #signup-form button#signUp {
     /*width: 26.5em;*/
     float: left;
-    width: 87%;
+    width: 88%;
     height: 3.4em;
     margin-left: 0.5em; }
 
-  #signup-form input#checkbox {
-    margin-top: 29em;
-    margin-left: -5em;
+  #signup-form input[type="checkbox"] {
     width: 1em;
     height: 1em;
-    position: absolute; }
+    position: relative;
+    margin-top: 6em;
+    margin-left: -2em;
+    border: none; }
 
   #signup-form img#profileImage {
     position: relative;
@@ -1610,6 +1738,15 @@
     border-bottom: 0.1em black solid;
     border-top: 0.1em black solid; }
 
+  #careerProfile-form p#agreementStatement {
+    color: black;
+    float: right;
+    width: 46%;
+    margin-right: 2em;
+    margin-top: -5em;
+    height: 7em;
+    padding: 0.5em; }
+
   #careerProfile-form button#updateProfile {
     width: 95%;
     float: left;
@@ -1641,7 +1778,7 @@
     width: 25%;
     padding-left: 2em;
     height: auto;
-    margin-top: 0em; }
+    margin-top: 1.5em; }
 
   aside#asideLatestNews {
     height: 70em;
@@ -1702,14 +1839,15 @@
     text-decoration: none; }
 
   .avatarProfile {
-    height: 3em;
-    width: 3em; }
+    height: 4em;
+    width: 4em; }
 
   .avatarProfile img {
     width: 100%;
     overflow: hidden;
     display: block;
-    float: left; }
+    float: left;
+    border-radius: 50%; }
 
   .editor, .date {
     color: black; }
@@ -1722,6 +1860,16 @@
   .date {
     font-size: 0.6em;
     font-weight: 500; }
+
+  div#shareSocial p a {
+    color: black;
+    float: left;
+    width: 3em;
+    height: 3em;
+    font-size: 1.2em; }
+
+  #shareSocial p a:hover {
+    color: #9B8FFB; }
 
   /* ==========================================================================
      POSTS
@@ -1744,7 +1892,7 @@
     padding-bottom: 1em; }
 
   #leftColomn {
-    width: 60%;
+    width: 55%;
     float: left;
     margin-top: -2.5em;
     margin-bottom: 5em; }
@@ -1756,7 +1904,8 @@
 
   .postAvatar img {
     width: 4em;
-    height: 4em; }
+    height: 4em;
+    border-radius: 50%; }
 
   .postPhoto img {
     width: 85%; }
@@ -1788,8 +1937,9 @@
     width: 82%; }
 
   #rightColomn {
-    width: 18%;
-    float: left; }
+    width: 20%;
+    float: left;
+    margin-top: 1.5em; }
 
   #rightColomn h2 {
     font-size: 1.3em;
@@ -1797,22 +1947,25 @@
     color: black;
     font-weight: 500;
     text-decoration: none;
-    margin-top: -1em; }
+    margin-top: -1em;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 1em; }
 
   .panelTopics {
+    width: 100%;
     height: auto; }
 
   li.styleList {
     border-bottom: 1px solid #aaaaaa;
-    border-top: 1px solid #aaaaaa;
     cursor: pointer;
     font-weight: 500;
-    height: 3.5em;
+    height: 4em;
     padding-top: 0.5em;
     padding-bottom: 2em;
     color: black;
     margin-left: -2.5em;
-    line-height: 100%; }
+    width: 130%;
+    padding-top: 1em; }
 
   .styleList a {
     text-decoration: none;
@@ -1824,26 +1977,163 @@
   /* ==========================================================================
      TESTIMONIALS
      ========================================================================== */
-  #mainTestimonialBody {
+  #leftColomnTestimonials {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    height: 20em;
-    margin-top: 2em;
-    outline: 1px red solid; }
+    margin-left: 12em;
+    margin-top: 0em; }
+
+  .cd-testimonials-wrapper h1 {
+    margin-left: 0em;
+    color: black; }
+
+  .cd-testimonials-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 50em;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 1.25em 2.5em 4.5em;
+    z-index: 1; }
+
+  .cd-testimonials-wrapper::after {
+    /* quotation mark */
+    content: '\201C';
+    position: absolute;
+    top: 0.6em;
+    left: 0;
+    width: 3.2em;
+    height: 3.2em;
+    padding-top: 0.5em;
+    margin-left: -1.5em;
+    text-align: center;
+    /* visible on big devices only */
+    display: none; }
+
+  .cd-testimonials {
+    color: black; }
+
+  .cd-testimonials:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+  .cd-testimonials > li {
+    position: absolute;
+    opacity: 0; }
+
+  .cd-testimonials > li:first-child {
+    position: relative;
+    opacity: 1; }
+
+  .flex-active-slide {
+    width: 100%;
+    position: relative;
+    width: 90%;
+    max-width: 60em; }
+
+  .flex-active-slide p {
+    font-size: 1.8em;
+    width: 85%;
+    color: black; }
+
+  .cd-client img {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin-left: -1.5em;
+    float: left; }
+
+  .flex-direction-nav li {
+    position: absolute;
+    height: 100%;
+    width: 3em;
+    top: 0; }
+
+  .cd-client-info {
+    color: black;
+    margin-left: 1em; }
+
+  .flex-direction-nav li:first-child {
+    left: -2em; }
+
+  .flex-direction-nav li:last-child {
+    left: 42em; }
+
+  .flex-direction-nav li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s; }
+
+  .flex-direction-nav li a::before, .flex-direction-nav li a::after {
+    /* left and right arrows in css only */
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 13px;
+    background-color: black; }
+
+  .flex-direction-nav li a::before {
+    -webkit-transform: translateY(-35px) rotate(45deg);
+    -moz-transform: translateY(-35px) rotate(45deg);
+    -ms-transform: translateY(-35px) rotate(45deg);
+    -o-transform: translateY(-35px) rotate(45deg);
+    transform: translateY(-35px) rotate(45deg); }
+
+  .flex-direction-nav li a::after {
+    -webkit-transform: translateY(-27px) rotate(-45deg);
+    -moz-transform: translateY(-27px) rotate(-45deg);
+    -ms-transform: translateY(-27px) rotate(-45deg);
+    -o-transform: translateY(-27px) rotate(-45deg);
+    transform: translateY(-27px) rotate(-45deg); }
+
+  .flex-direction-nav li:last-child a::before {
+    -webkit-transform: translateY(-35px) rotate(-45deg);
+    -moz-transform: translateY(-35px) rotate(-45deg);
+    -ms-transform: translateY(-35px) rotate(-45deg);
+    -o-transform: translateY(-35px) rotate(-45deg);
+    transform: translateY(-35px) rotate(-45deg); }
+
+  .flex-direction-nav li:last-child a::after {
+    -webkit-transform: translateY(-27px) rotate(45deg);
+    -moz-transform: translateY(-27px) rotate(45deg);
+    -ms-transform: translateY(-27px) rotate(45deg);
+    -o-transform: translateY(-27px) rotate(45deg);
+    transform: translateY(-27px) rotate(45deg); }
 
   /* ==========================================================================
      FOOTER
      ========================================================================== */
   div#footer_options {
     float: left;
-    width: 80%;
-    margin-left: 14em; }
+    width: 100%;
+    margin-left: 12em;
+    margin-top: 2em;
+    border-top: 1px solid #3d4144;
+    position: relative;
+    left: 7.14286%;
+    width: 85.71429%;
+    padding-bottom: 3em;
+    overflow: hidden;
+    opacity: .5;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear; }
 
   footer ul li a {
     color: black;
-    font-size: 2em;
+    font-size: 2.2em;
     padding: 0.5em; }
 
   footer ul li a:hover {
