@@ -135,6 +135,26 @@ ul#main-nav li i{
   font-size: 1.2em;
   margin-left: 1.3em;
 }
+
+ p#testimonialButton{
+    width: 90%;
+    height: 3em;
+    @include purpleButton;
+    box-shadow: none;
+//   margin: 0 auto;
+// position: relative;
+  text-align: center;
+  margin-left: 1em;
+   }
+ p#testimonialButton a{
+  color: white;
+  text-decoration: none;
+  line-height: 45px;
+  text-align: center;
+
+
+ }
+
 /* ==========================================================================
    LATEST UPDATES - NEXT TO SERVICES ACCORDION
    ========================================================================== */

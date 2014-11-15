@@ -111,6 +111,23 @@
     font-size: 1.2em;
     margin-left: 1.3em; }
 
+  p#testimonialButton {
+    width: 90%;
+    height: 3em;
+    border-radius: 0.2em;
+    background-color: #9B8FFB;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    text-decoration: none;
+    box-shadow: none;
+    text-align: center;
+    margin-left: 1em; }
+
+  p#testimonialButton a {
+    color: white;
+    text-decoration: none;
+    line-height: 45px;
+    text-align: center; }
+
   /* ==========================================================================
      LATEST UPDATES - NEXT TO SERVICES ACCORDION
      ========================================================================== */
