@@ -5,172 +5,172 @@
 /* ==========================================================================
    NAVIGATION BAR  hide
    ========================================================================== */
-@media only screen and (min-width: 20em) {
-body{
-  @include responsiveBackground(#242424);
+   @media only screen and (min-width: 20em) {
+    body{
+      @include responsiveBackground(#242424);
 
 
-}
+    }
 
-body.show{
-  @include responsiveBackground(#2B2937);
+    body.show{
+      @include responsiveBackground(#2B2937);
 
-}
+    }
 
-header #main-header{
-  z-index: 1000;
-  position: relative;
-  width: 100%;
-}
-#servicesPage div#main-header ul#main-nav li:nth-child(6){
-  background-color: white!important;
-  
-} 
+    header #main-header{
+      z-index: 1000;
+      position: relative;
+      width: 100%;
+    }
+    #servicesPage div#main-header ul#main-nav li:nth-child(6){
+      background-color: white!important;
+      
+    } 
 
-#main-nav{
-  height: 0%;
-  margin-left: -2.5em;
-  margin-top: 2em;
-}
+    #main-nav{
+      height: 0%;
+      margin-left: -2.5em;
+      margin-top: 2em;
+    }
 
-ul#main-header.hide{
-  display: none;
-}
-
-
-
-#droparrow.hide{
-font-size: 0px;
-display: none;
-}
+    ul#main-header.hide{
+      display: none;
+    }
 
 
 
+    #droparrow.hide{
+      font-size: 0px;
+      display: none;
+    }
 
 
-.nav-handle{
-position: absolute;
- right: 0;
- top: 2em;
- padding-right: 2em;
-
-}
-.nav-handle-other{
-  position: absolute;
- right: 0;
- top: 2em;
- padding-right: 2em;
-}
-.nav-handle-sign-up{
-  position: absolute;
- right: 0;
- top: 2em;
- padding-right: 2em;
-}
-
-.nav-handle-user{
-  margin-right: 2em;
-  top: 1em;
-  margin-top: -6em;
-  display: none;
-  height: 8em;
-
-}
-
-#signedInTag{
-  font-size: 0.9em;
-  float: left;
-  color: white!important;
-}
-
-.nav-handle-user img{
-
-  height:30%;
-  float: right;
-
-}
-
-#main-nav li {
-
-left: 0;
-top: 60px;
-display: block;
-/*clear: left;*/
-padding-top: 1.2em;
-padding-bottom: 0.5em;
-border-bottom: black 1px solid;
-margin: 0;
-font-size: 1.1em;
-font-weight: 300;
--webkit-transition: height 1s ease; 
-  -moz-transition: height 1s ease; 
-  -ms-transition: height 1s ease; 
-  -o-transition: height 1s ease; 
-  transition: height 1s ease; 
-line-height: 0px;
- background-color: #242424;
- cursor: pointer;
-
-}
-ul#main-nav li:nth-child(7){
-  background-color: white;
-  font-weight: 300;
-} 
-ul#main-nav li:nth-child(8){
-  background-color: white;
-  font-weight: 300;
-} 
-.styleList{
-  color: black!important;
-}
-
-ul#main-nav li p{
-  color: white;
-  font-weight: 100;
-  padding-left: 5em;
-  margin-top: -0.6em;
-}
-ul#main-nav li i{
-  color: #585859;
-  font-size: 1.2em;
-  margin-left: 1.3em;
-}
-
- p#testimonialButton{
-    width: 90%;
-    height: 3em;
-    @include purpleButton;
-    box-shadow: none;
-//   margin: 0 auto;
-// position: relative;
-  text-align: center;
-  margin-left: 1em;
-   }
- p#testimonialButton a{
-  color: white;
-  text-decoration: none;
-  line-height: 45px;
-  text-align: center;
 
 
- }
+
+    .nav-handle{
+      position: absolute;
+      right: 0;
+      top: 2em;
+      padding-right: 2em;
+
+    }
+    .nav-handle-other{
+      position: absolute;
+      right: 0;
+      top: 2em;
+      padding-right: 2em;
+    }
+    .nav-handle-sign-up{
+      position: absolute;
+      right: 0;
+      top: 2em;
+      padding-right: 2em;
+    }
+
+    .nav-handle-user{
+      margin-right: 2em;
+      top: 1em;
+      margin-top: -6em;
+      display: none;
+      height: 8em;
+
+    }
+
+    #signedInTag{
+      font-size: 0.9em;
+      float: left;
+      color: white!important;
+    }
+
+    .nav-handle-user img{
+
+      height:30%;
+      float: right;
+
+    }
+
+    #main-nav li {
+
+      left: 0;
+      top: 60px;
+      display: block;
+      /*clear: left;*/
+      padding-top: 1.2em;
+      padding-bottom: 0.5em;
+      border-bottom: black 1px solid;
+      margin: 0;
+      font-size: 1.1em;
+      font-weight: 300;
+      -webkit-transition: height 1s ease; 
+      -moz-transition: height 1s ease; 
+      -ms-transition: height 1s ease; 
+      -o-transition: height 1s ease; 
+      transition: height 1s ease; 
+      line-height: 0px;
+      background-color: #242424;
+      cursor: pointer;
+
+    }
+    ul#main-nav li:nth-child(7){
+      background-color: white;
+      font-weight: 300;
+    } 
+    ul#main-nav li:nth-child(8){
+      background-color: white;
+      font-weight: 300;
+    } 
+    .styleList{
+      color: black!important;
+    }
+
+    ul#main-nav li p{
+      color: white;
+      font-weight: 100;
+      padding-left: 5em;
+      margin-top: -0.6em;
+    }
+    ul#main-nav li i{
+      color: #585859;
+      font-size: 1.2em;
+      margin-left: 1.3em;
+    }
+
+    p#testimonialButton{
+      width: 90%;
+      height: 3em;
+      @include purpleButton;
+      box-shadow: none;
+      //   margin: 0 auto;
+      // position: relative;
+      text-align: center;
+      margin-left: 1em;
+    }
+    p#testimonialButton a{
+      color: white;
+      text-decoration: none;
+      line-height: 45px;
+      text-align: center;
+
+
+    }
 
 /* ==========================================================================
    LATEST UPDATES - NEXT TO SERVICES ACCORDION
    ========================================================================== */
 
-#asideLatestNews{
-  border-top: 1px solid white;
-  padding-bottom: 1em;
+   #asideLatestNews{
+    border-top: 1px solid white;
+    padding-bottom: 1em;
 /*  margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;*/
 }
 #latestUpdates article{
-border-bottom: 1px solid white;
-border-top: 1px solid white;
-color: white;
-padding-bottom: 1em;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  color: white;
+  padding-bottom: 1em;
 
 }
 
@@ -179,17 +179,17 @@ section#latestUpdates{
   padding-right: 1em;
   width: 98%;
   padding-left: 1em;
-    height:auto;
-    margin-top: 0em;
+  height:auto;
+  margin-top: 0em;
 
 }
 
 #latestUpdates h2{
   font-size:1.6em;
-    width: 90%;
+  width: 90%;
 
   color: white;
-   font-weight: 500;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -228,25 +228,25 @@ section#latestUpdates{
   padding-right: 0.5em;
 }
 .readMore p a{
-    color: white;
+  color: white;
   text-decoration: none;
 }
 .readMore p a:hover{
-    color: #9B8FFB;
+  color: #9B8FFB;
   text-decoration: none;
 }
 .avatarProfile{
-    height: 4em;
-width: 4em;
+  height: 4em;
+  width: 4em;
 
 }
 
 .avatarProfile img{
-width: 100%;
-overflow: hidden;
-display: block;
-float: left;
-border-radius: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  float: left;
+  border-radius: 50%;
 
 
 }
@@ -266,7 +266,7 @@ border-radius: 50%;
   margin-left: 7em;
 }
 
-   div#shareSocial p a{
+div#shareSocial p a{
   color: white;
   float: left;
   width: 3em;
@@ -278,94 +278,192 @@ border-radius: 50%;
   color: #9B8FFB;
 
 }
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+
+   #pagination ul li a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    height: 2em;
+    padding: 0.5em;
+
+  }
+  #pagination ul li a:hover{
+    color: #9B8FFB;
+
+  }
+
+/* ==========================================================================
+   ADMIN ADD EDIT AND DELETE BUTTONS
+   ========================================================================== */
+   .addButton{
+    @include purpleButton;
+    font-family: 'Quicksand'!important;
+    font-size: 1em;
+    color: white;
+    box-shadow: none;
+    width: 90%;
+    height: 3em;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 1em;  
+  }
+
+  .editButton{
+    @include purpleButton;
+    height: 2em;
+    width: 6em;
+    font-family: 'Quicksand'!important;
+    font-size: 0.8em;
+    color: white;
+    box-shadow: none;
+  }
+  .deleteButton{
+    @include purpleButton;
+    height: 2em;
+    width: 6em;
+    font-family: 'Quicksand'!important;
+    font-size: 0.8em;
+    color: white;
+    box-shadow: none;
+  }
+  #addATestimonialForm{
+    width: 100%;
+    margin-top: 2em;
+  }
+  #addATestimonial{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 1em;
+
+  }
+/* ==========================================================================
+   ADD POST ON SERVICES PAGE WHEN ADMIN IS LOGGED IN
+   ========================================================================== */
+   form#addPostForm{
+    width: 100%;
+
+  }
+
+  form#addPostForm input[type="text"], input[type="password"], input[type="email"], input[type="url"]{
+    -webkit-appearance: none;
+    width: 90%;
+    @include input;
+    border-radius: none;
+  }
+
+  #addPostForm textarea{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3em;
+    @include input;
+    padding-top: 0.8em;
+    
+  }
+  form#addPostForm span{
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color: white;
+    display: block;
+    float: left;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    margin-left: 0.5em;
+  }
+
 
 /* ==========================================================================
    ACTIVE HOLD ON LI DROP DOWN MENU
    ========================================================================== */
 
-ul#main-nav li:active{
-  
-@include navList;
+   ul#main-nav li:active{
+    
+    @include navList;
 
-}
-ul#main-nav li p:active{
-  @include hoverFont(#E6E6FA)
-}
-ul#main-nav li i:active{
-  @include hoverFont(#E6E6FA)
-}
+  }
+  ul#main-nav li p:active{
+    @include hoverFont(#E6E6FA)
+  }
+  ul#main-nav li i:active{
+    @include hoverFont(#E6E6FA)
+  }
 
 
-header #main-header ul#main-nav li a{
-  text-decoration: none;
-  color: black;  
-}
-header #main-header ul#main-nav li a{
-  text-decoration: none;
-  color: black;
-}
+  header #main-header ul#main-nav li a{
+    text-decoration: none;
+    color: black;  
+  }
+  header #main-header ul#main-nav li a{
+    text-decoration: none;
+    color: black;
+  }
 
-header #main-header #nav-handle {
-position: absolute;
-top: 0;
-right: 0;
-height: 56px;
-width: 56px;
-background-color: transparent;
-}
+  header #main-header #nav-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 56px;
+    width: 56px;
+    background-color: transparent;
+  }
 
-.side-bar{
-  position: absolute;
-  left: 0;
-  margin-top: -2.2em;
-}
-#droparrow{
-  @include whiteArrow;
-  right: 0;
-  padding-right: 2em;
-  margin-top: -1.2em;
-  color: white!important;
-}
-#droparrow.hide{
-  display: none;
-}
+  .side-bar{
+    position: absolute;
+    left: 0;
+    margin-top: -2.2em;
+  }
+  #droparrow{
+    @include whiteArrow;
+    right: 0;
+    padding-right: 2em;
+    margin-top: -1.2em;
+    color: white!important;
+  }
+  #droparrow.hide{
+    display: none;
+  }
 /* ==========================================================================
    NAVIGATION BAR hide
    ========================================================================== */
 
-#main-nav li.hide {
-display: block;
-left: 0;
-top: 60px;
-margin: 0;
-color: black;
-font-weight: 100;
-height: 0em;
-width: 0em;
-overflow: hidden;
-}
+   #main-nav li.hide {
+    display: block;
+    left: 0;
+    top: 60px;
+    margin: 0;
+    color: black;
+    font-weight: 100;
+    height: 0em;
+    width: 0em;
+    overflow: hidden;
+  }
 
-section#animation{
-  display: none;
-}
+  section#animation{
+    display: none;
+  }
 
-section#animation.show{
-  display: block;
-  width: 100%;
-  /*border-bottom: 1px white solid!important;*/
-}
+  section#animation.show{
+    display: block;
+    width: 100%;
+    /*border-bottom: 1px white solid!important;*/
+  }
 
-#aucklandSkyline img{
-  margin-top: 1em;
-  /*height: 25%;*/
-  width:100%;
-/* margin-left: -20em;*/
-  /*opacity: 0.8;*/
-  position: relative;
-  border-bottom: 1px #928CC4 solid!important;
-}
+  #aucklandSkyline img{
+    margin-top: 1em;
+    /*height: 25%;*/
+    width:100%;
+    /* margin-left: -20em;*/
+    /*opacity: 0.8;*/
+    position: relative;
+    border-bottom: 1px #928CC4 solid!important;
+  }
 
-#ponsonbyHousing img{
+  #ponsonbyHousing img{
 /*  height:10%;
 margin-top: 13em;
 */display: none;
@@ -398,20 +496,20 @@ li#seletedServices.display{
   color: black;
   font-size: 0.8em;
   margin-left: -3em;
-  }
+}
 li#seletedServices i.display{
   margin-left: 1.8em;
   
-  }
+}
 
 li#seletedServices p.display{
   margin-left: 1.3em;
 
-  }
+}
 #seletedServices li:last-child{
   border-bottom: none;
 
-  }
+}
 
 #brand_logo a img{
   height: 25%;
@@ -422,371 +520,377 @@ li#seletedServices p.display{
 /* ==========================================================================
    SEARCH 
    ========================================================================== */
-.search-container{
-  display: none;
+   .search-container{
+    display: none;
 
-}
+  }
 
-.search-bar{
-  display: none;
-}
+  .search-bar{
+    display: none;
+  }
 /* ==========================================================================
    WHEN NAV SLIDES UP BUTTON AND INTRO APPEARS
    ========================================================================== */
-// #careerContact{
-//   height: 5em;
-//   width: 100%;
-//   box-shadow: none !important;
-// margin-top: -0.2em;
-// border-top: none; 
-//  background-color: #9B8FFB;
-// background-image: -ms-linear-gradient(top, #9B8FFB, #2b2937);
-//  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9B8FFB), to(#2b2937)); 
-//  background-image: -webkit-linear-gradient(top, #9B8FFB, #2b2937);
-// background-image: -o-linear-gradient(top, #9B8FFB, #2b2937);
-// background-image: -moz-linear-gradient(top,#9B8FFB, #2b2937);
-// background-image: linear-gradient(top, #9B8FFB, #2b2937);
-// background-repeat: repeat-x; 
+   // #careerContact{
+    //   height: 5em;
+    //   width: 100%;
+    //   box-shadow: none !important;
+    // margin-top: -0.2em;
+    // border-top: none; 
+    //  background-color: #9B8FFB;
+    // background-image: -ms-linear-gradient(top, #9B8FFB, #2b2937);
+    //  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9B8FFB), to(#2b2937)); 
+    //  background-image: -webkit-linear-gradient(top, #9B8FFB, #2b2937);
+    // background-image: -o-linear-gradient(top, #9B8FFB, #2b2937);
+    // background-image: -moz-linear-gradient(top,#9B8FFB, #2b2937);
+    // background-image: linear-gradient(top, #9B8FFB, #2b2937);
+    // background-repeat: repeat-x; 
 
-// }
-// #careerContact p i{
-//   font-size: 3em;
-//   color: #2b2937
-// }
-// #careerContact p a{
-//   font-size: 2.25em;
-//   color: #2b2937;
-//   text-decoration: none;
-//   font-weight: 500;
-//   letter-spacing: -4px;
-// }
-
-
-// #careerContact p{
-//   float: left;
-//   padding: 0.5em;
-// }
-   #intro-form{
-   width: 80%;
-   height: auto;
-   position: relative;
-   z-index: 1000;  
-   }
-
-   #launchCareer{
-   @include outlineButton;
-   @include buttonStyle(white);
-   margin-top: 1em;
-    width:90%;
-    height: 3em;
-   color: white;
-   text-align: center;
-   line-height: 40px;
-   z-index: 4000;
-   margin-left: 1em;
-   }
-#launchCareer a{
-   text-decoration: none;
-   color: white;
-   width: 100%;
-   height: 100%;
-height: 3em;
-z-index: 4000;
-}
-   #careerButton{
-   @include purpleButton;
-   margin-top: 1em;
-   width:90%;
-   color: white;
-   text-align: center;
-   line-height: 40px;
-   z-index: 4000;
-   margin-left: 1em;
-   cursor: pointer;
-   }
-#careerButton a{
-   text-decoration: none;
-   color: white;
-   width: 90%;
-height: 3em;
-cursor: pointer;
-}
+    // }
+    // #careerContact p i{
+      //   font-size: 3em;
+      //   color: #2b2937
+      // }
+      // #careerContact p a{
+        //   font-size: 2.25em;
+        //   color: #2b2937;
+        //   text-decoration: none;
+        //   font-weight: 500;
+        //   letter-spacing: -4px;
+        // }
 
 
+        // #careerContact p{
+          //   float: left;
+          //   padding: 0.5em;
+          // }
+          #intro-form{
+           width: 80%;
+           height: auto;
+           position: relative;
+           z-index: 1000;  
+         }
 
-  button.button a{
-    width:315px;
-    height: 3em;
-    text-decoration: none;
-    color: white;
+         #launchCareer{
+           @include outlineButton;
+           @include buttonStyle(white);
+           margin-top: 1em;
+           width:90%;
+           height: 3em;
+           color: white;
+           text-align: center;
+           line-height: 40px;
+           z-index: 4000;
+           margin-left: 1em;
+         }
+         #launchCareer a{
+           text-decoration: none;
+           color: white;
+           width: 100%;
+           height: 100%;
+           height: 3em;
+           z-index: 4000;
+         }
+         #careerButton{
+           @include purpleButton;
+           margin-top: 1em;
+           width:90%;
+           color: white;
+           text-align: center;
+           line-height: 40px;
+           z-index: 4000;
+           margin-left: 1em;
+           cursor: pointer;
+         }
+         #careerButton a{
+           text-decoration: none;
+           color: white;
+           width: 90%;
+           height: 3em;
+           cursor: pointer;
+         }
 
-   }
 
-   .button{
-    @include purpleButton;
-    @include buttonStyle(white);
 
-   }
-.fa .fa-angle-down.hide{
-    display: none;
-  width: 0;
-  height: 0;
-}
-   #rightarrow{
-  margin-left:3em;
-  margin-top: 0.8em;
-  @include whiteArrow;
-}
-input[type="checkbox"]{
-  width: 1em;
-  height: 1em;
-  border: none;
-}
+         button.button a{
+          width:315px;
+          height: 3em;
+          text-decoration: none;
+          color: white;
+
+        }
+
+        .button{
+          @include purpleButton;
+          @include buttonStyle(white);
+
+        }
+        .fa .fa-angle-down.hide{
+          display: none;
+          width: 0;
+          height: 0;
+        }
+        #rightarrow{
+          margin-left:3em;
+          margin-top: 0.8em;
+          @include whiteArrow;
+        }
+        input[type="checkbox"]{
+          width: 1em;
+          height: 1em;
+          border: none;
+        }
 
 /* ==========================================================================
     LOG IN FORM  
-  ========================================================================== */
-   section#loggingIn{
-    display: block;
-    position: relative;
- 
-    margin: 0 auto;
-    margin-top: 1em;
+    ========================================================================== */
+    section#loggingIn{
+      display: block;
+      position: relative;
+      
+      margin: 0 auto;
+      margin-top: 1em;
 
-  }
-form#logIn-form{
-  width:100%;
-}
-#loggingIn h1{
-  color: white;
-  margin-left: 0.5em;
-}
-   #logIn-form input{
-    @include input;
-        width: 75%;
-    height: 3em;
+    }
+    form#logIn-form{
+      width:100%;
+    }
+    #loggingIn h1{
+      color: white;
+      margin-left: 0.5em;
+    }
+    #logIn-form input{
+      @include input;
+      width: 75%;
+      height: 3em;
       border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  background-color: transparent;
-  color: white;
-   }
+      border-top: 0.1em white solid;
+      background-color: transparent;
+      color: white;
+    }
 
-   #logIn-form span{
-          border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-   color: white;
-    display: block;
-    float: left;
-    height: 3em;
-    line-height: 50px;
-    text-align: center;
-    width: 3em;
-    margin-left: 0.5em;
-   }
+    #logIn-form span{
+      border-bottom: 0.1em white solid;
+      border-top: 0.1em white solid;
+      color: white;
+      display: block;
+      float: left;
+      height: 3em;
+      line-height: 50px;
+      text-align: center;
+      width: 3em;
+      margin-left: 0.5em;
+    }
 
-   #loggingIn p{
-    color: white;
-    padding-left: 1em;
-    padding-right: 1em;
-   }
-#logIn{
-    position: relative;
-    margin: 0 auto;
-    width: 90%;
-    margin-left: 1em;
-    margin-top: 1em;
-}
-// #logIn-form input#checkBox{
-//   float: left;
-//   width: 1em;
-//   height: 1em;
-//   margin-left: 2em;
-//   margin-top: 1em;
+    #loggingIn p{
+      color: white;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    #logIn{
+      position: relative;
+      margin: 0 auto;
+      width: 90%;
+      margin-left: 1em;
+      margin-top: 1em;
+    }
+    // #logIn-form input#checkBox{
+      //   float: left;
+      //   width: 1em;
+      //   height: 1em;
+      //   margin-left: 2em;
+      //   margin-top: 1em;
 
-// }
+      // }
 
-#loggingIn #profileImage{
-  width: 5em;
-  height: 5em;
-  margin-left: 35%;
-}
-// span#rememberMe{
-//  color: white;
-//     position: relative;
-//     margin: 0 auto;
-//     margin-left: 0.5em;
-//         width: 73%;
-//     height: 3em;
+      #loggingIn #profileImage{
+        width: 5em;
+        height: 5em;
+        margin-left: 35%;
+      }
+      // span#rememberMe{
+        //  color: white;
+        //     position: relative;
+        //     margin: 0 auto;
+        //     margin-left: 0.5em;
+        //         width: 73%;
+        //     height: 3em;
 
-// }
+        // }
 
 
 /* ==========================================================================
     SECTION INTRODUCTION BUTTONS AND INTRO  
-  ========================================================================== */
-   #intro-paragraph{
-   @include headers;
-   width: 90%;
-   margin-left: 1em;
-   margin-right: 1em;
-    text-align: center; 
-    margin-top: -14em;
+    ========================================================================== */
+    #intro-paragraph{
+     @include headers;
+     width: 90%;
+     margin-left: 1em;
+     margin-right: 1em;
+     text-align: center; 
+     margin-top: -14em;
 
    }
-    section#introduction{
+   section#introduction{
     display: none;
     height: 0;
     width: 0;
 
-   }
-   section#introduction.show{
+  }
+  section#introduction.show{
     display: block;
     margin: 0px auto;
     width: 100%;
     height: 100%;
     z-index: 4000;
-   }
+  }
 
- div#shareSocial{
-  width: 90%;
- }
+  div#shareSocial{
+    width: 90%;
+  }
 
 
 
 /* ==========================================================================
    TESTIMONIALS
    ========================================================================== */
-#leftColomnTestimonials{
-  display: block;
-width: 98%;
-margin-top:0em;
+   #leftColomnTestimonials{
+    display: block;
+    width: 98%;
+    margin-top:0em;
 
-}
-.cd-testimonials-wrapper h1{
-  margin-left: 0.5em;
-  color: white;
-}
+  }
+  .cd-testimonials-wrapper h1{
+    margin-left: 0.5em;
+    color: white;
+  }
   .cd-testimonials p {
     color: white;
     font-size: 1em;
     width:90%;
     margin-left:-1em;
   }
-.cd-client img {
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  margin-right: 5px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  float: left;
+  .cd-client img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    float: left;
 
-}
-.flex-active-slide{
-width: 100%;
-  position: relative;
-  width: 90%;
+  }
+  .flex-active-slide{
+    width: 100%;
+    position: relative;
+    width: 90%;
 
-}
+  }
 
-.flex-direction-nav li a{
-  color: white;
-  text-decoration: none;
-}
-.cd-client-info{
-  color: white;
-  margin-left: 1em;
-}
+  .flex-direction-nav li a{
+    color: white;
+    text-decoration: none;
+  }
+  .cd-client-info{
+    color: white;
+    margin-left: 1em;
+  }
 
-.flex-direction-nav li a{
-  float: left;
-  padding-top: 3em;
-  margin-left:-1em;
-}
-.flex-direction-nav li a:nth-child(1){
-  
-  padding-right: 2em;
-}
+  .flex-direction-nav li a{
+    float: left;
+    padding-top: 3em;
+    margin-left:-1em;
+  }
+  .flex-direction-nav li a:nth-child(1){
+    
+    padding-right: 2em;
+  }
+  #addATestimonial{
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 1em;
+  }
 /* ==========================================================================
     SIGN UP FORM
-  ========================================================================== */
+    ========================================================================== */
 
-#signing-up h1{
-  color: white;
-  margin-left: 0.2em;
-}
-#signing-up p#description{
-  color: white;
-   width: 95%;
-   font-size: 1.2em;
-   padding-left: 0.5em;
-   font-weight: bold;
-}
+    #signing-up h1{
+      color: white;
+      margin-left: 0.2em;
+    }
+    #signing-up p#description{
+      color: white;
+      width: 95%;
+      font-size: 1.2em;
+      padding-left: 0.5em;
+      font-weight: bold;
+    }
 
-ul#reasonsToSignUp{
-  height: 14em;
-  width: 92%;
-  margin-left: 0.5em;
-}
-ul#reasonsToSignUp li{
-   float: left;
-   list-style: decimal outside none;
-list-style-type: disc;
-color: white;
-margin-bottom: 0.8em;
-margin-left: -1em;
-padding-left: 0.8em;
-padding-right: 0.8em;
+    ul#reasonsToSignUp{
+      height: 14em;
+      width: 92%;
+      margin-left: 0.5em;
+    }
+    ul#reasonsToSignUp li{
+     float: left;
+     list-style: decimal outside none;
+     list-style-type: disc;
+     color: white;
+     margin-bottom: 0.8em;
+     margin-left: -1em;
+     padding-left: 0.8em;
+     padding-right: 0.8em;
 
-}
-ul#reasonsToSignUp li:nth-child(1){
-   float: left;
-   list-style: none;
-list-style-type: none;
-color: white;
-margin-bottom: 0.8em;
-margin-left: -3em;
+   }
+   ul#reasonsToSignUp li:nth-child(1){
+     float: left;
+     list-style: none;
+     list-style-type: none;
+     color: white;
+     margin-bottom: 0.8em;
+     margin-left: -3em;
 
-}
-#signup-form form{
-  width:100%;
-}
-   #signup-form input{
+   }
+   #signup-form form{
+    width:100%;
+  }
+  #signup-form input{
     width: 80%;
     height: 3em;
-      border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  background-color: transparent;
-  color: white;
-  border-radius: none;
-   }
-#signup-form input[type="checkbox"]{
-  width: 1em;
-  height: 1em;
-  position: relative;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  border: none;
-}
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    color: white;
+    border-radius: none;
+  }
+  #signup-form input[type="checkbox"]{
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    border: none;
+  }
 
-#signup-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"]{
+  #signup-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"]{
     -webkit-appearance: none;
     width: 90%;
     @include input;
     border-radius: none;
-}
+  }
 
-#signup-form textarea{
+  #signup-form textarea{
     -webkit-appearance: none;
     width: 80%;
     height: 3em;
     @include input;
     padding-top: 0.8em;
     
-}
-form#signup-form span{
-      border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-   color: white;
+  }
+  form#signup-form span{
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color: white;
     display: block;
     float: left;
     height: 48px;
@@ -794,7 +898,7 @@ form#signup-form span{
     text-align: center;
     width: 50px;
     margin-left: 0.5em;
-}
+  }
   #signup-form select{
     width: 80%;
     height: 3em;
@@ -803,413 +907,413 @@ form#signup-form span{
     color:white;
     background-color: transparent;
     border-radius: none;
-     }
-#signup-form button#signUp{
-  margin-left: 1em;
-  width: 90%;
-  margin-bottom: 2em;
-}
-.profileAuto{
-  width: 5em;
-  height: 5em;
-  margin-left: 35%;
-}
-img#profileImage{
-  
-  height: 100%;
-  
-}
-#signup-form p#agreementStatement{
-  // width: 94%;
-   padding-left: 1em;
-   padding-right: 1em;
-   padding-bottom: 1em;
-}
+  }
+  #signup-form button#signUp{
+    margin-left: 1em;
+    width: 90%;
+    margin-bottom: 2em;
+  }
+  .profileAuto{
+    width: 5em;
+    height: 5em;
+    margin-left: 35%;
+  }
+  img#profileImage{
+    
+    height: 100%;
+    
+  }
+  #signup-form p#agreementStatement{
+    // width: 94%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
 
-#aLink{
-  text-decoration: none;
-  color: #9B8FFB;
-}
+  #aLink{
+    text-decoration: none;
+    color: #9B8FFB;
+  }
 
-#signup-form input#checkbox{
-  float: left;
-  
-}
+  #signup-form input#checkbox{
+    float: left;
+    
+  }
 
 
 /* ==========================================================================
     CAREER PROFILE 
-  ========================================================================== */
+    ========================================================================== */
 
 
 
-   #career-profile h1#header{
+    #career-profile h1#header{
       color: white;
-    position: relative;
-    margin: 0 auto;
-  margin-top: 1em;
-  margin-left: 0.5em;
-   }
+      position: relative;
+      margin: 0 auto;
+      margin-top: 1em;
+      margin-left: 0.5em;
+    }
 
-   #career-profile p{
-    color: white;
-/*    padding: 0.5em;*/
-   }
+    #career-profile p{
+      color: white;
+      /*    padding: 0.5em;*/
+    }
 
-  section#career-profile{
-    position: relative;
-    margin: 0 auto;
-   }
-#careerProfile-form form{
-  width:320px;
-}
-   #careerProfile-form input{
-    width: 80%;
-    height: 3em;
+    section#career-profile{
+      position: relative;
+      margin: 0 auto;
+    }
+    #careerProfile-form form{
+      width:320px;
+    }
+    #careerProfile-form input{
+      width: 80%;
+      height: 3em;
       border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  background-color: transparent;
-  color: white;
+      border-top: 0.1em white solid;
+      background-color: transparent;
+      color: white;
 
-   }
+    }
 
-#careerProfile-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"]{
-    -webkit-appearance: none;
-    width: 90%;
-    @include input;
-   
-}
+    #careerProfile-form form input[type="text"], input[type="password"], input[type="email"], input[type="url"]{
+      -webkit-appearance: none;
+      width: 90%;
+      @include input;
+      
+    }
 
-#careerProfile-form textarea{
-    -webkit-appearance: none;
-    width: 80%;
-    height: 3em;
-    @include input;
-    padding-top: 0.8em;
-    
-}
-#careerProfile-form span{
+    #careerProfile-form textarea{
+      -webkit-appearance: none;
+      width: 80%;
+      height: 3em;
+      @include input;
+      padding-top: 0.8em;
+      
+    }
+    #careerProfile-form span{
       border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-   color: white;
-    display: block;
-    float: left;
-    height: 48px;
-    line-height: 50px;
-    text-align: center;
-    width: 50px;
-    margin-left: 0.5em;
-}
+      border-top: 0.1em white solid;
+      color: white;
+      display: block;
+      float: left;
+      height: 48px;
+      line-height: 50px;
+      text-align: center;
+      width: 50px;
+      margin-left: 0.5em;
+    }
 
 
-  #careerProfile-form select#servicesSel{
-    width: 80%;
-    height: 3em;
-    border-bottom: 0.1em white solid;
-    border-top: 0.1em white solid;
-    color:white;
-    background-color: transparent;
-     }
+    #careerProfile-form select#servicesSel{
+      width: 80%;
+      height: 3em;
+      border-bottom: 0.1em white solid;
+      border-top: 0.1em white solid;
+      color:white;
+      background-color: transparent;
+    }
 
 
-   #careerProfile-form select#careerClass{
+    #careerProfile-form select#careerClass{
      width: 80%;
-    height: 3em;
-    border-bottom: 0.1em white solid;
-  border-top: 0.1em white solid;
-  color:white;
-  background-color: transparent;
+     height: 3em;
+     border-bottom: 0.1em white solid;
+     border-top: 0.1em white solid;
+     color:white;
+     background-color: transparent;
    }
 
 
-#careerProfile-form button#updateProfile{
-  margin-left: 1em;
-  width: 90%;
-  margin-bottom: 2em;
-}
-#agreementStatement{
-  padding: 1em;
-  color: white;
-}
-p#description{
-  padding: 1em;
-}
+   #careerProfile-form button#updateProfile{
+    margin-left: 1em;
+    width: 90%;
+    margin-bottom: 2em;
+  }
+  #agreementStatement{
+    padding: 1em;
+    color: white;
+  }
+  p#description{
+    padding: 1em;
+  }
 
-#careerProfile-form input#checkbox{
-  position: absolute;
-  margin-top: -3.5em;
-  margin-left: 20em;
-  margin-bottom: 0.5em;
-}
+  #careerProfile-form input#checkbox{
+    position: absolute;
+    margin-top: -3.5em;
+    margin-left: 20em;
+    margin-bottom: 0.5em;
+  }
 
 /* ==========================================================================
    POSTS
    ========================================================================== */
-#mainPostBody{
-  display: block;
-margin-left: auto;
-margin-right: auto;
-width: 90%;
-margin-top:2em;
+   #mainPostBody{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top:2em;
 
-}
-.headerTopic h2 {
-color: white;
-height: auto;
-// position: relative;
-margin: 0 auto;
-font-size: 1.2em;
-text-transform: uppercase;
-padding-bottom:1em;
-margin-top:2em;
-} 
+  }
+  .headerTopic h2 {
+    color: white;
+    height: auto;
+    // position: relative;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-bottom:1em;
+    margin-top:2em;
+  } 
 
-#leftColomn{
-  width: 100%;
-float: left;
-margin-top: -2.5em;
-margin-bottom: 5em;
-}
-.contentWrapper{
-  padding-left: 5%;
-  padding-right: 5%;
+  #leftColomn{
+    width: 100%;
+    float: left;
+    margin-top: -2.5em;
+    margin-bottom: 5em;
+  }
+  .contentWrapper{
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
     color: white;
-}
+  }
 
-.postAvatar img{
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-}
-.postPhoto img{
-  width: 100%;
-  
-}
-.headerTopic{
-  font-size: 1.5em;
-  color: white;
-}
-.hashtagPost p a{
-  font-size:1em;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
+  .postAvatar img{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+  }
+  .postPhoto img{
+    width: 100%;
+    
+  }
+  .headerTopic{
+    font-size: 1.5em;
+    color: white;
+  }
+  .hashtagPost p a{
+    font-size:1em;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.hashtagPost p a:hover{
-  color: #9B8FFB;
-}
+  .hashtagPost p a:hover{
+    color: #9B8FFB;
+  }
 
-.hashtagPost i{
-  font-size:1em;
-  color: white;
-  text-decoration: none;
-  padding-right: 0.5em;
-}
+  .hashtagPost i{
+    font-size:1em;
+    color: white;
+    text-decoration: none;
+    padding-right: 0.5em;
+  }
 
-.hashtagPost a i:hover{
-  color: #9B8FFB;
-  padding-right: 0.5em;
-}
-.contentPost{
-  width: 82%;
-}
-#rightColomn{
-  width: 85%;
+  .hashtagPost a i:hover{
+    color: #9B8FFB;
+    padding-right: 0.5em;
+  }
+  .contentPost{
+    width: 82%;
+  }
+  #rightColomn{
+    width: 85%;
 
 
-}
+  }
 
-#rightColomn h2 {
-font-size: 1.3em;
-width: 100%;
-color: white;
-font-weight: 500;
-text-decoration: none;
-margin-top: -1em;
-border-bottom: 1px solid #aaaaaa;
-padding-bottom:1em;
-}
+  #rightColomn h2 {
+    font-size: 1.3em;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: -1em;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom:1em;
+  }
 
-.panelTopics{
+  .panelTopics{
 
-height: auto;
-}
-li.styleList{
-@include styleList;
-margin-left: -2.5em;
-line-height: 100%;
-padding-top: 1em;
-}
-.styleList a{
-  text-decoration: none;
-   color: white;
-  
-}
-.styleList a:hover{
+    height: auto;
+  }
+  li.styleList{
+    @include styleList;
+    margin-left: -2.5em;
+    line-height: 100%;
+    padding-top: 1em;
+  }
+  .styleList a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  .styleList a:hover{
    // transition: color 2s ease; 
    color: #9B8FFB;
-  
-}
+   
+ }
 
 
 /* ==========================================================================
     SERVICES
-  ========================================================================== */
-div#sectionServices{
-float: left;
-width: 100%;
-    margin: 0 auto;
-position: relative;
-}
+    ========================================================================== */
+    div#sectionServices{
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
 
-section#servicesListed{
-    display: block;
-margin: 0 auto;
-width: 90%;
-    margin-top: 6em;
+    section#servicesListed{
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 6em;
 
-  }
+    }
 
-#servicesListed h1#header{
-  color: white;
-  height: auto;
-  position: absolute;
-  margin: 0 auto;
-  margin-top:-2em;
-  margin-left: -0.5em;
-  padding-left: 0.8em;
+    #servicesListed h1#header{
+      color: white;
+      height: auto;
+      position: absolute;
+      margin: 0 auto;
+      margin-top:-2em;
+      margin-left: -0.5em;
+      padding-left: 0.8em;
 
-   }  
- #servicesListed p{
-  color: white;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+    }  
+    #servicesListed p{
+      color: white;
+      padding-left: 0.8em;
+      padding-right: 0.8em;
 
- }  
+    }  
 
-.ui-accordion {
-  /*background-color: white;*/
-  font-family: 'Quicksand'!important;
-  border-radius: none!important;
-/*  background-color: transparent!important;*/
+    .ui-accordion {
+      /*background-color: white;*/
+      font-family: 'Quicksand'!important;
+      border-radius: none!important;
+      /*  background-color: transparent!important;*/
 
- }
+    }
 
 
-.ui-corner-all{
-  border-radius: none!important;
-}
-.ui-accordion .ui-accordion-header{
-  font-size: 0.95em;
-  padding-right: 0.5em;
-}
-.ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-  left: 17.2em;
+    .ui-corner-all{
+      border-radius: none!important;
+    }
+    .ui-accordion .ui-accordion-header{
+      font-size: 0.95em;
+      padding-right: 0.5em;
+    }
+    .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+      left: 17.2em;
 
-}
-.ui-accordion .ui-accordion-content{
-  padding: 0.2em;
-  padding-top: 1em;
+    }
+    .ui-accordion .ui-accordion-content{
+      padding: 0.2em;
+      padding-top: 1em;
 
-}
-.ui-accordion-content ul{
-  margin-left: -0.7em;
-}
-.ui-accordion .ui-accordion-content ul li{
-  font-size: 0.9em;
-  padding-top: 1em;
-  left: 0;
-  width: 90%;
-  list-style: decimal outside none;
-  list-style-type: disc;
-}
-.ui-accordion .ui-accordion-content ul li:nth-last-child(1){
+    }
+    .ui-accordion-content ul{
+      margin-left: -0.7em;
+    }
+    .ui-accordion .ui-accordion-content ul li{
+      font-size: 0.9em;
+      padding-top: 1em;
+      left: 0;
+      width: 90%;
+      list-style: decimal outside none;
+      list-style-type: disc;
+    }
+    .ui-accordion .ui-accordion-content ul li:nth-last-child(1){
 
-  list-style: none;
-  list-style-type: none;
-}
-.ui-accordion .ui-accordion-content button.button{
-    font-family: 'Quicksand'!important;
-    margin-left: -1em;
-    width: 18em;
-    padding-bottom: 0.5em;
-    box-shadow: none;
-    line-height: 40px;
-/*    list-style-type: none!important;*/
-}
-.ui-accordion .ui-accordion-content{
-  height: auto;
-}
-#accordion i{
-  margin-left: -1em;
-  padding-right: 1em;
-}
-#accordion i.fa.fa-circle{
-  font-size: 0.1em;
+      list-style: none;
+      list-style-type: none;
+    }
+    .ui-accordion .ui-accordion-content button.button{
+      font-family: 'Quicksand'!important;
+      margin-left: -1em;
+      width: 18em;
+      padding-bottom: 0.5em;
+      box-shadow: none;
+      line-height: 40px;
+      /*    list-style-type: none!important;*/
+    }
+    .ui-accordion .ui-accordion-content{
+      height: auto;
+    }
+    #accordion i{
+      margin-left: -1em;
+      padding-right: 1em;
+    }
+    #accordion i.fa.fa-circle{
+      font-size: 0.1em;
 
-}
-#shareSocial p a{
-  color: black;
-  float: left;
-  width: 3em;
-  font-size: 1.5em;
+    }
+    #shareSocial p a{
+      color: black;
+      float: left;
+      width: 3em;
+      font-size: 1.5em;
 
-}
-#shareSocial p a:hover{
-  color: #9B8FFB;
+    }
+    #shareSocial p a:hover{
+      color: #9B8FFB;
 
-}
+    }
 /* ==========================================================================
     INPUT ERRORS
-  ========================================================================== */
+    ========================================================================== */
 
-  .invalid{
-    @include inputMessage(#9B8FFB);
-    position: absolute;
-    margin-top: -1em;
+    .invalid{
+      @include inputMessage(#9B8FFB);
+      position: absolute;
+      margin-top: -1em;
 
-  }
+    }
 /* ==========================================================================
    FOOTER
    ========================================================================== */
 
 
-div#footer_options{
+   div#footer_options{
 
-margin-top: 1em;
-border-top: 1px solid #3d4144;
-position: relative;
-left: -2em;
+    margin-top: 1em;
+    border-top: 1px solid #3d4144;
+    position: relative;
+    left: -2em;
 
-width: 100%;
+    width: 100%;
 
-padding-bottom: 3em;
-overflow: hidden;
-opacity: .5;
--webkit-transition: opacity 200ms linear;
--moz-transition: opacity 200ms linear;
--o-transition: opacity 200ms linear;
-transition: opacity 200ms linear;
-}
+    padding-bottom: 3em;
+    overflow: hidden;
+    opacity: .5;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+  }
 
-footer ul li{
-  float: left;
-  font-size: 0.6em;
-  padding: 0.4em;
-}
-footer ul li a{
-  list-style-type: none;
-  text-decoration: none;
-  color: white;
-  opacity: 0.5;
+  footer ul li{
+    float: left;
+    font-size: 0.6em;
+    padding: 0.4em;
+  }
+  footer ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
 
-}
-footer ul li a:hover{
-  opacity: 0.8;
+  }
+  footer ul li a:hover{
+    opacity: 0.8;
 
-}
+  }
 
 }
 
@@ -1221,103 +1325,103 @@ footer ul li a:hover{
    TABLET
    ========================================================================== */
 
-@media only screen and (min-width: 40em) {
+   @media only screen and (min-width: 40em) {
 
-body.show {
-@include responsiveBackground(#f4f2ef); 
-}
+    body.show {
+      @include responsiveBackground(#f4f2ef); 
+    }
 
-section#introduction.show{
-  display: block;
-  height: 100%;
-  float: left;
-  left: 0;
-}
-ul#main-nav.show{
-  display: block;
-}
-
-
-#servicesPage div#main-header ul#main-nav li:nth-child(6){
-  background-color: white!important;
-  
-} 
+    section#introduction.show{
+      display: block;
+      height: 100%;
+      float: left;
+      left: 0;
+    }
+    ul#main-nav.show{
+      display: block;
+    }
 
 
-#signing-up h1#header{
-  margin-left: -0.5em;
-  color: black;
-}
-input#password.border{
-  background-color: transparent;
-  color: black;
-}
-input#user-name.border{
-  background-color: transparent;
-  color: black;
-}
+    #servicesPage div#main-header ul#main-nav li:nth-child(6){
+      background-color: white!important;
+      
+    } 
+
+
+    #signing-up h1#header{
+      margin-left: -0.5em;
+      color: black;
+    }
+    input#password.border{
+      background-color: transparent;
+      color: black;
+    }
+    input#user-name.border{
+      background-color: transparent;
+      color: black;
+    }
 
 /* ==========================================================================
    MAIN NAV
    ========================================================================== */
-body{
-  @include responsiveBackground(#f4f2ef); 
-}
-.nav-handle{
-  display: none;
-}
-.nav-handle-other{
-  display: none;
-}
-.nav-handle-user{
-top: -5em;
-/*  background-color: rgba(255,255,255,0.5);*/
-  display: block;
-  height: 3em;
+   body{
+    @include responsiveBackground(#f4f2ef); 
+  }
+  .nav-handle{
+    display: none;
+  }
+  .nav-handle-other{
+    display: none;
+  }
+  .nav-handle-user{
+    top: -5em;
+    /*  background-color: rgba(255,255,255,0.5);*/
+    display: block;
+    height: 3em;
     margin: 0 auto;
-position: relative;
-  width: 50%;
-  /*margin-right: 18em;*/
-}
+    position: relative;
+    width: 50%;
+    /*margin-right: 18em;*/
+  }
 
-#signedInTag{
-  font-size: 0.9em;
-  float: left;
-  padding-right: 1em;
-  padding-left: 1em;
-  color: black!important;
-  
-}
-div#profilePic{
-  height: 3em;
-  width: 3em;
-  float: left;
-  border: #EDEDED 0.01em solid; 
-}
+  #signedInTag{
+    font-size: 0.9em;
+    float: left;
+    padding-right: 1em;
+    padding-left: 1em;
+    color: black!important;
+    
+  }
+  div#profilePic{
+    height: 3em;
+    width: 3em;
+    float: left;
+    border: #EDEDED 0.01em solid; 
+  }
 
-#profilePic a img{  
-  margin-right: 0em; 
-  height: 100%;
-  width: 100%;
-}
+  #profilePic a img{  
+    margin-right: 0em; 
+    height: 100%;
+    width: 100%;
+  }
 
-header  ul#main-nav{
-  margin-top: 1em; 
+  header  ul#main-nav{
+    margin-top: 1em; 
 
 
-}
+  }
 /*ul#main-nav li:nth-child(6){
   background-color: #242424;
   
-}*/
-ul#main-nav li:nth-child(7){
-  background-color: white;
-  
-} 
-ul#main-nav li:nth-child(8){
-  background-color: white;
-  
-} 
+  }*/
+  ul#main-nav li:nth-child(7){
+    background-color: white;
+    
+  } 
+  ul#main-nav li:nth-child(8){
+    background-color: white;
+    
+  } 
 
 
 
@@ -1325,100 +1429,100 @@ ul#main-nav li:nth-child(8){
    SERVICES ACCORDIAN
    ========================================================================== */
 
-section#servicesListed {
-  float: left;
-display: block;
-position: relative;
-width: 75%;
-margin: 0 auto;
-margin-top: 5em;
-margin-left: 7em;
+   section#servicesListed {
+    float: left;
+    display: block;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-left: 7em;
 
-}
+  }
 
-#servicesListed h1#header{
-  color: black;
-  height: auto;
-  position: relative;
-  margin: 0 auto;
-  margin-top:-3em;
-  margin-left: -3.6em;
+  #servicesListed h1#header{
+    color: black;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top:-3em;
+    margin-left: -3.6em;
 
-   }  
- #servicesListed p{
-  color: black;
+  }  
+  #servicesListed p{
+    color: black;
     margin-left:-6.3em;
-  padding-bottom: 1em;
- }  
+    padding-bottom: 1em;
+  }  
 
 
-.ui-accordion {
-  width: 118%;
- float: left;
- margin-left: -5em;
- margin-bottom: 2em;
-background-color: transparent!important;
-border: none;
-}
-div#accordion.ui-accordion .ui-widget .ui-helper-reset{
-  background-color: none!important;
-}
-
-
-
-
-.ui-accordion .ui-accordion-content ul li{
-  width: 100%;
-}
+  .ui-accordion {
+    width: 118%;
+    float: left;
+    margin-left: -5em;
+    margin-bottom: 2em;
+    background-color: transparent!important;
+    border: none;
+  }
+  div#accordion.ui-accordion .ui-widget .ui-helper-reset{
+    background-color: none!important;
+  }
 
 
 
 
-.ui-accordion .ui-accordion-content button.button{
+  .ui-accordion .ui-accordion-content ul li{
+    width: 100%;
+  }
+
+
+
+
+  .ui-accordion .ui-accordion-content button.button{
     margin: 0 auto;
     position: relative;
     margin-top:2em;
     width: 100%;
     margin-left: -1em;
     line-height: 45px;
-}
-.ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-  float: right;
-}
+  }
+  .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+    float: right;
+  }
 
-.ui-accordion .ui-accordion-content{
-  background-color: transparent;
-}
-.ui-accordion .ui-accordion-icons{
-  background-color: transparent!important;
-}
-#accordion i{
-  margin-left: -1em;
-  padding-right: 1em;
+  .ui-accordion .ui-accordion-content{
+    background-color: transparent;
+  }
+  .ui-accordion .ui-accordion-icons{
+    background-color: transparent!important;
+  }
+  #accordion i{
+    margin-left: -1em;
+    padding-right: 1em;
 
-}
-#accordion i.fa.fa-circle{
-  font-size: 0.1em;
-}
+  }
+  #accordion i.fa.fa-circle{
+    font-size: 0.1em;
+  }
 
- p#testimonialButton{
+  p#testimonialButton{
     width: 20em;
     height: 3em;
     @include purpleButton;
     box-shadow: none;
-//   margin: 0 auto;
-// position: relative;
-  text-align: center;
-  margin-left: -5.5em;
-   }
- p#testimonialButton a{
-  color: white;
-  text-decoration: none;
-  line-height: 45px;
-  text-align: center;
+    //   margin: 0 auto;
+    // position: relative;
+    text-align: center;
+    margin-left: -5.5em;
+  }
+  p#testimonialButton a{
+    color: white;
+    text-decoration: none;
+    line-height: 45px;
+    text-align: center;
 
 
- }
+  }
 /* ==========================================================================
    Checkbox for Nav Sign up
    ========================================================================== */
@@ -1430,58 +1534,58 @@ margin-left: -10.5em;
 }
 input #checkBox{
   float:left;
-}*/
+  }*/
 /* ==========================================================================
    NAV SIGN UP
    ========================================================================== */
 
-form#navLogIn{
-  height: 3em;
-  float: left;
-  width: 90%;
-  margin-top: -1em;
-  margin-left: 1em;
+   form#navLogIn{
+    height: 3em;
+    float: left;
+    width: 90%;
+    margin-top: -1em;
+    margin-left: 1em;
 
-}
+  }
 
-#navLogIn button{
-  width: 15%;
-  height: 3.2em!important;
-  margin-left: 0.3em;
-  margin-top: 0em;
-}
+  #navLogIn button{
+    width: 15%;
+    height: 3.2em!important;
+    margin-left: 0.3em;
+    margin-top: 0em;
+  }
 
-#navLogIn input{
-  height: 3.35em;
-  background-color:none!important;
-  width: 28%;
+  #navLogIn input{
+    height: 3.35em;
+    background-color:none!important;
+    width: 28%;
 
-  border-bottom: 0.1em black solid;
-border-top: 0.1em black solid;
-font-size: 0.9em;
-float: left;
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    font-size: 0.9em;
+    float: left;
 
-}
-#navLogIn span{
-  color: black!important;
-  float: left;
-  border-bottom: 0.1em black solid;
-border-top: 0.1em black solid;
-display: block;
-height: 3em;
-padding-top: 1em;
-float: left;
-text-align: center;
-width: 3em;
+  }
+  #navLogIn span{
+    color: black!important;
+    float: left;
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    display: block;
+    height: 3em;
+    padding-top: 1em;
+    float: left;
+    text-align: center;
+    width: 3em;
 
-}
-// form#navLogIn  i{
-// color: black!important;
-// border-bottom: 0.1em black solid;
-// border-top: 0.1em black solid;
-// display: block;
-// height: 3em;
-// padding-top: 1em;
+  }
+  // form#navLogIn  i{
+    // color: black!important;
+    // border-bottom: 0.1em black solid;
+    // border-top: 0.1em black solid;
+    // display: block;
+    // height: 3em;
+    // padding-top: 1em;
 // float: left;/*
 // height: 2.95em;
 // line-height: 49px;*/
@@ -1506,27 +1610,27 @@ width: 3em;
 /* ==========================================================================
    Login
    ========================================================================== */
-div#sectionLogin{
-display: block;
- width: 26em;
-  height: 30em;
-margin: 0 auto;
-position: relative;
-margin-top: 3em;
-}
-#sectionLogin h1{
+   div#sectionLogin{
+    display: block;
+    width: 26em;
+    height: 30em;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 3em;
+  }
+  #sectionLogin h1{
    color: black;
-}
-#sectionLogin p{
+ }
+ #sectionLogin p{
    color: black;
-}
-#logIn-form input{
-    border-bottom: 0.1em black solid;
-border-top: 0.1em black solid;
-color: black!important;
-width: 19em;
-height: 3em;
-background-color: transparent;
+ }
+ #logIn-form input{
+  border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  color: black!important;
+  width: 19em;
+  height: 3em;
+  background-color: transparent;
 }
 
 #logIn{
@@ -1535,15 +1639,15 @@ background-color: transparent;
 }
 
 form#logIn-form span{
-color: black!important;
-border-bottom: 0.1em black solid;
-border-top: 0.1em black solid;
-display: block;
-float: left;
-height: 3em;
-line-height: 50px;
-text-align: center;
-width: 3em;
+  color: black!important;
+  border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  display: block;
+  float: left;
+  height: 3em;
+  line-height: 50px;
+  text-align: center;
+  width: 3em;
 
 }
 
@@ -1566,30 +1670,30 @@ width: 3em;
 /* ==========================================================================
    Slide in and out tablet nav
    ========================================================================== */
-#tab-desk-nav{
-width:15.4em;
-  float: left;
- height: 90em;
- top:0;
- left: 0;
- position: absolute;
- z-index: 100;
- background-color: #242424;
-transition: width 1s;
+   #tab-desk-nav{
+    width:15.4em;
+    float: left;
+    height: 90em;
+    top:0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    background-color: #242424;
+    transition: width 1s;
     -webkit-transition: width 1s; /* Safari 3.1 to 6.0 */
-}
-ul#main-nav{
-width:0;
-  transition: width 1s;
+  }
+  ul#main-nav{
+    width:0;
+    transition: width 1s;
     -webkit-transition: width 1s; /* Safari 3.1 to 6.0 */
- float: left;
-  overflow:hidden;
-}
-#droparrow.hide{
-  display: none;
-  width: 0;
-  height: 0;
-}
+    float: left;
+    overflow:hidden;
+  }
+  #droparrow.hide{
+    display: none;
+    width: 0;
+    height: 0;
+  }
 /*#tab-desk-nav.show{
 display: block;
 width: 15.4em;
@@ -1604,66 +1708,66 @@ ul#main-nav{
   width: 0.5em;
   display: block;
   z-index: 1000;
-position: absolute;
-left: 8em;
-margin-top: -1.2em;
-color: white !important;
+  position: absolute;
+  left: 8em;
+  margin-top: -1.2em;
+  color: white !important;
 }
 /* ==========================================================================
    Slide in and out tablet nav
    ========================================================================== */
-#main-nav li p{
-  margin-left: -1.3em;
-}
-#brand_logo a img{
-  width:5em;
-  height: 5em;
-  margin-left: 4em;
-   z-index: 2001;
+   #main-nav li p{
+    margin-left: -1.3em;
+  }
+  #brand_logo a img{
+    width:5em;
+    height: 5em;
+    margin-left: 4em;
+    z-index: 2001;
     position: relative;
-}
+  }
 
-li#seletedServices.display {
-  margin-left: -3.2em;
+  li#seletedServices.display {
+    margin-left: -3.2em;
 
-}
-li#seletedServices li{
-  width: 17.5em;
-  height: 4em;
-}
-li#seletedServices li p{
-  line-height: 120%;  
-}
-li#seletedServices p:nth-child(2){
-padding-top:0.3em;
-}
-li#seletedServices p:nth-child(3){
-  line-height: 160%;
-}
-p.display:nth-child(5){
-  padding-bottom:0.5em;
+  }
+  li#seletedServices li{
+    width: 17.5em;
+    height: 4em;
+  }
+  li#seletedServices li p{
+    line-height: 120%;  
+  }
+  li#seletedServices p:nth-child(2){
+    padding-top:0.3em;
+  }
+  li#seletedServices p:nth-child(3){
+    line-height: 160%;
+  }
+  p.display:nth-child(5){
+    padding-bottom:0.5em;
   }  
-li#seletedServices p.display{
-  margin-top: -1.8em;
-  margin-left: -0.3em;
-}
+  li#seletedServices p.display{
+    margin-top: -1.8em;
+    margin-left: -0.3em;
+  }
 
 /* ==========================================================================
    SEARCH FORM
    ========================================================================== */
-.search-container{
-margin-right: 6em;
-top: 0;
-display: block;
-float: right;
-  width: 12em;
- margin-top: -8em;
-  
-}
+   .search-container{
+    margin-right: 6em;
+    top: 0;
+    display: block;
+    float: right;
+    width: 12em;
+    margin-top: -8em;
+    
+  }
 
 /*.search-bar{
   display: block;
-}*/
+  }*/
 
 /*input#txtsearch.search-bar{
   display: none;
@@ -1677,70 +1781,70 @@ float: right;
     transition-duration: 1s;
     transition-timing-function: linear;
     transition-delay: 2s;
-}*/
-input#txtsearch.search-bar{
-   display: block;
-   height: 3em;
-   width: 14em;
-   padding-left: 3.5em;
-  font-size: 1em;
-  font-weight: 100;
-  position: absolute;
-  color: white!important;
-  font-weight: 100;
-  margin-top: 3em;
+    }*/
+    input#txtsearch.search-bar{
+     display: block;
+     height: 3em;
+     width: 14em;
+     padding-left: 3.5em;
+     font-size: 1em;
+     font-weight: 100;
+     position: absolute;
+     color: white!important;
+     font-weight: 100;
+     margin-top: 3em;
 
 
-}
+   }
 
-#txtsearch{
+   #txtsearch{
     background-color: black;
-}
-#fa-search{
-  right: 10.8em;
-  padding-right: 0.5em;
-  margin-top: 2.6em;
-  font-size: 1.4em;
-  position: absolute;
-  color: white!important;
-  border-right: 1px white solid;
-}
+  }
+  #fa-search{
+    right: 10.8em;
+    padding-right: 0.5em;
+    margin-top: 2.6em;
+    font-size: 1.4em;
+    position: absolute;
+    color: white!important;
+    border-right: 1px white solid;
+  }
 /* ==========================================================================
    INTRODUCTION
    ========================================================================== */
 
-div#sectionOne{
-margin-top: 1em;
- width: 80%;
- padding-left: 4em;
-  margin: 0 auto;
-  z-index: 4000;
+   div#sectionOne{
+    margin-top: 1em;
+    width: 80%;
+    padding-left: 4em;
+    margin: 0 auto;
+    z-index: 4000;
 
 
-}
+  }
 
 
-section#introduction{
+  section#introduction{
     top: 24em;
-     position: relative;
-     margin-left: 8em;
+    position: relative;
+    margin-left: 8em;
     z-index: 4000;
     display: block;
     width: 37em;
     height: 16em;
     padding-left: 1.2em;
 
-   }
+  }
 
 
-section#animation{
+  section#animation{
    margin-top: 25em;
-    position: relative;
-    display: block;
-    height: 22em;
+   position: relative;
+   display: block;
+   height: 22em;
 
-}
-#aucklandSkyline img{
+ }
+ #aucklandSkyline img{
   margin-top: -8em;
   opacity: 0.3;
   position: absolute;
@@ -1750,11 +1854,11 @@ section#animation{
 
 #ponsonbyHousing img{
  /* height: 65%;*/
-  width: 100%;
-  margin-top: 10em;
-  margin-left: 6em;
-display: block;
-position: absolute;
+ width: 100%;
+ margin-top: 10em;
+ margin-left: 6em;
+ display: block;
+ position: absolute;
 
 
 }
@@ -1762,11 +1866,11 @@ position: absolute;
   margin-top:20em;
   width: 10%;
 /*  height: 6.5em;
-  width: 7em;*/
-  position: absolute;
-  z-index: 4000;
-  margin-left: 10em;
-  display: none;
+width: 7em;*/
+position: absolute;
+z-index: 4000;
+margin-left: 10em;
+display: none;
 }
 
 
@@ -1782,44 +1886,44 @@ position: absolute;
     width: 16em;
     margin-left: 0em;
 
-   }
+  }
   #rightarrow{
-  top: 1.8em;
- position: relative;
-  color: black;
-  left: -1.5em;
+    top: 1.8em;
+    position: relative;
+    color: black;
+    left: -1.5em;
   }
 
 
-   #launchCareer{
+  #launchCareer{
     border-color: black;
     width: 18em;
     margin-left: 0em;
     margin-top: -0.1em;   
 
-   }
+  }
 
 
-   #launchCareer a{
+  #launchCareer a{
     color: black;
 
-   }
+  }
 
-    #careerButton{
+  #careerButton{
     width: 16.2em;
     height: 2.65em;
 
     margin-left: 17em;
     margin-top: -2.7em;   
     box-shadow: none;
-   }
+  }
 
-   .button{
-/*    float: left;*/
+  .button{
+    /*    float: left;*/
     box-shadow: none;
     width: 18em;  
-   z-index: 4000;
-   }
+    z-index: 4000;
+  }
 
 
 /* ==========================================================================
@@ -1831,72 +1935,72 @@ position: absolute;
      position: relative;
      margin: 0 auto;
      margin-top: -2em;
-    }
-    section#signing-up{
-      width: 70%;
-     height: 68em;
-     float: left;
-     margin-left: 2em;
+   }
+   section#signing-up{
+    width: 70%;
+    height: 68em;
+    float: left;
+    margin-left: 2em;
 
-    }
+  }
 
 
 
-form#signup-form{
-  width: 100%;
-  margin-top: 7em;
+  form#signup-form{
+    width: 100%;
+    margin-top: 7em;
 
-}
+  }
 
-#signing-up p#description{
-  color: black;
-  font-size: 1.1em;
+  #signing-up p#description{
+    color: black;
+    font-size: 1.1em;
 
-  margin-left: -0.5em;
-}
+    margin-left: -0.5em;
+  }
 
-#signing-up p{
-  float: left;
-   width: 46%;
-   height: 3em;
-}
+  #signing-up p{
+    float: left;
+    width: 46%;
+    height: 3em;
+  }
 
-ul#reasonsToSignUp{
-  height: 8em;
-  width: 100%;
-  margin-left: -0.2em;
-}
-ul#reasonsToSignUp li{
+  ul#reasonsToSignUp{
+    height: 8em;
+    width: 100%;
+    margin-left: -0.2em;
+  }
+  ul#reasonsToSignUp li{
    float: left;
    list-style: decimal outside none;
-list-style-type: disc;
-color: black;
-margin-bottom: 0.8em;
-width: 100%;
+   list-style-type: disc;
+   color: black;
+   margin-bottom: 0.8em;
+   width: 100%;
 
 
-}
-ul#reasonsToSignUp li:nth-child(1){
+ }
+ ul#reasonsToSignUp li:nth-child(1){
    float: left;
    list-style: none;
-list-style-type: none;
-color: black;
-margin-bottom: 0.8em;
-margin-left: -3em;
-width: 100%;
+   list-style-type: none;
+   color: black;
+   margin-bottom: 0.8em;
+   margin-left: -3em;
+   width: 100%;
 
-}
+ }
 
-#signup-form input{
-    float: left;
-      border-bottom: 0.1em black solid;
+ #signup-form input{
+  float: left;
+  border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
   color: black;
 }
 
 #signing-up h1#header{
-    color: black;
-    margin-left: 0em;
+  color: black;
+  margin-left: 0em;
 }
 
 
@@ -1905,37 +2009,37 @@ width: 100%;
   border-top: 0.1em black solid;
   color: black;
 
- /*  width: 20em; */
+  /*  width: 20em; */
 }
 form#signup-form span{
  border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  float: left;
-  height: 3em;
-  color: black;
+ border-top: 0.1em black solid;
+ float: left;
+ height: 3em;
+ color: black;
 }
 #signup-form form input[type="password"]{
-     color: black;
-    border-bottom: 0.1em black solid!important;
-    border-top: 0.1em black solid!important;
+ color: black;
+ border-bottom: 0.1em black solid!important;
+ border-top: 0.1em black solid!important;
 
-    width: 90%;
-    @include input;
+ width: 90%;
+ @include input;
 }
 #signup-form form input[type="email"]{
-     color: black;
+ color: black;
 
-    width: 90%;
-    @include input;
+ width: 90%;
+ @include input;
 }
 #signup-form form input[type="text"], input[type="email"], input[type="url"]{
-   color: black;
-    border-bottom: 0.1em black solid!important;
-    border-top: 0.1em black solid!important;
+ color: black;
+ border-bottom: 0.1em black solid!important;
+ border-top: 0.1em black solid!important;
 
-    width: 90%;
-    @include input;
-   
+ width: 90%;
+ @include input;
+ 
 }
 /*form#signup-form  i{
 color: black!important;
@@ -1950,16 +2054,16 @@ width: 5%;
 
 
 }*/
-  #signup-form select#servicesSel{
+#signup-form select#servicesSel{
   border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
-color: black;
+  color: black;
 
-/*width: 20em; */
+  /*width: 20em; */
 }
 #signup-form p#agreementStatement{
   color: black;
-height: 7em;
+  height: 7em;
   width: 90%;
   margin-top: 0.5em;
   margin-left: 0.5em;
@@ -1967,145 +2071,145 @@ height: 7em;
 
 
 #signup-form button#signUp{
-   /*width: 26.5em;*/
-   float: left;
-   width: 88%;
-   height: 3.4em;
+ /*width: 26.5em;*/
+ float: left;
+ width: 88%;
+ height: 3.4em;
 
-   margin-left: 0.5em;
-   
+ margin-left: 0.5em;
+ 
 }
 // #signup-form input#checkbox{
-//   margin-top: 30em;
-//   margin-left: -4em;
-//   width: 1em;
-//   height: 1em;
-//   position: absolute;
+  //   margin-top: 30em;
+  //   margin-left: -4em;
+  //   width: 1em;
+  //   height: 1em;
+  //   position: absolute;
 
-// }
-#signup-form input[type="checkbox"] {
-width: 1em;
-height: 1em;
-position: relative;
-margin-top: 6em;
-margin-left: -2em;
-border: none;
-}
+  // }
+  #signup-form input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin-top: 6em;
+    margin-left: -2em;
+    border: none;
+  }
 
-#signup-form img#profileImage{
-  position: relative;
-  margin: 0 auto;
-  margin-left: 41%;
-/* position: absolute;*/
-}
+  #signup-form img#profileImage{
+    position: relative;
+    margin: 0 auto;
+    margin-left: 41%;
+    /* position: absolute;*/
+  }
 
 
 
 
 /* ==========================================================================
     CAREER PROFILE 
-  ========================================================================== */
-     div#sectionCareerProfile{
+    ========================================================================== */
+    div#sectionCareerProfile{
      display: block;
      position: relative;
      margin: 0 auto;
      margin-top: -2em;
-    }
-    section#career-profile{
-      width: 70%;
-     height: 68em;
-     float: left;
-     margin-left: 2em;
-
-    }
-
-
-
-#career-profile p{
-  float: left;
-   width: 47%;
-   height: 3em;
-
-}
-
-
-
-
-form#careerProfile-form{
-  width: 100%;
-  margin-top: 7em;
-
-}
-
-p#description{
-  color: black!important;
-  font-size: 1.1em;
-  margin-left: -0.5em;
-  width: 100%;
-}
-
-#careerProfile-form p{
-  float: left;
-   width: 50%;
-   height: 3em;
-}
-
-#careerProfile-form input{
+   }
+   section#career-profile{
+    width: 70%;
+    height: 68em;
     float: left;
-      border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  color: black;
-}
+    margin-left: 2em;
 
-#career-profile h1#header{
+  }
+
+
+
+  #career-profile p{
+    float: left;
+    width: 47%;
+    height: 3em;
+
+  }
+
+
+
+
+  form#careerProfile-form{
+    width: 100%;
+    margin-top: 7em;
+
+  }
+
+  p#description{
+    color: black!important;
+    font-size: 1.1em;
+    margin-left: -0.5em;
+    width: 100%;
+  }
+
+  #careerProfile-form p{
+    float: left;
+    width: 50%;
+    height: 3em;
+  }
+
+  #careerProfile-form input{
+    float: left;
+    border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    color: black;
+  }
+
+  #career-profile h1#header{
     color: black;
     margin-left: 0.1em;
-}
+  }
 
 
-#careerProfile-form textarea{
-  border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  color: black;
-
- /*  width: 20em; */
-}
-form#careerProfile-form span{
- border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-  float: left;
-  height: 3em;
-  color: black;
-}
-
-
-#careerProfile-form form input[type="text"]{
-   color: black;
-    border-bottom: 0.1em black solid!important;
-    border-top: 0.1em black solid!important;
-
-    width: 90%;
-    @include input;
-   
-}
-
-
-
-  #careerProfile-form select#servicesSel{
-  border-bottom: 0.1em black solid;
-  border-top: 0.1em black solid;
-color: black;
-
-}
-
-
-   #careerProfile-form select#careerClass{
-color: black;
+  #careerProfile-form textarea{
     border-bottom: 0.1em black solid;
+    border-top: 0.1em black solid;
+    color: black;
+
+    /*  width: 20em; */
+  }
+  form#careerProfile-form span{
+   border-bottom: 0.1em black solid;
+   border-top: 0.1em black solid;
+   float: left;
+   height: 3em;
+   color: black;
+ }
+
+
+ #careerProfile-form form input[type="text"]{
+   color: black;
+   border-bottom: 0.1em black solid!important;
+   border-top: 0.1em black solid!important;
+
+   width: 90%;
+   @include input;
+   
+ }
+
+
+
+ #careerProfile-form select#servicesSel{
+  border-bottom: 0.1em black solid;
+  border-top: 0.1em black solid;
+  color: black;
+
+}
+
+
+#careerProfile-form select#careerClass{
+  color: black;
+  border-bottom: 0.1em black solid;
   border-top: 0.1em black solid;
 
-   }
- #careerProfile-form p#agreementStatement{
+}
+#careerProfile-form p#agreementStatement{
   color: black;
   float: right;
   width: 46%;
@@ -2115,11 +2219,11 @@ color: black;
   padding: 0.5em;
 }
 #careerProfile-form button#updateProfile{
-   width: 95%; 
-   float: left;
-   height: 3.4em;
-   margin-top: 2em;
-   margin-left: 0.5em;
+ width: 95%; 
+ float: left;
+ height: 3.4em;
+ margin-top: 2em;
+ margin-left: 0.5em;
 }
 #careerProfile-form input#checkbox{
   margin-top: 35em;
@@ -2140,19 +2244,19 @@ color: black;
    LATEST UPDATES - NEXT TO SERVICES ACCORDION
    ========================================================================== */
 
-#servicesPage div#tab-desk-nav{
+   #servicesPage div#tab-desk-nav{
 /*  height: 100%;
 */   overflow-y: hidden;
 
 }
 div#sectionServices{
-float: left;
-width: 50%;
-    margin: 0 auto;
-position: relative;
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
 }
 aside#asideLatestNews{
-/*  height: 70em;*/
+  /*  height: 70em;*/
   border-top: none;
   float: left;
   
@@ -2162,26 +2266,26 @@ aside#asideLatestNews{
 
 section#latestUpdates{
   float: left;
-/*  margin-left: 1em;*/
+  /*  margin-left: 1em;*/
   width: 100%;
-/*  padding-left: 2em;*/
-    height:auto;
-    margin-top: 1.5em;
+  /*  padding-left: 2em;*/
+  height:auto;
+  margin-top: 1.5em;
 }
 
 section#latestUpdates article{
-/*  margin-top: 2.2em;*/
-border-bottom: 1px solid #aaaaaa;
-border-top: 1px solid #aaaaaa;
-/*padding-bottom: 1em;*/
-float: left;
+  /*  margin-top: 2.2em;*/
+  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+  /*padding-bottom: 1em;*/
+  float: left;
 
 }
 #latestUpdates h2{
   font-size:1.3em;
-    width: 100%;
+  width: 100%;
   color: black;
-   font-weight: 500;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -2191,7 +2295,7 @@ float: left;
   color: black;
   text-decoration: none;
   font-weight: 500;
-cursor: pointer;
+  cursor: pointer;
 }
 
 .divWrapperHeader h2 a:hover{
@@ -2227,25 +2331,25 @@ cursor: pointer;
   padding-right: 0.5em;
 }
 .readMore p a{
-    color: #2B2937;
+  color: #2B2937;
   text-decoration: none;
 }
 .readMore p a:hover{
-    color: #9B8FFB;
+  color: #9B8FFB;
   text-decoration: none;
 }
 
 .avatarProfile{
-    height: 5em;
-width: 5em;
-padding-right: 1em;
+  height: 5em;
+  width: 5em;
+  padding-right: 1em;
 }
 
 .avatarProfile img{
-width: 100%;
-overflow: hidden;
-display: block;
-float: left;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  float: left;
 
   border-radius: 50%;
 
@@ -2264,10 +2368,10 @@ float: left;
 .date{
   font-size: 0.6em;
   font-weight: 500;
-margin-left: 0.5em;
-margin-left: 7.5em;
+  margin-left: 0.5em;
+  margin-left: 7.5em;
 }
-   div#shareSocial p a{
+div#shareSocial p a{
   color: black;
   float: left;
   width: 3em;
@@ -2283,323 +2387,340 @@ margin-left: 7.5em;
    ADMIN POST CAREER UPDATES/ADVICE
    ========================================================================== */
 
-div#adminPostLatest{
+   div#adminPostLatest{
 
-width: 92%;
+    width: 92%;
     margin: 0 auto;
-position: relative;
-margin-left: 2em;
-margin-top: -3em;
-}
+    position: relative;
+    margin-left: 2em;
+    margin-top: -3em;
+  }
 
 
-section#postUpdates{
-  float: left;
-/*  margin-left: 1em;*/
-  width: 60%;
-/*  padding-left: 2em;*/
+  section#postUpdates{
+    float: left;
+    /*  margin-left: 1em;*/
+    width: 60%;
+    /*  padding-left: 2em;*/
     height:auto;
     margin-top: 1.5em;
     margin-left: 2em;
-}
+  }
 
-section#postUpdates article{
-/*  margin-top: 2.2em;*/
-border-bottom: 1px solid #aaaaaa;
-border-top: 1px solid #aaaaaa;
-padding-bottom: 1em;
-float: left;
+  section#postUpdates article{
+    /*  margin-top: 2.2em;*/
+    border-bottom: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    padding-bottom: 1em;
+    float: left;
 
-}
+  }
 /* ==========================================================================
    POSTS
    ========================================================================== */
-#mainPostBody{
-  display: block;
-margin-left: auto;
-margin-right: auto;
-width: 90%;
-max-width: 80em;
-margin-top:2em;
+   #mainPostBody{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 80em;
+    margin-top:2em;
 
-}
-.headerTopic h2 {
-color: black;
-height: auto;
-position: relative;
-margin: 0 auto;
-font-size: 1.2em;
-text-transform: uppercase;
-padding-bottom:1em;
-} 
+  }
+  .headerTopic h2 {
+    color: black;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-bottom:1em;
+  } 
 
-#leftColomn{
-  width: 55%;
-float: left;
-margin-top: -2.5em;
-margin-bottom: 5em;
-}
-.contentWrapper{
-  padding-left: 5%;
-  padding-right: 5%;
-  color: black;
-}
+  #leftColomn{
+    width: 55%;
+    float: left;
+    margin-top: -2.5em;
+    margin-bottom: 5em;
+  }
+  .contentWrapper{
+    padding-left: 5%;
+    padding-right: 5%;
+    color: black;
+  }
 
-.postAvatar img{
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-}
-.postPhoto img{
-  width: 85%;
-  
-}
-.headerTopic{
-  font-size: 1.5em;
-  color: black;
-}
-.hashtagPost p a{
-  font-size:1em;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
+  .postAvatar img{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+  }
+  .postPhoto img{
+    width: 85%;
+    
+  }
+  .headerTopic{
+    font-size: 1.5em;
+    color: black;
+  }
+  .hashtagPost p a{
+    font-size:1em;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.hashtagPost p a:hover{
-  color: #9B8FFB;
-}
+  .hashtagPost p a:hover{
+    color: #9B8FFB;
+  }
 
-.hashtagPost i{
-  font-size:1em;
-  color: black;
-  text-decoration: none;
-  padding-right: 0.5em;
-}
+  .hashtagPost i{
+    font-size:1em;
+    color: black;
+    text-decoration: none;
+    padding-right: 0.5em;
+  }
 
-.hashtagPost a i:hover{
-  color: #9B8FFB;
-  padding-right: 0.5em;
-}
-.contentPost{
-  width: 82%;
-}
-#rightColomn{
-  width: 20%;
-float: left;
-margin-top: 1.5em;
-}
+  .hashtagPost a i:hover{
+    color: #9B8FFB;
+    padding-right: 0.5em;
+  }
+  .contentPost{
+    width: 82%;
+  }
+  #rightColomn{
+    width: 20%;
+    float: left;
+    margin-top: 1.5em;
+  }
 
-#rightColomn h2 {
-font-size: 1.3em;
-width: 100%;
-color: black;
-font-weight: 500;
-text-decoration: none;
-margin-top: -1em;
-border-bottom: 1px solid #aaaaaa;
-padding-bottom:1em;
-}
+  #rightColomn h2 {
+    font-size: 1.3em;
+    width: 100%;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: -1em;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom:1em;
+  }
 
-.panelTopics{
-width: 100%;
-height: auto;
-}
-li.styleList{
-@include styleList;
-margin-left: -2.5em;
-// line-height: 100%;
-width: 130%;
-padding-top: 1em;
-// padding-bottom: 1em;
-}
-.styleList a{
-  text-decoration: none;
-   color: black;
-  
-}
-.styleList a:hover{
+  .panelTopics{
+    width: 100%;
+    height: auto;
+  }
+  li.styleList{
+    @include styleList;
+    margin-left: -2.5em;
+    // line-height: 100%;
+    width: 130%;
+    padding-top: 1em;
+    // padding-bottom: 1em;
+  }
+  .styleList a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  .styleList a:hover{
    // transition: color 2s ease; 
    color: #9B8FFB;
-  
-}
+   
+ }
 /* ==========================================================================
    TESTIMONIALS
    ========================================================================== */
-#leftColomnTestimonials{
-  display: block;
-width: 100%;
-margin-left: 12em;
-margin-top:0em;
+   #leftColomnTestimonials{
+    display: block;
+    width: 100%;
+    margin-left: 12em;
+    margin-top:0em;
 
-}
-.cd-testimonials-wrapper h1{
-  margin-left: 0em;
-  color: black;
-}
-.cd-testimonials-wrapper {
-  position: relative;
-  width: 90%;
-  max-width: 50em;
-  margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 1.25em 2.5em 4.5em;
-  z-index: 1;
+  }
+  .cd-testimonials-wrapper h1{
+    margin-left: 0em;
+    color: black;
+  }
+  .cd-testimonials-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 50em;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 1.25em 2.5em 4.5em;
+    z-index: 1;
 
-}
+  }
 
-.cd-testimonials-wrapper::after {
-  /* quotation mark */
-  content: '\201C';
-  position: absolute;
-  top:0.6em;
-  left: 0;
-  width: 3.2em;
-  height: 3.2em;
-  padding-top: 0.5em;
-  margin-left: -1.5em;
-  text-align: center;
-  /* visible on big devices only */
-  display: none;
-}
-.cd-testimonials {
-  color: black;
- 
-}
+  .cd-testimonials-wrapper::after {
+    /* quotation mark */
+    content: '\201C';
+    position: absolute;
+    top:0.6em;
+    left: 0;
+    width: 3.2em;
+    height: 3.2em;
+    padding-top: 0.5em;
+    margin-left: -1.5em;
+    text-align: center;
+    /* visible on big devices only */
+    display: none;
+  }
+  .cd-testimonials {
+    color: black;
+    
+  }
 
-.cd-testimonials:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.cd-testimonials > li {
-  position: absolute;
-  opacity: 0;
- }
-.cd-testimonials > li:first-child {
-  position: relative;
-  opacity: 1;
-}
-.flex-active-slide{
-width: 100%;
-  position: relative;
-  width: 90%;
-  max-width: 60em;
-}
-.flex-active-slide p{
-  font-size: 1.8em;
-  width: 85%;
-  color: black;
-}
+  .cd-testimonials:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .cd-testimonials > li {
+    position: absolute;
+    opacity: 0;
+  }
+  .cd-testimonials > li:first-child {
+    position: relative;
+    opacity: 1;
+  }
+  .flex-active-slide{
+    width: 100%;
+    position: relative;
+    width: 90%;
+    max-width: 60em;
+  }
+  .flex-active-slide p{
+    font-size: 1.8em;
+    width: 85%;
+    color: black;
+  }
 
-.cd-client img {
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-  margin-left: -1.5em;
-  float: left;
-  // box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-.flex-direction-nav li {
-  position: absolute;
-  height: 100%;
-  width: 3em;
-  top: 0;
-}
-.cd-client-info{
-  color: black;
-  margin-left: 1em;
+  .cd-client img {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin-left: -1.5em;
+    float: left;
+    // box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .flex-direction-nav li {
+    position: absolute;
+    height: 100%;
+    width: 3em;
+    top: 0;
+  }
+  .cd-client-info{
+    color: black;
+    margin-left: 1em;
 
-}
-.flex-direction-nav li:first-child {
-  left: -2em;
-}
-.flex-direction-nav li:last-child {
-  left: 42em;
-}
+  }
+  .flex-direction-nav li:first-child {
+    left: -2em;
+  }
+  .flex-direction-nav li:last-child {
+    left: 42em;
+  }
 
-.flex-direction-nav li a {
-  display: block;
-  height: 100%;
-  width: 100%;
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  -webkit-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-// .no-touch .flex-direction-nav li a:hover {
-//   background-color: #9B8FFB;
-// }
-.flex-direction-nav li a::before, .flex-direction-nav li a::after {
-  /* left and right arrows in css only */
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 2px;
-  height: 13px;
-  background-color: black;
-}
-.flex-direction-nav li a::before {
-  -webkit-transform: translateY(-35px) rotate(45deg);
-  -moz-transform: translateY(-35px) rotate(45deg);
-  -ms-transform: translateY(-35px) rotate(45deg);
-  -o-transform: translateY(-35px) rotate(45deg);
-  transform: translateY(-35px) rotate(45deg);
-}
-.flex-direction-nav li a::after {
-  -webkit-transform: translateY(-27px) rotate(-45deg);
-  -moz-transform: translateY(-27px) rotate(-45deg);
-  -ms-transform: translateY(-27px) rotate(-45deg);
-  -o-transform: translateY(-27px) rotate(-45deg);
-  transform: translateY(-27px) rotate(-45deg);
-}
-.flex-direction-nav li:last-child a::before {
-  -webkit-transform: translateY(-35px) rotate(-45deg);
-  -moz-transform: translateY(-35px) rotate(-45deg);
-  -ms-transform: translateY(-35px) rotate(-45deg);
-  -o-transform: translateY(-35px) rotate(-45deg);
-  transform: translateY(-35px) rotate(-45deg);
-}
-.flex-direction-nav li:last-child a::after {
-  -webkit-transform: translateY(-27px) rotate(45deg);
-  -moz-transform: translateY(-27px) rotate(45deg);
-  -ms-transform: translateY(-27px) rotate(45deg);
-  -o-transform: translateY(-27px) rotate(45deg);
-  transform: translateY(-27px) rotate(45deg);
-}
+  .flex-direction-nav li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+  // .no-touch .flex-direction-nav li a:hover {
+    //   background-color: #9B8FFB;
+    // }
+    .flex-direction-nav li a::before, .flex-direction-nav li a::after {
+      /* left and right arrows in css only */
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 13px;
+      background-color: black;
+    }
+    .flex-direction-nav li a::before {
+      -webkit-transform: translateY(-35px) rotate(45deg);
+      -moz-transform: translateY(-35px) rotate(45deg);
+      -ms-transform: translateY(-35px) rotate(45deg);
+      -o-transform: translateY(-35px) rotate(45deg);
+      transform: translateY(-35px) rotate(45deg);
+    }
+    .flex-direction-nav li a::after {
+      -webkit-transform: translateY(-27px) rotate(-45deg);
+      -moz-transform: translateY(-27px) rotate(-45deg);
+      -ms-transform: translateY(-27px) rotate(-45deg);
+      -o-transform: translateY(-27px) rotate(-45deg);
+      transform: translateY(-27px) rotate(-45deg);
+    }
+    .flex-direction-nav li:last-child a::before {
+      -webkit-transform: translateY(-35px) rotate(-45deg);
+      -moz-transform: translateY(-35px) rotate(-45deg);
+      -ms-transform: translateY(-35px) rotate(-45deg);
+      -o-transform: translateY(-35px) rotate(-45deg);
+      transform: translateY(-35px) rotate(-45deg);
+    }
+    .flex-direction-nav li:last-child a::after {
+      -webkit-transform: translateY(-27px) rotate(45deg);
+      -moz-transform: translateY(-27px) rotate(45deg);
+      -ms-transform: translateY(-27px) rotate(45deg);
+      -o-transform: translateY(-27px) rotate(45deg);
+      transform: translateY(-27px) rotate(45deg);
+    }
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+
+   #pagination ul li a{
+    float: left;
+    color: black;
+    text-decoration: none;
+
+  }
+  #pagination ul li a:hover{
+    color: #9B8FFB;
+
+  }
+
+
+
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-div#footer_options{
-float: left;
-width: 100%;
-margin-left: 12em;  
-margin-top: 2em;
-border-top: 1px solid #3d4144;
-position: relative;
-left: 7.14286%;
-width: 85.71429%;
-padding-bottom: 3em;
-overflow: hidden;
-opacity: .5;
--webkit-transition: opacity 200ms linear;
--moz-transition: opacity 200ms linear;
--o-transition: opacity 200ms linear;
-transition: opacity 200ms linear;
-}
+   div#footer_options{
+    float: left;
+    width: 100%;
+    margin-left: 12em;  
+    margin-top: 2em;
+    border-top: 1px solid #3d4144;
+    position: relative;
+    left: 7.14286%;
+    width: 85.71429%;
+    padding-bottom: 3em;
+    overflow: hidden;
+    opacity: .5;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+  }
 
 
-footer ul li a{
- color: black;
-  font-size: 2.2em;
-  padding: 0.5em;
+  footer ul li a{
+   color: black;
+   font-size: 2.2em;
+   padding: 0.5em;
 
-}
-footer ul li a:hover{
+ }
+ footer ul li a:hover{
   opacity: 0.8;
 
 }
@@ -2615,16 +2736,16 @@ footer ul li a:hover{
 
 
 
-@media only screen and (min-width: 60em) {
+   @media only screen and (min-width: 60em) {
 
-#brand_logo a img {
-width: 6em;
-height: 6em;
-}
+    #brand_logo a img {
+      width: 6em;
+      height: 6em;
+    }
 
 
 
-}
+  }
 
 
 

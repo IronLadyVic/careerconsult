@@ -232,6 +232,110 @@
     color: #9B8FFB; }
 
   /* ==========================================================================
+     PAGINATION
+     ========================================================================== */
+  #pagination ul li a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    height: 2em;
+    padding: 0.5em; }
+
+  #pagination ul li a:hover {
+    color: #9B8FFB; }
+
+  /* ==========================================================================
+     ADMIN ADD EDIT AND DELETE BUTTONS
+     ========================================================================== */
+  .addButton {
+    border-radius: 0.2em;
+    background-color: #9B8FFB;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    text-decoration: none;
+    font-family: "Quicksand" !important;
+    font-size: 1em;
+    color: white;
+    box-shadow: none;
+    width: 90%;
+    height: 3em;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 1em; }
+
+  .editButton {
+    border-radius: 0.2em;
+    background-color: #9B8FFB;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    text-decoration: none;
+    height: 2em;
+    width: 6em;
+    font-family: "Quicksand" !important;
+    font-size: 0.8em;
+    color: white;
+    box-shadow: none; }
+
+  .deleteButton {
+    border-radius: 0.2em;
+    background-color: #9B8FFB;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    text-decoration: none;
+    height: 2em;
+    width: 6em;
+    font-family: "Quicksand" !important;
+    font-size: 0.8em;
+    color: white;
+    box-shadow: none; }
+
+  #addATestimonialForm {
+    width: 100%;
+    margin-top: 2em; }
+
+  #addATestimonial {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 1em; }
+
+  /* ==========================================================================
+     ADD POST ON SERVICES PAGE WHEN ADMIN IS LOGGED IN
+     ========================================================================== */
+  form#addPostForm {
+    width: 100%; }
+
+  form#addPostForm input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
+    -webkit-appearance: none;
+    width: 90%;
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    height: 3em;
+    color: white;
+    border-radius: none; }
+
+  #addPostForm textarea {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3em;
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    background-color: transparent;
+    height: 3em;
+    color: white;
+    padding-top: 0.8em; }
+
+  form#addPostForm span {
+    border-bottom: 0.1em white solid;
+    border-top: 0.1em white solid;
+    color: white;
+    display: block;
+    float: left;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    margin-left: 0.5em; }
+
+  /* ==========================================================================
      ACTIVE HOLD ON LI DROP DOWN MENU
      ========================================================================== */
   ul#main-nav li:active {
@@ -452,7 +556,7 @@
 
   /* ==========================================================================
       LOG IN FORM  
-    ========================================================================== */
+      ========================================================================== */
   section#loggingIn {
     display: block;
     position: relative;
@@ -510,7 +614,7 @@
 
   /* ==========================================================================
       SECTION INTRODUCTION BUTTONS AND INTRO  
-    ========================================================================== */
+      ========================================================================== */
   #intro-paragraph {
     font-size: 1.1em;
     font-weight: 300;
@@ -583,9 +687,15 @@
   .flex-direction-nav li a:nth-child(1) {
     padding-right: 2em; }
 
+  #addATestimonial {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 1em; }
+
   /* ==========================================================================
       SIGN UP FORM
-    ========================================================================== */
+      ========================================================================== */
   #signing-up h1 {
     color: white;
     margin-left: 0.2em; }
@@ -709,7 +819,7 @@
 
   /* ==========================================================================
       CAREER PROFILE 
-    ========================================================================== */
+      ========================================================================== */
   #career-profile h1#header {
     color: white;
     position: relative;
@@ -904,7 +1014,7 @@
 
   /* ==========================================================================
       SERVICES
-    ========================================================================== */
+      ========================================================================== */
   div#sectionServices {
     float: left;
     width: 100%;
@@ -996,7 +1106,7 @@
 
   /* ==========================================================================
       INPUT ERRORS
-    ========================================================================== */
+      ========================================================================== */
   .invalid {
     color: #9B8FFB;
     font-size: 0.5em;
@@ -1110,7 +1220,7 @@
   /*ul#main-nav li:nth-child(6){
     background-color: #242424;
     
-  }*/
+    }*/
   ul#main-nav li:nth-child(7) {
     background-color: white; }
 
@@ -1208,7 +1318,7 @@
   }
   input #checkBox{
     float:left;
-  }*/
+    }*/
   /* ==========================================================================
      NAV SIGN UP
      ========================================================================== */
@@ -1406,7 +1516,7 @@
 
   /*.search-bar{
     display: block;
-  }*/
+    }*/
   /*input#txtsearch.search-bar{
     display: none;
   
@@ -1419,7 +1529,7 @@
       transition-duration: 1s;
       transition-timing-function: linear;
       transition-delay: 2s;
-  }*/
+      }*/
   input#txtsearch.search-bar {
     display: block;
     height: 3em;
@@ -1489,7 +1599,7 @@
     margin-top: 20em;
     width: 10%;
     /*  height: 6.5em;
-      width: 7em;*/
+    width: 7em;*/
     position: absolute;
     z-index: 4000;
     margin-left: 10em;
@@ -1688,7 +1798,7 @@
 
   /* ==========================================================================
       CAREER PROFILE 
-    ========================================================================== */
+      ========================================================================== */
   div#sectionCareerProfile {
     display: block;
     position: relative;
@@ -2179,6 +2289,17 @@
     -ms-transform: translateY(-27px) rotate(45deg);
     -o-transform: translateY(-27px) rotate(45deg);
     transform: translateY(-27px) rotate(45deg); }
+
+  /* ==========================================================================
+     PAGINATION
+     ========================================================================== */
+  #pagination ul li a {
+    float: left;
+    color: black;
+    text-decoration: none; }
+
+  #pagination ul li a:hover {
+    color: #9B8FFB; }
 
   /* ==========================================================================
      FOOTER
