@@ -1537,73 +1537,25 @@ input #checkBox{
    NAV LOG IN
    ========================================================================== */
 
-   form#navLogIn{
-    height: 3em;
-    float: left;
-    width: 90%;
-    margin-top: -1em;
-    margin-left: 1em;
-
-  }
-
-  #navLogIn button{
-    width: 18%;
-    height: 3.2em!important;
-    margin-left: 0.3em;
-    margin-top: 0em;
-  }
-
-  #navLogIn input{
-    height: 3.35em;
-    background-color:none!important;
-    width: 28%;
-
-    border-bottom: 0.1em black solid;
-    border-top: 0.1em black solid;
-    font-size: 0.9em;
-    float: left;
-
-  }
-  #navLogIn span{
-    color: black!important;
-    float: left;
-    border-bottom: 0.1em black solid;
-    border-top: 0.1em black solid;
-    display: block;
-    height: 3em;
-    padding-top: 1em;
-    float: left;
+div#navLogIn a{
+    text-decoration: none;
+    color: black;
+    @include outlineButton;
     text-align: center;
-    width: 3em;
+    border: 1px black solid;
+    box-shadow: none;
 
   }
-  // form#navLogIn  i{
-    // color: black!important;
-    // border-bottom: 0.1em black solid;
-    // border-top: 0.1em black solid;
-    // display: block;
-    // height: 3em;
-    // padding-top: 1em;
-// float: left;/*
-// height: 2.95em;
-// line-height: 49px;*/
-// text-align: center;
-// width: 3em;
-
-// }
 
 
-/*#login{
-  @include purpleButton;
-   height: 2em;
-  box-shadow: none!important;
-  font-size: 0.8em;
-  float: left;
-  margin-right: 0.5em;
-  color: white;
-    margin-top: 0.9em
-}
-*/
+  .nav-handle-login{
+        float: left;
+    margin-top: -4.5em;
+    margin-left: 2em;
+
+
+  }
+
 
 /* ==========================================================================
    Login
@@ -1823,7 +1775,7 @@ ul#main-nav{
 
 
   section#introduction{
-    top: 24em;
+    top: 28em;
     position: relative;
     margin-left: 8em;
     z-index: 4000;
@@ -1836,7 +1788,7 @@ ul#main-nav{
 
 
   section#animation{
-   margin-top: 25em;
+   margin-top: 30em;
    position: relative;
    display: block;
    height: 22em;
