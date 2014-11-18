@@ -1251,7 +1251,7 @@ div#loginForm.show{
     font-weight: 500;
     text-decoration: none;
     margin-top: -1em;
-    border-bottom: 1px solid #aaaaaa;
+    /*border-bottom: 1px solid #aaaaaa;*/
     padding-bottom:1em;
   }
 
@@ -1754,19 +1754,19 @@ section#pricesListed {
 #pricesListed h1{
   width: 70%;
   margin-left: -2em;
-
+  color: black;
 }
 
 .pricing_table {
 min-height: 42em;
-margin-left: -5em;
+margin-left: -6em;
 }
 .priceTable{
    height: auto;
-  width: 14em;
+  width: 12em;
   margin-top: 2em;
     float: left;
-    margin-right:0.5em; 
+    margin-right:0em; 
 /*margin: 0 1em 0 0;*/
 
 }
@@ -1792,10 +1792,10 @@ color: white;
 border: 1px solid #dfdfdf
 }
 .priceContents ul li{
-  width: 12em;
+  width: 10em;
 list-style: decimal outside none;
 list-style-type: disc;
-padding-right: 0.5em;
+padding-right: 2em;
 padding-top: 1em;
 padding-bottom: 1em;
 font-size: 0.9em;
@@ -2631,7 +2631,7 @@ div#shareSocial p a{
     margin-right: auto;
     width: 90%;
     max-width: 80em;
-    margin-top:2em;
+    margin-top:5em;
 
   }
   .headerTopic h2 {
@@ -2697,7 +2697,7 @@ div#shareSocial p a{
   #rightColomn{
     width: 20%;
     float: left;
-    margin-top: 1.5em;
+    margin-top: -1em;
   }
 
   #rightColomn h2 {
@@ -2707,7 +2707,6 @@ div#shareSocial p a{
     font-weight: 500;
     text-decoration: none;
     margin-top: -1em;
-    border-bottom: 1px solid #aaaaaa;
     padding-bottom:1em;
   }
 
@@ -2747,7 +2746,7 @@ div#shareSocial p a{
     height: 40em;
   }
   .cd-testimonials-wrapper h1{
-    margin-left: 0em;
+    margin-left: 0.2em;
     color: black;
   }
   .cd-testimonials-wrapper {
