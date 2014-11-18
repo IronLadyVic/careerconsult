@@ -11,7 +11,7 @@ $(function(){
 
 	$(".nav-handle a").on("click", function(){
 
-		$("#main-nav").toggleClass("show");
+		$("ul#main-nav li").toggleClass("show");
 		$("#droparrow").toggleClass("show");
 
 		
@@ -21,8 +21,8 @@ $(function(){
 	$(".nav-handle a").on("click", function(){
 
 		$("body").toggleClass("show");
-		$("section#introduction").toggleClass("show");
-		$("section#animation").toggleClass("show");
+		$("section#introduction").toggleClass("hide");
+		$("section#animation").toggleClass("hide");
 		
 
 	});

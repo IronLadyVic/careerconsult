@@ -83,33 +83,31 @@
 <!-- End of Headers -->
 
 <!-- End of Headers -->
-<div id="sectionLogin">
-<section id="loggingIn">
+<div id="mobdeskLogin">
+<section id="mobdeskSection">
     <h1 id="header">LOG IN</h1>
     
-    <p id="loginDescription">Log in to update your career profile, or enquire about booking a service.</p>
-    <form id="logIn-form" method="get">
+    <p id="mobdeskDescription">Log in to update your career profile, or enquire about booking a service.</p>
+    <form id="mobdeskForm" method="get">
         <p><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></p>
-    <p>
+        <p>
         <span class="border"><i class="fa fa-user"></i></span>
-        <label for="user-name"></label>
-        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
-        
-    </p>
-    <p>
-        <span class="border"><i class="fa fa-lock"></i></span>
-        <label for="password"></label>
-        <input type="password" name="password" id="password" placeholder="Password" class="border">
-        
-    </p> 
+        <label for="userName"></label>
+        <input type="text" name="username" id="userName" placeholder="Username" class="border">
+        </p>
+        <p>
+        <span class="border" ><i class="fa fa-lock"></i></span>       
+        <label for="passwordSignUp"></label>     
+        <input type="password" name="password" id="passwordSignUp" placeholder="Password" class="border">
+        </p>
 
         <input type="checkbox" value="None" id="checkBoxRemember" name="check" />
-        <label for="checkBox"></label>
+        <label for="checkBoxRemember"></label>
         <p  id="rememberMe">Remember Me</p>
         
         
-        <label for="logIn"></label>
-        <button type="submit" name="button" id="logIn" class="button">LOG IN</button>
+        <label for="loggingInButton"></label>
+        <button type="submit" name="button" id="loggingInButton" class="button">LOG IN</button>
     </form>
 </section>
 </div>
@@ -138,7 +136,7 @@
 <!-- End of Footer -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
+        
         <script src="js/formValidation.js"></script>
         <script src="js/avatarUpload.js"></script>
         <script src="js/main.js"></script>

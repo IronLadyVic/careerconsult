@@ -6,13 +6,13 @@
    NAVIGATION BAR  hide
    ========================================================================== */
    @media only screen and (min-width: 20em) {
-    body{
+    body.show{
       @include responsiveBackground(#242424);
 
 
     }
 
-    body.show{
+    body{
       @include responsiveBackground(#2B2937);
 
     }
@@ -27,15 +27,12 @@
       
     } 
 
-    #main-nav{
+/*    #main-nav{
       height: 0%;
       margin-left: -2.5em;
       margin-top: 2em;
     }
-
-    ul#main-header.hide{
-      display: none;
-    }
+*/
 
 
 
@@ -104,9 +101,11 @@ div#navLogIn a{
       float: right;
 
     }
+    ul#main-nav li{
+      display: none;
+    }
 
-    #main-nav li {
-
+    ul#main-nav li.show {
       left: 0;
       top: 60px;
       display: block;
@@ -117,14 +116,17 @@ div#navLogIn a{
       margin: 0;
       font-size: 1.1em;
       font-weight: 300;
-      -webkit-transition: height 1s ease; 
-      -moz-transition: height 1s ease; 
-      -ms-transition: height 1s ease; 
-      -o-transition: height 1s ease; 
-      transition: height 1s ease; 
+      /*Animation*/
+ -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+      -o-transition: height 1s ease;
+     -ms-transition: height 1s ease;
+         transition: height 1s ease;
       line-height: 0px;
       background-color: #242424;
       cursor: pointer;
+      height: 100%;
+      width: 100%;
 
     }
     ul#main-nav li:nth-child(7){
@@ -170,6 +172,136 @@ div#navLogIn a{
 
     }
 
+/* ==========================================================================
+   NAVIGATION BAR hide
+   ========================================================================== */
+
+/*   #main-nav li.hide {
+    display: block;
+    left: 0;
+    top: 60px;
+    margin: 0;
+    color: black;
+    font-weight: 100;
+    height: 0em;
+    width: 0em;
+    overflow: hidden;
+  }*/
+
+  section#animation{
+    display: block;
+    width: 100%;
+  }
+
+  section#animation.hide{
+    display: none;
+    /*Animation*/
+ -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+      -o-transition: height 1s ease;
+     -ms-transition: height 1s ease;
+         transition: height 1s ease;
+    
+  }
+
+  #aucklandSkyline img{
+    margin-top: 1em;
+    /*height: 25%;*/
+    width:100%;
+    /* margin-left: -20em;*/
+    /*opacity: 0.8;*/
+    position: relative;
+    border-bottom: 1px #928CC4 solid!important;
+  }
+
+  #ponsonbyHousing img{
+/*  height:10%;
+margin-top: 13em;
+*/display: none;
+/*outline: 1px red solid;*/
+/*position: absolute;*/
+
+}
+#workingGirl img{
+  display: none;
+/*  margin-top:10em;
+  height:22%;
+  width: 22%;
+  position: relative;
+  z-index: 4000;
+  margin-left: 2em;*/
+}
+
+li#seletedServices{
+  width: 0;
+  height: 0;
+  display: none;
+
+}
+
+
+li#seletedServices.display{
+  width: 112%;
+  height: auto;
+  display: block;
+  color: black;
+  font-size: 0.8em;
+  margin-left: -3em;
+}
+li#seletedServices i.display{
+  margin-left: 1.8em;
+  
+}
+
+li#seletedServices p.display{
+  margin-left: 1.3em;
+
+}
+#seletedServices li:last-child{
+  border-bottom: none;
+
+}
+
+#brand_logo a img{
+  height: 25%;
+  width:25%;
+  margin-left: 1.4em;
+}
+
+
+/* ==========================================================================
+    SECTION INTRODUCTION BUTTONS AND INTRO  
+    ========================================================================== */
+    #intro-paragraph{
+     @include headers;
+     width: 90%;
+     margin-left: 1em;
+     margin-right: 1em;
+     text-align: center; 
+  }
+   section#introduction.hide{
+    display: none;
+    height: 0;
+    width: 0;
+    /*Animation*/
+ -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+      -o-transition: height 1s ease;
+     -ms-transition: height 1s ease;
+         transition: height 1s ease;
+
+  }
+  section#introduction{
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    z-index: 4000;
+  }
+
+  div#shareSocial{
+    width: 90%;
+  }
 /* ==========================================================================
    LATEST UPDATES - NEXT TO SERVICES ACCORDION
    ========================================================================== */
@@ -292,6 +424,79 @@ div#shareSocial p a{
 #shareSocial p a:hover{
   color: #9B8FFB;
 
+}
+/* ==========================================================================
+   Desktop Login only - no pop up model
+   ========================================================================== */
+   div#mobdeskLogin{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    left: 20%;
+    top: 20%;
+  }
+
+section#mobdeskSection{
+    margin: 0 auto;
+    position: relative;
+    width: 25em;
+    height:auto;
+    margin-top: 1.5em;
+    
+}
+section#mobdeskSection h1{
+  color: white;
+}
+p#mobdeskDescription{
+  width: 90%;
+  color: white;
+}
+form#mobdeskForm{
+  width: 100%;
+}
+
+#mobdeskForm span{
+  border-bottom: 0.1em white solid;
+ border-top: 0.1em white solid;
+ float: left;
+ height: 3em;
+ width: 3em;
+ color: white;
+ padding-top: 0.8em;
+ padding-left: 0.8em;
+}
+
+
+form#mobdeskForm input[type="password"]{
+ color: black;
+ border-bottom: 0.1em white solid!important;
+ border-top: 0.1em white solid!important;
+
+ width: 80%;
+ @include input;
+}
+
+form#mobdeskForm input[type="text"]{
+ color: white;
+ border-bottom: 0.1em white solid!important;
+ border-top: 0.1em white solid!important;
+
+ width:80%;
+ @include input;
+ 
+}
+#mobdeskForm img#profileImage{
+  margin-left: 25%;
+}
+
+form#mobdeskForm #loggingInButton{
+  width:90%;
+}
+form#mobdeskForm p#rememberMe{
+  margin-top: -1.2em;
+   color: white;
+   margin-left: 1.5em;
 }
 /* ==========================================================================
    PRICING
@@ -519,95 +724,7 @@ color: #404040;
   #droparrow.hide{
     display: none;
   }
-/* ==========================================================================
-   NAVIGATION BAR hide
-   ========================================================================== */
 
-   #main-nav li.hide {
-    display: block;
-    left: 0;
-    top: 60px;
-    margin: 0;
-    color: black;
-    font-weight: 100;
-    height: 0em;
-    width: 0em;
-    overflow: hidden;
-  }
-
-  section#animation{
-    display: none;
-  }
-
-  section#animation.show{
-    display: block;
-    width: 100%;
-    /*border-bottom: 1px white solid!important;*/
-  }
-
-  #aucklandSkyline img{
-    margin-top: 1em;
-    /*height: 25%;*/
-    width:100%;
-    /* margin-left: -20em;*/
-    /*opacity: 0.8;*/
-    position: relative;
-    border-bottom: 1px #928CC4 solid!important;
-  }
-
-  #ponsonbyHousing img{
-/*  height:10%;
-margin-top: 13em;
-*/display: none;
-/*outline: 1px red solid;*/
-/*position: absolute;*/
-
-}
-#workingGirl img{
-  display: none;
-/*  margin-top:10em;
-  height:22%;
-  width: 22%;
-  position: relative;
-  z-index: 4000;
-  margin-left: 2em;*/
-}
-
-li#seletedServices{
-  width: 0;
-  height: 0;
-  display: none;
-
-}
-
-
-li#seletedServices.display{
-  width: 112%;
-  height: auto;
-  display: block;
-  color: black;
-  font-size: 0.8em;
-  margin-left: -3em;
-}
-li#seletedServices i.display{
-  margin-left: 1.8em;
-  
-}
-
-li#seletedServices p.display{
-  margin-left: 1.3em;
-
-}
-#seletedServices li:last-child{
-  border-bottom: none;
-
-}
-
-#brand_logo a img{
-  height: 25%;
-  width:25%;
-  margin-left: 1.4em;
-}
 
 /* ==========================================================================
    SEARCH 
@@ -837,35 +954,7 @@ div#loginForm.show{
 }
 
 
-/* ==========================================================================
-    SECTION INTRODUCTION BUTTONS AND INTRO  
-    ========================================================================== */
-    #intro-paragraph{
-     @include headers;
-     width: 90%;
-     margin-left: 1em;
-     margin-right: 1em;
-     text-align: center; 
-     margin-top: -14em;
 
-   }
-   section#introduction{
-    display: none;
-    height: 0;
-    width: 0;
-
-  }
-  section#introduction.show{
-    display: block;
-    margin: 0px auto;
-    width: 100%;
-    height: 100%;
-    z-index: 4000;
-  }
-
-  div#shareSocial{
-    width: 90%;
-  }
 
 
 
@@ -1955,11 +2044,11 @@ ul#main-nav{
    SEARCH FORM
    ========================================================================== */
    .search-container{
-    margin-right: 6em;
+    right: 1em;
     top: 0;
     display: block;
     float: right;
-    width: 12em;
+    width: 16em;
     margin-top: -8em;
     
   }
@@ -1992,7 +2081,7 @@ ul#main-nav{
      color: white!important;
      font-weight: 100;
      margin-top: 3em;
-
+     margin-left: -2em;
 
    }
 
@@ -2000,7 +2089,7 @@ ul#main-nav{
     background-color: black;
   }
   #fa-search{
-    right: 10.8em;
+    margin-left: -1em;
     padding-right: 0.5em;
     margin-top: 2.6em;
     font-size: 1.4em;
@@ -2024,37 +2113,38 @@ ul#main-nav{
 
 
   section#introduction{
-    top: 28em;
+   /* top: 28em;*/
     position: relative;
     margin-left: 8em;
     z-index: 4000;
     display: block;
-    width: 37em;
-    height: 16em;
+    width: 100%;
+    height: 100%;
     padding-left: 1.2em;
 
   }
 
 
   section#animation{
-   margin-top: 30em;
+   margin-top: 8em;
    position: relative;
    display: block;
-   height: 22em;
-
+   height: 20em;
+   width: 100%;
  }
  #aucklandSkyline img{
-  margin-top: -8em;
+  margin-top: -10em;
   opacity: 0.3;
   position: absolute;
-  margin-left: 1em;
-  height: 22em;
+  margin-left: 6em;
+  /*height: 100%;*/
+  width: 100%;
 }
 
 #ponsonbyHousing img{
  /* height: 65%;*/
  width: 100%;
- margin-top: 10em;
+ margin-top: 6em;
  margin-left: 6em;
  display: block;
  position: absolute;
@@ -2298,7 +2388,7 @@ width: 5%;
   #signup-form img#profileImage{
     position: relative;
     margin: 0 auto;
-    margin-left: 45%;
+    margin-left: 55%;
     /* position: absolute;*/
   }
 
@@ -2907,8 +2997,79 @@ div#shareSocial p a{
 
   }
 
+/* ==========================================================================
+   Desktop Login only - no pop up model
+   ========================================================================== */
+   div#mobdeskLogin{
+    width: 80%;
+    height: 40em;
+    margin: 0 auto;
+    position: relative;
+    left: 10%;
+    top: 20%;
+  }
+
+section#mobdeskSection{
+    margin: 0 auto;
+    position: relative;
+    width: 25em;
+    height:auto;
+    margin-top: 2.5em;
+    
+}
+section#mobdeskSection h1{
+  color: black;
+}
+p#mobdeskDescription{
+  width: 90%;
+  color: black;
+}
+form#mobdeskForm{
+  width: 28em;
+}
+
+#mobdeskForm span{
+  border-bottom: 0.1em black solid;
+ border-top: 0.1em black solid;
+ float: left;
+ height: 3em;
+ width: 3em;
+ color: black;
+ padding-top: 0.8em;
+ padding-left: 1em;
+}
 
 
+form#mobdeskForm input[type="password"]{
+ color: black;
+ border-bottom: 0.1em black solid!important;
+ border-top: 0.1em black solid!important;
+
+ width: 70%;
+ @include input;
+}
+
+form#mobdeskForm input[type="text"]{
+ color: black;
+ border-bottom: 0.1em black solid!important;
+ border-top: 0.1em black solid!important;
+
+ width:70%;
+ @include input;
+ 
+}
+#mobdeskForm img#profileImage{
+  margin-left: 25%;
+}
+
+form#mobdeskForm #loggingInButton{
+  width:80%;
+}
+form#mobdeskForm p#rememberMe{
+  margin-top: -1.2em;
+  color: black;
+  margin-left: 1.5em;
+}
 /* ==========================================================================
    FOOTER
    ========================================================================== */
