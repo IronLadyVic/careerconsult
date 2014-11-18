@@ -55,7 +55,7 @@
         <li><a href="services.html"><i class="fa fa-angle-right"></i><p>General Employment Advice</p></a></li>
         </ul>
       </li>           
-      <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
+      <li><a href="prices.html"><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href="testimonials.html"><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
       <li><a href=""><i class="fa fa-phone"></i><p>Contact</p></a></li>
@@ -75,27 +75,12 @@
         </svg>
    </a>
 </div>
-<div class="nav-handle-user">
-    <form id="navLogIn">
-    <p>
-        <span class="border"><i class="fa fa-user"></i></span>
-        <label for="user-name"></label>
-        <input type="text" name="username" id="user-name" placeholder="Username" class="border">
-        
-    </p>
-    <p>
-        <span class="border"><i class="fa fa-lock"></i></span>
-        <label for="password"></label>
-        <input type="password" name="password" id="password" placeholder="Password" class="border">
-        
-    </p>    
-        <button type="submit" name="button" id="logIn" class="button">LOG IN</button>
-    </form>
-</div>   
+<div class="nav-handle-login">
+        <div id="navLogIn"><i id="navRightArrow" class="fa fa-angle-right"></i><a href="#" id="loginHandle">LOG IN</a></div>   
+</div>  
 </header> 
 <!-- End of Headers -->
 
-<!-- End of Headers -->
 <div id="sectionSignUp">
 <section id="signing-up">
     <h1 id="header">SIGN UP</h1>
@@ -104,14 +89,19 @@
 
         <ul id="reasonsToSignUp">
             <li>Why should I sign up?</li>
-            <li>Helps your career consultant recognise who you are when you decide to meet up.</li>
-            <li>You may fill in your career profile, this will help tailor a service to your career needs.</li>
-            <li>Not sure with signing up? Please enquire with one of our <a href="services.html" id="aLink">services</a>.</li>
+            <li>Help your Career Consultant tailor a service to your needs by filling in your Career Profile.</li>
+            <li>Not sure on signing up? Please enquire with one of our <a href="services.html" id="aLink">services</a>.</li>
+            <li>Upload your Career Profile Picture. Help your Career Consultant recognise who you are, when you decide to meet up.</li>
         </ul>
 
 
     <form id="signup-form" method="get">
         <div class="profileAuto"><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></div>
+        <p>
+        <span class="border"><i class="fa fa-camera"></i></span>
+        <label for="avatar"></label>
+        <input type="file" name="imageType" id="avatar" class="border"  >
+        </p>
         <p>
         <span class="border"><i class="fa fa-user"></i></span>
         <label for="userName"></label>
@@ -147,12 +137,6 @@
         <label for="contact"></label>
         <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
         </p>
-        <p>
-        <span class="border"><i class="fa fa-camera"></i></span>
-        <label for="avatar"></label>
-        <input type="file" name="imageType" id="avatar" class="border"  >
-        </p>
-
         <p>
         <span class="border"><i class="fa fa-hand-o-right"></i></span>
         <select id="servicesSel" class="border">
@@ -196,7 +180,7 @@
             <li><a href="">HELP</a></li>
             <li><a href="">PRIVACY</a></li>
             <li><a href="">TERMS</a></li>
-            <li><a href=""><i class="fa fa-copyright"></i>CAREER CONSULT 2014</a></li>
+            <li><a href="#">&copy CAREER CONSULT 2014</a></li>
             <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
             <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
             <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>

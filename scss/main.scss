@@ -43,7 +43,22 @@
       font-size: 0px;
       display: none;
     }
+/* ==========================================================================
+   NAV LOG IN Desktop hide
+   ========================================================================== */
 
+div#navLogIn a{
+    display: none;
+  }
+
+
+  .nav-handle-login{
+        display: none;
+  }
+
+#navRightArrow{
+  display: none;
+}
 
 
 
@@ -279,14 +294,88 @@ div#shareSocial p a{
 
 }
 /* ==========================================================================
+   PRICING
+   ========================================================================== */
+
+   div#sectionPrices{
+/*    float: left;
+margin: 0 auto;
+position: relative;*/
+   }
+section#pricesListed {
+    float: left;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+#pricesListed h1{
+  width: 85%;
+  margin-left: 1em;
+  color: white;
+
+}
+
+.pricing_table {
+min-height: 42em;
+
+}
+.priceTable{
+   height: auto;
+   margin-right: 2em; 
+  margin-top: 2em;
+  margin-left: 2em; 
+  width:85%;
+/*margin: 0 1em 0 0;*/
+
+}
+.pricesHeader{
+  font-size: 1.4em;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#686868), to(#525252));
+background-image: -webkit-linear-gradient(top, #686868, #525252);
+background-image: -moz-linear-gradient(top, #686868, #525252);
+background-image: -ms-linear-gradient(top, #686868, #525252);
+background-image: -o-linear-gradient(top, #686868, #525252);
+background-image: linear-gradient(to bottom, #686868, #525252);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#525252',GradientType=0 );
+padding: 9px 14px;
+height: 5em;
+color: white;
+}
+.priceContents{
+
+background: #F6F6F6;
+border: 1px solid #dfdfdf
+}
+.priceContents ul li{
+
+list-style: decimal outside none;
+list-style-type: disc;
+padding-right: 0.5em;
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 0.9em;
+border-bottom: 1px solid #dfdfdf;
+border-top: 1px solid #fff;
+line-height: 1.3em;
+color: #404040;
+}
+/* ==========================================================================
    PAGINATION
    ========================================================================== */
+
+   div#pagination{
+   margin-left: -2em;
+   }
 
    #pagination ul li a{
     float: left;
     color: white;
     text-decoration: none;
-    height: 2em;
+
     padding: 0.5em;
 
   }
@@ -645,7 +734,7 @@ li#seletedServices p.display{
         }
 
 /* ==========================================================================
-    LOG IN FORM  
+   LOG IN FORM  
     ========================================================================== */
     section#loggingIn{
       display: block;
@@ -689,6 +778,10 @@ li#seletedServices p.display{
       color: white;
       padding-left: 1em;
       padding-right: 1em;
+      width: 100%;
+    }
+    p#loginDescription{
+      width: 80%;
     }
     #logIn{
       position: relative;
@@ -697,29 +790,51 @@ li#seletedServices p.display{
       margin-left: 1em;
       margin-top: 1em;
     }
-    // #logIn-form input#checkBox{
-      //   float: left;
-      //   width: 1em;
-      //   height: 1em;
-      //   margin-left: 2em;
-      //   margin-top: 1em;
 
-      // }
 
       #loggingIn #profileImage{
         width: 5em;
         height: 5em;
         margin-left: 35%;
       }
-      // span#rememberMe{
-        //  color: white;
-        //     position: relative;
-        //     margin: 0 auto;
-        //     margin-left: 0.5em;
-        //         width: 73%;
-        //     height: 3em;
+#logIn-form input#checkBoxRemember{
+  height: 1em;
+  width: 1em;
+  float: left;
+  margin-left: 2em;
 
-        // }
+}
+p#rememberMe{
+  margin-top: -0.1em;
+  margin-left: 3em;
+}
+/* ==========================================================================
+   Pop up log in
+   ========================================================================== */
+
+#background{
+    display: none;
+
+}
+
+div#loginForm{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+div#loginForm.show{
+    display: none;
+    width: 0;
+    height: 0;
+    
+}
+[role="close-modal"] {
+    display: none;
+    width: 0;
+    height: 0;
+}
 
 
 /* ==========================================================================
@@ -762,6 +877,9 @@ li#seletedServices p.display{
     width: 98%;
     margin-top:0em;
 
+  }
+  div.leftColomn{
+    height: 25em;
   }
   .cd-testimonials-wrapper h1{
     margin-left: 0.5em;
@@ -912,14 +1030,14 @@ li#seletedServices p.display{
     margin-bottom: 2em;
   }
   .profileAuto{
-    width: 5em;
-    height: 5em;
-    margin-left: 35%;
-    margin-bottom: 3em;
+    width: 10em;
+    margin-left: 28%;
+    margin-bottom: 2em;
   }
   img#profileImage{
-    
-    height: 100%;
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
     
   }
   #signup-form p#agreementStatement{
@@ -952,6 +1070,7 @@ li#seletedServices p.display{
       margin: 0 auto;
       margin-top: 1em;
       margin-left: 0.5em;
+      width: 70%;
     }
 
     #career-profile p{
@@ -964,7 +1083,7 @@ li#seletedServices p.display{
       margin: 0 auto;
     }
     #careerProfile-form form{
-      width:320px;
+      width:100%;
     }
     #careerProfile-form input{
       width: 80%;
@@ -1036,14 +1155,15 @@ li#seletedServices p.display{
   }
   p#description{
     padding: 1em;
+    width: 90%;
+
   }
 
-  #careerProfile-form input#checkbox{
-    position: absolute;
-    margin-top: -3.5em;
-    margin-left: 20em;
-    margin-bottom: 0.5em;
+  input#checkboxCareerProfile{
+    float: left;
+    
   }
+
 
 /* ==========================================================================
    POSTS
@@ -1169,7 +1289,7 @@ li#seletedServices p.display{
     section#servicesListed{
       display: block;
       margin: 0 auto;
-      width: 90%;
+     /* width: 90%;*/
       margin-top: 6em;
 
     }
@@ -1208,7 +1328,7 @@ li#seletedServices p.display{
       padding-right: 0.5em;
     }
     .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-      left: 17.2em;
+      left: 16.5em;
 
     }
     .ui-accordion .ui-accordion-content{
@@ -1235,7 +1355,7 @@ li#seletedServices p.display{
     .ui-accordion .ui-accordion-content button.button{
       font-family: 'Quicksand'!important;
       margin-left: -1em;
-      width: 18em;
+      width: 90%;
       padding-bottom: 0.5em;
       box-shadow: none;
       line-height: 40px;
@@ -1278,16 +1398,17 @@ li#seletedServices p.display{
    ========================================================================== */
 
 
-   div#footer_options{
+   div#footerOptions{
 
-    margin-top: 1em;
-    border-top: 1px solid #3d4144;
+
     position: relative;
-    left: -2em;
+    margin-left: -2em;
+  margin-top: 2em;
+  border-top: 1px solid #3d4144;
 
-    width: 100%;
+    width: 80%;
 
-    padding-bottom: 3em;
+    /*padding-bottom: 3em;*/
     overflow: hidden;
     opacity: .5;
     -webkit-transition: opacity 200ms linear;
@@ -1297,9 +1418,11 @@ li#seletedServices p.display{
   }
 
   footer ul li{
+    padding-bottom: 2em; 
     float: left;
     font-size: 0.6em;
-    padding: 0.4em;
+    padding-right: 0.8em;
+    margin-top: 2em;
   }
   footer ul li a{
     list-style-type: none;
@@ -1327,6 +1450,7 @@ li#seletedServices p.display{
 
     body.show {
       @include responsiveBackground(#f4f2ef); 
+
     }
 
     section#introduction.show{
@@ -1358,12 +1482,56 @@ li#seletedServices p.display{
       background-color: transparent;
       color: black;
     }
+/* ==========================================================================
+   Pop up log in
+   ========================================================================== */
+
+#background{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    z-index: 1000;
+    background-color:rgba(0,0,0,0.7);
+    display: none;
+
+}
+
+div#loginForm{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+div#loginForm.show{
+  display: block;
+    background-color: white;
+    position: absolute;
+    top:20%;
+    left:30%;
+    transform: translate(-50%,-50%);
+    z-index: -100000000;
+    
+}
+[role="close-modal"] {
+position: absolute;
+top: 0;
+right: 0;
+padding-right: 0.5em;
+cursor: pointer;
+color: #9B8FFB;
+}
 
 /* ==========================================================================
    MAIN NAV
    ========================================================================== */
    body{
     @include responsiveBackground(#f4f2ef); 
+
   }
   .nav-handle{
     display: none;
@@ -1433,7 +1601,7 @@ li#seletedServices p.display{
     position: relative;
     width: 75%;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 8em;
     margin-left: 7em;
 
   }
@@ -1478,7 +1646,7 @@ li#seletedServices p.display{
 
   .ui-accordion .ui-accordion-content button.button{
     margin: 0 auto;
-    position: relative;
+    /*position: relative;*/
     margin-top:2em;
     width: 100%;
     margin-left: -1em;
@@ -1544,35 +1712,118 @@ div#navLogIn a{
     text-align: center;
     border: 1px black solid;
     box-shadow: none;
-
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    display: block;
   }
 
 
   .nav-handle-login{
         float: left;
-    margin-top: -4.5em;
-    margin-left: 2em;
-
-
+    margin-top: -5em;
+    margin-left: 1.6em;
+    display: block;
   }
 
+#navRightArrow{
+  margin-left: 1em;
+  margin-top: 0.8em;
+  position: absolute;
+  display: block;
+}
+/* ==========================================================================
+   PRICING
+   ========================================================================== */
+
+   div#sectionPrices{
+/*    float: left;
+margin: 0 auto;
+position: relative;*/
+   }
+section#pricesListed {
+    float: left;
+    display: block;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: -26em;
+    margin-left: 22em;
+}
+#pricesListed h1{
+  width: 70%;
+  margin-left: -2em;
+
+}
+
+.pricing_table {
+min-height: 42em;
+margin-left: -5em;
+}
+.priceTable{
+   height: auto;
+  width: 14em;
+  margin-top: 2em;
+    float: left;
+    margin-right:0.5em; 
+/*margin: 0 1em 0 0;*/
+
+}
+.pricesHeader{
+  font-size: 1.4em;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#686868), to(#525252));
+background-image: -webkit-linear-gradient(top, #686868, #525252);
+background-image: -moz-linear-gradient(top, #686868, #525252);
+background-image: -ms-linear-gradient(top, #686868, #525252);
+background-image: -o-linear-gradient(top, #686868, #525252);
+background-image: linear-gradient(to bottom, #686868, #525252);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#525252',GradientType=0 );
+padding: 9px 14px;
+height: 110px;
+color: white;
+}
+.priceContents{
+
+/*background: #F6F6F6;*/
+border: 1px solid #dfdfdf
+}
+.priceContents ul li{
+  width: 12em;
+list-style: decimal outside none;
+list-style-type: disc;
+padding-right: 0.5em;
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 0.9em;
+border-bottom: 1px solid #dfdfdf;
+border-top: 1px solid #fff;
+line-height: 1.3em;
+color: #404040;
+}
 
 /* ==========================================================================
-   Login
+   Login when you press login button form styling
    ========================================================================== */
-   div#sectionLogin{
-    display: block;
-    width: 26em;
-    height: 30em;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 3em;
-  }
+form#logIn-form {
+width: 32em;
+height: 40em;
+margin-left: 8em;
+margin-top: 5em;
+
+}
   #sectionLogin h1{
    color: black;
  }
+ p#loginDescription{
+  width: 20em;
+ }
  #sectionLogin p{
    color: black;
+
  }
  #logIn-form input{
   border-bottom: 0.1em black solid;
@@ -1585,7 +1836,7 @@ div#navLogIn a{
 
 #logIn{
   width: 24.5em;
-  margin-left: 1.8em;
+  margin-left: 0.5em;
 }
 
 form#logIn-form span{
@@ -1605,18 +1856,16 @@ form#logIn-form span{
   margin-left: 8.5em;
 }
 
-#logIn-form input#checkBox{
+#logIn-form input#checkBoxRemember{
   height: 1em;
   width: 1em;
   float: left;
-  margin-top: -2em;
-  margin-right: 1em;
+  margin-left: 1em;
 
 }
-#logIn-form span.rememberMe{
-  color: black;
+p#rememberMe{
+  margin-left: 3em;
 }
-
 /* ==========================================================================
    Slide in and out tablet nav
    ========================================================================== */
@@ -1768,7 +2017,7 @@ ul#main-nav{
     width: 80%;
     padding-left: 4em;
     margin: 0 auto;
-    z-index: 4000;
+    /*z-index: 1000;*/
 
 
   }
@@ -1884,7 +2133,7 @@ display: none;
      display: block;
      position: relative;
      margin: 0 auto;
-     margin-top: -2em;
+     margin-top: 1em;
    }
    section#signing-up{
     width: 70%;
@@ -2049,7 +2298,7 @@ width: 5%;
   #signup-form img#profileImage{
     position: relative;
     margin: 0 auto;
-    margin-left: 41%;
+    margin-left: 45%;
     /* position: absolute;*/
   }
 
@@ -2132,12 +2381,20 @@ width: 5%;
    color: black;
  }
 
+ #careerProfile-form form input[type="email"]{
+   color: black;
+   border-bottom: 0.1em black solid!important;
+   border-top: 0.1em black solid!important;
+   width: 90%;
+   @include input;
+   
+ }
+
 
  #careerProfile-form form input[type="text"]{
    color: black;
    border-bottom: 0.1em black solid!important;
    border-top: 0.1em black solid!important;
-
    width: 90%;
    @include input;
    
@@ -2183,9 +2440,9 @@ width: 5%;
 
 }
 #careerProfile-form img#profileImage{
-  width: 6em;
-  height: 6em;
-  margin-left: 42%;
+  width: 8em;
+  height: 8em;
+  margin-left: 55%;
   margin-top: 2em;
 
 }
@@ -2483,8 +2740,11 @@ div#shareSocial p a{
     display: block;
     width: 100%;
     margin-left: 12em;
-    margin-top:0em;
+    margin-top:4em;
 
+  }
+  div.leftColomn{
+    height: 40em;
   }
   .cd-testimonials-wrapper h1{
     margin-left: 0em;

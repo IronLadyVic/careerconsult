@@ -41,8 +41,25 @@ $(function(){
 		
 		
 	});
+//-----------When in Desktop pop up log in-----------//
+	
+	$("#loginHandle").on("click",function(e){
 
+		e.preventDefault();
+		$("#background").show().animate({width:"100%",height:"100%"},1000);
+		$("div#loginForm").toggleClass("show");
+		$("div#loginForm").appendTo("#background");
 
+	});
+
+	$("#loginForm [role='close-modal']").on("click",function(){
+
+		$("#background").animate({width:"0%",height:"0%"},1000,function(){
+			$(this).hide();
+			$("div#loginForm").appendTo("body");
+		});
+		
+	});
 
 });
 

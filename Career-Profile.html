@@ -56,7 +56,7 @@
         <li><a href="services.html"><i class="fa fa-angle-right"></i><p>General Employment Advice</p></a></li>
         </ul>
       </li>           
-      <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
+      <li><a href="prices.html"><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href="testimonials.html"><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
       <li><a href=""><i class="fa fa-phone"></i><p>Contact</p></a></li>
@@ -89,14 +89,20 @@
 </header> 
 <!-- End of Headers -->
 
-<!-- End of Headers -->
+<!-- Career Profile Client add info. -->
 <div id="sectionCareerProfile">
 <section id="career-profile">
     <h1 id="header">CAREER PROFILE</h1>
     
-    <p id="description">Please feel free to update your profile, this will help your career consultant provide the correct service and help you launch your career.</p>
+    <p id="description">By updating your Career Profile, this will help your career consultant provide the correct service and help you launch your career, faster and easier.</p>
     <form id="careerProfile-form" method="get">
         <div class="profileAuto"><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></div>
+        <p>
+        <span class="border"><i class="fa fa-camera"></i></span>
+        <label for="avatar"></label>
+        <input type="file" name="imageType" id="avatar" class="border"  >
+        </p>
+
         <p>
         <span class="border"><i class="fa fa-user"></i></span>
         <label for="userName"></label>
@@ -126,13 +132,7 @@
         <label for="contact"></label>
         <input type="text" name="phone" id="contact" placeholder="Contact Number" class="border">
         </p>
-
-        <p>
-        <span class="border"><i class="fa fa-camera"></i></span>
-        <label for="avatar"></label>
-        <input type="file" name="imageType" id="avatar" class="border"  >
-        </p>
-        
+      
         <p>
         <span class="border"><i  class="fa fa-pencil-square-o"></i></span>
         <label for="personalGoals"></label>
@@ -217,11 +217,11 @@
         
 
         <p>
-        <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your career profile for future career consult meetings & career planning.</p>
-        <div>
-<!--         <input type="checkbox" value="agreement" id="checkbox" name="check" />
-        <label for="checkbox"></label> -->
-        </div>
+        <p id="agreementStatement" class="border">In order to keep you informed and help you with your future career, we will retain your career profile for future career consult meetings & career planning. I consent by ticking this box.
+        
+        <input type="checkbox" value="agreement" id="checkboxCareerProfile" name="check" />
+        <label for="checkboxCareerProfile"></label></p>
+        
 
         <label for="updateProfile"></label>
         <button type="submit" name="button" id="updateProfile" class="button">UPDATE MY PROFILE</button>
@@ -242,7 +242,7 @@
             <li><a href="">HELP</a></li>
             <li><a href="">PRIVACY</a></li>
             <li><a href="">TERMS</a></li>
-            <li><a href=""><i class="fa fa-copyright"></i>CAREER CONSULT 2014</a></li>
+            <li><a href="#">&copy CAREER CONSULT 2014</a></li>
             <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
             <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
             <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>

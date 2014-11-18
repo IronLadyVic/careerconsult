@@ -49,7 +49,7 @@
 
                   <li id="menuServices"><a href="services.html"><i class="fa fa-cogs"></i><p>Services</p><i id="droparrow" class="fa fa-angle-down"></i></a></li>    
                   
-                  <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
+                  <li><a href="prices.html"><i class="fa fa-usd"></i><p>Pricing</p></a></li>
                   <li><a href="testimonials.html"><i class="fa fa-users"></i><p>Testimonials</p></a></li>
                   <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
                   <li><a href=""><i class="fa fa-phone"></i><p>Contact</p></a></li>
@@ -69,27 +69,13 @@
             </svg>
         </a>
     </div>
-    <div class="nav-handle-user">
-        <form id="navLogIn">
-            <p>
-                <span class="border"><i class="fa fa-user"></i></span>
-                <label for="user-name"></label>
-                <input type="text" name="username" id="user-name" placeholder="Username" class="border">
-                
-            </p>
-            <p>
-                <span class="border"><i class="fa fa-lock"></i></span>
-                <label for="password"></label>
-                <input type="password" name="password" id="password" placeholder="Password" class="border">
-                
-            </p>    
-            <button type="submit" name="button" id="logIn" class="button">LOG IN</button>
-        </form>
-    </div>  
+<div class="nav-handle-login">
+    <div id="navLogIn"><i id="navRightArrow" class="fa fa-angle-right"></i><a href="#" id="loginHandle">LOG IN</a></div>   
+</div> 
 </header> 
 <!-- End of Headers -->
 
-<!-- End of Headers -->
+<!-- Start of Services -->
 <div id="sectionServices">
     <section id="servicesListed">
         <h1 id="header">SERVICES</h1>
@@ -259,32 +245,75 @@
                     <div class="date">
                         <p>15th Thursday November 2014</p>
                     </div>
-                </article>  
-        </section>
-                <div id="pagination">
-                    <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                    </ul>
-                </div>  
-            </aside>
-        <!-- Footer -->
-        <footer>
-            <div id="footer_options">
-                <ul>
-                    <li><a href="">HELP</a></li>
-                    <li><a href="">PRIVACY</a></li>
-                    <li><a href="">TERMS</a></li>
-                    <li><a href=""><i class="fa fa-copyright"></i>CAREER CONSULT 2014</a></li>
-                    <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-                    <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
-            </ul>
-        </div>
-</footer>
+            </article>  
+       <div id="pagination">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+             </ul>
+        </div>       
+    </section>
         
+</aside>
+
+
+<!-- Section Two Log in pop up -->
+<div id="loginForm" class="l-box-lrg pure-u-1 pure-u-md-2-5">
+
+    <span role="close-modal"><i class="fa fa-times"></i></span>
+
+    <form id="logIn-form" class="pure-form pure-form-stacked">
+        <h1 id="header">LOG IN</h1>
+
+        <p id="loginDescription">Log in to update your career profile, or enquire about booking a service.</p>
+
+        <p><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></p>
+        <p>
+            <span class="border"><i class="fa fa-user"></i></span>
+            <label for="user-name"></label>
+            <input type="text" name="username" id="user-name" placeholder="Username" class="border">
+
+        </p>
+        <p>
+            <span class="border"><i class="fa fa-lock"></i></span>
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="Password" class="border">
+
+        </p> 
+
+        <input type="checkbox" value="None" id="checkBoxRemember" name="check" />
+        <label for="checkBox"></label>
+        <p  id="rememberMe">Remember Me</p>
+        
+        
+        <label for="logIn"></label>
+        <button type="submit" name="button" id="logIn" class="button">LOG IN</button>
+
+    </form>
+</div>
+
+
+<div id="background"></div>
+
+
+<!-- End of Section Two Log in pop up -->            
+        <!-- Footer -->
+<footer>
+    <div id="footer_options">
+        <ul>
+            <li><a href="">HELP</a></li>
+            <li><a href="">PRIVACY</a></li>
+            <li><a href="">TERMS</a></li>
+            <li><a href="#">&copy CAREER CONSULT 2014</a></li>
+            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+</footer>
+       
         <!-- End of Footer -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

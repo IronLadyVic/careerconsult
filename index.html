@@ -55,7 +55,7 @@
         <li><a href="services.html"><i class="fa fa-angle-right"></i><p>General Employment Advice</p></a></li> 
         </ul>
       </li>           
-      <li><a href=""><i class="fa fa-usd"></i><p>Pricing</p></a></li>
+      <li><a href="prices.html"><i class="fa fa-usd"></i><p>Pricing</p></a></li>
       <li><a href="testimonials.html"><i class="fa fa-users"></i><p>Testimonials</p></a></li>
       <li><a href=""><i class="fa fa-briefcase"></i><p>About</p></a></li>
       <li><a href=""><i class="fa fa-phone"></i><p>Contact</p></a></li>
@@ -75,7 +75,7 @@
    </a>
 </div>
 <div class="nav-handle-login">
-        <div id="navLogIn"><a href="#" id="loginHandle">LOG IN</a></div>   
+        <div id="navLogIn"><i id="navRightArrow" class="fa fa-angle-right"></i><a href="#" id="loginHandle">LOG IN</a></div>   
 </div>  
 </header> 
 <!-- End of Headers -->
@@ -113,7 +113,46 @@
 </section> -->
 </div>
 <!-- End of Section One -->
-<!-- <div id="sectionTwo"></div> -->
+<!-- Section Two Log in pop up -->
+<div id="loginForm" class="l-box-lrg pure-u-1 pure-u-md-2-5">
+
+    <span role="close-modal"><i class="fa fa-times"></i></span>
+
+    <form id="logIn-form" class="pure-form pure-form-stacked">
+        <h1 id="header">LOG IN</h1>
+
+        <p id="loginDescription">Log in to update your career profile, or enquire about booking a service.</p>
+
+        <p><img id="profileImage" src="img/careerprofile-BLK.png" alt="profile picture"></p>
+        <p>
+            <span class="border"><i class="fa fa-user"></i></span>
+            <label for="user-name"></label>
+            <input type="text" name="username" id="user-name" placeholder="Username" class="border">
+
+        </p>
+        <p>
+            <span class="border"><i class="fa fa-lock"></i></span>
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="Password" class="border">
+
+        </p> 
+
+        <input type="checkbox" value="None" id="checkBoxRemember" name="check" />
+        <label for="checkBox"></label>
+        <p  id="rememberMe">Remember Me</p>
+        
+        
+        <label for="logIn"></label>
+        <button type="submit" name="button" id="logIn" class="button">LOG IN</button>
+
+    </form>
+</div>
+
+
+<div id="background"></div>
+
+
+<!-- End of Section Two Log in pop up -->
 <!-- Footer -->
 <footer>
     <div id="footer_options">
@@ -121,7 +160,7 @@
             <li><a href="">HELP</a></li>
             <li><a href="">PRIVACY</a></li>
             <li><a href="">TERMS</a></li>
-            <li><a href=""><i class="fa fa-copyright"></i>CAREER CONSULT 2014</a></li>
+            <li><a href="#">&copy CAREER CONSULT 2014</a></li>
             <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
             <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
             <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
