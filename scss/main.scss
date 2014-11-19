@@ -6,16 +6,16 @@
    NAVIGATION BAR  hide
    ========================================================================== */
    @media only screen and (min-width: 20em) {
-    body.show{
+    body{
       @include responsiveBackground(#242424);
 
 
     }
 
-    body{
-      @include responsiveBackground(#2B2937);
+    // body{
+    //   @include responsiveBackground(#2B2937);
 
-    }
+    // }
 
     header #main-header{
       z-index: 1000;
@@ -27,19 +27,16 @@
       
     } 
 
-/*    #main-nav{
+    #main-nav{
       height: 0%;
       margin-left: -2.5em;
       margin-top: 2em;
     }
-*/
 
 
 
-    #droparrow.hide{
-      font-size: 0px;
-      display: none;
-    }
+
+
 /* ==========================================================================
    NAV LOG IN Desktop hide
    ========================================================================== */
@@ -103,6 +100,11 @@ div#navLogIn a{
     }
     ul#main-nav li{
       display: none;
+       -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+      -o-transition: height 1s ease;
+     -ms-transition: height 1s ease;
+         transition: height 1s ease;
     }
 
     ul#main-nav li.show {
@@ -115,7 +117,7 @@ div#navLogIn a{
       border-bottom: black 1px solid;
       margin: 0;
       font-size: 1.1em;
-      font-weight: 300;
+      // font-weight: 300;
       /*Animation*/
  -webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
@@ -125,10 +127,12 @@ div#navLogIn a{
       line-height: 0px;
       background-color: #242424;
       cursor: pointer;
-      height: 100%;
+      // height: 100%;
       width: 100%;
 
     }
+
+
     ul#main-nav li:nth-child(7){
       background-color: white;
       font-weight: 300;
@@ -232,7 +236,7 @@ margin-top: 13em;
   margin-left: 2em;*/
 }
 
-li#seletedServices{
+ul#main-nav li#seletedServices{
   width: 0;
   height: 0;
   display: none;
@@ -240,24 +244,25 @@ li#seletedServices{
 }
 
 
-li#seletedServices.display{
+ul#main-nav li#seletedServices.display{
   width: 112%;
   height: auto;
   display: block;
   color: black;
   font-size: 0.8em;
+  left: 0;
   margin-left: -3em;
 }
-li#seletedServices i.display{
+ul#main-nav li#seletedServices i.display{
   margin-left: 1.8em;
   
 }
 
-li#seletedServices p.display{
+ul#main-nav li#seletedServices p.display{
   margin-left: 1.3em;
 
 }
-#seletedServices li:last-child{
+ul#main-nav li#seletedServices li:last-child{
   border-bottom: none;
 
 }
@@ -307,7 +312,7 @@ li#seletedServices p.display{
    ========================================================================== */
 
    #asideLatestNews{
-    border-top: 1px solid white;
+    // border-top: 1px solid white;
     padding-bottom: 1em;
 /*  margin-top: 2em;
   margin-left: 2em;
@@ -429,18 +434,18 @@ div#shareSocial p a{
    Desktop Login only - no pop up model
    ========================================================================== */
    div#mobdeskLogin{
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     position: relative;
-    left: 20%;
-    top: 20%;
+    // left: 20%;
+    // top: 20%;
   }
 
 section#mobdeskSection{
     margin: 0 auto;
     position: relative;
-    width: 25em;
+    // width: 80%;
     height:auto;
     margin-top: 1.5em;
     
@@ -491,7 +496,7 @@ form#mobdeskForm input[type="text"]{
 }
 
 form#mobdeskForm #loggingInButton{
-  width:90%;
+  width:95%;
 }
 form#mobdeskForm p#rememberMe{
   margin-top: -1.2em;
@@ -513,6 +518,7 @@ section#pricesListed {
     position: relative;
     width: 100%;
     margin: 0 auto;
+    margin-left: -1em;
 }
 #pricesListed h1{
   width: 85%;
@@ -721,8 +727,8 @@ color: #404040;
     margin-top: -1.2em;
     color: white!important;
   }
-  #droparrow.hide{
-    display: none;
+  #droparrow.show{
+    display: block;
   }
 
 
@@ -1373,6 +1379,7 @@ div#loginForm.show{
       width: 100%;
       margin: 0 auto;
       position: relative;
+      margin-top: -1em;
     }
 
     section#servicesListed{
@@ -1417,7 +1424,7 @@ div#loginForm.show{
       padding-right: 0.5em;
     }
     .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-      left: 16.5em;
+      left: 17.5em;
 
     }
     .ui-accordion .ui-accordion-content{
@@ -1444,7 +1451,7 @@ div#loginForm.show{
     .ui-accordion .ui-accordion-content button.button{
       font-family: 'Quicksand'!important;
       margin-left: -1em;
-      width: 90%;
+      width: 111%;
       padding-bottom: 0.5em;
       box-shadow: none;
       line-height: 40px;
@@ -1487,7 +1494,7 @@ div#loginForm.show{
    ========================================================================== */
 
 
-   div#footerOptions{
+   div#footer_options{
 
 
     position: relative;
@@ -1495,7 +1502,7 @@ div#loginForm.show{
   margin-top: 2em;
   border-top: 1px solid #3d4144;
 
-    width: 80%;
+    width: 110%;
 
     /*padding-bottom: 3em;*/
     overflow: hidden;
@@ -1548,9 +1555,9 @@ div#loginForm.show{
       float: left;
       left: 0;
     }
-    ul#main-nav.show{
-      display: block;
-    }
+    // ul#main-nav.show{
+    //   display: block;
+    // }
 
 
     #servicesPage div#main-header ul#main-nav li:nth-child(6){
@@ -1661,9 +1668,7 @@ color: #9B8FFB;
   }
 
   header  ul#main-nav{
-    margin-top: 1em; 
-
-
+    // margin-top: 1em; 
   }
 /*ul#main-nav li:nth-child(6){
   background-color: #242424;
@@ -1678,8 +1683,47 @@ color: #9B8FFB;
     
   } 
 
+    ul#main-nav li {
+      left: 0;
+      top: 60px;
+      display: block;
+      /*clear: left;*/
+      padding-top: 1.2em;
+      padding-bottom: 0.5em;
+      border-bottom: black 1px solid;
+      margin: 0;
+      font-size: 1.1em;
+      font-weight: 300;
+      /*Animation*/
+ -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+      -o-transition: height 1s ease;
+     -ms-transition: height 1s ease;
+         transition: height 1s ease;
+      line-height: 0px;
+      background-color: #242424;
+      cursor: pointer;
+      
 
+    }
+ul#main-nav li#seletedServices li{
+  margin-left: -2em;
+  height: 4em;
+  line-height: 120%;
+  width: 19.5em;
+  padding-bottom: 3em;
+}
 
+ul#main-nav li#seletedServices i{
+  padding-left: 1.5em;
+}
+
+ul#main-nav li#seletedServicesv p:nth-child(1){
+    padding-bottom:1em;
+  }
+ul#main-nav li#seletedServices p:nth-child(5){
+    padding-bottom:1em;
+  }
 /* ==========================================================================
    SERVICES ACCORDIAN
    ========================================================================== */
@@ -1743,6 +1787,7 @@ color: #9B8FFB;
   }
   .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
     float: right;
+    margin-left: 7em;
   }
 
   .ui-accordion .ui-accordion-content{
@@ -1990,6 +2035,7 @@ height: 80em;
 }*/
 ul#main-nav{
   width:17.9em;
+  margin-left: -2.5em;
 
 }
 #droparrow{
@@ -2015,30 +2061,7 @@ ul#main-nav{
     position: relative;
   }
 
-  li#seletedServices.display {
-    margin-left: -3.2em;
 
-  }
-  li#seletedServices li{
-    width: 17.5em;
-    height: 4em;
-  }
-  li#seletedServices li p{
-    line-height: 120%;  
-  }
-  li#seletedServices p:nth-child(2){
-    padding-top:0.3em;
-  }
-  li#seletedServices p:nth-child(3){
-    line-height: 160%;
-  }
-  p.display:nth-child(5){
-    padding-bottom:0.5em;
-  }  
-  li#seletedServices p.display{
-    margin-top: -1.8em;
-    margin-left: -0.3em;
-  }
 
 /* ==========================================================================
    SEARCH FORM
@@ -2133,7 +2156,7 @@ ul#main-nav{
    width: 100%;
  }
  #aucklandSkyline img{
-  margin-top: -10em;
+  margin-top: -14em;
   opacity: 0.3;
   position: absolute;
   margin-left: 6em;
@@ -2522,9 +2545,10 @@ width: 5%;
  margin-top: 2em;
  margin-left: 0.5em;
 }
-#careerProfile-form input#checkbox{
-  margin-top: 35em;
-  margin-left: -4em;
+#careerProfile-form input#checkboxCareerProfile{
+  margin-top: 0em;
+  padding-left: 0.5em;
+ 
   width: 1em;
   height: 1em;
 

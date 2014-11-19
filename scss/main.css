@@ -11,11 +11,8 @@
    NAVIGATION BAR  hide
    ========================================================================== */
 @media only screen and (min-width: 20em) {
-  body.show {
-    background-color: #242424; }
-
   body {
-    background-color: #2B2937; }
+    background-color: #242424; }
 
   header #main-header {
     z-index: 1000;
@@ -25,15 +22,10 @@
   #servicesPage div#main-header ul#main-nav li:nth-child(6) {
     background-color: white !important; }
 
-  /*    #main-nav{
-        height: 0%;
-        margin-left: -2.5em;
-        margin-top: 2em;
-      }
-  */
-  #droparrow.hide {
-    font-size: 0px;
-    display: none; }
+  #main-nav {
+    height: 0%;
+    margin-left: -2.5em;
+    margin-top: 2em; }
 
   /* ==========================================================================
      NAV LOG IN Desktop hide
@@ -82,7 +74,12 @@
     float: right; }
 
   ul#main-nav li {
-    display: none; }
+    display: none;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease; }
 
   ul#main-nav li.show {
     left: 0;
@@ -94,7 +91,6 @@
     border-bottom: black 1px solid;
     margin: 0;
     font-size: 1.1em;
-    font-weight: 300;
     /*Animation*/
     -webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
@@ -104,7 +100,6 @@
     line-height: 0px;
     background-color: #242424;
     cursor: pointer;
-    height: 100%;
     width: 100%; }
 
   ul#main-nav li:nth-child(7) {
@@ -180,7 +175,7 @@
     /* margin-left: -20em;*/
     /*opacity: 0.8;*/
     position: relative;
-    border-bottom: 1px #928CC4 solid !important; }
+    border-bottom: 1px #928cc4 solid !important; }
 
   #ponsonbyHousing img {
     /*  height:10%;
@@ -199,26 +194,27 @@
       z-index: 4000;
       margin-left: 2em;*/ }
 
-  li#seletedServices {
+  ul#main-nav li#seletedServices {
     width: 0;
     height: 0;
     display: none; }
 
-  li#seletedServices.display {
+  ul#main-nav li#seletedServices.display {
     width: 112%;
     height: auto;
     display: block;
     color: black;
     font-size: 0.8em;
+    left: 0;
     margin-left: -3em; }
 
-  li#seletedServices i.display {
+  ul#main-nav li#seletedServices i.display {
     margin-left: 1.8em; }
 
-  li#seletedServices p.display {
+  ul#main-nav li#seletedServices p.display {
     margin-left: 1.3em; }
 
-  #seletedServices li:last-child {
+  ul#main-nav li#seletedServices li:last-child {
     border-bottom: none; }
 
   #brand_logo a img {
@@ -263,7 +259,6 @@
      LATEST UPDATES - NEXT TO SERVICES ACCORDION
      ========================================================================== */
   #asideLatestNews {
-    border-top: 1px solid white;
     padding-bottom: 1em;
     /*  margin-top: 2em;
       margin-left: 2em;
@@ -364,17 +359,14 @@
      Desktop Login only - no pop up model
      ========================================================================== */
   div#mobdeskLogin {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
-    position: relative;
-    left: 20%;
-    top: 20%; }
+    position: relative; }
 
   section#mobdeskSection {
     margin: 0 auto;
     position: relative;
-    width: 25em;
     height: auto;
     margin-top: 1.5em; }
 
@@ -424,7 +416,7 @@
     margin-left: 25%; }
 
   form#mobdeskForm #loggingInButton {
-    width: 90%; }
+    width: 95%; }
 
   form#mobdeskForm p#rememberMe {
     margin-top: -1.2em;
@@ -444,7 +436,8 @@
     display: block;
     position: relative;
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-left: -1em; }
 
   #pricesListed h1 {
     width: 85%;
@@ -473,7 +466,7 @@
     background-image: -ms-linear-gradient(top, #686868, #525252);
     background-image: -o-linear-gradient(top, #686868, #525252);
     background-image: linear-gradient(to bottom, #686868, #525252);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#525252',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#686868', endColorstr='#525252',GradientType=0 );
     padding: 9px 14px;
     height: 5em;
     color: white; }
@@ -606,13 +599,13 @@
      ACTIVE HOLD ON LI DROP DOWN MENU
      ========================================================================== */
   ul#main-nav li:active {
-    background-image: linear-gradient(#9B8FFB, #2B2937); }
+    background-image: linear-gradient(#9b8ffb, #2b2937); }
 
   ul#main-nav li p:active {
-    color: #E6E6FA; }
+    color: lavender; }
 
   ul#main-nav li i:active {
-    color: #E6E6FA; }
+    color: lavender; }
 
   header #main-header ul#main-nav li a {
     text-decoration: none;
@@ -643,8 +636,8 @@
     margin-top: -1.2em;
     color: white !important; }
 
-  #droparrow.hide {
-    display: none; }
+  #droparrow.show {
+    display: block; }
 
   /* ==========================================================================
      SEARCH 
@@ -1217,7 +1210,8 @@
     float: left;
     width: 100%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    margin-top: -1em; }
 
   section#servicesListed {
     display: block;
@@ -1253,7 +1247,7 @@
     padding-right: 0.5em; }
 
   .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-    left: 16.5em; }
+    left: 17.5em; }
 
   .ui-accordion .ui-accordion-content {
     padding: 0.2em;
@@ -1277,7 +1271,7 @@
   .ui-accordion .ui-accordion-content button.button {
     font-family: "Quicksand" !important;
     margin-left: -1em;
-    width: 90%;
+    width: 111%;
     padding-bottom: 0.5em;
     box-shadow: none;
     line-height: 40px;
@@ -1306,7 +1300,7 @@
       INPUT ERRORS
       ========================================================================== */
   .invalid {
-    color: #9B8FFB;
+    color: #9b8ffb;
     font-size: 0.5em;
     position: absolute;
     margin-top: -1em; }
@@ -1314,12 +1308,12 @@
   /* ==========================================================================
      FOOTER
      ========================================================================== */
-  div#footerOptions {
+  div#footer_options {
     position: relative;
     margin-left: -2em;
     margin-top: 2em;
     border-top: 1px solid #3d4144;
-    width: 80%;
+    width: 110%;
     /*padding-bottom: 3em;*/
     overflow: hidden;
     opacity: .5;
@@ -1355,9 +1349,6 @@
     height: 100%;
     float: left;
     left: 0; }
-
-  ul#main-nav.show {
-    display: block; }
 
   #servicesPage div#main-header ul#main-nav li:nth-child(6) {
     background-color: white !important; }
@@ -1451,9 +1442,6 @@
     height: 100%;
     width: 100%; }
 
-  header ul#main-nav {
-    margin-top: 1em; }
-
   /*ul#main-nav li:nth-child(6){
     background-color: #242424;
     
@@ -1463,6 +1451,43 @@
 
   ul#main-nav li:nth-child(8) {
     background-color: white; }
+
+  ul#main-nav li {
+    left: 0;
+    top: 60px;
+    display: block;
+    /*clear: left;*/
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
+    border-bottom: black 1px solid;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+    /*Animation*/
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+    line-height: 0px;
+    background-color: #242424;
+    cursor: pointer; }
+
+  ul#main-nav li#seletedServices li {
+    margin-left: -2em;
+    height: 4em;
+    line-height: 120%;
+    width: 19.5em;
+    padding-bottom: 3em; }
+
+  ul#main-nav li#seletedServices i {
+    padding-left: 1.5em; }
+
+  ul#main-nav li#seletedServicesv p:nth-child(1) {
+    padding-bottom: 1em; }
+
+  ul#main-nav li#seletedServices p:nth-child(5) {
+    padding-bottom: 1em; }
 
   /* ==========================================================================
      SERVICES ACCORDIAN
@@ -1512,7 +1537,8 @@
     line-height: 45px; }
 
   .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-    float: right; }
+    float: right;
+    margin-left: 7em; }
 
   .ui-accordion .ui-accordion-content {
     background-color: transparent; }
@@ -1631,7 +1657,7 @@
     background-image: -ms-linear-gradient(top, #686868, #525252);
     background-image: -o-linear-gradient(top, #686868, #525252);
     background-image: linear-gradient(to bottom, #686868, #525252);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#525252',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#686868', endColorstr='#525252',GradientType=0 );
     padding: 9px 14px;
     height: 110px;
     color: white; }
@@ -1742,7 +1768,8 @@
   
   }*/
   ul#main-nav {
-    width: 17.9em; }
+    width: 17.9em;
+    margin-left: -2.5em; }
 
   #droparrow {
     width: 0.5em;
@@ -1765,29 +1792,6 @@
     margin-left: 4em;
     z-index: 2001;
     position: relative; }
-
-  li#seletedServices.display {
-    margin-left: -3.2em; }
-
-  li#seletedServices li {
-    width: 17.5em;
-    height: 4em; }
-
-  li#seletedServices li p {
-    line-height: 120%; }
-
-  li#seletedServices p:nth-child(2) {
-    padding-top: 0.3em; }
-
-  li#seletedServices p:nth-child(3) {
-    line-height: 160%; }
-
-  p.display:nth-child(5) {
-    padding-bottom: 0.5em; }
-
-  li#seletedServices p.display {
-    margin-top: -1.8em;
-    margin-left: -0.3em; }
 
   /* ==========================================================================
      SEARCH FORM
@@ -1869,7 +1873,7 @@
     width: 100%; }
 
   #aucklandSkyline img {
-    margin-top: -10em;
+    margin-top: -14em;
     opacity: 0.3;
     position: absolute;
     margin-left: 6em;
@@ -2191,9 +2195,9 @@
     margin-top: 2em;
     margin-left: 0.5em; }
 
-  #careerProfile-form input#checkbox {
-    margin-top: 35em;
-    margin-left: -4em;
+  #careerProfile-form input#checkboxCareerProfile {
+    margin-top: 0em;
+    padding-left: 0.5em;
     width: 1em;
     height: 1em; }
 
@@ -2715,5 +2719,3 @@
   #brand_logo a img {
     width: 6em;
     height: 6em; } }
-
-/*# sourceMappingURL=main.css.map */
